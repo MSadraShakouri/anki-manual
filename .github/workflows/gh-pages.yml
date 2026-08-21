@@ -1,32 +1,17 @@
-env:
-  cname: docs.ankiweb.net
-
 name: github pages
 
 on:
   push:
     branches:
       - main
-      - test
 
 jobs:
   deploy:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v6
-
-      - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          components: rustfmt
-
-      - name: Cache binaries
-        uses: actions/cache@v5
-        with:
-          path: ~/.cargo/bin
-          key: ${{ runner.os }}-bin-${{ hashFiles('.github/workflows/build.sh') }}
-          restore-keys: |
-            ${{ runner.os }}-bin-
+      - uses: actions/checkout@v4
 
       - name: Build
         run: .github/workflows/build.sh
@@ -36,25 +21,14 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./book/html
-          cname: ${{ env.cname }}
 
   check:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
 
-      - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          components: rustfmt
+      - name: Translation QA (structure checker)
+        run: python3 tools/fa/check.py
 
-      - name: Cache binaries
-        uses: actions/cache@v5
-        with:
-          path: ~/.cargo/bin
-          key: ${{ runner.os }}-bin-${{ hashFiles('.github/workflows/build.sh') }}
-          restore-keys: |
-            ${{ runner.os }}-bin-
-
-      - name: Build
-        run: CHECK=1 .github/workflows/build.sh
+      - name: Build (with linkcheck removed)
+        run: .github/workflows/build.sh

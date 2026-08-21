@@ -1,3 +1,3 @@
-# Frequently Asked Questions
+# پرسش‌های متداول {#frequently-asked-questions}
 
-See <https://faqs.ankiweb.net>
+به <https://faqs.ankiweb.net> مراجعه کنید

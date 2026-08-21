@@ -1,0 +1,90 @@
+/* راست‌به‌چپ‌سازی راهنمای آنکی — RTL fixes for the Persian Anki manual */
+
+/* فونت وزیرمتن (موجود در src/fonts) */
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    direction: rtl;
+    font-family: 'Vazirmatn', 'Iranian Sans', Tahoma, sans-serif !important;
+}
+
+/* کدها همیشه چپ‌به‌راست می‌مانند */
+code, pre, .playpen, pre > code {
+    direction: ltr;
+    font-family: var(--mono-font, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace);
+    text-align: left;
+}
+.hljs {
+    unicode-bidi: plaintext;
+}
+pre {
+    text-align: left;
+}
+
+/* نوار منو و پیمایش بالا برای پایداری چیدمان، چپ‌به‌راست می‌مانند */
+.nav-wide-wrapper, #menu-bar, #theme-toggle, #search-toggle, #toggle-nav {
+    direction: ltr;
+}
+
+/* جابه‌جایی هدف لینک‌ها در صفحه‌های RTL */
+h1:target::before, h2:target::before, h3:target::before,
+h4:target::before, h5:target::before, h6:target::before {
+    margin-right: -10px !important;
+    margin-left: 0 !important;
+}
+
+/* جدول‌ها: ستون‌ها از راست خوانده می‌شوند، اما محتوای سلول‌های کد LTR می‌مانند */
+td, th {
+    direction: rtl;
+}
+td code, th code {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+/* جعبه‌های admonish در چیدمان RTL */
+.admonish {
+    direction: rtl;
+}
+.admonish code {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+/* اعداد و کلیدهای صفحه‌کلید داخل متن */
+kbd {
+    direction: ltr;
+    unicode-bidi: embed;
+    font-family: sans-serif;
+}
+
+/* ورودی جست‌وجو */
+#searchbar.searchbar input, #searchbar input {
+    direction: rtl;
+    text-align: right;
+}
+
+/* متن لاتین داخل پاراگراف فارسی نباید فونت فارسی بگیرد */
+body :not(code):not(pre) > span.latin, body em {
+    /* no-op: placeholder for future fine-tuning */
+}

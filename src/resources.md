@@ -1,3 +1,4 @@
-# Resources
+# منابع {#resources}
 
-You can find guides, templates, custom schedulers and other resources in [this resource list](https://forums.ankiweb.net/t/collection-of-anki-resources/60044).
+راهنماها، قالب‌ها، زمان‌بندهای سفارشی و منابع دیگر را می‌توانید در
+[این فهرست منابع](https://forums.ankiweb.net/t/collection-of-anki-resources/60044) بیابید.

@@ -1,24 +1,24 @@
-# Introduction
+# مقدمه {#introduction}
 
-## Mobile Clients
+## کلاینت‌های موبایل {#mobile-clients}
 
-This is the manual for the computer version of Anki. Separate manuals are available for the mobile clients:
+این کتاب، راهنمای نسخه رایانه‌ای آنکی است. برای کلاینت‌های موبایل راهنماهای جداگانه‌ای موجود است:
 
-- [AnkiDroid Manual](https://docs.ankidroid.org/) (Android)
-- [AnkiMobile Manual](https://docs.ankimobile.net/) (iPhone/iPad)
+- [راهنمای AnkiDroid](https://docs.ankidroid.org/) (اندروید)
+- [راهنمای AnkiMobile](https://docs.ankimobile.net/) (آیفون/آیپد)
 
-## Quickstart
+## شروع سریع {#quickstart}
 
-In a hurry? Jump straight to [Getting Started](getting-started.md).
+عجله دارید؟ مستقیم به بخش [شروع به کار](getting-started.md) بروید.
 
-## Getting Help
+## گرفتن کمک {#getting-help}
 
-Looking for help? See [Getting Help](./getting-help.md).
+به دنبال راهنمایی هستید؟ بخش [گرفتن کمک](./getting-help.md) را ببینید.
 
-## Translations
+## ترجمه‌ها {#translations}
 
-Volunteers have contributed translations of this manual. The
-translations may not always be up to date.
+داوطلبانی از این راهنما به زبان‌های مختلف ترجمه ارائه کرده‌اند.
+ترجمه‌ها ممکن است همیشه به‌روز نباشند.
 
 - [Bahasa Indonesia](https://web.archive.org/web/20250228144632/https://apps.ankiweb.net/docs/manual.id.html)
 - [Deutsch](https://web.archive.org/web/20240413080739/https://www.dennisproksch.de/anki)
@@ -31,15 +31,15 @@ translations may not always be up to date.
 - [русский язык](https://andreykaiu.github.io/anki-manual-ru/)
 - [Українська](https://astropsy999.github.io/anki-manual/)
 - [العربية](https://abdnh.github.io/anki-manual/)
-- [فارسى](https://web.archive.org/web/20250328102629/http://ankidroid.ir/anki.pdf)
 - [日本語](http://wikiwiki.jp/rage2050/)
 - [简体中文](https://open-spaced-repetition.github.io/anki-manual-zh-CN/)
 
-If you would like to help translate the manual into a different language,
-please see the [translation docs](https://translating.ankiweb.net/anki/manual.html).
+اگر مایلید در ترجمه این راهنما به زبان دیگری کمک کنید، لطفاً
+[مستندات ترجمه](https://translating.ankiweb.net/anki/manual.html) را ببینید.
 
-## Legacy Documentation
+## مستندات قدیمی {#legacy-documentation}
 
-Not on the latest version of Anki? Find archives of this manual at the [Internet Archive](https://web.archive.org/web/20240829022941/https://docs.ankiweb.net/).
+روی آخرین نسخه آنکی نیستید؟ نسخه‌های آرشیوشده این راهنما را در
+[Internet Archive](https://web.archive.org/web/20240829022941/https://docs.ankiweb.net/) بیابید.
 
-For information on old scheduler versions, see [this FAQ](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
+برای اطلاع از نسخه‌های قدیمی زمان‌بند، [این پرسش‌های متداول](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) را ببینید.
