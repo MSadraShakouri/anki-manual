@@ -18,3 +18,6 @@ rm -f "$HOME/mdbook-binaries/mdbook-linkcheck"
 
 cd "$GITHUB_WORKSPACE"
 mdbook build
+
+# Persian search normalization (index + lazy-load searcher)
+node tools/fa/normalize-search.js book/html
