@@ -174,416 +174,360 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="searching"><a class="header" href="#searching">Searching</a></h1>
+                        <h1 id="searching"><a class="header" href="#searching">جست‌وجو</a></h1>
 <ul>
-<li><a href="#simple-searches">Simple searches</a></li>
-<li><a href="#limiting-to-a-field">Limiting to a field</a></li>
-<li><a href="#tags-decks-cards-and-notes">Tags, decks, cards and notes</a></li>
-<li><a href="#ignoring-accentscombining-characters">Ignoring accents/combining characters</a></li>
-<li><a href="#searching-in-cloze-deletions">Searching in cloze deletions</a></li>
-<li><a href="#regular-expressions">Regular expressions</a></li>
-<li><a href="#card-state">Card state</a></li>
-<li><a href="#flags">Flags</a></li>
-<li><a href="#card-properties">Card properties</a></li>
-<li><a href="#recent-events">Recent Events</a>
+<li><a href="#simple-searches">جست‌وجوهای ساده</a></li>
+<li><a href="#limiting-to-a-field">محدودکردن به یک فیلد</a></li>
+<li><a href="#tags-decks-cards-and-notes">برچسب‌ها، دسته‌ها، کارت‌ها و یادداشت‌ها</a></li>
+<li><a href="#ignoring-accentscombining-characters">نادیده‌گرفتن اعراب/نویسه‌های ترکیبی</a></li>
+<li><a href="#searching-in-cloze-deletions">جست‌وجو در حذف‌های اطلاعاتی</a></li>
+<li><a href="#regular-expressions">عبارت‌های باقاعده</a></li>
+<li><a href="#card-state">وضعیت کارت</a></li>
+<li><a href="#flags">پرچم‌ها</a></li>
+<li><a href="#card-properties">ویژگی‌های کارت</a></li>
+<li><a href="#recent-events">رخدادهای اخیر</a>
 <ul>
-<li><a href="#added">Added</a></li>
-<li><a href="#edited">Edited</a></li>
-<li><a href="#answered">Answered</a></li>
-<li><a href="#first-answered">First Answered</a></li>
+<li><a href="#added">افزوده‌شده</a></li>
+<li><a href="#edited">ویرایش‌شده</a></li>
+<li><a href="#answered">پاسخ‌داده‌شده</a></li>
+<li><a href="#first-answered">نخستین پاسخ</a></li>
 </ul>
 </li>
-<li><a href="#matching-special-characters">Matching special characters</a>
+<li><a href="#matching-special-characters">تطبیق نویسه‌های ویژه</a>
 <ul>
-<li><a href="#raw-input">Raw input</a></li>
+<li><a href="#raw-input">ورودی خام</a></li>
 </ul>
 </li>
-<li><a href="#object-ids">Object IDs</a></li>
-<li><a href="#custom-data">Custom Data</a></li>
-<li><a href="#other-searches">Other Searches</a></li>
+<li><a href="#object-ids">شناسه‌های اشیا</a></li>
+<li><a href="#custom-data">داده سفارشی</a></li>
+<li><a href="#other-searches">جست‌وجوهای دیگر</a></li>
 </ul>
-<p>Anki's Browse screen and the Filtered Deck feature use a common method
-of searching for specific cards/notes. This method can also be used to adjust the scope of FSRS optimization. </p>
-<h2 id="simple-searches"><a class="header" href="#simple-searches">Simple searches</a></h2>
-<p>When you type some text into the search box, Anki finds matching notes
-and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (see <a href="#tags-decks-cards-and-notes">later in this section</a> to search for tags). Some examples:</p>
+<p>صفحه مرورگر آنکی و قابلیت دسته پالایش‌شده از روش مشترکی برای جست‌وجوی کارت‌ها/یادداشت‌های مشخص استفاده می‌کنند. این روش را می‌توان برای تنظیم محدوده بهینه‌سازی FSRS هم به‌کار برد.</p>
+<h2 id="simple-searches"><a class="header" href="#simple-searches">جست‌وجوهای ساده</a></h2>
+<p>وقتی متنی در جعبه جست‌وجو تایپ می‌کنید، آنکی یادداشت‌های منطبق را می‌یابد و کارت‌هایشان را نمایش می‌دهد. آنکی در همه فیلدهای یادداشت‌ها جست‌وجو می‌کند، اما برچسب‌ها را جست‌وجو نمی‌کند (برای جست‌وجوی برچسب‌ها <a href="#tags-decks-cards-and-notes">بعداً در همین بخش</a> را ببینید). چند مثال:</p>
 <p><code>dog</code><br />
-searches for &quot;dog&quot; - will match words like &quot;doggy&quot; and &quot;underdog&quot; too.</p>
+جست‌وجو برای &quot;dog&quot; — با واژه‌هایی مانند &quot;doggy&quot; و &quot;underdog&quot; هم مطابقت می‌کند.</p>
 <p><code>dog cat</code><br />
-finds notes that have both &quot;dog&quot; and &quot;cat&quot; on them, such as &quot;raining
-cats and dogs&quot;.</p>
+یادداشت‌هایی را می‌یابد که هم &quot;dog&quot; و هم &quot;cat&quot; دارند؛ مانند &quot;raining cats and dogs&quot;.</p>
 <p><code>dog or cat</code><br />
-finds notes with either &quot;dog&quot; or &quot;cat&quot;.</p>
+یادداشت‌هایی را می‌یابد که &quot;dog&quot; یا &quot;cat&quot; دارند.</p>
 <p><code>dog (cat or mouse)</code><br />
-finds notes with &quot;dog&quot; and &quot;cat&quot;, or &quot;dog&quot; and &quot;mouse&quot;.</p>
+یادداشت‌هایی را می‌یابد که &quot;dog&quot; و &quot;cat&quot; دارند، یا &quot;dog&quot; و &quot;mouse&quot;.</p>
 <p><code>-cat</code><br />
-finds notes without &quot;cat&quot;.</p>
+یادداشت‌هایی را می‌یابد که &quot;cat&quot; ندارند.</p>
 <p><code>-cat -mouse</code><br />
-finds notes with neither &quot;cat&quot; nor &quot;mouse&quot;.</p>
+یادداشت‌هایی را می‌یابد که نه &quot;cat&quot; دارند و نه &quot;mouse&quot;.</p>
 <p><code>-(cat or mouse)</code><br />
-same as the above.</p>
+مثل مورد قبلی.</p>
 <p><code>&quot;a dog&quot;</code><br />
-finds notes with the exact sequence of characters &quot;a dog&quot; in them, such
-as &quot;atta dog&quot;, but not &quot;dog a&quot; or &quot;adog&quot;.</p>
+یادداشت‌هایی را می‌یابد که دقیقاً رشته نویسه‌های &quot;a dog&quot; در آن‌ها هست؛ مانند &quot;atta dog&quot;، اما نه &quot;dog a&quot; یا &quot;adog&quot;.</p>
 <p><code>-&quot;a dog&quot;</code><br />
-finds notes without the exact sequence of characters &quot;a dog&quot; in them.</p>
+یادداشت‌هایی را می‌یابد که دقیقاً رشته نویسه‌های &quot;a dog&quot; را ندارند.</p>
 <p><code>d_g</code><br />
-finds notes with d, &lt;one character&gt;, g, like dog, dig, dug, and so on.</p>
+یادداشت‌هایی را می‌یابد که d، &lt;یک نویسه&gt; و g دارند؛ مانند dog، dig، dug و غیره.</p>
 <p><code>d*g</code><br />
-finds notes with d, &lt;zero or more characters&gt;, g, like dg, dog, dung,
-etc.</p>
+یادداشت‌هایی را می‌یابد که d، &lt;صفر یا چند نویسه&gt; و g دارند؛ مانند dg، dog، dung و غیره.</p>
 <p><code>w:dog</code><br />
-searches for the word &quot;dog&quot; as opposed to a sequence of characters - will match &quot;dog&quot;, but not &quot;doggy&quot;
-or &quot;underdog&quot;. Requires Anki 2.1.24+, AnkiMobile 2.1.61+, or AnkiDroid 2.17+. Note that
-formatting changes may be interpreted as word boundaries, e.g. searching
-for <code>w:exam</code> will match <strong>exam</strong>ple, as the &quot;exam&quot; part of example is in bold format.</p>
+به‌جای رشته نویسه‌ها، واژه &quot;dog&quot; را جست‌وجو می‌کند — با &quot;dog&quot; مطابقت می‌کند اما نه با &quot;doggy&quot; یا &quot;underdog&quot;. نیازمند آنکی 2.1.24+، AnkiMobile 2.1.61+ یا AnkiDroid 2.17+ است. توجه کنید تغییرات قالب‌بندی ممکن است به‌عنوان مرز واژه تفسیر شوند؛ مثلاً جست‌وجوی <code>w:exam</code> با <strong>exam</strong>ple مطابقت می‌کند، چون بخش &quot;exam&quot; واژه example درشت است.</p>
 <p><code>w:dog*</code><br />
-will match &quot;dog&quot; and &quot;doggy&quot;, but not &quot;underdog&quot;.</p>
+با &quot;dog&quot; و &quot;doggy&quot; مطابقت می‌کند، اما نه با &quot;underdog&quot;.</p>
 <p><code>w:*dog</code><br />
-will match &quot;dog&quot; and &quot;underdog&quot;, but not &quot;doggy&quot;.</p>
-<p>Things to note from the above:</p>
+با &quot;dog&quot; و &quot;underdog&quot; مطابقت می‌کند، اما نه با &quot;doggy&quot;.</p>
+<p>نکته‌های مهم از موارد بالا:</p>
 <ul>
 <li>
-<p>Search terms are separated by spaces.</p>
+<p>عبارت‌های جست‌وجو با فاصله از هم جدا می‌شوند.</p>
 </li>
 <li>
-<p>When multiple search terms are provided, Anki looks for notes that
-match all of the terms - an implicit <code>and</code> is inserted between each
-term. On Anki 2.1.24+, AnkiMobile 2.0.60+, and AnkiDroid 2.17+ you can be explicit
-if you like (<code>dog and cat</code> is the same as <code>dog cat</code>), but older
-Anki versions will treat <code>and</code> as just another word to search for.</p>
+<p>وقتی چند عبارت جست‌وجو داده می‌شود، آنکی به‌دنبال یادداشت‌هایی می‌گردد که با همه عبارت‌ها مطابقت دارند — یک <code>and</code> ضمنی میان هر عبارت درج می‌شود. در آنکی 2.1.24+، AnkiMobile 2.0.60+ و AnkiDroid 2.17+ می‌توانید در صورت تمایل صریح باشید (<code>dog and cat</code> همان <code>dog cat</code> است)، اما نسخه‌های قدیمی‌تر آنکی <code>and</code> را واژه دیگری برای جست‌وجو تلقی می‌کنند.</p>
 </li>
 <li>
-<p>You can use <code>or</code> if you only need one of the terms to match.</p>
+<p>اگر فقط تطبیق یکی از عبارت‌ها کافی است، می‌توانید از <code>or</code> استفاده کنید.</p>
 </li>
 <li>
-<p>You can prepend a minus sign (<code>-</code>) to a term to find notes that don’t
-match the term.</p>
+<p>می‌توانید علامت منفی (<code>-</code>) را به ابتدای عبارتی بیفزایید تا یادداشت‌هایی یافته شوند که با آن عبارت مطابقت ندارند.</p>
 </li>
 <li>
-<p>You can group search terms by placing them in parentheses, as in the
-<code>dog (cat or mouse)</code> example. This becomes important when
-combining OR and AND searches — in the example, with the
-parentheses, it matches either &quot;dog cat&quot; or &quot;dog mouse&quot;, whereas
-without them it would match either &quot;dog and cat&quot; or &quot;mouse&quot;.</p>
+<p>می‌توانید عبارت‌های جست‌وجو را با قراردادن در پرانتز گروه‌بندی کنید؛ مانند مثال <code>dog (cat or mouse)</code>. این هنگام ترکیب جست‌وجوهای OR و AND مهم می‌شود — در مثال، با پرانتزها یا &quot;dog cat&quot; یا &quot;dog mouse&quot; مطابقت می‌کند، در حالی که بدون آن‌ها یا &quot;dog and cat&quot; یا &quot;mouse&quot;.</p>
 </li>
 <li>
-<p>Anki is only able to search within formatting in the <a href="editing.html#customizing-fields">sort field</a> you’ve configured. For example, if you add
-&quot;<strong>exa</strong>mple&quot; to one of your fields, with the &quot;exa&quot; part in bold, this will not be matched when
-searching for <code>example</code> unless that field is the sort field. If a
-word is not formatted, or the formatting does not change in the
-middle of the word, then Anki will be able to find it in any field.</p>
+<p>آنکی فقط می‌تواند درون قالب‌بندیِ <a href="editing.html#customizing-fields">فیلد مرتب‌سازی</a>‌ای که پیکربندی کرده باشید جست‌وجو کند. مثلاً اگر &quot;<strong>exa</strong>mple&quot; را در یکی از فیلدهایتان بیفزایید با بخش &quot;exa&quot; درشت، هنگام جست‌وجوی <code>example</code> مطابقت نمی‌کند مگر آنکه آن فیلد فیلد مرتب‌سازی باشد. اگر واژه‌ای قالب‌بندی نشده، یا قالب‌بندی در میان واژه تغییر نکرده باشد، آنکی می‌تواند آن را در هر فیلدی بیابد.</p>
 </li>
 <li>
-<p>Standard searches are case insensitive for Latin characters - a-z will
-match A-Z, and vice versa. Other characters such as Cyrillic are case sensitive
-in a standard search, but can be made case insensitive by searching on a word
-boundary or regular expression (<code>w:</code>, <code>re:</code>).</p>
+<p>جست‌وجوهای استاندارد برای نویسه‌های لاتین به بزرگی و کوچکی حروف حساس نیستند — a-z با A-Z مطابقت می‌کند و برعکس. نویسه‌های دیگر مانند سیریلیک در جست‌وجوی استاندارد حساس به بزرگی و کوچکی‌اند، اما با جست‌وجو بر مرز واژه یا عبارت باقاعده (<code>w:</code>، <code>re:</code>) می‌توان آن‌ها را نا‌حساس کرد.</p>
 </li>
 </ul>
-<h2 id="limiting-to-a-field"><a class="header" href="#limiting-to-a-field">Limiting to a field</a></h2>
-<p>You can also ask Anki to match only if a particular field contains some
-text. Unlike the previous search examples, searching in fields requires an exact
-match by default.</p>
+<h2 id="limiting-to-a-field"><a class="header" href="#limiting-to-a-field">محدودکردن به یک فیلد</a></h2>
+<p>همچنین می‌توانید از آنکی بخواهید فقط وقتی مطابقت کند که فیلد معینی متنی را در بر داشته باشد. برخلاف مثال‌های جست‌وجوی قبلی، جست‌وجو در فیلدها به‌طور پیش‌فرض نیازمند تطابق دقیق است.</p>
 <p><code>front:dog</code><br />
-finds notes with a Front field of exactly &quot;dog&quot;. A field that says &quot;a
-dog&quot; will not match.</p>
+یادداشت‌هایی را می‌یابد که فیلد Frontشان دقیقاً &quot;dog&quot; است. فیلدی که &quot;a dog&quot; باشد مطابقت نمی‌کند.</p>
 <p><code>&quot;animal front:a dog&quot;</code><br />
-finds notes where the &quot;Animal Front&quot; field is exactly &quot;a dog&quot;. The double quotes are
-mandatory: see <a href="#matching-special-characters">later in this section</a>.</p>
+یادداشت‌هایی را می‌یابد که فیلد &quot;Animal Front&quot; آن‌ها دقیقاً &quot;a dog&quot; است. گیومه دوتایی الزامی است: <a href="#matching-special-characters">بعداً در همین بخش</a> را ببینید.</p>
 <p><code>front:*dog*</code><br />
-finds notes where the Front field contains dog somewhere.</p>
+یادداشت‌هایی را می‌یابد که فیلد Frontشان در جایی dog دارد.</p>
 <p><code>front:</code><br />
-finds notes that have an empty Front field.</p>
+یادداشت‌هایی را می‌یابد که فیلد Front خالی دارند.</p>
 <p><code>front:_*</code><br />
-finds notes that have a non-empty Front field.</p>
+یادداشت‌هایی را می‌یابد که فیلد Frontشان ناخالی است.</p>
 <p><code>front:*</code><br />
-finds notes that have a Front field, empty or not.</p>
+یادداشت‌هایی را می‌یابد که فیلد Front دارند، خالی یا ناخالی.</p>
 <p><code>fr*:text</code><br />
-finds notes in a field starting with &quot;fr&quot;. Requires Anki 2.1.24+, AnkiMobile 2.1.60+, or AnkiDroid 2.17+.</p>
-<h2 id="tags-decks-cards-and-notes"><a class="header" href="#tags-decks-cards-and-notes">Tags, decks, cards and notes</a></h2>
+یادداشت‌هایی را می‌یابد که در فیلدی با پیشوند &quot;fr&quot; هستند. نیازمند آنکی 2.1.24+، AnkiMobile 2.1.60+ یا AnkiDroid 2.17+ است.</p>
+<h2 id="tags-decks-cards-and-notes"><a class="header" href="#tags-decks-cards-and-notes">برچسب‌ها، دسته‌ها، کارت‌ها و یادداشت‌ها</a></h2>
 <p><code>tag:animal</code><br />
-finds notes with the tag &quot;animal&quot;, or subtags like &quot;animal::mammal&quot;.</p>
+یادداشت‌هایی را می‌یابد که برچسب &quot;animal&quot; یا زیربرچسب‌هایی مانند &quot;animal::mammal&quot; دارند.</p>
 <p><code>tag:none</code><br />
-finds notes with no tags.</p>
+یادداشت‌هایی را می‌یابد که برچسب ندارند.</p>
 <p><code>tag:ani*</code><br />
-finds notes with tags starting with &quot;ani&quot;.</p>
+یادداشت‌هایی را می‌یابد که برچسب‌هایشان با &quot;ani&quot; شروع می‌شود.</p>
 <p><code>deck:french</code><br />
-find cards in a top-level deck called &quot;French&quot;, or its subdecks like &quot;French::Words&quot;. It will not match subdecks with that name, such as &quot;Languages::French&quot;.</p>
+کارت‌هایی را در دسته سطح بالایی به نام &quot;French&quot; یا زیردسته‌هایش مانند &quot;French::Words&quot; می‌یابد. با زیردسته‌هایی با آن نام، مانند &quot;Languages::French&quot;، مطابقت نمی‌کند.</p>
 <p><code>deck:french::words</code><br />
-find cards in the &quot;French::Words&quot; subdeck.</p>
+کارت‌هایی را در زیردسته &quot;French::Words&quot; می‌یابد.</p>
 <p><code>deck:french -deck:french::*</code><br />
-finds cards in &quot;French&quot;, but not its subdecks.</p>
+کارت‌هایی را در &quot;French&quot; می‌یابد، اما نه در زیردسته‌هایش.</p>
 <p><code>deck:&quot;french words&quot;</code><br />
-searching when the deck name has a space.</p>
+جست‌وجو وقتی نام دسته فاصله دارد.</p>
 <p><code>&quot;deck:french words&quot;</code><br />
-same as earlier.</p>
+مثل قبلی.</p>
 <p><code>deck:filtered</code><br />
-filtered decks only.</p>
+فقط دسته‌های پالایش‌شده.</p>
 <p><code>-deck:filtered</code><br />
-normal decks only.</p>
+فقط دسته‌های عادی.</p>
 <p><code>preset:&quot;Default&quot;</code><br />
-cards in all decks that use the &quot;Default&quot; deck options preset.
-Requires Anki 23.10+, AnkiMobile 23.10+ or AnkiDroid 2.17+.</p>
+کارت‌ها در همه دسته‌هایی که از پیش‌تنظیم گزینه‌های دستهٔ &quot;Default&quot; استفاده می‌کنند.
+نیازمند آنکی 23.10+، AnkiMobile 23.10+ یا AnkiDroid 2.17+ است.</p>
 <p><code>card:forward</code><br />
-finds cards created by a card type named &quot;Forward&quot;.</p>
+کارت‌هایی را می‌یابد که توسط نوع کارتی به نام &quot;Forward&quot; ساخته شده‌اند.</p>
 <p><code>card:1</code><br />
-searches for cards by card type number, e.g. to find the second cloze
-deletion for a note, you’d use <code>card:2</code></p>
+کارت‌ها را بر اساس شماره نوع کارت جست‌وجو می‌کند؛ مثلاً برای یافتن دومین حذف اطلاعاتی یک یادداشت، از <code>card:2</code> استفاده می‌کردید</p>
 <p><code>note:basic</code><br />
-searches for cards created with a note type named &quot;Basic&quot;.</p>
-<h2 id="ignoring-accentscombining-characters"><a class="header" href="#ignoring-accentscombining-characters">Ignoring accents/combining characters</a></h2>
-<p>Requires Anki 2.1.24+, AnkiMobile 2.0.60+ or AnkiDroid 2.17+.</p>
-<p>You can use <code>nc:</code> (nc stands for &quot;no combining&quot;) to make Anki ignore combining characters. For example:</p>
+کارت‌هایی را جست‌وجو می‌کند که با نوع یادداشتی به نام &quot;Basic&quot; ساخته شده‌اند.</p>
+<h2 id="ignoring-accentscombining-characters"><a class="header" href="#ignoring-accentscombining-characters">نادیده‌گرفتن اعراب/نویسه‌های ترکیبی</a></h2>
+<p>نیازمند آنکی 2.1.24+، AnkiMobile 2.0.60+ یا AnkiDroid 2.17+ است.</p>
+<p>می‌توانید از <code>nc:</code> (nc مخفف &quot;no combining&quot; است) استفاده کنید تا آنکی نویسه‌های ترکیبی را نادیده بگیرد. مثلاً:</p>
 <p><code>nc:uber</code><br />
-matches notes with &quot;uber&quot;, &quot;über&quot;, &quot;Über&quot; and so on.</p>
+با یادداشت‌هایی مطابقت می‌کند که &quot;uber&quot;، &quot;über&quot;، &quot;Über&quot; و غیره دارند.</p>
 <p><code>nc:は</code><br />
-matches &quot;は&quot;, &quot;ば&quot;, and &quot;ぱ&quot;.</p>
-<p><code>nc:heisen</code> or <code>nc:heißen</code><br />
-matches notes with &quot;heißen&quot; and with &quot;heisen&quot;, since ß is treated as s (not ss) and s is treated as ß.</p>
-<p>Searches that ignore combining characters are slower than regular searches.</p>
-<h2 id="searching-in-cloze-deletions"><a class="header" href="#searching-in-cloze-deletions">Searching in cloze deletions</a></h2>
-<p>Requires Anki 25.07+.</p>
-<p>You can use <code>sc:</code> (sc stands for “strip clozes”) to search through the full text
-of notes with cloze deletions, ignoring the cloze markup. For example:</p>
+با &quot;は&quot;، &quot;ば&quot; و &quot;ぱ&quot; مطابقت می‌کند.</p>
+<p><code>nc:heisen</code> یا <code>nc:heißen</code><br />
+با یادداشت‌هایی مطابقت می‌کند که &quot;heißen&quot; و &quot;heisen&quot; دارند، چون ß مانند s تلقی می‌شود (نه ss) و s مانند ß.</p>
+<p>جست‌وجوهایی که نویسه‌های ترکیبی را نادیده می‌گیرند از جست‌وجوهای معمولی کندترند.</p>
+<h2 id="searching-in-cloze-deletions"><a class="header" href="#searching-in-cloze-deletions">جست‌وجو در حذف‌های اطلاعاتی</a></h2>
+<p>نیازمند آنکی 25.07+ است.</p>
+<p>می‌توانید از <code>sc:</code> (sc مخفف &quot;strip clozes&quot; است) برای جست‌وجو در متن کامل یادداشت‌هایی با حذف اطلاعاتی، با نادیده‌گرفتن نشانه‌گذاری cloze استفاده کنید. مثلاً:</p>
 <p><code>sc:mnemonic</code><br />
-matches a note containing <code>{{c1::mn}}{{c2::e}}monic</code>.</p>
+با یادداشتی مطابقت می‌کند که <code>{{c1::mn}}{{c2::e}}monic</code> را در بر دارد.</p>
 <p><code>sc:capital of France</code><br />
-matches a note containing <code>The {{c1::capital}} of {{c2::France}}</code>.</p>
-<p>Searches that strip cloze deletions are slower than regular searches.</p>
-<h2 id="regular-expressions"><a class="header" href="#regular-expressions">Regular expressions</a></h2>
-<p>Anki 2.1.24+, AnkiMobile 2.0.60+ and AnkiDroid 2.17+ support searching in notes with &quot;regular expressions&quot;,
-a standard and powerful way of searching in text.</p>
-<p>Start a search with <code>re:</code> to search using regular expressions. To make things easier, Anki will
-treat the following as <a href="#raw-input">raw input</a>, so bear in mind the rules listed there.</p>
-<p>Some examples:</p>
+با یادداشتی مطابقت می‌کند که <code>The {{c1::capital}} of {{c2::France}}</code> را در بر دارد.</p>
+<p>جست‌وجوهایی که حذف‌های اطلاعاتی را کنار می‌گذارند از جست‌وجوهای معمولی کندترند.</p>
+<h2 id="regular-expressions"><a class="header" href="#regular-expressions">عبارت‌های باقاعده</a></h2>
+<p>آنکی 2.1.24+، AnkiMobile 2.0.60+ و AnkiDroid 2.17+ از جست‌وجو در یادداشت‌ها با «عبارت‌های باقاعده» — راه استاندارد و قدرتمند جست‌وجو در متن — پشتیبانی می‌کنند.</p>
+<p>جست‌وجو را با <code>re:</code> شروع کنید تا از عبارت باقاعده استفاده شود. برای آسان‌تر شدن کار، آنکی موارد زیر را <a href="#raw-input">ورودی خام</a> تلقی می‌کند؛ پس قواعد آنجا را به یاد بسپارید.</p>
+<p>چند مثال:</p>
 <p><code>&quot;re:(some|another).*thing&quot;</code><br />
-finds notes that have &quot;some&quot; or &quot;another&quot; on them, followed by 0 or more characters, and then &quot;thing&quot;.</p>
+یادداشت‌هایی را می‌یابد که &quot;some&quot; یا &quot;another&quot; دارند، سپس ۰ یا چند نویسه، و سپس &quot;thing&quot;.</p>
 <p><code>re:\d{3}</code><br />
-finds notes that have 3 digits in a row.</p>
-<p>Regular expressions can also be limited to a specific field. Note that unlike the normal searches
-in a specific field, regular expressions in fields don't require an exact match:</p>
+یادداشت‌هایی را می‌یابد که ۳ رقم پشت‌سرهم دارند.</p>
+<p>عبارت‌های باقاعده را می‌توان به فیلد مشخصی هم محدود کرد. توجه کنید که برخلاف جست‌وجوهای معمولی در فیلد مشخص، عبارت‌های باقاعده در فیلدها نیازمند تطابق دقیق نیستند:</p>
 <p><code>front:re:[a-c]1</code><br />
-matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the &quot;Front&quot; field.</p>
+با a1، B1 یا c1 — با حرف بزرگ یا کوچک — که در هر جای فیلد &quot;Front&quot; آمده باشد مطابقت می‌کند.</p>
 <p><code>front:re:^[a-c]1$</code><br />
-same as the previous example, but will not match if any other text falls before or after a1/b1/c1.</p>
-<p>Anki 2.1.50+ supports regular expressions for tags:</p>
+مانند مثال قبلی، اما اگر متن دیگری پیش یا پس از a1/b1/c1 بیاید مطابقت نمی‌کند.</p>
+<p>آنکی 2.1.50+ از عبارت‌های باقاعده برای برچسب‌ها پشتیبانی می‌کند:</p>
 <p><code>tag:re:^parent$</code><br />
-finds notes with the exact tag &quot;parent&quot;, disregarding any child tags like &quot;parent::child&quot;.</p>
+یادداشت‌هایی را می‌یابد که دقیقاً برچسب &quot;parent&quot; دارند، بدون توجه به برچسب‌های فرزندی مانند &quot;parent::child&quot;.</p>
 <p><code>&quot;tag:re:lesson-(1[7-9]|2[0-5])&quot;</code><br />
-finds notes with tags &quot;lesson-17&quot; through &quot;lesson-25&quot;.</p>
-<p>For more information on regular expressions, see <a href="https://regexone.com/lesson/introduction_abcs">this website</a>.</p>
-<p>Some things to be aware of:</p>
+یادداشت‌هایی را می‌یابد که برچسب‌های &quot;lesson-17&quot; تا &quot;lesson-25&quot; دارند.</p>
+<p>برای اطلاعات بیشتر درباره عبارت‌های باقاعده، <a href="https://regexone.com/lesson/introduction_abcs">این وب‌سایت</a> را ببینید.</p>
+<p>چند نکته که باید بدانید:</p>
 <ul>
-<li>The search is case-insensitive by default; use <code>(?-i)</code> at the start to turn on case sensitivity.</li>
-<li>Some text like spaces and newlines may be represented differently in HTML - you can
-use the HTML editor in the editing screen to see the underlying HTML contents.</li>
-<li>For the specifics of Anki's regex support, see the <a href="https://docs.rs/regex/1.3.9/regex/#syntax">regex crate documentation</a>.</li>
+<li>جست‌وجو به‌طور پیش‌فرض به بزرگی و کوچکی حروف حساس نیست؛ برای حساس‌کردن، از <code>(?-i)</code> در ابتدا استفاده کنید.</li>
+<li>بعضی متن‌ها مانند فاصله‌ها و خطوط جدید ممکن است در HTML متفاوت نمایش داده شوند — می‌توانید از ویرایشگر HTML در صفحه ویرایش برای دیدن محتوای HTML زیرین استفاده کنید.</li>
+<li>برای جزئیات پشتیبانی regex آنکی، <a href="https://docs.rs/regex/1.3.9/regex/#syntax">مستندات crateregex</a> را ببینید.</li>
 </ul>
-<h2 id="card-state"><a class="header" href="#card-state">Card state</a></h2>
+<h2 id="card-state"><a class="header" href="#card-state">وضعیت کارت</a></h2>
 <p><code>is:due</code><br />
-review cards and learning cards waiting to be studied.</p>
+کارت‌های مروری و کارت‌های در حال یادگیری که منتظر مطالعه‌اند.</p>
 <p><code>is:new</code><br />
-new cards.</p>
+کارت‌های جدید.</p>
 <p><code>is:learn</code><br />
-cards in learning.</p>
+کارت‌های در حال یادگیری.</p>
 <p><code>is:review</code><br />
-reviews (both due and not due) and lapsed cards.</p>
+مرورها (هم سررسید و هم غیرسررسید) و کارت‌های لغزش‌خورده.</p>
 <p><code>is:suspended</code><br />
-cards that have been <a href="leeches.html">automatically</a> or manually suspended.</p>
+کارت‌هایی که به‌طور <a href="leeches.html">خودکار</a> یا دستی معلق شده‌اند.</p>
 <p><code>is:buried</code><br />
-cards that have been either <a href="studying.html#siblings-and-burying">automatically</a> or
-manually buried.</p>
+کارت‌هایی که به‌طور <a href="studying.html#siblings-and-burying">خودکار</a> یا دستی کنار گذاشته شده‌اند.</p>
 <p><code>is:buried-sibling</code><br />
-cards that have been buried automatically.</p>
+کارت‌هایی که به‌طور خودکار کنار گذاشته شده‌اند.</p>
 <p><code>is:buried-manually</code><br />
-cards that have been manually buried.</p>
-<p>Cards that have <a href="deck-options.html#lapses">lapsed</a> fall into several of the previous categories, so it may
-be useful to combine different search terms to get more precise results:</p>
+کارت‌هایی که به‌طور دستی کنار گذاشته شده‌اند.</p>
+<p>کارت‌هایی که <a href="deck-options.html#lapses">لغزش</a> خورده‌اند در چند مورد از دسته‌های قبلی می‌گنجند؛ پس ترکیب عبارت‌های جست‌وجوی مختلف برای نتایج دقیق‌تر سودمند باشد:</p>
 <p><code>is:learn is:review</code><br />
-cards that have lapsed and are awaiting relearning.</p>
+کارت‌هایی که لغزش خورده‌اند و منتظر یادگیری مجدد‌اند.</p>
 <p><code>-is:learn is:review</code><br />
-review cards, not including lapsed cards.</p>
+کارت‌های مروری، بدون کارت‌های لغزش‌خورده.</p>
 <p><code>is:learn -is:review</code><br />
-cards that are in learning for the first time.</p>
-<h2 id="flags"><a class="header" href="#flags">Flags</a></h2>
+کارت‌هایی که برای نخستین‌بار در حال یادگیری‌اند.</p>
+<h2 id="flags"><a class="header" href="#flags">پرچم‌ها</a></h2>
 <p><code>flag:0</code><br />
-cards without a flag.</p>
+کارت‌های بدون پرچم.</p>
 <p><code>flag:1</code><br />
-cards with a red flag.</p>
+کارت‌های با پرچم قرمز.</p>
 <p><code>flag:2</code><br />
-cards with an orange flag.</p>
+کارت‌های با پرچم نارنجی.</p>
 <p><code>flag:3</code><br />
-cards with a green flag.</p>
+کارت‌های با پرچم سبز.</p>
 <p><code>flag:4</code><br />
-cards with a blue flag.</p>
+کارت‌های با پرچم آبی.</p>
 <p><code>flag:5</code><br />
-cards with a pink flag.</p>
+کارت‌های با پرچم صورتی.</p>
 <p><code>flag:6</code><br />
-cards with a turquoise flag.</p>
+کارت‌های با پرچم فیروزه‌ای.</p>
 <p><code>flag:7</code><br />
-cards with a purple flag.</p>
-<h2 id="card-properties"><a class="header" href="#card-properties">Card properties</a></h2>
+کارت‌های با پرچم بنفش.</p>
+<h2 id="card-properties"><a class="header" href="#card-properties">ویژگی‌های کارت</a></h2>
 <p><code>prop:ivl&gt;=10</code><br />
-cards with interval of 10 days or more.</p>
+کارت‌هایی با فاصله ۱۰ روز یا بیشتر.</p>
 <p><code>prop:due=1</code><br />
-cards due tomorrow.</p>
+کارت‌های سررسید فردا.</p>
 <p><code>prop:due=-1</code><br />
-cards due yesterday that haven’t been answered yet.</p>
+کارت‌های سررسید دیروز که هنوز پاسخ داده نشده‌اند.</p>
 <p><code>prop:due&gt;=1</code><br />
-all cards due in the future, including tomorrow.</p>
+همه کارت‌های سررسید در آینده، از جمله فردا.</p>
 <p><code>prop:due&lt;=-1</code><br />
-all overdue cards.</p>
+همه کارت‌های عقب‌افتاده.</p>
 <p><code>prop:due&gt;=-1 prop:due&lt;=1</code><br />
-cards due yesterday, today and tomorrow.</p>
+کارت‌های سررسید دیروز، امروز و فردا.</p>
 <p><code>prop:reps&lt;10</code><br />
-cards that have been answered less than 10 times.</p>
+کارت‌هایی که کمتر از ۱۰ بار به آن‌ها پاسخ داده شده.</p>
 <p><code>prop:lapses&gt;3</code><br />
-cards that have lapsed more than 3 times.</p>
+کارت‌هایی که بیش از ۳ بار لغزش خورده‌اند.</p>
 <p><code>prop:ease!=2.5</code><br />
-cards easier or harder than default ease.</p>
+کارت‌هایی که از سهولت پیش‌فرض آسان‌تر یا سخت‌ترند.</p>
 <p><code>prop:pos&lt;=100</code><br />
-new cards with a position in the queue less than or equal to 100.</p>
-<p>The following searches require Anki 23.10+ and FSRS enabled:</p>
+کارت‌های جدید با موقعیتی کمتر یا مساوی ۱۰۰ در صف.</p>
+<p>جست‌وجوهای زیر نیازمند آنکی 23.10+ و فعال‌بودن FSRS هستند:</p>
 <p><code>prop:s&gt;21</code><br />
-cards with stability greater than 21 days.</p>
+کارت‌هایی با پایداری بیشتر از ۲۱ روز.</p>
 <p><code>prop:d&gt;0.3</code><br />
-cards with difficulty greater than 0.3.</p>
+کارت‌هایی با دشواری بیشتر از 0.3.</p>
 <p><code>prop:r&lt;0.9</code><br />
-cards with retrievability less than 0.9.</p>
-<h2 id="recent-events"><a class="header" href="#recent-events">Recent Events</a></h2>
-<h3 id="added"><a class="header" href="#added">Added</a></h3>
+کارت‌هایی با بازیابی‌پذیری کمتر از 0.9.</p>
+<h2 id="recent-events"><a class="header" href="#recent-events">رخدادهای اخیر</a></h2>
+<h3 id="added"><a class="header" href="#added">افزوده‌شده</a></h3>
 <p><code>added:1</code><br />
-cards added today.</p>
+کارت‌هایی که امروز افزوده شده‌اند.</p>
 <p><code>added:7</code><br />
-cards added in the last 7 days.</p>
-<p>The check is made against card creation time rather than note creation
-time, so cards that were generated within the time frame will be
-included even if their notes were added a long time ago.</p>
-<h3 id="edited"><a class="header" href="#edited">Edited</a></h3>
+کارت‌هایی که در ۷ روز گذشته افزوده شده‌اند.</p>
+<p>بررسی بر اساس زمان ساخت کارت انجام می‌شود نه زمان ساخت یادداشت؛ پس کارت‌هایی که در این بازه زمانی تولید شده‌اند گنجانده می‌شوند، حتی اگر یادداشت‌هایشان مدت‌ها پیش افزوده شده باشد.</p>
+<h3 id="edited"><a class="header" href="#edited">ویرایش‌شده</a></h3>
 <p><code>edited:n</code><br />
-cards where the note text was added/edited in the last n days.</p>
-<p>This requires Anki 2.1.28+ or AnkiMobile 2.0.64+.</p>
-<h3 id="answered"><a class="header" href="#answered">Answered</a></h3>
+کارت‌هایی که متن یادداشت‌شان در n روز گذشته افزوده/ویرایش شده است.</p>
+<p>این نیازمند آنکی 2.1.28+ یا AnkiMobile 2.0.64+ است.</p>
+<h3 id="answered"><a class="header" href="#answered">پاسخ‌داده‌شده</a></h3>
 <p><code>rated:1</code><br />
-cards answered today.</p>
+کارت‌هایی که امروز به آن‌ها پاسخ داده شده.</p>
 <p><code>rated:1:2</code><br />
-cards answered Hard (2) today.</p>
+کارت‌هایی که امروز Hard (۲) گرفته‌اند.</p>
 <p><code>rated:7:1</code><br />
-cards answered Again (1) in the last 7 days.</p>
+کارت‌هایی که در ۷ روز گذشته Again (۱) گرفته‌اند.</p>
 <p><code>rated:31:4</code><br />
-cards answered Easy (4) in the last 31 days.</p>
-<p>Anki 2.1.39+ supports rating searches over 31 days.</p>
-<p>Note that, to search for cards answered at a particular day, <code>rated:n -rated:(n-1)</code> might not work every time. Use the following instead:</p>
+کارت‌هایی که در ۳۱ روز گذشته Easy (۴) گرفته‌اند.</p>
+<p>آنکی 2.1.39+ از جست‌وجوهای نمره بر بازه بیش از ۳۱ روز پشتیبانی می‌کند.</p>
+<p>توجه کنید برای جست‌وجوی کارت‌های پاسخ‌داده‌شده در روز مشخص، <code>rated:n -rated:(n-1)</code> ممکن است همیشه کار نکند. به‌جای آن از این‌ها استفاده کنید:</p>
 <p><code>prop:rated=0</code><br />
-cards answered today.</p>
+کارت‌هایی که امروز به آن‌ها پاسخ داده شده.</p>
 <p><code>prop:rated=-1</code><br />
-cards answered one day ago.</p>
+کارت‌هایی که یک روز پیش به آن‌ها پاسخ داده شده.</p>
 <p><code>prop:rated=-7</code><br />
-cards answered 7 days ago.</p>
-<h3 id="first-answered"><a class="header" href="#first-answered">First Answered</a></h3>
-<p>Requires Anki 2.1.45+.</p>
+کارت‌هایی که ۷ روز پیش به آن‌ها پاسخ داده شده.</p>
+<h3 id="first-answered"><a class="header" href="#first-answered">نخستین پاسخ</a></h3>
+<p>نیازمند آنکی 2.1.45+ است.</p>
 <p><code>introduced:1</code><br />
-cards answered for the first time today.</p>
+کارت‌هایی که امروز برای نخستین‌بار به آن‌ها پاسخ داده شده.</p>
 <p><code>introduced:365</code><br />
-cards answered for the first time within the last 365 days.</p>
-<h2 id="matching-special-characters"><a class="header" href="#matching-special-characters">Matching special characters</a></h2>
-<p>If you're using a version earlier than Anki 2.1.36 the following searches may not work.</p>
-<p>As shown in the previous section, some characters like <code>*</code>, <code>_</code> and <code>&quot;</code> have a
-special meaning in search. If you need to locate those characters in a search,
-you need to tell Anki not to treat them specially. This is called &quot;escaping a character&quot; and is primarily done by using double quotes and backslashes.</p>
+کارت‌هایی که در ۳۶۵ روز گذشته برای نخستین‌بار به آن‌ها پاسخ داده شده.</p>
+<h2 id="matching-special-characters"><a class="header" href="#matching-special-characters">تطبیق نویسه‌های ویژه</a></h2>
+<p>اگر از نسخه‌ای پیش از آنکی 2.1.36 استفاده می‌کنید، جست‌وجوهای زیر ممکن است کار نکنند.</p>
+<p>همان‌طور که در بخش قبلی دیدید، بعضی نویسه‌ها مانند <code>*</code>، <code>_</code> و <code>&quot;</code> در جست‌وجو معنای ویژه دارند. اگر لازم باشد آن نویسه‌ها را در جست‌وجو بیابید، باید به آنکی بگویید به‌طور ویژه با آن‌ها رفتار نکند. به این کار «گریز دادن نویسه» می‌گویند و عمدتاً با گیومه دوتایی و بک‌اسلش انجام می‌شود.</p>
 <ul>
 <li>
-<p><em>Space</em><br />
-To match something that includes spaces, enclose the <code>&quot;entire term&quot;</code> in double
-quotes. If it is a colon search, you also have the option to only quote the
-<code>part:&quot;after the colon&quot;</code>.</p>
+<p><em>فاصله</em><br />
+برای تطبیق چیزی که فاصله دارد، <code>&quot;entire term&quot;</code> را در گیومه دوتایی بپیچید. اگر جست‌وجوی دونقطه‌ای است، می‌توانید فقط <code>part:&quot;after the colon&quot;</code> را گیومه بزنید.</p>
 </li>
 <li>
 <p><code>And</code>/<code>Or</code><br />
-To search for these words, wrap them with double quotes. For example, <code>dog &quot;and&quot; cat</code> searches for &quot;dog&quot;, &quot;cat&quot; and the word &quot;and&quot;.
-If you wrap the entire search term with quotes like in the previous example, you do not need to escape <code>and</code> or <code>or</code>.</p>
+برای جست‌وجوی این واژه‌ها، آن‌ها را در گیومه دوتایی بپیچید. مثلاً <code>dog &quot;and&quot; cat</code> به‌دنبال &quot;dog&quot;، &quot;cat&quot; و واژه &quot;and&quot; می‌گردد.
+اگر کل عبارت جست‌وجو را مانند مثال قبل گیومه بزنید، نیازی به گریز دادن <code>and</code> یا <code>or</code> نیست.</p>
 </li>
 <li>
-<p><code>&quot;</code>, <code>*</code> and <code>_</code><br />
-Add a backslash before these characters to treat them literally. For example,
-<code>_</code> will match any single character, but <code>\_</code> matches only an actual underscore.</p>
+<p><code>&quot;</code>، <code>*</code> و <code>_</code><br />
+پیش از این نویسه‌ها بک‌اسلش بگذارید تا تحت‌اللفظی تلقی شوند. مثلاً
+<code>_</code> با هر نویسه منفردی مطابقت می‌کند، اما <code>\_</code> فقط با خط تیره زیرین واقعی.</p>
 </li>
 <li>
 <p><code>\</code><br />
-Because a backslash is used to remove the special meaning from other characters,
-it too is treated specially. If you need to search for an actual backslash,
-use <code>\\</code> instead of <code>\</code>.</p>
+چون بک‌اسلش برای گرفتن معنای ویژه از نویسه‌های دیگر استفاده می‌شود، خودش هم ویژه تلقی می‌شود. اگر لازم است به‌دنبال بک‌اسلش واقعی بگردید،
+به‌جای <code>\</code> از <code>\\</code> استفاده کنید.</p>
 </li>
 <li>
-<p><code>(</code> and <code>)</code><br />
-You can search for parentheses by enclosing the entire term in quotes,
-by using a backslash, or both at the same time. For example, <code>&quot;(text)&quot;</code>, <code>\(text\)</code> and
-<code>&quot;\(text\)&quot;</code> are all equivalent searches, and search for <code>(text)</code>.</p>
+<p><code>(</code> و <code>)</code><br />
+می‌توانید پرانتزها را با گیومه‌کردن کل عبارت، با بک‌اسلش، یا هر دو هم‌زمان جست‌وجو کنید. مثلاً <code>&quot;(text)&quot;</code>، <code>\(text\)</code> و
+<code>&quot;\(text\)&quot;</code> همگی جست‌وجوهای هم‌ارزند و به‌دنبال <code>(text)</code> می‌گردند.</p>
 </li>
 <li>
 <p><code>-</code><br />
-Starting a search term with <code>-</code> usually inverts it: <code>-dog</code> matches everything
-except dog for example. If you instead wish to include an actual hyphen,
-you can either use a backslash, or include the text in quotes. For example,
-<code>\-free</code> or <code>&quot;-free&quot;</code> will match &quot;guilt-free&quot; and &quot;cruelty-free&quot;.</p>
+شروع عبارت جست‌وجو با <code>-</code> معمولاً آن را معکوس می‌کند: مثلاً <code>-dog</code> با همه‌چیز به‌جز dog مطابقت می‌کند. اگر به‌جای آن می‌خواهید خط تیره واقعی را بگنجانید، می‌توانید از بک‌اسلش استفاده کنید یا متن را در گیومه بگذارید. مثلاً
+<code>\-free</code> یا <code>&quot;-free&quot;</code> با &quot;guilt-free&quot; و &quot;cruelty-free&quot; مطابقت می‌کند.</p>
 </li>
 <li>
 <p><code>:</code><br />
-Colons have to be escaped using backslashes unless they are preceded by another, unescaped colon.
-For example, <code>w:3:30</code> searches for &quot;3:30&quot; on word boundary and doesn't require you to use a backslash.
-However, if you don't use a colon search, the colons need to be escaped like this: <code>3\:30</code>.</p>
+دونقطه‌ها باید با بک‌اسلش گریز داده شوند، مگر آنکه پس از دونقطه‌ای گریزنداده‌شده آمده باشند.
+مثلاً <code>w:3:30</code> &quot;3:30&quot; را روی مرز واژه جست‌وجو می‌کند و نیازی به بک‌اسلش ندارد.
+اما اگر از جست‌وجوی دونقطه‌ای استفاده نمی‌کنید، دونقطه‌ها باید این‌طور گریز داده شوند: <code>3\:30</code>.</p>
 </li>
 <li>
-<p><code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code><br />
-<code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code> are treated as HTML when searching in Anki, and as such, searches
-containing them don't work as expected. However, you can search for them by using their
-corresponding HTML entity names (<code>&amp;amp;</code> for <code>&amp;</code>, <code>&amp;lt;</code> for <code>&lt;</code>, and <code>&amp;gt;</code> for <code>&gt;</code>).
-For example, searching <code>&amp;amp;text</code> searches for a note with <code>&amp;text</code> in a field.</p>
+<p><code>&amp;</code>، <code>&lt;</code> و <code>&gt;</code><br />
+<code>&amp;</code>، <code>&lt;</code> و <code>&gt;</code> هنگام جست‌وجو در آنکی به‌عنوان HTML تلقی می‌شوند و از این رو، جست‌وجوهای دارای آن‌ها همان‌طور که انتظار می‌رود کار نمی‌کنند. اما می‌توانید با استفاده از نام‌های موجودیت HTML متناظرشان (<code>&amp;amp;</code> برای <code>&amp;</code>، <code>&amp;lt;</code> برای <code>&lt;</code> و <code>&amp;gt;</code> برای <code>&gt;</code>) به‌دنبالشان بگردید.
+مثلاً جست‌وجوی <code>&amp;amp;text</code> به‌دنبال یادداشتی با <code>&amp;text</code> در فیلدی می‌گردد.</p>
 </li>
 </ul>
-<h3 id="raw-input"><a class="header" href="#raw-input">Raw input</a></h3>
-<p>Text preceded by certain keywords (like <code>re:</code>) will be treated as raw input. That is,
-the characters listed above largely lose their special meaning. In such a context, only
-a minimum of escaping is required to prevent ambiguity:</p>
+<h3 id="raw-input"><a class="header" href="#raw-input">ورودی خام</a></h3>
+<p>متنی که پس از کلیدواژه‌های معینی (مانند <code>re:</code>) بیاید، ورودی خام تلقی می‌شود؛ یعنی نویسه‌های فهرست‌شده بالا عمدتاً معنای ویژه‌شان را از دست می‌دهند. در چنین زمینه‌ای، فقط حداقلی از گریز دادن برای جلوگیری از ابهام لازم است:</p>
 <ul>
 <li>
-<p>Double quotes (<code>&quot;</code>) must be escaped.</p>
+<p>گیومه دوتایی (<code>&quot;</code>) باید گریز داده شود.</p>
 </li>
 <li>
-<p>Spaces and unescaped parentheses require the search term to be quoted.</p>
+<p>فاصله‌ها و پرانتزهای گریزنداده‌شده نیازمند گیومه‌شدن عبارت جست‌وجو هستند.</p>
 </li>
 <li>
-<p>The search term must not end in an odd number of backslashes.</p>
+<p>عبارت جست‌وجو نباید به تعداد فردی بک‌اسلش پایان یابد.</p>
 </li>
 </ul>
-<h2 id="object-ids"><a class="header" href="#object-ids">Object IDs</a></h2>
+<h2 id="object-ids"><a class="header" href="#object-ids">شناسه‌های اشیا</a></h2>
 <p><code>nid:123</code><br />
-the note with note id 123.</p>
+یادداشت با شناسه یادداشت 123.</p>
 <p><code>cid:123,456,789</code><br />
-all cards with card ids 123, 456, or 789.</p>
-<p>Note and card IDs can be found in the <a href="stats.html">card info</a> dialog in the
-browser. These searches may also be helpful when doing add-on
-development or otherwise working closely with the database.</p>
-<h2 id="custom-data"><a class="header" href="#custom-data">Custom Data</a></h2>
-<p>Anki allows small amounts of custom data to be stored on cards, enabling
-advanced use cases such as custom schedulers. One of the notable applications
-of this feature was in earlier implementations of FSRS. In Anki 23.10+, there
-are some ways to search it:</p>
+همه کارت‌ها با شناسه کارت 123، 456 یا 789.</p>
+<p>شناسه‌های یادداشت و کارت را می‌توان در گفت‌وگوی <a href="stats.html">اطلاعات کارت</a> در مرورگر یافت. این جست‌وجوها هنگام توسعه افزونه یا کار نزدیک با پایگاه داده هم سودمندند.</p>
+<h2 id="custom-data"><a class="header" href="#custom-data">داده سفارشی</a></h2>
+<p>آنکی اجازه می‌دهد مقادیر کمی داده سفارشی روی کارت‌ها ذخیره شود که موارد استفاده پیشرفته‌ای مانند زمان‌بندهای سفارشی را ممکن می‌کند. یکی از کاربردهای شاخص این قابلیت در پیاده‌سازی‌های اولیه FSRS بود. در آنکی 23.10+ راه‌هایی برای جست‌وجوی آن هست:</p>
 <p><code>has-cd:v</code><br />
-cards having the property <code>v</code> in custom data.</p>
+کارت‌هایی که خاصیت <code>v</code> را در داده سفارشی دارند.</p>
 <p><code>prop:cdn:d&gt;5</code><br />
-cards with the value of <code>d</code> in custom data (usually refers to difficulty in FSRS) greater than 5.</p>
+کارت‌هایی که مقدار <code>d</code> در داده سفارشی (معمولاً به دشواری در FSRS اشاره دارد) بزرگ‌تر از ۵ است.</p>
 <p><code>prop:cds:v=reschedule</code><br />
-cards with the string <code>v</code> in custom data equal to <code>reschedule</code>.</p>
-<h2 id="other-searches"><a class="header" href="#other-searches">Other Searches</a></h2>
+کارت‌هایی که رشته <code>v</code> در داده سفارشی‌شان برابر <code>reschedule</code> است.</p>
+<h2 id="other-searches"><a class="header" href="#other-searches">جست‌وجوهای دیگر</a></h2>
 <p><code>prop:due=1 is:learn</code><br />
-interday learning cards due for tomorrow.</p>
+کارت‌های یادگیری بین‌روزه که برای فردا سررسیدند.</p>
 <p><code>prop:due=0 is:learn -introduced:1</code><br />
-interday learning cards due today.</p>
+کارت‌های یادگیری بین‌روزه که امروز سررسیدند.</p>
 <p><code>prop:resched=0</code><br />
-cards rescheduled today, either using <strong>Set due date</strong> or <strong>Reschedule cards on change</strong>.</p>
+کارت‌هایی که امروز دوباره زمان‌بندی شده‌اند؛ چه با <strong>Set due date</strong> چه با <strong>Reschedule cards on change</strong>.</p>
 
                     </main>
 

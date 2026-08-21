@@ -174,37 +174,32 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="backups"><a class="header" href="#backups">Backups</a></h1>
+                        <h1 id="backups"><a class="header" href="#backups">پشتیبان‌ها</a></h1>
 <ul>
-<li><a href="#automatic-backups">Automatic backups</a>
+<li><a href="#automatic-backups">پشتیبان‌های خودکار</a>
 <ul>
-<li><a href="#restoring">Restoring</a></li>
-<li><a href="#creating">Creating</a></li>
+<li><a href="#restoring">بازگردانی</a></li>
+<li><a href="#creating">ساخت</a></li>
 </ul>
 </li>
-<li><a href="#manual-colpkg-backups">Manual colpkg backups</a>
+<li><a href="#manual-colpkg-backups">پشتیبان‌های دستی colpkg</a>
 <ul>
-<li><a href="#restoring-1">Restoring</a></li>
-<li><a href="#creating-1">Creating</a></li>
+<li><a href="#restoring-1">بازگردانی</a></li>
+<li><a href="#creating-1">ساخت</a></li>
 </ul>
 </li>
 <li><a href="#ankiweb">AnkiWeb</a></li>
-<li><a href="#deletion-log">Deletion log</a></li>
+<li><a href="#deletion-log">گزارش حذف</a></li>
 </ul>
-<h2 id="automatic-backups"><a class="header" href="#automatic-backups">Automatic backups</a></h2>
-<p>Anki will create automatic backups of your card data. These include the text
-on your cards and your scheduling information, but do not include sounds or
-image files.</p>
-<p>Automatic backups can be useful to recover from mistakes, but you should not
-rely solely on them. Because they are stored on your local device, they will not
-protect you if your device breaks or is stolen. We recommend you combine them with
-<a href="#manual-colpkg-backups">manual backups</a>.</p>
-<h3 id="restoring"><a class="header" href="#restoring">Restoring</a></h3>
-<p>To restore from an automatic backup:</p>
+<h2 id="automatic-backups"><a class="header" href="#automatic-backups">پشتیبان‌های خودکار</a></h2>
+<p>آنکی از داده‌های کارت‌هایتان پشتیبان‌های خودکار می‌سازد. این‌ها شامل متن کارت‌ها و اطلاعات زمان‌بندی‌تان هستند، اما صداها یا پرونده‌های تصویری را شامل نمی‌شوند.</p>
+<p>پشتیبان‌های خودکار می‌توانند برای بازیابی از اشتباهات سودمند باشند، اما نباید صرفاً به آن‌ها تکیه کنید. چون روی دستگاه محلی‌تان ذخیره می‌شوند، اگر دستگاه‌تان خراب یا دزدیده شود از شما محافظت نمی‌کنند. توصیه می‌کنیم آن‌ها را با <a href="#manual-colpkg-backups">پشتیبان‌های دستی</a> ترکیب کنید.</p>
+<h3 id="restoring"><a class="header" href="#restoring">بازگردانی</a></h3>
+<p>برای بازگردانی از پشتیبان خودکار:</p>
 <ul>
-<li>Open Anki, and choose Switch Profile from the File menu.</li>
-<li>Click on the &quot;Open Backup&quot; button.</li>
-<li>Select the backup you wish to restore from.</li>
+<li>آنکی را باز کنید و از منوی File گزینه Switch Profile را انتخاب کنید.</li>
+<li>روی دکمه &quot;Open Backup&quot; کلیک کنید.</li>
+<li>پشتیبانی را که می‌خواهید از آن بازگردانی کنید انتخاب کنید.</li>
 </ul>
 <div id="admonition-caution" class="admonition admonish-warning" role="note" aria-labelledby="admonition-caution-title">
 <div class="admonition-title">
@@ -214,23 +209,20 @@ protect you if your device breaks or is stolen. We recommend you combine them wi
 <a class="admonition-anchor-link" href="#admonition-caution"></a>
 </div>
 <div>
-<p>When restoring from a backup, any changes made since the backup was created will be lost.</p>
+<p>هنگام بازگردانی از پشتیبان، هر تغییری که پس از ساخت پشتیبان انجام شده باشد از دست می‌رود.</p>
 </div>
 </div>
-<p>Anki disables automatic syncing and backups when you restore from a backup. Once you're
-happy that you've restored the correct backup, close and re-open Anki to return to normal.</p>
-<h3 id="creating"><a class="header" href="#creating">Creating</a></h3>
-<p>Backups are created periodically. You can configure the time between backups
-in the <a href="preferences.html">preferences</a> screen. The default is 30 minutes.</p>
-<p>Certain operations will trigger a backup, even if the configured time has not
-elapsed yet:</p>
+<p>آنکی هنگام بازگردانی از پشتیبان، همگام‌سازی و پشتیبان‌گیری خودکار را غیرفعال می‌کند. وقتی مطمئن شدید پشتیبان درست را بازگردانده‌اید، آنکی را ببندید و دوباره باز کنید تا به حالت عادی برگردد.</p>
+<h3 id="creating"><a class="header" href="#creating">ساخت</a></h3>
+<p>پشتیبان‌ها به‌طور دوره‌ای ساخته می‌شوند. زمان میان پشتیبان‌ها را می‌توانید در صفحه <a href="preferences.html">تنظیمات</a> پیکربندی کنید. پیش‌فرض ۳۰ دقیقه است.</p>
+<p>برخی عملیات حتی اگر زمان پیکربندی‌شده نگذشته باشد پشتیبان می‌سازند:</p>
 <ul>
-<li>A one-way sync download</li>
-<li>Importing a .colpkg file using <strong>File &gt; Import</strong></li>
+<li>دانلود همگام‌سازی یک‌طرفه</li>
+<li>درون‌ریزی پرونده .colpkg با <strong>File &gt; Import</strong></li>
 <li><strong>Tools &gt; Check Database</strong></li>
 </ul>
-<p>After backups are two days old, Anki will start removing some of the older ones.
-You can control how many daily, weekly and monthly backups you'd like to keep.</p>
+<p>پس از دو روز شدن پشتیبان‌ها، آنکی شروع به حذف برخی از قدیمی‌ترها می‌کند.
+می‌توانید کنترل کنید چند پشتیبان روزانه، هفتگی و ماهانه نگه دارید.</p>
 <div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
 <div class="admonition-title">
 <div id="admonition-info-title">
@@ -239,39 +231,26 @@ You can control how many daily, weekly and monthly backups you'd like to keep.</
 <a class="admonition-anchor-link" href="#admonition-info"></a>
 </div>
 <div>
-<p>Backups created with 2.1.50 will not be importable into older Anki versions.</p>
+<p>پشتیبان‌های ساخته‌شده با 2.1.50 در نسخه‌های قدیمی‌تر آنکی قابل درون‌ریزی نخواهند بود.</p>
 </div>
 </div>
-<h2 id="manual-colpkg-backups"><a class="header" href="#manual-colpkg-backups">Manual colpkg backups</a></h2>
-<h3 id="restoring-1"><a class="header" href="#restoring-1">Restoring</a></h3>
-<p>You can restore from a manual backup by using <strong>File &gt; Import</strong>.</p>
-<h3 id="creating-1"><a class="header" href="#creating-1">Creating</a></h3>
-<p>In Anki 2.1.50+, you can use <strong>File &gt; Create Backup</strong> to trigger an immediate backup. This
-functions like regular automatic backups, and does not include media files.</p>
-<p>To create a backup that includes your sounds and images:</p>
+<h2 id="manual-colpkg-backups"><a class="header" href="#manual-colpkg-backups">پشتیبان‌های دستی colpkg</a></h2>
+<h3 id="restoring-1"><a class="header" href="#restoring-1">بازگردانی</a></h3>
+<p>می‌توانید با <strong>File &gt; Import</strong> از پشتیبان دستی بازگردانی کنید.</p>
+<h3 id="creating-1"><a class="header" href="#creating-1">ساخت</a></h3>
+<p>در آنکی 2.1.50+ می‌توانید از <strong>File &gt; Create Backup</strong> برای پشتیبان فوری استفاده کنید. این مانند پشتیبان‌های خودکار معمولی کار می‌کند و پرونده‌های رسانه را شامل نمی‌شود.</p>
+<p>برای ساختن پشتیبانی که صداها و تصاویرتان را هم در بر بگیرد:</p>
 <ul>
-<li>Select Export from the File menu.</li>
-<li>Ensure &quot;Anki collection package (.colpkg)&quot; is selected.</li>
-<li>Enable the &quot;include media&quot; option.</li>
+<li>Export را از منوی File انتخاب کنید.</li>
+<li>مطمئن شوید &quot;Anki collection package (.colpkg)&quot; انتخاب شده است.</li>
+<li>گزینه &quot;include media&quot; را فعال کنید.</li>
 </ul>
-<p>This will create a .colpkg file that contains all of your cards and any sounds/images they
-use. We recommend you store the file somewhere safe, like a different device, or a cloud-based
-file storage service like Dropbox or Google Drive.</p>
+<p>این کار پرونده .colpkg‌ای می‌سازد که همه کارت‌هایتان و هر صدا/تصویری که استفاده می‌کنند را در بر دارد. توصیه می‌کنیم پرونده را جایی امن ذخیره کنید؛ مانند دستگاهی دیگر، یا خدمت ذخیره‌سازی پرونده ابری مانند Dropbox یا Google Drive.</p>
 <h2 id="ankiweb"><a class="header" href="#ankiweb">AnkiWeb</a></h2>
-<p><a href="./syncing.html">Synchronising</a> your collection with AnkiWeb provides some level of protection
-against your device being lost or stolen. If you need to restore your collection from AnkiWeb,
-you can force a one-way sync in the preferences screen, or sync from a new device, and then choose
-&quot;Download&quot;.</p>
-<h2 id="deletion-log"><a class="header" href="#deletion-log">Deletion log</a></h2>
-<p>Anki logs deleted notes to a text file called <code>deleted.txt</code> in your
-profile folder. These notes are in a text format that can be read by
-<strong>File &gt; Import</strong>. Historically, Anki only supported a single note type
-at one time. So, if you had deleted notes from different note types,
-you needed to split the file into separate files for each note type
-first.</p>
-<p>However, profiles created in Anki versions newer than 25.09.2 have the
-following snippet at the top of <code>deleted.txt</code> (hence allowing you to
-import <code>deleted.txt</code> without the need to split the file):</p>
+<p><a href="./syncing.html">همگام‌سازی</a> مجموعه‌تان با AnkiWeb سطحی از محافظت در برابر گم‌شدن یا دزدیده‌شدن دستگاه‌تان فراهم می‌کند. اگر لازم باشد مجموعه‌تان را از AnkiWeb بازگردانی کنید، می‌توانید در صفحه تنظیمات همگام‌سازی یک‌طرفه را به‌اجبار اعمال کنید، یا از دستگاهی جدید همگام کنید و سپس &quot;Download&quot; را انتخاب کنید.</p>
+<h2 id="deletion-log"><a class="header" href="#deletion-log">گزارش حذف</a></h2>
+<p>آنکی یادداشت‌های حذف‌شده را در پرونده متنی به نام <code>deleted.txt</code> در پوشه نمایه‌تان ثبت می‌کند. این یادداشت‌ها به قالبی متنی‌اند که <strong>File &gt; Import</strong> می‌تواند بخواند. در گذشته، آنکی هم‌زمان فقط از یک نوع یادداشت پشتیبانی می‌کرد. پس اگر یادداشت‌هایی از انواع یادداشت متفاوت حذف کرده بودید، ابتدا باید پرونده را برای هر نوع یادداشت به پرونده‌های جداگانه می‌شکستید.</p>
+<p>اما نمایه‌هایی که در نسخه‌های جدیدتر از 25.09.2 آنکی ساخته شده‌اند، این قطعه را در بالای <code>deleted.txt</code> دارند (و در نتیجه می‌توانید <code>deleted.txt</code> را بدون نیاز به شکستن پرونده درون‌ریزی کنید):</p>
 <pre><code>#guid column:1
 #notetype column:2
 </code></pre>
@@ -283,8 +262,7 @@ import <code>deleted.txt</code> without the need to split the file):</p>
 <a class="admonition-anchor-link" href="#admonition-note"></a>
 </div>
 <div>
-<p><code>deleted.txt</code> is unique to each profile and is not interchangeable between
-different user profiles.</p>
+<p><code>deleted.txt</code> برای هر نمایه یکتاست و میان نمایه‌های کاربری متفاوت قابل مبادله نیست.</p>
 </div>
 </div>
 

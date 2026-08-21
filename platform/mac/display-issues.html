@@ -174,35 +174,31 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="display-issues-on-macos"><a class="header" href="#display-issues-on-macos">Display Issues on macOS</a></h1>
+                        <h1 id="display-issues-on-macos"><a class="header" href="#display-issues-on-macos">مشکلات نمایش در macOS</a></h1>
 <ul>
-<li><a href="#change-the-video-driver">Change the Video Driver</a>
+<li><a href="#change-the-video-driver">تغییر درایور ویدیو</a>
 <ul>
-<li><a href="#changing-the-driver-from-the-preferences-screen">Changing the Driver From the Preferences Screen</a></li>
-<li><a href="#changing-the-driver-from-terminalapp">Changing the Driver From Terminal.app</a></li>
+<li><a href="#changing-the-driver-from-the-preferences-screen">تغییر درایور از صفحه تنظیمات</a></li>
+<li><a href="#changing-the-driver-from-terminalapp">تغییر درایور از Terminal.app</a></li>
 </ul>
 </li>
-<li><a href="#egpus">eGPUs</a></li>
-<li><a href="#monitors-with-different-resolutions">Monitors with Different Resolutions</a></li>
+<li><a href="#egpus">eGPUها</a></li>
+<li><a href="#monitors-with-different-resolutions">مانیتورها با رزولوشن‌های متفاوت</a></li>
 </ul>
-<h2 id="change-the-video-driver"><a class="header" href="#change-the-video-driver">Change the Video Driver</a></h2>
-<h3 id="changing-the-driver-from-the-preferences-screen"><a class="header" href="#changing-the-driver-from-the-preferences-screen">Changing the Driver From the Preferences Screen</a></h3>
-<p>If you're experiencing display issues or crashes in Anki 23.10+, you can try
-changing the video driver in the preferences screen by navigating to <strong>Anki →
-Preferences</strong> and then selecting the driver from the dropdown menu. After that it
-is necessary to restart Anki.</p>
-<h3 id="changing-the-driver-from-terminalapp"><a class="header" href="#changing-the-driver-from-terminalapp">Changing the Driver From Terminal.app</a></h3>
-<p>Older Anki versions did not provide an option in the preferences, but allowed
-you to adjust the driver by opening Terminal.app, then pasting the following and hit <kbd>Enter</kbd>:</p>
-<pre><code>echo software &gt; ~/Library/Application\ Support/Anki2/gldriver6
+<h2 id="change-the-video-driver"><a class="header" href="#change-the-video-driver">تغییر درایور ویدیو</a></h2>
+<h3 id="changing-the-driver-from-the-preferences-screen"><a class="header" href="#changing-the-driver-from-the-preferences-screen">تغییر درایور از صفحه تنظیمات</a></h3>
+<p>اگر در آنکی 23.10+ مشکلات نمایش یا خرابی دارید، می‌توانید با رفتن به <strong>Anki →
+Preferences</strong> و سپس انتخاب درایور از فهرست کشویی، درایور ویدیو را در صفحه تنظیمات عوض کنید. پس از آن لازم است آنکی دوباره راه‌اندازی شود.</p>
+<h3 id="changing-the-driver-from-terminalapp"><a class="header" href="#changing-the-driver-from-terminalapp">تغییر درایور از Terminal.app</a></h3>
+<p>نسخه‌های قدیمی‌تر آنکی گزینه‌ای در تنظیمات نداشتند، اما اجازه می‌دادند درایور را با باز کردن Terminal.app و چسباندن موارد زیر و زدن <kbd>Enter</kbd> تنظیم کنید:</p>
+<pre><code>echo software &gt; ~/Library/Application\\ Support/Anki2/gldriver6
 </code></pre>
-<p>It will not print anything. You can then start Anki again.</p>
-<p>If you wish to switch back to the default, change <code>software</code> to <code>auto</code>, or
-remove that file.</p>
-<h2 id="egpus"><a class="header" href="#egpus">eGPUs</a></h2>
-<p>If you experience blank screens when using an external graphics card on a Mac, you can <kbd>Ctrl</kbd>-click on the Anki app, click <strong>Get Info</strong>, and enable the <strong>prefer eGPU</strong> option.</p>
-<h2 id="monitors-with-different-resolutions"><a class="header" href="#monitors-with-different-resolutions">Monitors with Different Resolutions</a></h2>
-<p>See <a href="https://forums.ankiweb.net/t/mac-known-issues-wording-suggestion/7331">this forum post</a>.</p>
+<p>چیزی چاپ نمی‌کند. سپس می‌توانید آنکی را دوباره شروع کنید.</p>
+<p>اگر می‌خواهید به پیش‌فرض برگردید، <code>software</code> را به <code>auto</code> تغییر دهید، یا آن پرونده را حذف کنید.</p>
+<h2 id="egpus"><a class="header" href="#egpus">eGPUها</a></h2>
+<p>اگر هنگام استفاده از کارت گرافیک خارجی روی مک صفحه‌های خالی می‌بینید، می‌توانید روی برنامه آنکی <kbd>Ctrl</kbd>-کلیک کنید، روی <strong>Get Info</strong> کلیک کنید و گزینه <strong>prefer eGPU</strong> را فعال کنید.</p>
+<h2 id="monitors-with-different-resolutions"><a class="header" href="#monitors-with-different-resolutions">مانیتورها با رزولوشن‌های متفاوت</a></h2>
+<p><a href="https://forums.ankiweb.net/t/mac-known-issues-wording-suggestion/7331">این پست انجمن</a> را ببینید.</p>
 
                     </main>
 

@@ -174,62 +174,31 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="card-generation"><a class="header" href="#card-generation">Card Generation</a></h1>
+                        <h1 id="card-generation"><a class="header" href="#card-generation">ساخت کارت</a></h1>
 <ul>
-<li><a href="#reverse-cards">Reverse Cards</a></li>
-<li><a href="#card-generation--deletion">Card Generation &amp; Deletion</a></li>
-<li><a href="#selective-card-generation">Selective Card Generation</a></li>
-<li><a href="#conditional-replacement">Conditional Replacement</a></li>
-<li><a href="#blank-back-sides">Blank Back Sides</a></li>
-<li><a href="#adding-empty-notes">Adding Empty Notes</a></li>
-<li><a href="#cloze-templates">Cloze Templates</a></li>
+<li><a href="#reverse-cards">کارت‌های معکوس</a></li>
+<li><a href="#card-generation--deletion">ساخت و حذف کارت</a></li>
+<li><a href="#selective-card-generation">ساخت گزینشی کارت</a></li>
+<li><a href="#conditional-replacement">جایگزینی شرطی</a></li>
+<li><a href="#blank-back-sides">پشت‌های خالی</a></li>
+<li><a href="#adding-empty-notes">افزودن یادداشت‌های خالی</a></li>
+<li><a href="#cloze-templates">قالب‌های Cloze</a></li>
 </ul>
-<h2 id="reverse-cards"><a class="header" href="#reverse-cards">Reverse Cards</a></h2>
-<p>You can watch <a href="http://www.youtube.com/watch?v=DnbKwHEQ1mA&amp;yt:cc=on">a video about reversing cards</a> on YouTube.</p>
-<p>If you want to create cards that go in both directions (e.g., both
-“ookii”→“big” and “big”→“ookii”), you have several options. The simplest
-is to select the “Basic (and reversed card)” built-in note type. This
-will generate two cards, one in each direction.</p>
-<p>If you want to generate reverse cards for only some of your material
-(perhaps you only want to take the time to study reverses for the most
-important material, or some of your cards don’t make sense reversed),
-you can select the “Basic (optional reversed card)” note type. This note
-type generates a forward-only card when you fill in only the first two
-fields; if you additionally enter something in the “Add Reverse” field
-(like a &quot;y&quot;), Anki will generate a reverse card as well. The contents of
-this field will never be displayed on a card.</p>
-<h2 id="card-generation--deletion"><a class="header" href="#card-generation--deletion">Card Generation &amp; Deletion</a></h2>
-<p>Anki will not create cards with empty front sides. Thus if “My Field”
-was empty, and one card’s front template included only that field, the
-card would not be created.</p>
-<p>When you edit a previously added note, Anki will automatically create
-extra cards if they were previously blank but no longer are. If your
-edits have made some cards blank when they previously were not, however,
-Anki will not delete them immediately, as that could lead to accidental
-data loss. To remove the empty cards, go to Tools → Empty Cards in the
-main window. You will be shown a list of empty cards and be given the
-option to delete them.</p>
-<p>Because of the way that card generation works, it is not possible to
-manually delete individual cards, as they would just end up being recreated
-the next time the note was edited. Instead, you should make the
-relevant conditional replacement fields empty and then use the Empty
-Cards option.</p>
-<p>Anki does not consider special fields or non-field text for the purposes
-of card generation. Thus if your front template looked like the
-following, no card would be generated if Country was empty:</p>
+<h2 id="reverse-cards"><a class="header" href="#reverse-cards">کارت‌های معکوس</a></h2>
+<p>می‌توانید <a href="http://www.youtube.com/watch?v=DnbKwHEQ1mA&amp;yt:cc=on">ویدیویی درباره معکوس‌کردن کارت‌ها</a> را در یوتیوب ببینید.</p>
+<p>اگر می‌خواهید کارت‌هایی بسازید که در هر دو جهت کار کنند (مثلاً هم &quot;ookii&quot;→&quot;big&quot; و هم &quot;big&quot;→&quot;ookii&quot;)، چند گزینه پیش روی شماست. ساده‌ترین آن‌ها انتخاب نوع یادداشت داخلی &quot;Basic (and reversed card)&quot; است. این نوع دو کارت می‌سازد؛ یکی در هر جهت.</p>
+<p>اگر می‌خواهید فقط برای بخشی از مطالبتان کارت معکوس بسازید (شاید فقط بخواهید برای مهم‌ترین مطالب وقت گذاشته و معکوس‌هایشان را مطالعه کنید، یا برخی کارت‌هایتان در جهت معکوس بی‌معنا باشند)، می‌توانید نوع یادداشت &quot;Basic (optional reversed card)&quot; را انتخاب کنید. این نوع یادداشت وقتی فقط دو فیلد اول را پر کنید، تنها یک کارتِ رو به جلو می‌سازد؛ اگر علاوه بر آن در فیلد &quot;Add Reverse&quot; چیزی وارد کنید (مانند &quot;y&quot;)، آنکی کارت معکوس هم می‌سازد. محتوای این فیلد هرگز روی کارت نمایش داده نمی‌شود.</p>
+<h2 id="card-generation--deletion"><a class="header" href="#card-generation--deletion">ساخت و حذف کارت</a></h2>
+<p>آنکی کارت‌هایی با روی خالی نمی‌سازد. پس اگر &quot;My Field&quot; خالی بود و قالبِ رویِ کارتی فقط آن فیلد را در بر می‌داشت، آن کارت ساخته نمی‌شد.</p>
+<p>وقتی یادداشتِ قبلاً افزوده‌شده‌ای را ویرایش می‌کنید، آنکی به‌طور خودکار کارت‌های اضافی را می‌سازد اگر پیش‌تر خالی بودند و حالا دیگر نیستند. اما اگر ویرایش‌هایتان برخی کارت‌ها را که پیش‌تر خالی نبودند خالی کرده باشد، آنکی آن‌ها را بلافاصله حذف نمی‌کند، چون این ممکن است به از دست رفتن تصادفی داده‌ها بینجامد. برای حذف کارت‌های خالی، در پنجره اصلی به Tools → Empty Cards بروید. فهرست کارت‌های خالی به شما نشان داده می‌شود و گزینه حذفشان را می‌یابید.</p>
+<p>به‌دلیل شیوه کار ساخت کارت، امکان حذف دستی کارت‌های منفرد وجود ندارد، چون دفعه بعد که یادداشت ویرایش شود دوباره ساخته می‌شوند. در عوض، باید فیلدهای جایگزینی شرطیِ مربوط را خالی کنید و سپس از گزینه Empty Cards استفاده کنید.</p>
+<p>آنکی برای ساخت کارت، فیلدهای ویژه یا متنِ غیرفیلد را در نظر نمی‌گیرد. پس اگر قالبِ روی شما این شکل بود و Country خالی بود، هیچ کارتی ساخته نمی‌شد:</p>
 <pre><code>Where is {{Country}} on the map?
 </code></pre>
-<h2 id="selective-card-generation"><a class="header" href="#selective-card-generation">Selective Card Generation</a></h2>
-<p>Sometimes you may want to generate extra cards for only some of your
-material, such as testing your ability to recall the most important
-words of a set. You can accomplish this by adding an extra field to your
-note, and adding some text into it (such as &quot;1&quot;) on the notes you want
-the extra card. Then in the card template, you can make the card’s
-creation depend on that field being non-empty. For more information on
-this, see the conditional replacement section below.</p>
-<h2 id="conditional-replacement"><a class="header" href="#conditional-replacement">Conditional Replacement</a></h2>
-<p>It is possible to include certain text, fields, or HTML on your cards
-only if a field is empty or not empty. An example:</p>
+<h2 id="selective-card-generation"><a class="header" href="#selective-card-generation">ساخت گزینشی کارت</a></h2>
+<p>گاهی ممکن است بخواهید فقط برای بخشی از مطالبتان کارت اضافی بسازید؛ مثلاً سنجش توانایتان در به‌یادآوردی مهم‌ترین واژه‌های یک مجموعه. این کار را با افزودن فیلدی اضافی به یادداشت‌تان و گذاشتن متنی در آن (مانند &quot;1&quot;) روی یادداشت‌هایی که کارتِ اضافی می‌خواهید، انجام می‌دهید. سپس در قالب کارت می‌توانید ساخته‌شدن کارت را به خالی‌نبودن آن فیلد وابسته کنید. برای اطلاعات بیشتر، بخش جایگزینی شرطی در پایین را ببینید.</p>
+<h2 id="conditional-replacement"><a class="header" href="#conditional-replacement">جایگزینی شرطی</a></h2>
+<p>ممکن است درج متن، فیلد یا HTML مشخصی روی کارت‌ها فقط در صورتی که فیلدی خالی یا ناخالی باشد. یک مثال:</p>
 <pre><code>This text is always shown.
 
 {{#FieldName}}
@@ -240,15 +209,12 @@ only if a field is empty or not empty. An example:</p>
     This text is only shown if FieldName is empty
 {{/FieldName}}
 </code></pre>
-<p>A real life example is only showing a label if the field is not empty:</p>
+<p>یک مثال واقعی، نمایش یک برچسب فقط در صورتی است که فیلد خالی نباشد:</p>
 <pre><code>{{#Tags}}
     Tags: {{Tags}}
 {{/Tags}}
 </code></pre>
-<p>Or say you want to display a specific field in blue on the front of your
-card if there are extra notes on the back (perhaps the fact that there
-are notes serves as a reminder that you should spend more time thinking
-about the answer). You can style the field as follows:</p>
+<p>یا فرض کنید می‌خواهید در صورت وجود یادداشت‌های اضافی در پشتِ کارت، فیلدی مشخص را در روی کارت به رنگ آبی نمایش دهید (شاید این واقعیت که یادداشتی هست، یادآورِ آن باشد که باید زمان بیشتری به فکر کردن درباره پاسخ بگذارید). می‌توانید فیلد را این‌طور استایل دهید:</p>
 <pre><code>{{#Notes}}
     &lt;span style=&quot;color:blue;&quot;&gt;
 {{/Notes}}
@@ -259,23 +225,17 @@ about the answer). You can style the field as follows:</p>
     &lt;/span&gt;
 {{/Notes}}
 </code></pre>
-<p>You can also use conditional replacement to control which cards are
-generated. This works since Anki will not generate
-cards which would have a blank front side. For
-example, consider a card with two fields on the front:</p>
+<p>همچنین می‌توانید از جایگزینی شرطی برای کنترل اینکه کدام کارت‌ها ساخته شوند استفاده کنید. این کار از آن رو ممکن است که آنکی کارت‌هایی را که رویشان خالی می‌شد نمی‌سازد. مثلاً کارتی را در نظر بگیرید با دو فیلد در روی آن:</p>
 <pre><code>{{Expression}}
 {{Notes}}
 </code></pre>
-<p>Normally a card would be generated if either the expression or notes
-field had text in it. If you only wanted a card generated if expression
-was not empty, then you could change the template to this:</p>
+<p>معمولاً اگر فیلد expression یا notes متنی داشت، کارتی ساخته می‌شد. اگر فقط در صورت خالی‌نبودن expression می‌خواهید کارت ساخته شود، می‌توانید قالب را به این تغییر دهید:</p>
 <pre><code>{{#Expression}}
     {{Expression}}
     {{Notes}}
 {{/Expression}}
 </code></pre>
-<p>And if you wanted to require both fields, you could use two conditional
-replacements:</p>
+<p>و اگر هر دو فیلد لازم بود، می‌توانید از دو جایگزینی شرطی استفاده کنید:</p>
 <pre><code>{{#Expression}}
     {{#Notes}}
         {{Expression}}
@@ -283,69 +243,45 @@ replacements:</p>
     {{/Notes}}
 {{/Expression}}
 </code></pre>
-<p>Keep in mind that this only works when you place the
-conditional replacement code on the <em>front</em> of the card; if you do this
-on the back, you will simply end up with cards with a blank back side.
-Similarly, since this works by checking if the front field would be
-empty, it is important to make sure you wrap the &quot;entire&quot; front side in
-the conditional replacement; for instance, the following would not work
-as expected:</p>
+<p>در نظر داشته باشید که این فقط وقتی کار می‌کند که کد جایگزینی شرطی را در <em>رویِ</em> کارت بگذارید؛ اگر این کار را در پشت انجام دهید، صرفاً کارت‌هایی با پشتِ خالی به دست می‌آورید. به همین ترتیب، چون این مکانیزم با بررسی خالی‌بودنِ فیلدِ روی کار است، مهم است مطمئن شوید «تمامِ» روی کارت را در جایگزینی شرطی می‌پیچید؛ مثلاً مورد زیر همان‌طور که انتظار دارید کار نمی‌کند:</p>
 <pre><code>{{#Expression}}
     {{Expression}}
 {{/Expression}}
 {{Notes}}
 </code></pre>
-<h2 id="blank-back-sides"><a class="header" href="#blank-back-sides">Blank Back Sides</a></h2>
-<p>Card generation only looks at the front side of the card. For example, if you have a
-front template:</p>
+<h2 id="blank-back-sides"><a class="header" href="#blank-back-sides">پشت‌های خالی</a></h2>
+<p>ساخت کارت فقط به روی کارت نگاه می‌کند. مثلاً اگر قالبِ رویِ این را داشته باشید:</p>
 <pre><code>{{Field 1}}
 </code></pre>
-<p>and a back template:</p>
+<p>و قالب پشت:</p>
 <pre><code>{{Field 2}}
 </code></pre>
-<p>Then a card will be generated if Field 1 is non-empty. If Field 2 is empty, the card
-will still be generated, and you will get a blank back side.</p>
-<p>If you wish to avoid a blank back side, you will need to place a required field
-on the front template as a conditional, like so:</p>
+<p>آنگاه اگر Field 1 ناخالی باشد، کارت ساخته می‌شود. اگر Field 2 خالی باشد، کارت همچنان ساخته می‌شود و پشتیِ خالی خواهید داشت.</p>
+<p>اگر می‌خواهید از پشتِ خالی اجتناب کنید، باید فیلدی الزامی را به‌صورت شرطی در قالبِ روی بگذارید؛ مانند:</p>
 <pre><code>{{#Field 2}}
     {{Field 1}}
 {{/Field 2}}
 </code></pre>
-<p>This will ensure the card is generated only if both Field 2 and Field 1 are non-empty.</p>
-<h2 id="adding-empty-notes"><a class="header" href="#adding-empty-notes">Adding Empty Notes</a></h2>
-<p>When you add a new note in Anki, if the card
-templates and note fields combine to produce no cards, a blank card will be
-created using the first template. This allows you to add material even if it's
-incomplete, and modify it or the template later to make it valid. If you don't
-wish to keep an empty note, you can remove it with the Empty Cards function.</p>
-<h2 id="cloze-templates"><a class="header" href="#cloze-templates">Cloze Templates</a></h2>
-<p>See the <a href="../editing.html#cloze-deletion">cloze deletion</a> section for background info.</p>
-<p>The cloze note type functions differently from regular note types.
-Instead of a customizable number of card types, it has a single type
-which is shared by all cloze deletions on a note.</p>
-<p>As mentioned in the card generation section above, generation of regular
-cards depends on one or more fields on the question being non-empty.
-Cloze deletion note types are generated differently:</p>
+<p>این تضمین می‌کند کارت فقط در صورتی ساخته شود که هم Field 2 و هم Field 1 ناخالی باشند.</p>
+<h2 id="adding-empty-notes"><a class="header" href="#adding-empty-notes">افزودن یادداشت‌های خالی</a></h2>
+<p>وقتی در آنکی یادداشت جدیدی می‌افزایید، اگر قالب‌های کارت و فیلدهای یادداشت با هم هیچ کارتی نسازند، کارتی خالی با استفاده از اولین قالب ساخته می‌شود. این به شما اجازه می‌دهد حتی ناقص، مطلبی را بیفزایید و بعداً آن یا قالب را تغییر دهید تا معتبر شود. اگر نمی‌خواهید یادداشت خالی را نگه دارید، می‌توانید با عملکرد Empty Cards آن را حذف کنید.</p>
+<h2 id="cloze-templates"><a class="header" href="#cloze-templates">قالب‌های Cloze</a></h2>
+<p>برای اطلاعات پیش‌زمینه، بخش <a href="../editing.html#cloze-deletion">حذف اطلاعاتی</a> را ببینید.</p>
+<p>نوع یادداشت cloze با انواع یادداشت معمولی متفاوت کار می‌کند. به‌جای شمار قابل تنظیمی از انواع کارت، یک نوع واحد دارد که میان همه حذف‌های اطلاعاتی یک یادداشت مشترک است.</p>
+<p>همان‌طور که در بخش ساخت کارت در بالا گفته شد، ساخت کارت‌های معمولی به ناخالی‌بودن یک یا چند فیلد در پرسش وابسته است. انواع یادداشت حذف اطلاعاتی به شکل دیگری ساخته می‌شوند:</p>
 <ul>
 <li>
-<p>Anki looks on the front template for one or more cloze replacements,
-like {{cloze:FieldName}}.</p>
+<p>آنکی در قالبِ روی به‌دنبال یک یا چند جایگزینی cloze می‌گردد؛ مانند {{cloze:FieldName}}.</p>
 </li>
 <li>
-<p>It then looks in the FieldName field for all cloze references, like
-{{c1::text}}.</p>
+<p>سپس در فیلد FieldName همه ارجاع‌های cloze را می‌یابد؛ مانند {{c1::text}}.</p>
 </li>
 <li>
-<p>For each separate number, a card will be generated.</p>
+<p>برای هر شمارهٔ جداگانه، کارتی ساخته می‌شود.</p>
 </li>
 </ul>
-<p>Because card generation functions differently for cloze deletion cards,
-{{cloze:…​}} tags can not be used with a regular note type - they
-will only function properly when used with a cloze note type.</p>
-<p>Conditional generation provides a special field so you can check which
-card you are rendering. If you wanted to display the &quot;hint1&quot; field on
-the first cloze, and &quot;hint2&quot; field on the second cloze for example, you
-could use the following template:</p>
+<p>چون ساخت کارت برای کارت‌های حذف اطلاعاتی متفاوت کار می‌کند، برچسب‌های {{cloze:…​}} را نمی‌توان با نوع یادداشت معمولی استفاده کرد — آن‌ها فقط با نوع یادداشت cloze درست کار می‌کنند.</p>
+<p>ساختِ شرطی فیلد ویژه‌ای فراهم می‌کند تا بتوانید بررسی کنید کدام کارت را رندر می‌کنید. مثلاً اگر بخواهید فیلد &quot;hint1&quot; را روی اولین cloze و فیلد &quot;hint2&quot; را روی دومین cloze نمایش دهید، می‌توانید از قالب زیر استفاده کنید:</p>
 <pre><code>{{cloze:Text}}
 
 {{#c1}}

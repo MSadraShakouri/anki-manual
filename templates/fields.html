@@ -174,142 +174,116 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="field-replacements"><a class="header" href="#field-replacements">Field Replacements</a></h1>
+                        <h1 id="field-replacements"><a class="header" href="#field-replacements">جایگزینی فیلدها</a></h1>
 <ul>
-<li><a href="#basic-replacements">Basic Replacements</a></li>
-<li><a href="#newlines">Newlines</a></li>
-<li><a href="#text-to-speech-for-individual-fields">Text to Speech for individual fields</a></li>
-<li><a href="#text-to-speech-for-multiple-fields-and-static-text">Text to Speech for multiple fields and static text</a></li>
-<li><a href="#special-fields">Special Fields</a></li>
-<li><a href="#hint-fields">Hint Fields</a></li>
-<li><a href="#dictionary-links">Dictionary Links</a></li>
-<li><a href="#html-stripping">HTML Stripping</a></li>
-<li><a href="#right-to-left-text">Right To Left Text</a></li>
-<li><a href="#ruby-characters">Ruby Characters</a>
+<li><a href="#basic-replacements">جایگزینی‌های پایه</a></li>
+<li><a href="#newlines">خطوط جدید</a></li>
+<li><a href="#text-to-speech-for-individual-fields">تبدیل متن به گفتار برای فیلدهای منفرد</a></li>
+<li><a href="#text-to-speech-for-multiple-fields-and-static-text">تبدیل متن به گفتار برای چند فیلد و متن ایستا</a></li>
+<li><a href="#special-fields">فیلدهای ویژه</a></li>
+<li><a href="#hint-fields">فیلدهای راهنما</a></li>
+<li><a href="#dictionary-links">پیوندهای واژه‌نامه</a></li>
+<li><a href="#html-stripping">حذف HTML</a></li>
+<li><a href="#right-to-left-text">متن راست‌به‌چپ</a></li>
+<li><a href="#ruby-characters">نویسه‌های روبی</a>
 <ul>
-<li><a href="#additional-ruby-character-filters">Additional Ruby Character Filters</a></li>
+<li><a href="#additional-ruby-character-filters">پالایشگرهای اضافی نویسه روبی</a></li>
 </ul>
 </li>
-<li><a href="#media--latex">Media &amp; LaTeX</a>
+<li><a href="#media--latex">رسانه و LaTeX</a>
 <ul>
-<li><a href="#static-soundsimages">Static Sounds/Images</a></li>
-<li><a href="#field-references">Field References</a></li>
+<li><a href="#static-soundsimages">صداها/تصاویر ایستا</a></li>
+<li><a href="#field-references">ارجاع‌های فیلد</a></li>
 </ul>
 </li>
-<li><a href="#checking-your-answer">Checking Your Answer</a>
+<li><a href="#checking-your-answer">بررسی پاسخ شما</a>
 <ul>
-<li><a href="#ignoring-diacritics">Ignoring Diacritics</a></li>
+<li><a href="#ignoring-diacritics">نادیده‌گرفتن اعراب</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="basic-replacements"><a class="header" href="#basic-replacements">Basic Replacements</a></h2>
-<p>The most basic template looks something like this:</p>
+<h2 id="basic-replacements"><a class="header" href="#basic-replacements">جایگزینی‌های پایه</a></h2>
+<p>ساده‌ترین قالب چیزی شبیه این است:</p>
 <pre><code>{{Front}}
 </code></pre>
-<p>When you place text within curly brackets, Anki looks for a field by
-that name, and replaces the text with the actual content of the field.</p>
-<p>Field names are case sensitive. If you have a field named <code>Front</code>,
-writing <code>{{front}}</code> will not work properly.</p>
-<p>Your templates are not limited to a list of fields. You can also include
-arbitrary text on your templates. For example, if you’re studying
-capital cities, and you’ve created a note type with a “Country” field,
-you might create a front template like this:</p>
+<p>وقتی متنی را داخل آکولاد می‌گذارید، آنکی دنبال فیلدی با آن نام می‌گردد و متن را با محتوای واقعی فیلد جایگزین می‌کند.</p>
+<p>نام‌های فیلد به بزرگی و کوچکی حروف حساس‌اند. اگر فیلدی به نام <code>Front</code> دارید، نوشتن <code>{{front}}</code> درست کار نمی‌کند.</p>
+<p>قالب‌های شما به فهرستی از فیلدها محدود نیستند. می‌توانید متن دلخواهی هم در قالب‌هایتان بگنجانید. مثلاً اگر پایتخت‌ها را می‌آموزید و نوع یادداشتی با فیلد &quot;Country&quot; ساخته‌اید، ممکن است قالبِ رویی مانند این بسازید:</p>
 <pre><code>What's the capital city of {{Country}}?
 </code></pre>
-<p>The default back template will look something like this:</p>
+<p>قالب پشتِ پیش‌فرض چیزی شبیه این خواهد بود:</p>
 <pre><code>{{FrontSide}}
 
 &lt;hr id=answer&gt;
 
 {{Back}}
 </code></pre>
-<p>This means “show me the text that’s on the front side, then a divider
-line, and then the Back field”.</p>
-<p>The &quot;id=answer&quot; part tells Anki where the divider is between the
-question and the answer. This allows Anki to automatically scroll to the
-spot where the answer starts when you press <strong>show answer</strong> on a long card
-(especially useful on mobile devices with small screens). If you don’t
-want a horizontal line at the beginning of the answer, you can use
-another HTML element such as a paragraph or div instead.</p>
-<h2 id="newlines"><a class="header" href="#newlines">Newlines</a></h2>
-<p>Card templates are like web pages, which means a special command is required
-to create a new line. For example, if you wrote the following in the template:</p>
+<p>یعنی «متنِ روی کارت را نشانم بده، سپس یک خط جداکننده و سپس فیلد Back».</p>
+<p>بخش &quot;id=answer&quot; به آنکی می‌گوید جداکننده میان پرسش و پاسخ کجاست. این به آنکی اجازه می‌دهد هنگام زدن <strong>show answer</strong> روی کارت بلند، به‌طور خودکار به جایی که پاسخ شروع می‌شود پیمایش کند (به‌ویژه روی دستگاه‌های موبایل با صفحه‌های کوچک سودمند است). اگر نمی‌خواهید در ابتدای پاسخ خط افقی باشد، می‌توانید به‌جای آن از عنصر HTML دیگری مانند پاراگراف یا div استفاده کنید.</p>
+<h2 id="newlines"><a class="header" href="#newlines">خطوط جدید</a></h2>
+<p>قالب‌های کارت مانند صفحات وب‌اند؛ یعنی برای ساختن خط جدید به فرمان ویژه‌ای نیاز است. مثلاً اگر این را در قالب می‌نوشتید:</p>
 <pre><code>one
 two
 </code></pre>
-<p>In the preview, you’d actually see:</p>
+<p>در پیش‌نمایش در واقع این را می‌دیدید:</p>
 <pre><code>one two
 </code></pre>
-<p>To add a new line, you need to add a &lt;br&gt; code to the end of a
-line, like so:</p>
+<p>برای افزودن خط جدید، باید کد &lt;br&gt; را به انتهای خطی اضافه کنید؛ مانند:</p>
 <pre><code>one&lt;br&gt;
 two
 </code></pre>
-<p>The br code stands for &quot;(line) br(eak)&quot;.</p>
-<p>The same applies for fields. If you want to display two fields, one on
-each line, you would use</p>
+<p>کد br مخفف «(line) br(eak)» است.</p>
+<p>همین درباره فیلدها هم صادق است. اگر بخواهید دو فیلد را نمایش دهید، هر کدام در یک خط، از این استفاده می‌کردید</p>
 <pre><code>{{Field 1}}&lt;br&gt;
 {{Field 2}}
 </code></pre>
-<h2 id="text-to-speech-for-individual-fields"><a class="header" href="#text-to-speech-for-individual-fields">Text to Speech for individual fields</a></h2>
-<p>This feature requires Anki 2.1.20, AnkiMobile 2.0.56 or AnkiDroid 2.17.</p>
-<p>To have Anki read the Front field in a US English voice, you can place
-the following in your card template:</p>
+<h2 id="text-to-speech-for-individual-fields"><a class="header" href="#text-to-speech-for-individual-fields">تبدیل متن به گفتار برای فیلدهای منفرد</a></h2>
+<p>این قابلیت نیازمند آنکی 2.1.20، AnkiMobile 2.0.56 یا AnkiDroid 2.17 است.</p>
+<p>برای آنکه آنکی فیلد Front را با صدای انگلیسی آمریکایی بخواند، می‌توانید این را در قالب کارت‌تان بگذارید:</p>
 <pre><code>{{tts en_US:Front}}
 </code></pre>
-<p>On Windows, macOS, and iOS, Anki will use the OS’s built-in voices. On
-Linux, no voices are built in, but voices can be provided by add-ons,
-such as <a href="https://ankiweb.net/shared/info/391644525">this one</a>.</p>
-<p>To see a list of all available languages/voices, place the following on
-your card template:</p>
+<p>در ویندوز، macOS و iOS، آنکی از صداهای داخلی سیستم‌عامل استفاده می‌کند. در لینوکس صدایی به‌صورت داخلی موجود نیست، اما می‌توان صداهایی را از افزونه‌ها تأمین کرد؛ مانند <a href="https://ankiweb.net/shared/info/391644525">این افزونه</a>.</p>
+<p>برای دیدن فهرست همه زبان‌ها/صداهای موجود، این را در قالب کارت‌تان بگذارید:</p>
 <pre><code>{{tts-voices:}}
 </code></pre>
-<p>If there are multiple voices that support your chosen language, you can
-specify desired voices in a list, and Anki will choose the first
-available voice. For example:</p>
+<p>اگر چند صدا از زبان انتخابی‌تان پشتیبانی می‌کنند، می‌توانید صداهای دلخواه را به‌صورت فهرست مشخص کنید و آنکی اولین صدای موجود را انتخاب می‌کند. مثلاً:</p>
 <pre><code>{{tts ja_JP voices=Apple_Otoya,Microsoft_Haruka:Field}}
 </code></pre>
-<p>This would use Otoya when on an Apple device, and Haruka when on a
-Windows PC.</p>
-<p>Specifying a different speed is possible in some TTS implementations:</p>
+<p>این روی دستگاه اپل از Otoya و روی رایانه ویندوزی از Haruka استفاده می‌کند.</p>
+<p>مشخص‌کردن سرعت متفاوت در بعضی پیاده‌سازی‌های TTS ممکن است:</p>
 <pre><code>{{tts fr_FR speed=0.8:SomeField}}
 </code></pre>
-<p>Both speed and voices are optional, but the language must be included.</p>
-<p>On a Mac, you can customize the available voices:</p>
+<p>سرعت و صدا هر دو اختیاری‌اند، اما زبان باید بیاید.</p>
+<p>روی مک می‌توانید صداهای موجود را سفارشی کنید:</p>
 <ul>
 <li>
-<p>Open the System Preferences screen.</p>
+<p>صفحه System Preferences را باز کنید.</p>
 </li>
 <li>
-<p>Click on Accessibility.</p>
+<p>روی Accessibility کلیک کنید.</p>
 </li>
 <li>
-<p>Click on Speech.</p>
+<p>روی Speech کلیک کنید.</p>
 </li>
 <li>
-<p>Click on the system voice dropdown, and choose Customize.</p>
+<p>روی فهرست کشویی system voice کلیک کنید و Customize را انتخاب کنید.</p>
 </li>
 </ul>
-<p>Some voices sound better than others, so experiment to choose the one
-you prefer. Note that the Siri voice can only be used by Apple
-apps. Once you’ve installed new voices, you’ll need to restart Anki for
-the new voices to become available.</p>
-<p>On Windows, some voices like Cortana can not be selected, as Microsoft
-does not make those voices available to other applications.</p>
-<p>On a cloze note type, you can make Anki read only the elided sections
-using the <code>cloze-only</code> filter, like so:</p>
+<p>بعضی صداها بهتر از بقیه‌اند؛ پس آزمایش کنید تا موردی را که ترجیح می‌دهید برگزینید. توجه کنید که صدای Siri فقط توسط برنامه‌های اپل قابل استفاده است. پس از نصب صداهای جدید، باید آنکی را دوباره راه‌اندازی کنید تا صداهای جدید در دسترس شوند.</p>
+<p>در ویندوز، بعضی صداها مانند Cortana قابل انتخاب نیستند، چون مایکروسافت آن صداها را در اختیار برنامه‌های دیگر قرار نمی‌دهد.</p>
+<p>روی نوع یادداشت cloze می‌توانید کاری کنید آنکی فقط بخش‌های حذف‌شده را با پالایشگر <code>cloze-only</code> بخواند؛ مانند:</p>
 <pre><code>{{tts en_US:cloze-only:Text}}
 </code></pre>
-<p>The cloze-only filter is supported in Anki 2.1.29+, AnkiMobile 2.0.65+, and AnkiDroid 2.17+.</p>
-<h2 id="text-to-speech-for-multiple-fields-and-static-text"><a class="header" href="#text-to-speech-for-multiple-fields-and-static-text">Text to Speech for multiple fields and static text</a></h2>
-<p>This feature requires Anki 2.1.50+, AnkiMobile 2.0.84+, or AnkiDroid 2.17+.</p>
-<p>If you want TTS to read multiple fields or static text included in the template, you can use the following:</p>
+<p>پالایشگر cloze-only در آنکی 2.1.29+، AnkiMobile 2.0.65+ و AnkiDroid 2.17+ پشتیبانی می‌شود.</p>
+<h2 id="text-to-speech-for-multiple-fields-and-static-text"><a class="header" href="#text-to-speech-for-multiple-fields-and-static-text">تبدیل متن به گفتار برای چند فیلد و متن ایستا</a></h2>
+<p>این قابلیت نیازمند آنکی 2.1.50+، AnkiMobile 2.0.84+ یا AnkiDroid 2.17+ است.</p>
+<p>اگر می‌خواهید TTS چند فیلد یا متن ایستای درون قالب را بخواند، می‌توانید از این استفاده کنید:</p>
 <pre><code>[anki:tts lang=en_US] This text should be read. Here is {{Field1}} and {{Field2}}[/anki:tts]
 
 This is other text on the template. It is outside of the tags so it should not be read.
 </code></pre>
-<h2 id="special-fields"><a class="header" href="#special-fields">Special Fields</a></h2>
-<p>There are some special fields you can include in your templates:</p>
+<h2 id="special-fields"><a class="header" href="#special-fields">فیلدهای ویژه</a></h2>
+<p>چند فیلد ویژه هست که می‌توانید در قالب‌هایتان بگنجانید:</p>
 <pre><code>The note's tags: {{Tags}}
 
 The type of note: {{Type}}
@@ -325,165 +299,110 @@ The type of card (&quot;Forward&quot;, etc): {{Card}}
 The content of the front template
 (only valid in back template): {{FrontSide}}
 </code></pre>
-<p>FrontSide will not automatically play any audio that was on the front side
-of the card. If you wish to have the same audio play automatically on both
-the front and back of the card, you’ll need to manually include the audio
-fields on the back as well.</p>
-<p>As with other fields, special field names are case sensitive - you must use
-<code>{{Tags}}</code> rather than <code>{{tags}}</code> for example.</p>
-<h2 id="hint-fields"><a class="header" href="#hint-fields">Hint Fields</a></h2>
-<p>It’s possible to add a field to the front or back of a card, but make it
-hidden until you explicitly show it. We call this a <em>hint field</em>. Before
-adding a hint, bear in mind that the easier you make it to answer
-a question in Anki, the less likely you are to remember that question
-when you encounter it in real life. Have a read about the
-&quot;minimum information principle&quot; on
-<a href="https://super-memory.com/articles/20rules.htm">https://super-memory.com/articles/20rules.htm</a> before proceeding.</p>
-<p>First, you’ll need to add a field to store the hint in if you have not
-already. See the <a href="../editing.html#customizing-fields">fields</a> section if you’re not sure how
-to do this.</p>
-<p>Assuming you’ve created a field called MyField, you can tell Anki to
-include it on the card but hide it by default by adding the following to
-your template:</p>
+<p>FrontSide هیچ صدویی را که در روی کارت بوده به‌طور خودکار پخش نمی‌کند. اگر می‌خواهید همان صدا هم در روی و هم در پشت کارت به‌طور خودکار پخش شود، باید فیلدهای صدا را به‌طور دستی در پشت هم بیفزایید.</p>
+<p>مانند بقیه فیلدها، نام‌های فیلد ویژه به بزرگی و کوچکی حروف حساس‌اند — مثلاً باید <code>{{Tags}}</code> را به‌کار ببرید نه <code>{{tags}}</code> را.</p>
+<h2 id="hint-fields"><a class="header" href="#hint-fields">فیلدهای راهنما</a></h2>
+<p>ممکن است فیلدی را به روی یا پشت کارت بیفزایید، اما تا وقتی صریحاً نشانش ندهید پنهان بماند. به این یک <em>فیلد راهنما</em> می‌گوییم. پیش از افزودن راهنما در نظر داشته باشید که هرچه پاسخ‌دادن به پرسشی را در آنکی آسان‌تر کنید، احتمال کمتری دارد که آن پرسش را وقتی در زندگی واقعی با آن روبه‌رو می‌شوید به یاد بیاورید. پیش از ادامه، درباره «اصل حداقل اطلاعات» در
+<a href="https://super-memory.com/articles/20rules.htm">https://super-memory.com/articles/20rules.htm</a> بخوانید.</p>
+<p>اگر هنوز فیلدی برای نگه‌داشتن راهنما نساخته‌اید، نخست باید آن را بیفزایید. اگر مطمئن نیستید چگونه، بخش <a href="../editing.html#customizing-fields">فیلدها</a> را ببینید.</p>
+<p>فرض کنید فیلدی به نام MyField ساخته‌اید؛ می‌توانید با افزودن این به قالب‌تان به آنکی بگویید آن را روی کارت بیاورد اما به‌طور پیش‌فرض پنهانش کند:</p>
 <pre><code>{{hint:MyField}}
 </code></pre>
-<p>This will show a link labeled “show hint”; when you click it, the
-content of the field will be displayed on the card. (If MyField is
-empty, nothing will be shown.)</p>
-<p>If you show the hint on the question and then reveal the answer, the
-hint will be hidden again. If you want to have the hint always revealed
-when the answer is shown, you will need to remove <code>{{FrontSide}}</code> from
-your back template and manually add the fields you wish to appear.</p>
-<p>It is not currently possible to use a hint field for audio — the audio
-will play regardless of whether you’ve clicked on the hint link.</p>
-<p>If you want to customize the appearance or behaviour, you’ll need to
-implement the hint field yourself. We can not provide any support for
-doing so, but the following code should get you started:</p>
+<p>این پیوندی با برچسب «show hint» نشان می‌دهد؛ وقتی رویش کلیک کنید، محتوای فیلد روی کارت نمایش داده می‌شود. (اگر MyField خالی باشد، چیزی نشان داده نمی‌شود.)</p>
+<p>اگر راهنما را در پرسش نشان دهید و سپس پاسخ را آشکار کنید، راهنما دوباره پنهان می‌شود. اگر می‌خواهید راهنما هنگام نمایش پاسخ همیشه آشکار باشد، باید <code>{{FrontSide}}</code> را از قالب پشت حذف کنید و فیلدهایی را که می‌خواهید ظاهر شوند به‌طور دستی بیفزایید.</p>
+<p>در حال حاضر استفاده از فیلد راهنما برای صدا ممکن نیست — صدا فارغ از اینکه روی پیوند راهنما کلیک کرده‌اید یا نه پخش می‌شود.</p>
+<p>اگر می‌خواهید ظاهر یا رفتار را سفارشی کنید، باید فیلد راهنما را خودتان پیاده کنید. ما نمی‌توانیم پشتیبانی‌ای برای این کار فراهم کنیم، اما کد زیر شما را شروع می‌کند:</p>
 <pre><code>{{#Back}}
 &lt;a class=hint href=&quot;#&quot;
 onclick=&quot;this.style.display='none';document.getElementById('hint4753594160').style.display='inline-block';return false;&quot;&gt;
 Show Back&lt;/a&gt;&lt;div id=&quot;hint4753594160&quot; class=hint style=&quot;display: none&quot;&gt;{{Back}}&lt;/div&gt;
 {{/Back}}
 </code></pre>
-<h2 id="dictionary-links"><a class="header" href="#dictionary-links">Dictionary Links</a></h2>
-<p>You can also use field replacement to create dictionary links. Imagine
-you’re studying a language and your favourite online dictionary allows
-you to search for text using a web URL like:</p>
+<h2 id="dictionary-links"><a class="header" href="#dictionary-links">پیوندهای واژه‌نامه</a></h2>
+<p>همچنین می‌توانید از جایگزینی فیلد برای ساختن پیوندهای واژه‌نامه‌ای استفاده کنید. تصور کنید زبانی می‌آموزید و واژه‌نامه برخط محبوبتان اجازه می‌دهد متنی را با نشانی وبی مانند این جست‌وجو کنید:</p>
 <pre><code>http://example.com/search?q=myword
 </code></pre>
-<p>You could add an automatic link by doing the following in your template:</p>
+<p>می‌توانید با انجام این کار در قالب‌تان، پیوندی خودکار بیفزایید:</p>
 <pre><code>{{Expression}}
 
 &lt;a href=&quot;http://example.com/search?q={{Expression}}&quot;&gt;check in dictionary&lt;/a&gt;
 </code></pre>
-<p>The template above would allow you to search for each note’s expression
-by clicking on the link while reviewing. There is a caveat however, so
-please see the next section.</p>
-<h2 id="html-stripping"><a class="header" href="#html-stripping">HTML Stripping</a></h2>
-<p>Like templates, fields are stored in HTML. In the dictionary link
-example above, if the expression contained the word &quot;myword&quot; without any
-formatting, then the HTML would be the same: &quot;myword&quot;. But when you
-include formatting in your fields, extra HTML is included. If &quot;myword&quot;
-was bolded for example, the actual HTML would be
-&quot;&lt;b&gt;myword&lt;/b&gt;&quot;.</p>
-<p>This can present a problem for things like dictionary links. In the
-above example, the dictionary link would end up being:</p>
+<p>قالب بالا به شما اجازه می‌دهد هنگام مرور، با کلیک روی پیوند، عبارت هر یادداشت را جست‌وجو کنید. اما نکته‌ای هست؛ پس لطفاً بخش بعدی را ببینید.</p>
+<h2 id="html-stripping"><a class="header" href="#html-stripping">حذف HTML</a></h2>
+<p>مانند قالب‌ها، فیلدها هم به HTML ذخیره می‌شوند. در مثال پیوند واژه‌نامه در بالا، اگر عبارت شامل واژه &quot;myword&quot; بدون هیچ قالب‌بندی بود، HTML همان &quot;myword&quot; می‌بود. اما وقتی در فیلدهایتان قالب‌بندی می‌گنجانید، HTML اضافه‌ای هم وارد می‌شود. مثلاً اگر &quot;myword&quot; درشت باشد، HTML واقعی
+&quot;&lt;b&gt;myword&lt;/b&gt;&quot; است.</p>
+<p>این می‌تواند برای چیزهایی مانند پیوندهای واژه‌نامه مشکل ایجاد کند. در مثال بالا، پیوند واژه‌نامه این‌طور می‌شد:</p>
 <pre><code>&lt;a href=&quot;http://example.com/search?q=&lt;b&gt;myword&lt;/b&gt;&quot;&gt;check in dictionary&lt;/a&gt;
 </code></pre>
-<p>The extra characters in the link would likely confuse the dictionary
-site, and you’re likely not to get any matches.</p>
-<p>To solve this, Anki provides the ability to strip formatting from fields
-when they are replaced. If you prefix a field name with text:, Anki will
-not include any formatting. So a dictionary link that worked even with
-formatted text would be:</p>
+<p>نویسه‌های اضافی در پیوند احتمالاً سایت واژه‌نامه را گیج می‌کند و محتمل است هیچ نتیجه‌ای نگیرید.</p>
+<p>برای حل این، آنکی امکان حذف قالب‌بندی از فیلدها هنگام جایگزینی‌شان را فراهم کرده است. اگر قبل از نام فیلد text: بگذارید، آنکی هیچ قالب‌بندی‌ای نمی‌گنجاند. پس پیوند واژه‌نامه‌ای که حتی با متن قالب‌بندی‌شده کار کند این است:</p>
 <pre><code>&lt;a href=&quot;http://example.com/search?q={{text:Expression}}&quot;&gt;check in dictionary&lt;/a&gt;
 </code></pre>
-<h2 id="right-to-left-text"><a class="header" href="#right-to-left-text">Right To Left Text</a></h2>
-<p>If you’re using a language that reads from right to left, you’ll need
-to adjust the template like so:</p>
+<h2 id="right-to-left-text"><a class="header" href="#right-to-left-text">متن راست‌به‌چپ</a></h2>
+<p>اگر از زبانی استفاده می‌کنید که از راست به چپ خوانده می‌شود، باید قالب را این‌طور تنظیم کنید:</p>
 <pre><code>&lt;div dir=rtl&gt;{{FieldThatHasRTLTextInIt}}&lt;/div&gt;
 </code></pre>
-<h2 id="ruby-characters"><a class="header" href="#ruby-characters">Ruby Characters</a></h2>
-<p>Some languages commonly use annotations above the text to display the
-pronunciation of characters. These annotations are known as
-<a href="https://en.wikipedia.org/wiki/Ruby_character">ruby characters</a>.
-In Japanese, these are known as <a href="https://en.wikipedia.org/wiki/Furigana">furigana</a>.</p>
-<p>In Anki, you can display ruby characters by using the following syntax:</p>
+<h2 id="ruby-characters"><a class="header" href="#ruby-characters">نویسه‌های روبی</a></h2>
+<p>بعضی زبان‌ها معمولاً از حاشیه‌نویسی بالای متن برای نمایش تلفظ نویسه‌ها استفاده می‌کنند. این حاشیه‌نویسی‌ها <a href="https://en.wikipedia.org/wiki/Ruby_character">نویسه‌های روبی</a> نامیده می‌شوند.
+در ژاپنی، این‌ها با نام <a href="https://en.wikipedia.org/wiki/Furigana">فوریگانا</a> شناخته می‌شوند.</p>
+<p>در آنکی می‌توانید نویسه‌های روبی را با این نحو نمایش دهید:</p>
 <pre><code>Text[Ruby]
 </code></pre>
-<p>Suppose the text above is written in MyField. By default, if you simply use
-<code>{{Myfield}}</code>, the field will be displayed as is. To properly position the
-ruby characters above the text, use the <code>furigana</code> filter in the templates
-like so:</p>
+<p>فرض کنید متن بالا در MyField نوشته شده است. به‌طور پیش‌فرض، اگر صرفاً <code>{{Myfield}}</code> را به‌کار ببرید، فیلد همان‌طور که هست نمایش داده می‌شود. برای جای‌گذاری درست نویسه‌های روبی بالای متن، در قالب‌ها از پالایشگر <code>furigana</code> استفاده کنید؛ مانند:</p>
 <pre><code>{{furigana:MyField}}
 </code></pre>
-<p>Here are some examples:</p>
+<p>چند مثال:</p>
 <!-- prettier-ignore -->
-<div class="table-wrapper"><table><thead><tr><th>Raw Text</th><th>Rendered Text</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>متن خام</th><th>متن نمایش‌داده‌شده</th></tr></thead><tbody>
 <tr><td><code>Text[Ruby]</code></td><td><ruby><rb>Text</rb><rt>Ruby</rt></ruby></td></tr>
 <tr><td><code>日本語[にほんご]</code></td><td><ruby><rb>日本語</rb><rt>にほんご</rt></ruby></td></tr>
 <tr><td><code>世[よ]の 中[なか]</code></td><td><ruby><rb>世</rb><rt>よ</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby></td></tr>
-<tr><td><code>世[よ]の中[なか]</code></td><td><ruby><rb>世</rb><rt>よ</rt></ruby><ruby><rb>の中</rb><rt>なか</rt></ruby> <em>(incorrect!)</em></td></tr>
+<tr><td><code>世[よ]の中[なか]</code></td><td><ruby><rb>世</rb><rt>よ</rt></ruby><ruby><rb>の中</rb><rt>なか</rt></ruby> <em>(نادرست!)</em></td></tr>
 </tbody></table>
 </div>
-<p>Notice how the third example has a space before the 中 character. This is
-necessary to specify that the ruby text applies only to that character.
-If there was no space, the ruby text will be misplaced above the の character,
-as shown in the fourth example.</p>
-<h3 id="additional-ruby-character-filters"><a class="header" href="#additional-ruby-character-filters">Additional Ruby Character Filters</a></h3>
-<p>In addition to the <code>furigana</code> filter, you can also only show certain parts
-of the ruby text, with the <code>kana</code> and <code>kanji</code> filters. The <code>kana</code> filter will
-only show the ruby text, while the <code>kanji</code> filter removes the ruby text
-entirely.</p>
+<p>دقت کنید چگونه مثال سوم یک فاصله پیش از نویسه 中 دارد. این برای مشخص‌کردن اینکه متن روبی فقط به همان نویسه مربوط است ضروری است.
+اگر فاصله نبود، متن روبی همان‌طور که در مثال چهارم نشان داده شده، بالای نویسه の به‌اشتباه قرار می‌گرفت.</p>
+<h3 id="additional-ruby-character-filters"><a class="header" href="#additional-ruby-character-filters">پالایشگرهای اضافی نویسه روبی</a></h3>
+<p>علاوه بر پالایشگر <code>furigana</code>، می‌توانید فقط بخش‌های معینی از متن روبی را هم با پالایشگرهای <code>kana</code> و <code>kanji</code> نشان دهید. پالایشگر <code>kana</code> فقط متن روبی را نشان می‌دهد، در حالی که پالایشگر <code>kanji</code> متن روبی را به‌طور کامل حذف می‌کند.</p>
 <!-- prettier-ignore -->
-<div class="table-wrapper"><table><thead><tr><th>Raw Text</th><th>Field Filter</th><th>Rendered Text</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>متن خام</th><th>پالایشگر فیلد</th><th>متن نمایش‌داده‌شده</th></tr></thead><tbody>
 <tr><td><code>日本語[にほんご]</code></td><td><code>{{furigana:MyField}}</code></td><td><ruby><rb>日本語</rb><rt>にほんご</rt></ruby></td></tr>
 <tr><td><code>日本語[にほんご]</code></td><td><code>{{kana:MyField}}</code></td><td>にほんご</td></tr>
 <tr><td><code>日本語[にほんご]</code></td><td><code>{{kanji:MyField}}</code></td><td>日本語</td></tr>
 </tbody></table>
 </div>
-<p>These names are, again, borrowed from Japanese.
-The term <a href="https://en.wikipedia.org/wiki/Kana">kana</a> represents the phonetic
-system used to describe how words are pronounced, whereas the term
-<a href="https://en.wikipedia.org/wiki/Kanji">kanji</a> represents its Chinese characters.</p>
-<h2 id="media--latex"><a class="header" href="#media--latex">Media &amp; LaTeX</a></h2>
-<p>Anki does not scan templates for media references, because it is slow to
-do so. This has implications for including media on the template.</p>
-<h3 id="static-soundsimages"><a class="header" href="#static-soundsimages">Static Sounds/Images</a></h3>
-<p>If you wish to include images or sounds on your cards that are the same
-for every card (e.g. a company logo at the top of each card):</p>
+<p>این نام‌ها نیز از ژاپنی وام گرفته شده‌اند.
+اصطلاح <a href="https://en.wikipedia.org/wiki/Kana">کانا</a> نظام آوایی توصیف تلفظ واژه‌ها را نشان می‌دهد، در حالی که اصطلاح <a href="https://en.wikipedia.org/wiki/Kanji">کانجی</a> نویسه‌های چینی آن را.</p>
+<h2 id="media--latex"><a class="header" href="#media--latex">رسانه و LaTeX</a></h2>
+<p>آنکی قالب‌ها را برای ارجاع‌های رسانه‌ای پویش نمی‌کند، چون این کار کُند است. این برای گنجاندن رسانه در قالب پیامد دارد.</p>
+<h3 id="static-soundsimages"><a class="header" href="#static-soundsimages">صداها/تصاویر ایستا</a></h3>
+<p>اگر می‌خواهید تصاویر یا صداهایی روی کارت‌هایتان بگنجانید که برای هر کارت یکسان‌اند (مثلاً نشان شرکت در بالای هر کارت):</p>
 <ol>
 <li>
-<p>Rename the file so it starts with an underscore, e.g &quot;_logo.jpg&quot;.
-The underscore tells Anki that the file is used by the template and
-it should be exported when sharing the deck.</p>
+<p>نام پرونده را طوری تغییر دهید که با خط تیره زیرین (underscore) شروع شود؛ مانند &quot;_logo.jpg&quot;.
+خط تیره زیرین به آنکی می‌گوید پرونده توسط قالب استفاده می‌شود و هنگام اشتراک‌گذاری دسته باید برون‌بری شود.</p>
 </li>
 <li>
-<p>Add a reference to the media on your front or back template, like:</p>
+<p>ارجاعی به رسانه در قالب روی یا پشتتان بیفزایید؛ مانند:</p>
 </li>
 </ol>
 <!-- -->
 <pre><code>&lt;img src=&quot;_logo.jpg&quot;&gt;
 </code></pre>
-<h3 id="field-references"><a class="header" href="#field-references">Field References</a></h3>
-<p>Media references to fields are not supported. They may or may not display
-during review, and will not work when checking for unused media,
-importing/exporting, and so on. Examples that won’t work:</p>
+<h3 id="field-references"><a class="header" href="#field-references">ارجاع‌های فیلد</a></h3>
+<p>ارجاع‌های رسانه‌ای به فیلدها پشتیبانی نمی‌شوند. ممکن است هنگام مرور نمایش داده شوند یا نشوند، و هنگام بررسی رسانه‌های بلااستفاده، درون‌ریزی/برون‌بری و غیره کار نخواهند کرد. مثال‌هایی که کار نمی‌کنند:</p>
 <pre><code>&lt;img src=&quot;{{Expression}}.jpg&quot;&gt;
 
 [sound:{{Word}}]
 
 [latex]{{Field 1}}[/latex]
 </code></pre>
-<p>Instead, you should include the media references in the field.
-See the <a href="../importing/text-files.html#importing-media">importing section</a> for more information.</p>
-<h2 id="checking-your-answer"><a class="header" href="#checking-your-answer">Checking Your Answer</a></h2>
-<p>You can watch <a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">a video about this feature</a> on
-YouTube.</p>
-<p>The easiest way to check your answer is to click &quot;Basic&quot; at the top
-left of the card adding screen, and select &quot;Basic (type in the answer)&quot;.</p>
-<p>If you have downloaded a shared deck and would like to type in the answer
-with it, you can modify its card template. If it has a template like:</p>
+<p>در عوض، باید ارجاع‌های رسانه‌ای را در فیلد بگنجانید.
+برای اطلاعات بیشتر، <a href="../importing/text-files.html#importing-media">بخش درون‌ریزی</a> را ببینید.</p>
+<h2 id="checking-your-answer"><a class="header" href="#checking-your-answer">بررسی پاسخ شما</a></h2>
+<p>می‌توانید <a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">ویدیویی درباره این قابلیت</a> را در یوتیوب ببینید.</p>
+<p>آسان‌ترین راه بررسی پاسخ‌تان، کلیک روی &quot;Basic&quot; در بالا-چپ صفحه افزودن کارت و انتخاب &quot;Basic (type in the answer)&quot; است.</p>
+<p>اگر دسته اشتراکی دانلود کرده‌اید و می‌خواهید با آن پاسخ را تایپ کنید، می‌توانید قالب کارتش را تغییر دهید. اگر قالبی مانند این دارد:</p>
 <pre><code>{{Native Word}}
 
 {{FrontSide}}
@@ -492,58 +411,38 @@ with it, you can modify its card template. If it has a template like:</p>
 
 {{Foreign Word}}
 </code></pre>
-<p>To type in the foreign word and check if you are correct, you need to
-edit your front template so that it looks like this:</p>
+<p>برای تایپ‌کردن واژه خارجی و بررسی درستی‌تان، باید قالبِ روی‌تان را این‌طور ویرایش کنید:</p>
 <pre><code>{{Native Word}}
 {{type:Foreign Word}}
 </code></pre>
-<p>Here, we have added <code>type:</code> in front of the field we want to
-compare. Since FrontSide is on the back of the card, the type answer box
-will appear on the back as well.</p>
-<p>When reviewing, Anki will display a text box where you can type in the
-answer, and upon hitting <kbd>Enter</kbd> or showing the answer, Anki will show you
-which parts you got right and which parts you got wrong. The text box’s
-font size will be the size you configured for that field (via the
-“Fields” button when editing).</p>
-<p>Note that the type answer boxes don't appear in the preview dialog or in AnkiWeb.</p>
-<p>This feature does not change how the cards are answered, so it’s still
-up to you to decide how well you remembered or not.</p>
-<p>Only one typing comparison can be used on a card. If you add the above
-text multiple times, it will not work. It also only supports a single
-line, so it is not useful for comparing against a field that is
-comprised of multiple lines.</p>
-<p>Anki uses a monospaced font for the answer comparison so that the
-“provided” and “correct” sections line up. If you wish to override the
-font for the answer comparison, you can put the following at the bottom
-of your styling section:</p>
+<p>اینجا <code>type:</code> را پیش از فیلدی که می‌خواهیم مقایسه شود افزوده‌ایم. چون FrontSide در پشت کارت است، جعبه پاسخ تایپی هم در پشت ظاهر می‌شود.</p>
+<p>هنگام مرور، آنکی جعبه متنی نشان می‌دهد که می‌توانید پاسخ را در آن تایپ کنید و پس از زدن <kbd>Enter</kbd> یا نمایش پاسخ، آنکی نشان می‌دهد کدام بخش‌ها را درست و کدام‌ها را نادرست گفتید. اندازه قلم جعبه متنی همان اندازه‌ای است که برای آن فیلد پیکربندی کرده‌اید (از طریق دکمه &quot;Fields&quot; هنگام ویرایش).</p>
+<p>توجه کنید جعبه‌های پاسخ تایپی در گفت‌وگوی پیش‌نمایش و در AnkiWeb ظاهر نمی‌شوند.</p>
+<p>این قابلیت شیوه پاسخ‌دادن به کارت‌ها را تغییر نمی‌دهد؛ پس همچنان به شماست که تصمیم بگیرید چقدر به‌خاطر سپرده‌اید یا نه.</p>
+<p>روی هر کارت فقط یک مقایسه تایپی می‌توان داشت. اگر متن بالا را چند بار بیفزایید، کار نخواهد کرد. همچنین فقط از یک خط پشتیبانی می‌کند؛ پس برای مقایسه با فیلدی که از چند خط تشکیل شده سودمند نیست.</p>
+<p>آنکی برای مقایسه پاسخ از قلم هم‌عرض استفاده می‌کند تا بخش‌های «داده‌شده» و «درست» ردیف شوند. اگر می‌خواهید قلم مقایسه پاسخ را تغییر دهید، می‌توانید این را در پایین بخش استایل‌تان بگذارید:</p>
 <pre><code>code#typeans { font-family: &quot;myfontname&quot;; }
 </code></pre>
-<p>Which will affect the following HTML for the answer comparison:</p>
+<p>که بر HTML زیر در مقایسه پاسخ اثر می‌گذارد:</p>
 <pre><code>&lt;code id=typeans&gt;...&lt;/code&gt;
 </code></pre>
-<p>Advanced users can override the default type-answer colors with the css
-classes &quot;typeGood&quot;, &quot;typeBad&quot; and &quot;typeMissed&quot;. AnkiMobile supports
-&quot;typeGood&quot; and &quot;typeBad&quot;, but not &quot;typeMissed&quot;.</p>
-<p>If you wish to override the size of the typing box and don’t want to
-change the font in the Fields dialog, you can override the default
-inline style using <code>!important</code>, like so:</p>
+<p>کاربران پیشرفته می‌توانند رنگ‌های پیش‌فرض پاسخ تایپی را با کلاس‌های css با نام‌های &quot;typeGood&quot;، &quot;typeBad&quot; و &quot;typeMissed&quot; تغییر دهند. AnkiMobile از
+&quot;typeGood&quot; و &quot;typeBad&quot; پشتیبانی می‌کند، اما نه &quot;typeMissed&quot; را.</p>
+<p>اگر می‌خواهید اندازه جعبه تایپ را تغییر دهید و نمی‌خواهید قلم را در گفت‌وگوی Fields عوض کنید، می‌توانید سبک درون‌خطی پیش‌فرض را با <code>!important</code> باطل کنید؛ مانند:</p>
 <pre><code>#typeans { font-size: 50px !important; }
 </code></pre>
-<p>It is also possible to type in the answer for cloze deletion cards. To
-do this, add <code>{{type:cloze:Text}}</code> to both the front and back
-template, so the back looks something like this:</p>
+<p>همچنین ممکن است پاسخ را در کارت‌های حذف اطلاعاتی تایپ کنید. برای این کار، <code>{{type:cloze:Text}}</code> را به قالبِ روی و پشت هر دو بیفزایید تا پشت چیزی شبیه این شود:</p>
 <pre><code>{{cloze:Text}}
 {{type:cloze:Text}}
 {{Extra}}
 </code></pre>
-<p>If there are multiple sections elided, you can separate the answers in
-the text box with a comma.</p>
-<h3 id="ignoring-diacritics"><a class="header" href="#ignoring-diacritics">Ignoring Diacritics</a></h3>
-<p>If you don't want Anki to compare accents on characters in your typed input with the correct answer, you can do so by using <code>type:nc</code> in your fields.</p>
+<p>اگر چند بخش حذف شده، می‌توانید پاسخ‌ها را در جعبه متنی با کاما جدا کنید.</p>
+<h3 id="ignoring-diacritics"><a class="header" href="#ignoring-diacritics">نادیده‌گرفتن اعراب</a></h3>
+<p>اگر نمی‌خواهید آنکی اعراب نویسه‌های ورودی تایپ‌شده‌تان را با پاسخ درست مقایسه کند، می‌توانید با استفاده از <code>type:nc</code> در فیلدهایتان این کار را انجام دهید.</p>
 <pre><code>{{type:nc:Front}}
 </code></pre>
-<p>This makes sure a difference in accents isn't marked as incorrect by Anki. 
-For example, <code>بطيخ</code> would be treated the same as <code>بَطِّيخ</code> or <code>elite</code> would be treated same as <code>élite</code>.</p>
+<p>این تضمین می‌کند تفاوت در اعراب توسط آنکی نادرست علامت نخورد.
+مثلاً <code>بطيخ</code> مانند <code>بَطِّيخ</code> و <code>elite</code> مانند <code>élite</code> رفتار می‌شود.</p>
 
                     </main>
 

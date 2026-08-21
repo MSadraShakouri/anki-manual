@@ -174,67 +174,49 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="styling--html"><a class="header" href="#styling--html">Styling &amp; HTML</a></h1>
+                        <h1 id="styling--html"><a class="header" href="#styling--html">استایل و HTML</a></h1>
 <ul>
-<li><a href="#card-styling">Card Styling</a></li>
-<li><a href="#image-resizing">Image Resizing</a></li>
-<li><a href="#field-styling">Field Styling</a></li>
-<li><a href="#audio-replay-buttons">Audio Replay Buttons</a></li>
-<li><a href="#text-direction">Text Direction</a></li>
-<li><a href="#displaying-code-snippets">Displaying Code Snippets</a>
+<li><a href="#card-styling">استایل کارت</a></li>
+<li><a href="#image-resizing">تغییر اندازه تصویر</a></li>
+<li><a href="#field-styling">استایل فیلد</a></li>
+<li><a href="#audio-replay-buttons">دکمه‌های پخش دوباره صدا</a></li>
+<li><a href="#text-direction">جهت متن</a></li>
+<li><a href="#displaying-code-snippets">نمایش قطعه‌های کد</a>
 <ul>
-<li><a href="#inline-code">Inline code</a></li>
-<li><a href="#code-blocks">Code blocks</a></li>
+<li><a href="#inline-code">کد درون‌خطی</a></li>
+<li><a href="#code-blocks">بلوک‌های کد</a></li>
 </ul>
 </li>
-<li><a href="#other-html">Other HTML</a></li>
-<li><a href="#browser-appearance">Browser Appearance</a></li>
-<li><a href="#platform-specific-css">Platform-Specific CSS</a></li>
-<li><a href="#installing-fonts">Installing Fonts</a>
+<li><a href="#other-html">HTML دیگر</a></li>
+<li><a href="#browser-appearance">ظاهر در مرورگر</a></li>
+<li><a href="#platform-specific-css">CSS مخصوص پلتفرم</a></li>
+<li><a href="#installing-fonts">نصب قلم‌ها</a>
 <ul>
-<li><a href="#add-font-to-media-folder">Add Font to Media Folder</a></li>
-<li><a href="#update-template-to-use-that-font">Update Template to Use That Font</a></li>
+<li><a href="#add-font-to-media-folder">افزودن قلم به پوشه رسانه</a></li>
+<li><a href="#update-template-to-use-that-font">به‌روزرسانی قالب برای استفاده از آن قلم</a></li>
 </ul>
 </li>
-<li><a href="#night-mode">Night Mode</a></li>
-<li><a href="#fading-and-scrolling">Fading and Scrolling</a></li>
-<li><a href="#javascript">Javascript</a></li>
+<li><a href="#night-mode">حالت شب</a></li>
+<li><a href="#fading-and-scrolling">محو شدن و پیمایش</a></li>
+<li><a href="#javascript">جاوااسکریپت</a></li>
 </ul>
-<h2 id="card-styling"><a class="header" href="#card-styling">Card Styling</a></h2>
-<p>You can watch <a href="http://www.youtube.com/watch?v=F1j1Zx0mXME&amp;yt:cc=on">a video about styling cards</a> on YouTube.
-The video shows Anki 2.0’s interface, but the concepts are largely the
-same.</p>
-<p>The styling section of the Cards screen can be accessed by clicking the
-&quot;Styling&quot; button next to the &quot;Back Template&quot; button. In that section,
-you can change the background color of the card, the default font, the
-text alignment, and so on.</p>
-<p>The standard options available to you are:</p>
+<h2 id="card-styling"><a class="header" href="#card-styling">استایل کارت</a></h2>
+<p>می‌توانید <a href="http://www.youtube.com/watch?v=F1j1Zx0mXME&amp;yt:cc=on">ویدیویی درباره استایل‌دادن به کارت‌ها</a> را در یوتیوب ببینید.
+ویدیو رابط آنکی 2.0 را نشان می‌دهد، اما مفاهیم عمدتاً همان‌ها هستند.</p>
+<p>به بخش استایل صفحه Cards می‌توان با کلیک روی دکمه &quot;Styling&quot; کنار دکمه &quot;Back Template&quot; دسترسی پیدا کرد. در آن بخش می‌توانید رنگ پس‌زمینه کارت، قلم پیش‌فرض، تراز متن و غیره را تغییر دهید.</p>
+<p>گزینه‌های استاندارد در دسترس شما این‌ها هستند:</p>
 <p><strong>font-family</strong><br />
-The name of the font to use on the card. If your font has spaces in it
-like &quot;MS Unicode&quot;, then you need to surround the font name in double
-quotes, like <code>font-family: &quot;MS Unicode&quot;;</code>. It is also possible to use multiple fonts on
-one card; for information on that, see below.</p>
+نام قلمی که روی کارت استفاده می‌شود. اگر قلم‌تان فاصله دارد، مانند &quot;MS Unicode&quot;، باید نام قلم را در گیومه دوتایی بگذارید؛ مانند <code>font-family: &quot;MS Unicode&quot;;</code>. همچنین ممکن است از چند قلم روی یک کارت استفاده کنید؛ برای اطلاعات درباره آن، پایین را ببینید.</p>
 <p><strong>font-size</strong><br />
-The size of the font in pixels. When changing it, make sure you leave px
-at the end.</p>
+اندازه قلم بر حسب پیکسل. هنگام تغییرش، مطمئن شوید px را در انتها نگه می‌دارید.</p>
 <p><strong>text-align</strong><br />
-Whether the text should be aligned in the center, left, or right.</p>
+اینکه متن باید در وسط، چپ یا راست تراز شود.</p>
 <p><strong>color</strong><br />
-The color of the text. Simple color names like &quot;blue&quot;, &quot;lightyellow&quot;,
-and so on will work, or you can use HTML color codes to select arbitrary
-colors. See <a href="https://htmlcolorcodes.com/">this webpage</a> for more
-information.</p>
+رنگ متن. نام‌های رنگ ساده مانند &quot;blue&quot;، &quot;lightyellow&quot; و غیره کار می‌کنند، یا می‌توانید از کدهای رنگ HTML برای انتخاب رنگ‌های دلخواه استفاده کنید. برای اطلاعات بیشتر <a href="https://htmlcolorcodes.com/">این صفحه وب</a> را ببینید.</p>
 <p><strong>background-color</strong><br />
-The color of the card background.</p>
-<p>Any CSS can be placed in the styling section – advanced users may wish
-to do things like add a background image or gradient, for example. If
-you’re wondering how to get some particular formatting, search
-the web for information about how to do it in CSS, as there is a great
-deal of documentation available.</p>
-<p>The styling is shared between all cards, which means that when you make
-an adjustment it will affect all cards for that note type. It is also
-possible to specify card-specific styling, however. The following
-example will use a yellow background on all cards except the first one:</p>
+رنگ پس‌زمینه کارت.</p>
+<p>هر CSS می‌تواند در بخش استایل قرار گیرد — کاربران پیشرفته شاید بخواهند کارهایی مانند افزودن تصویر پس‌زمینه یا گرادیان انجام دهند. اگر می‌خواهید قالب‌بندی خاصی به دست آورید، در وب درباره چگونگی انجامش در CSS جست‌وجو کنید، چون مستندات فراوانی موجود است.</p>
+<p>استایل میان همه کارت‌ها مشترک است؛ یعنی وقتی تنظیمی می‌دهید بر همه کارت‌های آن نوع یادداشت اثر می‌گذارد. با این حال، مشخص‌کردن استایل مخصوص هر کارت هم ممکن است. مثال زیر روی همه کارت‌ها به‌جز کارت اول، پس‌زمینه زرد می‌گذارد:</p>
 <pre><code class="language-css">.card {
   background-color: yellow;
 }
@@ -242,71 +224,52 @@ example will use a yellow background on all cards except the first one:</p>
   background-color: blue;
 }
 </code></pre>
-<h2 id="image-resizing"><a class="header" href="#image-resizing">Image Resizing</a></h2>
-<p>Anki shrinks images to fit the screen by default. You can change this by adding
-the following to the bottom of your styling section (outside of the default
-<code>.card { ... }</code>):</p>
+<h2 id="image-resizing"><a class="header" href="#image-resizing">تغییر اندازه تصویر</a></h2>
+<p>آنکی به‌طور پیش‌فرض تصاویر را برای جا شدن در صفحه کوچک می‌کند. می‌توانید این را با افزودن کد زیر به پایین بخش استایل‌تان (بیرون از <code>.card { ... }</code> پیش‌فرض) تغییر دهید:</p>
 <pre><code class="language-css">img {
   max-width: none;
   max-height: none;
 }
 </code></pre>
-<p>AnkiDroid sometimes has <a href="https://github.com/ankidroid/Anki-Android/issues/3612">trouble scaling images to fit the
-screen</a>. Setting maximum
-image dimensions using css should fix this, but seems to be ignored as of
-AnkiDroid 2.9. A fix is to append <code>!important</code> to each style directive, for
-example:</p>
+<p>AnkiDroid گاهی در <a href="https://github.com/ankidroid/Anki-Android/issues/3612">مقیاس‌کردن تصاویر برای جا شدن در صفحه</a> مشکل دارد. تنظیم ابعاد بیشینه تصویر با css باید این را درست کند، اما از AnkiDroid 2.9 به بعد به‌نظر نادیده گرفته می‌شود. راه‌حل، الصاق <code>!important</code> به هر دستور استایل است؛ مثلاً:</p>
 <pre><code class="language-css">img {
   max-width: 300px !important;
   max-height: 300px !important;
 }
 </code></pre>
-<p>If you try to change the style for images and find that the star that
-appears on marked cards is affected (for instance, it becomes way too
-large), you can target it with the following:</p>
+<p>اگر سعی کردید استایل تصاویر را تغییر دهید و دیدید ستاره‌ای که روی کارت‌های نشان‌گذاری‌شده ظاهر می‌شود تحت تأثیر قرار می‌گیرد (مثلاً خیلی بزرگ می‌شود)، می‌توانید با این کار آن را هدف بگیرید:</p>
 <pre><code class="language-css">img#star {
   ...;
 }
 </code></pre>
-<p>You can explore the styling of cards interactively by using Chrome:</p>
+<p>می‌توانید با کروم، استایل کارت‌ها را به‌صورت تعاملی بررسی کنید:</p>
 <p><a href="https://addon-docs.ankiweb.net/porting2.0.html#webview-changes">https://addon-docs.ankiweb.net/porting2.0.html#webview-changes</a></p>
-<p>Anki 2.1.50+ supports image resizing within the editor natively.</p>
-<h2 id="field-styling"><a class="header" href="#field-styling">Field Styling</a></h2>
-<p>The default styling applies to the whole card. You can also make certain
-fields or part of the card use a different font, color, and so on. This
-is particularly important when studying foreign languages, as Anki will
-sometimes be unable to correctly display characters unless an
-appropriate font has been chosen.</p>
-<p>Say you have an “Expression” field, and you want to give it the macOS Thai
-font “Ayuthaya”. Imagine your template already reads:</p>
+<p>آنکی 2.1.50+ تغییر اندازه تصویر را در خود ویرایشگر به‌طور بومی پشتیبانی می‌کند.</p>
+<h2 id="field-styling"><a class="header" href="#field-styling">استایل فیلد</a></h2>
+<p>استایل پیش‌فرض بر کل کارت اعمال می‌شود. همچنین می‌توانید فیلدها یا بخش‌های معینی از کارت را وادار کنید از قلم، رنگ و غیره متفاوتی استفاده کنند. این به‌ویژه هنگام یادگیری زبان‌های خارجی مهم است، چون آنکی گاهی بدون انتخاب قلم مناسب نمی‌تواند نویسه‌ها را درست نمایش دهد.</p>
+<p>فرض کنید فیلد &quot;Expression&quot; دارید و می‌خواهید قلم تایلندیِ macOS با نام &quot;Ayuthaya&quot; را به آن بدهید. تصور کنید قالب‌تان هم‌اکنون این است:</p>
 <pre><code>What is {{Expression}}?
 
 {{Notes}}
 </code></pre>
-<p>What we need to do is wrap the text we want to style in some HTML. We
-will put the following in front of the text:</p>
+<p>کاری که باید بکنیم پیچیدن متنی که می‌خواهیم استایل بگیرد در HTML است. این را پیش از متن می‌گذاریم:</p>
 <pre><code>&lt;div class=mystyle1&gt;
 </code></pre>
-<p>And the following behind it:</p>
+<p>و این را پس از آن:</p>
 <pre><code>&lt;/div&gt;
 </code></pre>
-<p>By wrapping the text like the above, we tell Anki to style the wrapped
-text with a custom style called “mystyle1”, which we will create later.</p>
-<p>Thus if we wanted the entire “What is …​?” expression to use the Thai
-font, we would use:</p>
+<p>با پیچیدن متن مانند بالا، به آنکی می‌گوییم متن پیچیده‌شده را با استایلی سفارشی به نام &quot;mystyle1&quot; استایل بدهد که بعداً می‌سازیم.</p>
+<p>پس اگر بخواهیم کل عبارت «What is …​?» از قلم تایلندی استفاده کند، از این استفاده می‌کنیم:</p>
 <pre><code>&lt;div class=mystyle1&gt;What is {{Expression}}?&lt;/div&gt;
 
 {{Notes}}
 </code></pre>
-<p>And if we wanted only the expression field itself to use the Thai font,
-we’d use:</p>
+<p>و اگر فقط خود فیلد عبارت از قلم تایلندی استفاده کند، از این:</p>
 <pre><code>What is &lt;div class=mystyle1&gt;{{Expression}}&lt;/div&gt;?
 
 {{Notes}}
 </code></pre>
-<p>After we’ve edited the template, we now need to move to the Styling
-section between the templates. Before editing it, it should look
-something like:</p>
+<p>پس از ویرایش قالب، اکنون باید به بخش Styling میان قالب‌ها برویم. پیش از ویرایش، باید چیزی شبیه این باشد:</p>
 <pre><code class="language-css">.card {
   font-family: arial;
   font-size: 20px;
@@ -315,7 +278,7 @@ something like:</p>
   background-color: white;
 }
 </code></pre>
-<p>Add your new style to the bottom, so it looks like:</p>
+<p>استایل جدیدتان را به پایین بیفزایید تا این‌طور شود:</p>
 <pre><code class="language-css">.card {
   font-family: arial;
   font-size: 20px;
@@ -328,24 +291,17 @@ something like:</p>
   font-family: ayuthaya;
 }
 </code></pre>
-<p>You can include any styling you want in the style. If you wanted to
-increase the font size too, you’d change the mystyle1 section to look
-like:</p>
+<p>می‌توانید هر استایلی را که می‌خواهید در آن بگنجانید. اگر می‌خواستید اندازه قلم را هم بزرگ کنید، بخش mystyle1 را این‌طور تغییر می‌دادید:</p>
 <pre><code class="language-css">.mystyle1 {
   font-family: ayuthaya;
   font-size: 30px;
 }
 </code></pre>
-<p>It’s also possible to bundle custom fonts with your deck, so you don’t
-need to install them on your computer or mobile device. See the
-<a href="#installing-fonts">installing fonts</a> section for more info.</p>
-<h2 id="audio-replay-buttons"><a class="header" href="#audio-replay-buttons">Audio Replay Buttons</a></h2>
-<p>When audio or text to speech is included on your cards, Anki will show
-buttons you can click on to replay the audio.</p>
-<p>If you prefer not to see the buttons, you can hide them in the
-preferences screen.</p>
-<p>You can customize their appearance in your card styling, for example, to
-make them smaller and colored, you could use the following:</p>
+<p>همچنین ممکن است قلم‌های سفارشی را همراه دسته‌تان بسته‌بندی کنید تا لازم نباشد آن‌ها را روی رایانه یا دستگاه موبایلتان نصب کنید. برای اطلاعات بیشتر، بخش <a href="#installing-fonts">نصب قلم‌ها</a> را ببینید.</p>
+<h2 id="audio-replay-buttons"><a class="header" href="#audio-replay-buttons">دکمه‌های پخش دوباره صدا</a></h2>
+<p>وقتی صدا یا متن به گفتار روی کارت‌هایتان گنجانده شده باشد، آنکی دکمه‌هایی نشان می‌دهد که می‌توانید برای پخش دوباره صدا رویشان کلیک کنید.</p>
+<p>اگر ترجیح می‌دهید دکمه‌ها را نبینید، می‌توانید در صفحه تنظیمات پنهانشان کنید.</p>
+<p>می‌توانید ظاهرشان را در استایل کارت سفارشی کنید؛ مثلاً برای کوچک‌تر و رنگی‌کردنشان می‌توانید از این استفاده کنید:</p>
 <pre><code class="language-css">.replay-button svg {
   width: 20px;
   height: 20px;
@@ -358,56 +314,38 @@ make them smaller and colored, you could use the following:</p>
   fill: green;
 }
 </code></pre>
-<h2 id="text-direction"><a class="header" href="#text-direction">Text Direction</a></h2>
-<p>If you use a language that is written right-to-left, such as Arabic or Hebrew,
-you can add the CSS <code>direction</code> property to the .card section for correct display during review:</p>
+<h2 id="text-direction"><a class="header" href="#text-direction">جهت متن</a></h2>
+<p>اگر از زبانی استفاده می‌کنید که راست‌به‌چپ نوشته می‌شود — مانند عربی یا عبری — می‌توانید خاصیت CSS <code>direction</code> را برای نمایش درست هنگام مرور به بخش .card بیفزایید:</p>
 <pre><code class="language-css">.card {
   direction: rtl;
 }
 </code></pre>
-<p>This will change the direction of the entire card. You can change the direction
-of only certain fields by wrapping their references in some HTML:</p>
+<p>این جهت کل کارت را تغییر می‌دهد. می‌توانید جهت فقط فیلدهای معین را با پیچیدن ارجاع‌هایشان در HTML تغییر دهید:</p>
 <pre><code>&lt;div dir=&quot;rtl&quot;&gt;{{Front}}&lt;/div&gt;
 </code></pre>
-<p>To change the direction of fields in the editor, see
-the <a href="../editing.html#customizing-fields">editing</a> section.</p>
-<h2 id="displaying-code-snippets"><a class="header" href="#displaying-code-snippets">Displaying Code Snippets</a></h2>
-<p>If you want to include code in your Anki cards, you can use HTML tags to format
-text as code. For that, you need to open the
-<a href="../editing.html#editing-features">HTML view</a>.</p>
-<h3 id="inline-code"><a class="header" href="#inline-code">Inline code</a></h3>
-<p>Wrap your text with the <code>&lt;code&gt;</code> tag:</p>
+<p>برای تغییر جهت فیلدها در ویرایشگر، بخش <a href="../editing.html#customizing-fields">ویرایش</a> را ببینید.</p>
+<h2 id="displaying-code-snippets"><a class="header" href="#displaying-code-snippets">نمایش قطعه‌های کد</a></h2>
+<p>اگر می‌خواهید در کارت‌های آنکی‌تان کد بگنجانید، می‌توانید از برچسب‌های HTML برای قالب‌بندی متن به‌عنوان کد استفاده کنید. برای آن، باید <a href="../editing.html#editing-features">نمای HTML</a> را باز کنید.</p>
+<h3 id="inline-code"><a class="header" href="#inline-code">کد درون‌خطی</a></h3>
+<p>متن‌تان را با برچسب <code>&lt;code&gt;</code> بپیچید:</p>
 <pre><code class="language-html">&lt;code&gt;console.log(&quot;Hello World!&quot;);&lt;/code&gt;
 </code></pre>
-<h3 id="code-blocks"><a class="header" href="#code-blocks">Code blocks</a></h3>
-<p>Use <code>&lt;pre&gt;&lt;code&gt;</code> for multi-line code:</p>
+<h3 id="code-blocks"><a class="header" href="#code-blocks">بلوک‌های کد</a></h3>
+<p>برای کد چندخطی از <code>&lt;pre&gt;&lt;code&gt;</code> استفاده کنید:</p>
 <pre><code class="language-html">&lt;pre&gt;&lt;code&gt;
 function square(number) {
   return number * number;
 };
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
-<h2 id="other-html"><a class="header" href="#other-html">Other HTML</a></h2>
-<p>Your templates can contain arbitrary HTML, which means that all the
-layout possibilities used on internet web pages can also be used on your
-cards. Things like tables, lists, images, links to external pages and so
-on are all supported. With tables for example, you could change the
-layout so that the front and back of a card appear on the left and right
-instead of the top and bottom.</p>
-<p>Covering all of HTML’s features is outside the scope of this manual, but
-there are plenty of good introductory guides to HTML available on the
-web if you’d like to learn more.</p>
-<h2 id="browser-appearance"><a class="header" href="#browser-appearance">Browser Appearance</a></h2>
-<p>If your card templates are complex, it may be difficult to read the
-question and answer columns (called &quot;Front&quot; and &quot;Back&quot;) in the <a href="../browsing.html#cardnote-table">card list</a>. The &quot;browser appearance&quot; option allows you to define a
-custom template to be used only in the browser, so you can include only
-the important fields and change the order if you desire. The syntax is
-the same as in standard card templates.</p>
-<p>When using this option, if the text in the question column is repeated at the beginning of the answer column, Anki will display the text only in the question column. For example, if the question column text is &quot;People in Ladakh speak&quot;, and the answer is &quot;People in Ladakh speak Ladakhi&quot;, the answer column will only display &quot;Ladakhi&quot;, omitting the rest.</p>
-<h2 id="platform-specific-css"><a class="header" href="#platform-specific-css">Platform-Specific CSS</a></h2>
-<p>Anki defines some special CSS classes that allow you to define different
-styling for different platforms. The example below shows how to vary the
-font depending on where you’re reviewing:</p>
+<h2 id="other-html"><a class="header" href="#other-html">HTML دیگر</a></h2>
+<p>قالب‌های شما می‌توانند HTML دلخواه در بر داشته باشند؛ یعنی همه امکانات چیدمانی که در صفحات وب اینترنت استفاده می‌شوند، روی کارت‌هایتان هم قابل استفاده‌اند. چیزهایی مانند جدول‌ها، فهرست‌ها، تصاویر، پیوندها به صفحات بیرونی و غیره همگی پشتیبانی می‌شوند. مثلاً با جدول‌ها می‌توانید چیدمان را طوری تغییر دهید که روی و پشت کارت به‌جای بالا و پایین، در چپ و راست ظاهر شوند.</p>
+<p>پوشش همه امکانات HTML خارج از حیطه این راهنماست، اما اگر دوست دارید بیشتر بیاموزید، راهنماهای مقدماتی خوبی برای HTML در وب موجود است.</p>
+<h2 id="browser-appearance"><a class="header" href="#browser-appearance">ظاهر در مرورگر</a></h2>
+<p>اگر قالب‌های کارت‌تان پیچیده باشند، ممکن است خواندن ستون‌های پرسش و پاسخ (به نام &quot;Front&quot; و &quot;Back&quot;) در <a href="../browsing.html#cardnote-table">فهرست کارت‌ها</a> دشوار باشد. گزینه &quot;browser appearance&quot; به شما اجازه می‌دهد قالبی سفارشی تعریف کنید که فقط در مرورگر استفاده شود؛ پس می‌توانید فقط فیلدهای مهم را بیاورید و در صورت تمایل ترتیب را عوض کنید. نحو همان نحو قالب‌های کارت استاندارد است.</p>
+<p>هنگام استفاده از این گزینه، اگر متن ستون پرسش در ابتدای ستون پاسخ تکرار شده باشد، آنکی متن را فقط در ستون پرسش نمایش می‌دهد. مثلاً اگر متن ستون پرسش &quot;People in Ladakh speak&quot; باشد و پاسخ &quot;People in Ladakh speak Ladakhi&quot;، ستون پاسخ فقط &quot;Ladakhi&quot; را نمایش می‌دهد و باقی را حذف می‌کند.</p>
+<h2 id="platform-specific-css"><a class="header" href="#platform-specific-css">CSS مخصوص پلتفرم</a></h2>
+<p>آنکی چند کلاس CSS ویژه تعریف می‌کند که به شما اجازه می‌دهد برای پلتفرم‌های مختلف استایل متفاوتی تعریف کنید. مثال زیر نشان می‌دهد چگونه بسته به جایی که مرور می‌کنید، قلم را تغییر دهید:</p>
 <pre><code class="language-css">/* Windows */
 .win .example {
   font-family: &quot;Example1&quot;;
@@ -438,52 +376,40 @@ font depending on where you’re reviewing:</p>
   font-family: &quot;Example7&quot;;
 }
 </code></pre>
-<p>And in the template:</p>
+<p>و در قالب:</p>
 <pre><code class="language-html">&lt;div class=&quot;example&quot;&gt;{{Field}}&lt;/div&gt;
 </code></pre>
-<p>You can also use properties like .gecko, .opera, and .ie to select
-particular browsers when using AnkiWeb. See
-<a href="http://rafael.adm.br/css_browser_selector/">http://rafael.adm.br/css_browser_selector/</a> for a full list of options.</p>
-<h2 id="installing-fonts"><a class="header" href="#installing-fonts">Installing Fonts</a></h2>
-<p>You can install fonts directly to Anki. This is useful if you’re using Anki on
-a work or school computer where you don’t have permission to install new fonts,
-or if you’re using Anki on a mobile device.</p>
-<p>Anki supports the most widely used font formats, such as TrueType (.ttf),
-OpenType (.otf), Web Open Font Format (.woff) and others.</p>
-<h3 id="add-font-to-media-folder"><a class="header" href="#add-font-to-media-folder">Add Font to Media Folder</a></h3>
-<p>Once you have downloaded a supported font, such as &quot;Arial.ttf&quot;, you have to add
-it to the media folder.</p>
+<p>همچنین می‌توانید هنگام استفاده از AnkiWeb از خاصیت‌هایی مانند .gecko، .opera و .ie برای انتخاب مرورگرهای مشخص استفاده کنید. برای فهرست کامل گزینه‌ها
+<a href="http://rafael.adm.br/css_browser_selector/">http://rafael.adm.br/css_browser_selector/</a> را ببینید.</p>
+<h2 id="installing-fonts"><a class="header" href="#installing-fonts">نصب قلم‌ها</a></h2>
+<p>می‌توانید قلم‌ها را مستقیماً در آنکی نصب کنید. این سودمند است اگر آنکی را روی رایانه محل کار یا مدرسه‌ای استفاده می‌کنید که اجازه نصب قلم جدید ندارید، یا اگر آنکی را روی دستگاه موبایل استفاده می‌کنید.</p>
+<p>آنکی از پرکاربردترین قالب‌های قلم پشتیبانی می‌کند؛ مانند TrueType (.ttf)،
+OpenType (.otf)، Web Open Font Format (.woff) و غیره.</p>
+<h3 id="add-font-to-media-folder"><a class="header" href="#add-font-to-media-folder">افزودن قلم به پوشه رسانه</a></h3>
+<p>وقتی قلم پشتیبانی‌شده‌ای — مانند &quot;Arial.ttf&quot; — دانلود کردید، باید آن را به پوشه رسانه بیفزایید.</p>
 <ol>
 <li>
-<p>Rename the file, adding an underscore at the start, so it becomes
-like &quot;_arial.ttf&quot;. Adding an underscore will tell Anki that this
-file will be used on a template, and should not be deleted when
-checking for unused media.</p>
+<p>نام پرونده را طوری تغییر دهید که خط تیره زیرین در ابتدایش بیاید؛ مانند &quot;_arial.ttf&quot;. افزودن خط تیره زیرین به آنکی می‌گوید این پرونده روی قالبی استفاده می‌شود و هنگام بررسی رسانه‌های بلااستفاده نباید حذف شود.</p>
 </li>
 <li>
-<p>In your computer’s file browser, go to your Anki application data folder (see <a href="../files.html#file-locations">File Locations</a> for details),
-and then into your profile folder (e.g., &quot;User 1&quot;).</p>
+<p>در مرورگر پرونده رایانه‌تان، به پوشه داده برنامه آنکی بروید (جزئیات در <a href="../files.html#file-locations">محل پرونده‌ها</a>)، سپس به پوشه نمایه‌تان (مثلاً &quot;User 1&quot;).</p>
 </li>
 <li>
-<p>Inside the folder, you should see a folder called collection.media.
-Drag the renamed file to that folder.</p>
+<p>درون پوشه، پوشه‌ای به نام collection.media باید ببینید.
+پرونده تغییرنام‌یافته را به آن پوشه بکشید.</p>
 </li>
 </ol>
-<h3 id="update-template-to-use-that-font"><a class="header" href="#update-template-to-use-that-font">Update Template to Use That Font</a></h3>
-<p>After the font has been added to the media folder, you need to update the
-template.</p>
+<h3 id="update-template-to-use-that-font"><a class="header" href="#update-template-to-use-that-font">به‌روزرسانی قالب برای استفاده از آن قلم</a></h3>
+<p>پس از افزوده‌شدن قلم به پوشه رسانه، باید قالب را به‌روزرسانی کنید.</p>
 <ol>
 <li>
-<p>Click <strong>Add</strong> at the top of the main screen, and then select the
-note type you want to change with the top left button.</p>
+<p>در بالای صفحه اصلی روی <strong>Add</strong> کلیک کنید، سپس با دکمه بالا-چپ نوع یادداشتی را که می‌خواهید تغییر دهید انتخاب کنید.</p>
 </li>
 <li>
-<p>Click <strong>Cards</strong>.</p>
+<p>روی <strong>Cards</strong> کلیک کنید.</p>
 </li>
 <li>
-<p>In the styling section, add the following text to the bottom (after
-the last &quot;}&quot; character), replacing &quot;_arial.ttf&quot; with the name of
-the file you copied into your media folder:</p>
+<p>در بخش استایل، متن زیر را به پایین بیفزایید (پس از آخرین نویسه &quot;}&quot;) و &quot;_arial.ttf&quot; را با نام پرونده‌ای که در پوشه رسانه رونوشت کرده‌اید جایگزین کنید:</p>
 </li>
 </ol>
 <pre><code class="language-css">@font-face {
@@ -491,67 +417,36 @@ the file you copied into your media folder:</p>
   src: url(&quot;_arial.ttf&quot;);
 }
 </code></pre>
-<p>Only change the &quot;arial&quot; part, not the &quot;myfont&quot; part.</p>
-<p>After that, you can either change the font for the entire card, or for
-individual fields. To change the font for the entire card, simply locate
-the font-family: line in the .card section and change the font to
-&quot;myfont&quot;. To change the font for only certain fields, see the
-<a href="#field-styling">Field Styling</a> instructions above.</p>
-<p>Make sure the filenames match exactly. If the file is called
-arial.TTF and you write arial.ttf in your card templates, it will not
-work.</p>
-<h2 id="night-mode"><a class="header" href="#night-mode">Night Mode</a></h2>
-<p>You can customize the way templates appear when night mode is enabled in
-the preferences screen.</p>
-<p>If you wanted a lighter grey background, you could use
-something like:</p>
+<p>فقط بخش &quot;arial&quot; را تغییر دهید، نه بخش &quot;myfont&quot; را.</p>
+<p>پس از آن، می‌توانید قلم را برای کل کارت یا برای فیلدهای منفرد تغییر دهید. برای تغییر قلم کل کارت، خط font-family: را در بخش .card پیدا کنید و قلم را به &quot;myfont&quot; تغییر دهید. برای تغییر قلم فقط فیلدهای معین، دستورالعمل‌های <a href="#field-styling">استایل فیلد</a> در بالا را ببینید.</p>
+<p>مطمئن شوید نام پرونده‌ها دقیقاً مطابقت دارند. اگر پرونده arial.TTF نام دارد و شما در قالب کارت‌تان arial.ttf بنویسید، کار نخواهد کرد.</p>
+<h2 id="night-mode"><a class="header" href="#night-mode">حالت شب</a></h2>
+<p>می‌توانید ظاهر قالب‌ها هنگام فعال‌بودن حالت شب در صفحه تنظیمات را سفارشی کنید.</p>
+<p>اگر پس‌زمینه خاکستری روشن‌تری می‌خواستید، می‌توانستید چیزی مانند این استفاده کنید:</p>
 <pre><code class="language-css">.card.nightMode {
   background-color: #555;
 }
 </code></pre>
-<p>If you have a &quot;myclass&quot; style, the following would show the text in
-yellow when night mode is enabled:</p>
+<p>اگر استایلی به نام &quot;myclass&quot; دارید، مورد زیر هنگام فعال‌بودن حالت شب متن را زرد نشان می‌دهد:</p>
 <pre><code class="language-css">.nightMode .myclass {
   color: yellow;
 }
 </code></pre>
-<h2 id="fading-and-scrolling"><a class="header" href="#fading-and-scrolling">Fading and Scrolling</a></h2>
-<p>Anki will automatically scroll to the answer by default. It looks for an
-HTML element with id=answer, and scrolls to that. You can place the id
-on a different element to adjust the scrolling position, or remove the
-id=answer to turn off scrolling.</p>
-<p>The question side of a card fades in by default. If you wish to adjust
-this delay, you can place the following at the top of your front card
-template:</p>
+<h2 id="fading-and-scrolling"><a class="header" href="#fading-and-scrolling">محو شدن و پیمایش</a></h2>
+<p>آنکی به‌طور پیش‌فرض به‌طور خودکار به پاسخ پیمایش می‌کند. دنبال عنصر HTML با id=answer می‌گردد و به آن پیمایش می‌کند. می‌توانید id را روی عنصر دیگری بگذارید تا موقعیت پیمایش تنظیم شود، یا id=answer را حذف کنید تا پیمایش خاموش شود.</p>
+<p>سمت پرسش کارت به‌طور پیش‌فرض با محو شدن ظاهر می‌شود. اگر می‌خواهید این تأخیر را تنظیم کنید، می‌توانید این را در بالای قالبِ روی کارت‌تان بگذارید:</p>
 <pre><code class="language-html">&lt;script&gt;
   qFade = 100;
   if (typeof anki !== &quot;undefined&quot;) anki.qFade = qFade;
 &lt;/script&gt;
 </code></pre>
-<p>100 (milliseconds) is the default; set to 0 to disable fading.</p>
-<h2 id="javascript"><a class="header" href="#javascript">Javascript</a></h2>
-<p>As Anki cards are treated like web pages, it is possible to embed some
-Javascript on your cards via the card template. For a good reference
-read <a href="https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756">this post</a>
-in the forums.</p>
-<p>Because Javascript is an advanced feature and so many things can go
-wrong, <strong>Javascript functionality is provided without any support or
-warranty</strong>. We can not provide any assistance with writing Javascript,
-and can not guarantee any code you have written will continue to work
-without modification in future Anki updates. If you are not comfortable
-addressing any issues you encounter on your own, then please avoid using
-Javascript.</p>
-<p>Each Anki client may implement card display differently, so you will
-need to test the behaviour across platforms. A number of clients are
-implemented by keeping a long running webpage and dynamically updating
-parts of it as cards are reviewed, so your Javascript will need to
-update sections of the document using things like
-document.getElementById() rather than doing things like
-document.write().</p>
-<p>Functions like window.alert may not be available. Anki will write
-javascript errors to the terminal, so you'll need to <a href="https://addon-docs.ankiweb.net/console-output.html#console-output">view the console</a> to
-see them. To debug issues with JavaScript, you can use Chrome's
-<a href="https://addon-docs.ankiweb.net/debugging.html#webviews">inspector</a>.</p>
+<p>۱۰۰ (میلی‌ثانیه) پیش‌فرض است؛ برای خاموش‌کردن محو شدن روی ۰ بگذارید.</p>
+<h2 id="javascript"><a class="header" href="#javascript">جاوااسکریپت</a></h2>
+<p>چون کارت‌های آنکی مانند صفحات وب تلقی می‌شوند، ممکن است از طریق قالب کارت، جاوااسکریپتی روی کارت‌هایتان جاسازی کنید. برای مرجعی خوب، <a href="https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756">این نوشته</a> را در انجمن‌ها بخوانید.</p>
+<p>چون جاوااسکریپت قابلیتی پیشرفته است و بسیار چیز می‌تواند خراب شود، <strong>قابلیت جاوااسکریپت بدون هیچ پشتیبانی یا ضمانتی فراهم شده است</strong>. ما نمی‌توانیم هیچ کمکی برای نوشتن جاوااسکریپت ارائه کنیم و نمی‌توانیم تضمین کنیم کدی که نوشته‌اید بدون تغییر در به‌روزرسانی‌های آینده آنکی به کار خود ادامه دهد. اگر با روبه‌رو شدن و حل مشکلات به‌تنهایی راحت نیستید، لطفاً از استفاده از جاوااسکریپت بپرهیزید.</p>
+<p>هر کلاینت آنکی ممکن است نمایش کارت را متفاوت پیاده کند؛ پس باید رفتار را میان پلتفرم‌ها آزمایش کنید. تعدادی از کلاینت‌ها با نگه‌داشتن صفحه وبی طولانی‌عمر و به‌روزرسانی پویا بخش‌هایی از آن هنگام مرور کارت‌ها پیاده شده‌اند؛ پس جاوااسکریپت شما باید بخش‌های سند را با چیزهایی مانند
+document.getElementById() به‌روزرسانی کند، نه اینکه کارهایی مانند document.write() انجام دهد.</p>
+<p>عملکردهایی مانند window.alert ممکن است موجود نباشند. آنکی خطاهای جاوااسکریپت را در ترمینال می‌نویسد؛ پس برای دیدن آن‌ها باید <a href="https://addon-docs.ankiweb.net/console-output.html#console-output">کنسول را ببینید</a>. برای اشکال‌زدایی جاوااسکریپت می‌توانید از <a href="https://addon-docs.ankiweb.net/debugging.html#webviews">بازرس</a> کروم استفاده کنید.</p>
 
                     </main>
 
