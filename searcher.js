@@ -468,15 +468,48 @@ window.search = window.search || {};
         showResults(true);
     }
 
-    fetch(path_to_root + 'searchindex.json')
-        .then(response => response.json())
-        .then(json => init(json))        
-        .catch(error => { // Try to load searchindex.js if fetch failed
-            var script = document.createElement('script');
-            script.src = path_to_root + 'searchindex.js';
-            script.onload = () => init(window.search);
-            document.head.appendChild(script);
+    // --- fa patch: lazy-load the (large) search index -------------------
+    // The stock code fetches searchindex.json (~3MB) on every page load.
+    // We load it (a) immediately when the user reaches for search, and
+    // (b) in the background shortly after the page settles, so it is
+    // usually warm by the time it is needed.
+    var faIndexRequested = false;
+    function faRequestIndex() {
+        if (faIndexRequested) return;
+        faIndexRequested = true;
+        fetch(path_to_root + 'searchindex.json')
+            .then(response => response.json())
+            .then(json => init(json))
+            .catch(error => { // Try to load searchindex.js if fetch failed
+                var script = document.createElement('script');
+                script.src = path_to_root + 'searchindex.js';
+                script.onload = () => init(window.search);
+                document.head.appendChild(script);
+            });
+    }
+
+    // warm up after the page has settled, without blocking page load
+    if (typeof requestIdleCallback === 'function') {
+        window.addEventListener('load', function () {
+            setTimeout(function () { requestIdleCallback(faRequestIndex); }, 2500);
         });
+    } else {
+        window.addEventListener('load', function () { setTimeout(faRequestIndex, 3500); });
+    }
+
+    // load immediately if the user goes for search first
+    var faSearchToggle = document.getElementById('search-toggle');
+    if (faSearchToggle) faSearchToggle.addEventListener('click', faRequestIndex, true);
+    var faSearchbar = document.getElementById('searchbar');
+    if (faSearchbar) {
+        faSearchbar.addEventListener('focus', faRequestIndex, true);
+        faSearchbar.addEventListener('input', faRequestIndex, true);
+    }
+    window.addEventListener('keydown', function (e) {
+        if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+        var k = e.key;
+        if (k === '/' || (typeof k === 'string' && k.toLowerCase() === 's')) faRequestIndex();
+    }, true);
 
     // Exported functions
     search.hasFocus = hasFocus;
