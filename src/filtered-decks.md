@@ -1,233 +1,131 @@
-# Filtered Decks & Cramming
+# دسته‌های پالایش‌شده و مرور فشرده {#filtered-decks--cramming}
 
 <!-- toc -->
 
-When you study a regular deck in Anki, only a limited number of cards
-are shown: the cards Anki thinks you are about to forget, and a daily
-limit of new cards. This is generally useful, as it ensures you don't
-spend more time studying than necessary. But sometimes it can be useful
-to step outside of these normal limits, such as when you need to review
-for a test, focus on particular material, and so on. To make this
-possible, Anki provides a different type of deck called a "filtered
-deck".
+وقتی در آنکی دسته‌ای معمولی را مطالعه می‌کنید، فقط شمار محدودی کارت نشان داده می‌شود: کارت‌هایی که آنکی فکر می‌کند در آستانه فراموشی‌شان هستید، و حد روزانه کارت‌های جدید. این عموماً سودمند است، چون تضمین می‌کند بیش از لازم وقت مطالعه نگذارید. اما گاهی می‌تواند سودمند باشد که از این حدود عادی بیرون بروید؛ مانند وقتی که باید برای آزمونی مرور کنید یا بر مطلب مشخصی تمرکز کنید و غیره. برای ممکن‌کردن این، آنکی نوع متفاوتی از دسته به نام «دسته پالایش‌شده» فراهم کرده است.
 
-Filtered decks offer a lot of possibilities. They can be used for
-previewing cards, cramming cards before a test, studying particular
-tags, catching up on a backlog with a particular sort order, reviewing
-ahead of schedule, going over the day's failed cards, and more.
+دسته‌های پالایش‌شده امکانات زیادی ارائه می‌کنند. می‌توان از آن‌ها برای پیش‌نمایش کارت‌ها، مرور فشرده پیش از آزمون، مطالعه برچسب‌های مشخص، جبران عقب‌افتادگی با ترتیب مرتب‌سازی خاص، مرور جلوتر از برنامه، مرور کارت‌های خراب‌شده روز و موارد دیگر استفاده کرد.
 
-## Custom Study
+## مطالعه سفارشی {#custom-study}
 
-The easiest way to create a filtered deck is with the Custom Study
-button, which appears at the bottom of the screen when you click on a
-deck. It offers some convenient preset filters for common tasks like reviewing
-the cards that you have failed that day. It will create a filtered deck called
-"Custom Study Session" and automatically open it for you.
+آسان‌ترین راه ساختن دسته پالایش‌شده، دکمه Custom Study است که وقتی روی دسته‌ای کلیک می‌کنید در پایین صفحه ظاهر می‌شود. این دکمه چند پالایه از پیش تنظیم‌شدهٔ مناسب برای کارهای رایج — مانند مرور کارت‌هایی که در همان روز خراب کرده‌اید — فراهم می‌کند. دسته پالایش‌شده‌ای به نام "Custom Study Session" می‌سازد و آن را برایتان خودکار باز می‌کند.
 
-If an existing "Custom Study Session" deck exists, it will be emptied
-before a new one is created. If you wish to keep a custom study deck,
-you can rename it from the deck list.
+اگر دسته "Custom Study Session" موجودی وجود داشته باشد، پیش از ساخت جدید خالی می‌شود. اگر می‌خواهید دسته مطالعه سفارشی را نگه دارید، می‌توانید از فهرست دسته‌ها نامش را تغییر دهید.
 
-Here is a summary of each of the options:
+خلاصه هر گزینه:
 
-**Increase today's new card limit**\
-Add more new cards to the deck you are currently studying. Note that
-unlike other options, this does "not" create a new filtered deck, it
-modifies the existing deck.
+**افزایش حد کارت جدید امروز**\
+کارت‌های جدید بیشتری به دسته‌ای که در حال مطالعه‌اش هستید می‌افزاید. توجه کنید که برخلاف بقیه گزینه‌ها، این گزینه دسته پالایش‌شده جدیدی «نمی‌سازد»، بلکه دسته موجود را تغییر می‌دهد.
 
-**Increase today's review card limit**\
-If not all reviews due today were shown because of the daily review limit,
-this option allows you to show more of them. As with the new cards
-option, this modifies the existing deck.
+**افزایش حد کارت مروری امروز**\
+اگر همه مرورهای سررسیدِ امروز به‌دلیل حد مرور روزانه نشان داده نشده‌اند، این گزینه به شما اجازه می‌دهد بیشترشان را ببینید. مانند گزینه کارت‌های جدید، این هم دسته موجود را تغییر می‌دهد.
 
-**Review forgotten cards**\
-Show all the cards, for which you've answered Again (1) within the number of days
-you specify.
+**مرور کارت‌های فراموش‌شده**\
+همه کارت‌هایی را نشان می‌دهد که در شمار روزِ مشخص‌شده توسط شما Again (۱) گرفته‌اند.
 
-**Review ahead**\
-Show cards that will be due in the near future (the number of days you
-specify). This is useful for working through some of your older cards
-before a vacation, but it will not help with cards you have learned
-recently. See the [reviewing ahead](#reviewing-ahead) section
-below for more info.
+**مرور جلوتر از برنامه**\
+کارت‌هایی را نشان می‌دهد که در آینده نزدیک (شمار روزِ مشخص‌شده توسط شما) سررسید می‌شوند. این برای گذراندن برخی کارت‌های قدیمی‌ترتان پیش از مسافرت سودمند است، اما به کارت‌هایی که اخیراً آموخته‌اید کمکی نمی‌کند. برای اطلاعات بیشتر، بخش [مرور جلوتر از برنامه](#reviewing-ahead) در پایین را ببینید.
 
-**Preview new cards**\
-Show cards that you have recently added, without converting them to
-review cards as they are answered.
+**پیش‌نمایش کارت‌های جدید**\
+کارت‌هایی را که اخیراً افزوده‌اید نشان می‌دهد، بدون اینکه با پاسخ‌دادن به آن‌ها به کارت مروری تبدیل شوند.
 
-**Study by card state or tag**\
-Select a certain number of cards from the current deck to study. You can
-choose to select new cards only, due cards only, or all cards; after you
-click "Choose Tags", you can also limit the selected cards by tags. If
-you wish to see all the cards in the deck (for instance, to study before
-a big test), you can set the number of cards to more than the number of
-cards in the deck.
+**مطالعه بر اساس وضعیت کارت یا برچسب**\
+شمار معینی کارت از دسته فعلی برای مطالعه انتخاب کنید. می‌توانید انتخاب را به فقط کارت‌های جدید، فقط کارت‌های سررسید یا همه کارت‌ها محدود کنید؛ پس از کلیک روی "Choose Tags" می‌توانید کارت‌های انتخاب‌شده را بر اساس برچسب هم محدود کنید. اگر می‌خواهید همه کارت‌های دسته را ببینید (مثلاً برای مطالعه پیش از آزمون بزرگ)، می‌توانید شمار کارت را بیشتر از شمار کارت‌های دسته بگذارید.
 
-## Home Decks
+## دسته‌های اصلی {#home-decks}
 
-When a card is moved to a filtered deck, it retains a link to the deck,
-from which it came. That previous deck is said to be the card's "home
-deck".
+وقتی کارتی به دسته پالایش‌شده منتقل می‌شود، پیوندش را به دسته‌ای که از آن آمده نگه می‌دارد. به آن دستهٔ قبلی «دسته اصلیِ» کارت گفته می‌شود.
 
-Cards automatically return to their home deck after they are studied in
-the filtered deck. This can be after a single review, or after multiple
-reviews, depending on your settings.
+کارت‌ها پس از مطالعه در دسته پالایش‌شده، به‌طور خودکار به دسته اصلی‌شان بازمی‌گردند. این می‌تواند پس از یک مرور یا پس از چند مرور باشد، بسته به تنظیمات شما.
 
-It is also possible to move all cards back to their home decks at once:
+همچنین ممکن است همه کارت‌ها یک‌جا به دسته‌های اصلی‌شان بازگردانده شوند:
 
-- The "Empty" button in the study overview moves all cards in the
-  filtered deck back to their home deck, but does not delete the empty
-  filtered deck. This can be useful if you want to fill it again later
-  (using the Rebuild button).
+- دکمه "Empty" در پیش‌نمایش دسته، همه کارت‌های دسته پالایش‌شده را به دسته اصلی‌شان برمی‌گرداند، اما دسته پالایش‌شدهٔ خالی‌شده را حذف نمی‌کند. این می‌تواند سودمند باشد اگر بخواهید بعداً (با دکمه Rebuild) دوباره پرش کنید.
 
-- Deleting a filtered deck does the same thing as "Empty" does, but
-  also removes the emptied deck from the deck list. No cards are
-  deleted when you delete a filtered deck.
+- حذف یک دسته پالایش‌شده همان کاری را می‌کند که "Empty" می‌کند، اما علاوه بر آن دسته خالی‌شده را از فهرست دسته‌ها هم برمی‌دارد. هنگام حذف دسته پالایش‌شده هیچ کارتی حذف نمی‌شود.
 
-## Creating Manually
+## ساختن دستی {#creating-manually}
 
-Advanced users can create filtered decks with arbitrary search strings
-(or "filters"),
-instead of relying on the preset filters. To create a filtered deck manually,
-choose Create Filtered Deck from the Tools menu.
+کاربران پیشرفته می‌توانند دسته‌های پالایش‌شده را با رشته‌های جست‌وجوی دلخواه (یا «پالایه‌ها») بسازند، به‌جای اتکا به پالایه‌های از پیش تنظیم‌شده. برای ساختن دستی دسته پالایش‌شده، از منوی Tools گزینه Create Filtered Deck را انتخاب کنید.
 
-When you click the Build button, Anki finds cards that match the
-settings you specified, and temporarily moves them from their existing
-decks into your new filtered deck for study.
+وقتی دکمه Build را می‌زنید، آنکی کارت‌های منطبق با تنظیماتی که مشخص کرده‌اید می‌یابد و آن‌ها را موقتاً از دسته‌های موجودشان به دسته پالایش‌شده جدیدتان برای مطالعه منتقل می‌کند.
 
-If you wish to fetch cards again using the same filter options (for
-instance, if you want to study all cards with a particular tag every
-day), you can use the Rebuild button at the bottom of the deck's
-overview screen.
+اگر می‌خواهید دوباره با همان گزینه‌های پالایه کارت‌ها را واکشی کنید (مثلاً اگر می‌خواهید هر روز همه کارت‌های دارای برچسب معینی را مطالعه کنید)، می‌توانید از دکمه Rebuild در پایین صفحه پیش‌نمایش دسته استفاده کنید.
 
-The **search** area controls what cards Anki will gather. All of the
-searches possible in the browser are also possible for filtered decks,
-such as limiting to tags, finding cards forgotten a certain number of
-times, and so on. See the [searching](searching.md) section of the
-manual for more information on the different possibilities.
+ناحیه **search** (جست‌وجو) کنترل می‌کند آنکی چه کارت‌هایی را جمع می‌کند. همه جست‌وجوهایی که در مرورگر ممکن‌اند برای دسته‌های پالایش‌شده هم ممکن‌اند؛ مانند محدودکردن به برچسب‌ها، یافتن کارت‌های فراموش‌شده چند باره و غیره. برای اطلاعات بیشتر درباره امکانات مختلف، بخش [جست‌وجو](searching.md) راهنما را ببینید.
 
-Filtered decks cannot pull in cards that are suspended, buried, or already in a
-different filtered deck. For this reason, a search in the
-browser may reveal cards that do not end up in the filtered deck.
+دسته‌های پالایش‌شده نمی‌توانند کارت‌هایی را که معلق‌اند، کنار گذاشته شده‌اند یا هم‌اکنون در دسته پالایش‌شده دیگری هستند جمع کنند. به همین دلیل، جست‌وجویی در مرورگر ممکن است کارت‌هایی را نشان دهد که در نهایت در دسته پالایش‌شده قرار نمی‌گیرند.
 
-The **limit** option controls how many cards will be gathered into the
-deck. The order you select controls both the order cards are gathered
-in, and the order they will be reviewed in. If you select "most lapses"
-and a limit of 20 for example, then Anki will show you only the 20 most
-lapsed cards.
+گزینه **limit** (حد) کنترل می‌کند چند کارت در دسته جمع می‌شود. ترتیبی که انتخاب می‌کنید هم ترتیب جمع‌آوری کارت‌ها و هم ترتیب مرورشان را کنترل می‌کند. مثلاً اگر "most lapses" و حد ۲۰ را انتخاب کنید، آنکی فقط ۲۰ کارتِ بیشترین لغزش را به شما نشان می‌دهد.
 
-The **enable second filter** option allows you to create a filtered deck
-comprised of two different searches, so that you can, for example, include
-due cards with one order, and a smaller amount of new cards with a different order.
+گزینه **enable second filter** به شما اجازه می‌دهد دسته پالایش‌شده‌ای از دو جست‌وجوی متفاوت بسازید تا مثلاً کارت‌های سررسید را با یک ترتیب و شمار کمتری کارت جدید را با ترتیبی متفاوت بگنجانید.
 
-## Order
+## ترتیب {#order}
 
-The "cards selected by" option controls the order that cards will appear
-in. If the maximum number of cards you select is lower than the number
-of cards that match the filter criteria, Anki will exclude the cards at
-the end of this sorted list first.
+گزینه "cards selected by" ترتیب ظاهر شدن کارت‌ها را کنترل می‌کند. اگر بیشینه شمار کارتی که انتخاب می‌کنید کمتر از شمار کارت‌های منطبق با معیارهای پالایه باشد، آنکی ابتدا کارت‌های انتهای این فهرست مرتب‌شده را کنار می‌گذارد.
 
-**Oldest seen first**\
-Display those cards first, that you haven't seen in reviews for the longest
-time.
+**اول قدیمی‌ترین دیده‌شده‌ها**\
+ابتدا کارت‌هایی را نمایش می‌دهد که طولانی‌ترین زمان است در مرورها ندیده‌اید.
 
-**Random**\
-Randomize the order of all cards that match the filter criteria (use no
-set order).
+**تصادفی**\
+ترتیب همه کارت‌های منطبق با معیارهای پالایه را به‌هم می‌ریزد (بدون ترتیب ثابت).
 
-**Increasing intervals**\
-Display cards that have the smallest interval first.
+**فاصله‌های افزایشی**\
+ابتدا کارت‌هایی را با کوچک‌ترین فاصله نمایش می‌دهد.
 
-**Decreasing intervals**\
-Display cards that have the largest interval first.
+**فاصله‌های کاهشی**\
+ابتدا کارت‌هایی را با بزرگ‌ترین فاصله نمایش می‌دهد.
 
-**Most lapses**\
-Display those cards first, that you have failed the most times.
+**بیشترین لغزش‌ها**\
+ابتدا کارت‌هایی را نمایش می‌دهد که بیشترین بار در آن‌ها شکست خورده‌اید.
 
-**Order added**\
-Display cards that you added first (i.e. those cards that have the earliest
-creation date).
+**ترتیب افزوده‌شدن**\
+ابتدا کارت‌هایی را نمایش می‌دهد که اول افزوده‌اید (یعنی کارت‌هایی با قدیمی‌ترین تاریخ ساخت).
 
-**Order due**\
-Display cards with the earliest due date first.
+**ترتیب سررسید**\
+ابتدا کارت‌ها با قدیمی‌ترین تاریخ سررسید.
 
-**Latest added first**\
-Display cards that you have most recently added to the deck first.
-(This is the opposite of "Order added".)
+**اول آخرین افزوده‌شده‌ها**\
+ابتدا کارت‌هایی را نمایش می‌دهد که اخیراً به دسته افزوده‌اید.
+(این عکس «ترتیب افزوده‌شدن» است.)
 
-**Relative overdueness**\
-Display cards that you're most likely to have forgotten first. This is useful if
-you have a large backlog that may take some time to get through, and you want to
-reduce the chances of forgetting more cards.
+**عقب‌افتادگی نسبی**\
+ابتدا کارت‌هایی را نمایش می‌دهد که به‌احتمال بیشتر فراموششان کرده‌اید. این سودمند است اگر انبوه بزرگی دارید که گذراندن از آن ممکن است زمان ببرد و می‌خواهید احتمال فراموشی کارت‌های بیشتر را کاهش دهید.
 
-When using the SM-2 algorithm, overdueness is determined by comparing how
-overdue cards are, and how long their interval is. For example, a card with a
-current interval of 5 days that is overdue by 2 days, will display before a card
-with a current interval of 10 days that is overdue by 3 days.
+با الگوریتم SM-2، عقب‌افتادگی با مقایسه میزان عقب‌افتادگی کارت‌ها و طول فاصله‌شان تعیین می‌شود. مثلاً کارتی با فاصله فعلی ۵ روز که ۲ روز عقب افتاده، پیش از کارتی با فاصله فعلی ۱۰ روز که ۳ روز عقب افتاده نمایش داده می‌شود.
 
-When using FSRS, overdueness is calculated based on each card's retrievability,
-and the desired retention in the deck preset.
+با FSRS، عقب‌افتادگی بر پایه بازیابی‌پذیری هر کارت و حفظ مطلوبِ پیش‌تنظیم دسته محاسبه می‌شود.
 
-## Steps & Returning
+## گام‌ها و بازگشت {#steps--returning}
 
-By default, Anki will use the steps of a card’s home deck. If a new card
-would normally be reviewed twice when being learned, the same thing will
-happen when you study it in a filtered deck.
-To learn about how (re)learning steps work, see [Deck Options](deck-options.md#learning-steps) section.
+به‌طور پیش‌فرض، آنکی از گام‌های دسته اصلیِ کارت استفاده می‌کند. اگر کارت جدیدی معمولاً هنگام یادگیری دو بار مرور می‌شود، همین اتفاق هنگام مطالعه‌اش در دسته پالایش‌شده هم می‌افتد.
+برای آشنایی با نحوه کار گام‌های (یادگیری مجدد)، بخش [گزینه‌های دسته](deck-options.md#learning-steps) را ببینید.
 
-Cards return to their home deck when (re)learning is complete. Thus if
-you have 3 learning steps, a new card will return to its home deck upon
-three presses of "Good" or a single press of "Easy".
+کارت‌ها وقتی (یادگیری مجددِ)شان کامل شود به دسته اصلی‌شان بازمی‌گردند. بنابراین اگر ۳ گام یادگیری دارید، کارت جدید پس از سه بار زدن "Good" یا یک بار زدن "Easy" به دسته اصلی‌اش بازمی‌گردد.
 
-Filtered decks with rescheduling disabled show 4 buttons. The **Again**, **Hard**, and **Good** buttons have configurable delays. The **Easy** button removes cards from the filtered deck.
+دسته‌های پالایش‌شده با زمان‌بندی دوباره خاموش، ۴ دکمه نشان می‌دهند. دکمه‌های **Again**، **Hard** و **Good** تأخیرهای قابل تنظیم دارند. دکمه **Easy** کارت‌ها را از دسته پالایش‌شده خارج می‌کند.
 
-## Due Reviews
+## مرورهای سررسید {#due-reviews}
 
-If the filtered deck includes cards that were due for review, they will
-be shown like they would have been in their original deck: they appear
-in the review card count at the bottom of the screen, and there are four
-choices for how well you remembered. Upon a correct answer, the card
-will be moved back to its home deck, and its next delay adjusted using
-the home deck's settings. If you forget the card, it will be shown
-according to the relearning steps defined in the home deck.
+اگر دسته پالایش‌شده کارت‌هایی را که سررسید مرور بوده‌اند در بر داشته باشد، مانند اینکه در دسته اصلی‌شان بوده‌اند نشان داده می‌شوند: در شمار کارت‌های مروری پایین صفحه ظاهر می‌شوند و چهار انتخاب برای میزان یادآوری دارید. با پاسخ درست، کارت به دسته اصلی‌اش بازگردانده می‌شود و تأخیر بعدی‌اش با تنظیمات دسته اصلی تنظیم می‌شود. اگر کارت را فراموش کنید، مطابق گام‌های یادگیری مجددِ تعریف‌شده در دسته اصلی نشان داده می‌شود.
 
-## Reviewing Ahead
+## مرور جلوتر از برنامه {#reviewing-ahead}
 
-If your search included cards that are not due, Anki will show the
-reviews ahead of time.
+اگر جست‌وجوی شما کارت‌هایی را که سررسید نیستند در بر داشته باشد، آنکی مرورها را زودتر از موعد نشان می‌دهد.
 
-Anki uses a special algorithm for these reviews that takes into account
-how early you are reviewing. If the cards were almost due to be shown,
-they will be given a new delay similar to what they would have received
-if you had reviewed them on time. If the cards are reviewed soon after
-they were scheduled however, their new delay will be similar to their
-previous delay. This calculation works on a sliding scale.
+آنکی برای این مرورها از الگوریتم ویژه‌ای استفاده می‌کند که میزان جلوتر بودن مرور شما را در نظر می‌گیرد. اگر کارت‌ها تقریباً سررسیدِ نمایش بوده‌اند، تأخیر جدیدی مشابه آنچه در صورت مرور به‌موقع می‌گرفتند می‌گیرند. اگر کارت‌ها اندکی پس از زمان‌بندی‌شان مرور شوند، تأخیر جدیدشان مشابه تأخیر قبلی‌شان خواهد بود. این محاسبه روی مقیاسی لغزنده کار می‌کند.
 
-Because reviewing a card shortly after it is scheduled has little impact
-on scheduling (e.g. a card due tomorrow with a one day interval will
-remain due tomorrow if reviewed early), **the "review ahead" custom
-study setting is not appropriate for repeated use**. If used to go
-through a week's worth of cards before a trip, the mature cards will be
-rescheduled into the future and the new cards will remain at small
-intervals, because you don't know them well enough for them to be
-rescheduled further. If you review ahead again the next day, all you'll
-end up doing is going through those same new cards again, to little
-benefit.
+چون مرور کارتی اندکی پس از زمان‌بندی‌اش اثر کمی بر زمان‌بندی دارد (مثلاً کارت سررسیدِ فردا با فاصله یک‌روزه، در صورت مرور زودتر، همچنان برای فردا سررسید می‌ماند)، **تنظیم مطالعه سفارشیِ «مرور جلوتر از برنامه» برای استفاده مکرر مناسب نیست**. اگر برای گذراندن کارت‌های یک هفته پیش از سفری استفاده شود، کارت‌های بالغ در آینده دوباره زمان‌بندی می‌شوند و کارت‌های جدید در فاصله‌های کوچک می‌مانند، چون آن‌قدرشان را خوب نمی‌دانید که بیشتر دوباره زمان‌بندی شوند. اگر روز بعد دوباره مرورِ جلوتر انجام دهید، تنها کاری که کرده‌اید این است که دوباره همان کارت‌های جدید را گذرانده‌اید، با سودی ناچیز.
 
-## Rescheduling
+## زمان‌بندی دوباره {#rescheduling}
 
-By default, Anki will return cards to their home decks with altered scheduling,
-based on your performance in the filtered deck. 
+به‌طور پیش‌فرض، آنکی کارت‌ها را با زمان‌بندیِ تغییرکرده — بر پایه عملکرد شما در دسته پالایش‌شده — به دسته‌های اصلی‌شان بازمی‌گرداند.
 
-To change this behaviour, turn off **Reschedule
-cards based on my answers**. When this is turned off, cards are shown in a simple "preview mode", and
-when they are returned to their original deck, they are returned exactly as they started.
+برای تغییر این رفتار، **Reschedule cards based on my answers** را خاموش کنید. وقتی خاموش است، کارت‌ها در «حالت پیش‌نمایشِ» ساده‌ای نمایش داده می‌شوند و وقتی به دسته اصلی‌شان بازمی‌گردند، دقیقاً همان‌طور که شروع کرده بودند بازمی‌گردند.
 
-## Catching Up
+## جبران عقب‌افتادگی {#catching-up}
 
-Filtered decks can be useful for catching up when you've fallen behind
-in your reviews. One Anki user describes the way they use the filtered
-decks to catch up as follows:
+دسته‌های پالایش‌شده می‌توانند برای جبران وقتی در مرورهایتان عقب افتاده‌اید سودمند باشند. یک کاربر آنکی شیوه استفاده‌اش از دسته‌های پالایش‌شده برای جبران را این‌طور توصیف می‌کند:
 
     I did this for a backlog of 800 cards with filtered subdecks. Worked
     very well for me.

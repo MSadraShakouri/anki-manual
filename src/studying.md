@@ -1,246 +1,146 @@
-# Studying
+# مطالعه {#studying}
 
 <!-- toc -->
 
-When you have found a deck you like or entered some notes in, it’s time
-to start studying.
+وقتی دسته‌ای را که دوست دارید پیدا کردید یا چند یادداشت وارد کردید، وقت آن است که مطالعه را شروع کنید.
 
-## Decks
+## دسته‌ها {#decks}
 
-Study in Anki is limited to the currently selected deck as well as any
-subdecks it contains.
+مطالعه در آنکی به دستهٔ در حال انتخاب و هر زیردسته‌ای که در بر دارد محدود است.
 
-On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn, and Due (To Review)](getting-started.md#card-states)
-cards for that day will be also displayed here.
+در صفحه دسته‌ها، دسته‌ها و زیردسته‌هایتان به‌صورت فهرستی نمایش داده می‌شوند. کارت‌های [جدید، در حال یادگیری و سررسید (برای مرور)](getting-started.md#card-states) آن روز هم اینجا نمایش داده می‌شوند.
 
 ![](media/decks_screen.png)
 
-When you click on a deck, it will become the "current deck", and Anki
-will change to the study screen. You can return to the deck list at any time by clicking on “Decks” at
-the top of the main window. (You can also use the Study
-Deck action in the menu to select a new deck from the keyboard, or you
-can press the <kbd>S</kbd> key to study the currently selected deck.)
+وقتی روی دسته‌ای کلیک کنید، «دستهٔ فعلی» می‌شود و آنکی به صفحه مطالعه می‌رود. می‌توانید هر زمان با کلیک روی «Decks» در بالای پنجره اصلی به فهرست دسته‌ها برگردید. (همچنین می‌توانید از کنش Study Deck در منو برای انتخاب دستهٔ تازه با صفحه‌کلید استفاده کنید، یا کلید <kbd>S</kbd> را بزنید تا دستهٔ در حال انتخاب مطالعه شود.)
 
-You can click the gears button to the right of a deck to rename or
-delete the deck, change its [options](deck-options.md), or [export](exporting.md) it.
+می‌توانید روی دکمه چرخ‌دنده در سمت راست دسته کلیک کنید تا نام آن را تغییر دهید یا حذفش کنید، [گزینه‌هایش](deck-options.md) را تغییر دهید یا آن را [برون‌بری](exporting.md) کنید.
 
-## Study Overview
+## پیش‌نمایش دسته {#study-overview}
 
-After clicking on a deck to study, you’ll see a screen that shows you
-how many cards are due today. This is called the "deck overview" screen:
+پس از کلیک روی دسته‌ای برای مطالعه، صفحه‌ای می‌بینید که نشان می‌دهد امروز چند کارت سررسید است. به این صفحه «پیش‌نمایش دسته» (deck overview) گفته می‌شود:
 
 ![](media/study_overview.png)
 
-The cards are split into [three types](getting-started.md#card-states): New, Learning, and To Review.
-If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you
-may see how many cards will be buried in grey:
+کارت‌ها به [سه نوع](getting-started.md#card-states) تقسیم می‌شوند: جدید، در حال یادگیری و برای مرور. اگر [کنار گذاشتن هم‌خانواده‌ها](#siblings-and-burying) در گزینه‌های دسته فعال باشد، ممکن است ببینید چند کارت به‌صورت خاکستری کنار گذاشته خواهند شد:
 
 ![](media/study_overview_buried_cards.png)
 
-To start a study session, click the **Study Now** button. Anki will
-proceed to show you cards until the cards to be shown for the day have
-run out.
+برای شروع جلسه مطالعه، دکمه **Study Now** (همین حالا مطالعه کن) را بزنید. آنکی کارت‌ها را پشت‌سرهم به شما نشان می‌دهد تا کارت‌های آن روز تمام شوند.
 
-While studying, you can return to the overview by pressing the <kbd>S</kbd> key
-on your keyboard.
+هنگام مطالعه می‌توانید با فشردن کلید <kbd>S</kbd> روی صفحه‌کلیدتان به پیش‌نمایش بازگردید.
 
-## Questions
+## پرسش‌ها {#questions}
 
-When a card is shown, only the question is shown at first. After
-thinking about the answer, either click the **Show Answer** button, or
-press the <kbd>Space</kbd>. The answer will then be shown. It’s okay if it takes
-you a little while to recall the answer, but as a general rule if you
-can’t answer within about 10 seconds, it’s probably better to move on
-and show the answer than keep struggling to remember.
+وقتی کارتی نمایش داده می‌شود، در ابتدا فقط پرسش دیده می‌شود. پس از فکر کردن به پاسخ، یا دکمه **Show Answer** (نمایش پاسخ) را بزنید، یا کلید <kbd>Space</kbd> را فشار دهید تا پاسخ نمایش داده شود. اشکالی ندارد اگر یادآوری پاسخ کمی طول بکشد، اما به‌عنوان قاعدهٔ کلی، اگر نتوانستید ظرف حدود ۱۰ ثانیه پاسخ دهید، احتمالاً بهتر است به جلو بروید و پاسخ را ببینید تا اینکه به سختی به یادآوری ادامه دهید.
 
-## Answer Buttons
+## دکمه‌های پاسخ {#answer-buttons}
 
-After the answer is shown, compare the answer you thought of
-with the answer that is shown and select any of the following buttons.
+پس از نمایش پاسخ، پاسخی را که در ذهن داشتید با پاسخِ نمایش‌داده‌شده مقایسه کنید و یکی از دکمه‌های زیر را برگزینید.
 
-- **Again**: Select this when your answer is incorrect or when you couldn't recall the answer. If your answer is partially correct, you should be strict with yourself: if it counts as a fail in a real-life context outside of Anki, then it counts as a fail in Anki as well. You'll typically use this button about 5-20% of the time.
+- **Again (دوباره):** وقتی پاسخ‌تان نادرست است یا نتوانستید پاسخ را به یاد بیاورید، این را انتخاب کنید. اگر پاسخ‌تان تا حدی درست است، باید با خودتان سخت‌گیر باشید: اگر در موقعیت واقعی بیرون از آنکی شکست حساب می‌شود، در آنکی هم شکست است. معمولاً حدود ۵ تا ۲۰ درصد مواقع از این دکمه استفاده خواهید کرد.
 
-  Keyboard Shortcut: <kbd>1</kbd>
+  میانبر صفحه‌کلید: <kbd>1</kbd>
 
-- **Hard**: Select this button when your answer is correct, but you had doubts about it or it took a long time to recall.
+- **Hard (سخت):** وقتی پاسخ‌تان درست است، اما در آن تردید داشتید یا به‌یادآوری‌اش طول کشید، این دکمه را انتخاب کنید.
 
-  Keyboard Shortcut: <kbd>2</kbd>
+  میانبر صفحه‌کلید: <kbd>2</kbd>
 
-- **Good**: Select this when your answer is correct, but it took some mental effort to recall it. When Anki is used properly, this should be the most commonly used button. You'll typically use this button about 80-95% of the time.
+- **Good (خوب):** وقتی پاسخ‌تان درست است، اما به‌یادآوری‌اش کمی زحمت ذهنی کشید، این را انتخاب کنید. وقتی آنکی به‌درستی استفاده شود، این باید رایج‌ترین دکمه باشد. معمولاً حدود ۸۰ تا ۹۵ درصد مواقع از این دکمه استفاده خواهید کرد.
 
-  Keyboard Shortcut: <kbd>3</kbd>, <kbd>Space</kbd>, <kbd>Enter</kbd>
+  میانبر صفحه‌کلید: <kbd>3</kbd>، <kbd>Space</kbd>، <kbd>Enter</kbd>
 
-- **Easy**: Select this if your answer is correct and it took no mental effort to recall it.
+- **Easy (آسان):** اگر پاسخ‌تان درست است و به‌یادآوری‌اش هیچ زحمت ذهنی نداشت، این را انتخاب کنید.
 
-  Keyboard Shortcut: <kbd>4</kbd>
+  میانبر صفحه‌کلید: <kbd>4</kbd>
 
-If you find it hard to use four answer buttons, you can also use only **Again** and **Good** buttons. Use **Again** for incorrect answers and use **Good** for correct answers.
+اگر استفاده از چهار دکمه پاسخ برایتان دشوار است، می‌توانید فقط از دکمه‌های **Again** و **Good** استفاده کنید: **Again** برای پاسخ‌های نادرست و **Good** برای پاسخ‌های درست.
 
-Each answer button shows the next time a card will be reviewed again if you select that button. To learn about the settings that control the next review intervals, see the topics [Learning Steps](deck-options.html#learning-steps), [Lapses](deck-options.md#lapses), [FSRS](deck-options.html#fsrs) and [Advanced](deck-options.md#advanced) in the Deck Options section.
+هر دکمه پاسخ، زمان مرورِ دوبارهٔ کارت را در صورت انتخاب آن دکمه نشان می‌دهد. برای آشنایی با تنظیماتی که فاصله‌های مرور بعدی را کنترل می‌کنند، مباحث [گام‌های یادگیری](deck-options.html#learning-steps)، [لغزش‌ها](deck-options.md#lapses)، [FSRS](deck-options.html#fsrs) و [پیشرفته](deck-options.md#advanced) در بخش گزینه‌های دسته را ببینید.
 
-## Fuzz Factor
+## ضریب تصادفی {#fuzz-factor}
 
-When you select an answer button on a review card, Anki also applies a small amount of random “fuzz”
-to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day.
+وقتی روی یک کارتِ مرور دکمه پاسخ را انتخاب می‌کنید، آنکی مقدار کمی «تصادف» (fuzz) نیز اعمال می‌کند تا کارت‌هایی که هم‌زمان معرفی شده‌اند و نمرهٔ یکسانی گرفته‌اند، به هم نچسبند و همیشه در یک روز برای مرور نیایند.
 
-Learning cards are also given up to 5 minutes of extra delay so that they
-don’t always appear in the same order, but answer buttons won't reflect that. It
-is not possible to turn this feature off.
+به کارت‌های در حال یادگیری نیز تا ۵ دقیقه تأخیر اضافه داده می‌شود تا همیشه به یک ترتیب ظاهر نشوند، اما دکمه‌های پاسخ این را منعکس نمی‌کنند. امکان خاموش‌کردن این قابلیت وجود ندارد.
 
-## Editing and More
+## ویرایش و بیشتر {#editing-and-more}
 
-You can click the **Edit** button in the bottom left to edit the current
-note. When you finish editing, you’ll be returned to study. The editing
-screen works very similarly to the [add notes](editing.md) screen.
+می‌توانید دکمه **Edit** (ویرایش) در پایینِ چپ را بزنید تا یادداشت فعلی را ویرایش کنید. وقتی ویرایش تمام شود، به مطالعه بازمی‌گردید. صفحه ویرایش بسیار شبیه صفحه [افزودن یادداشت](editing.md) کار می‌کند.
 
-At the bottom right of the study screen is a button labeled **More**.
-This button provides some other operations you can do on the current
-card or note:
+در پایینِ راست صفحه مطالعه، دکمه‌ای با نام **More** (بیشتر) است. این دکمه کنش‌های دیگری ارائه می‌دهد که می‌توانید روی کارت یا یادداشت فعلی انجام دهید:
 
-- [**Flag Card**](editing.md#using-flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
-  study, and you can search for flagged cards in the Browse screen. This is useful
-  when you want to take some action on the card at a later date, such as looking
-  up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags
-  from the [browser](browsing.md).
+- [**Flag Card** (پرچم‌زدن کارت)](editing.md#using-flags): به کارت یک نشانگر رنگی می‌افزاید یا آن را برمی‌دارد. پرچم‌ها هنگام مطالعه ظاهر می‌شوند و می‌توانید در صفحه مرورگر کارت‌های پرچم‌خورده را جست‌وجو کنید. این وقتی سودمند است که بخواهید در تاریخ دیگری کاری با کارت انجام دهید؛ مثلاً وقتی به خانه رسیدید معنی واژه‌ای را ببینید. اگر از آنکی 2.1.45+ استفاده می‌کنید، می‌توانید پرچم‌ها را از [مرورگر](browsing.md) تغییر نام دهید.
 
-- **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
-  (If you want to unbury cards before then, you can click the “unbury”
-  button on the [deck overview](studying.md#study-overview) screen.) This is useful if
-  you cannot answer the card at the moment or you want to come back to it
-  another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
-  cards of the same note.
+- **کنار گذاشتن کارت / یادداشت (Bury Card / Note)**: کارتی یا همه کارت‌های یادداشت را تا روز بعد از مرور پنهان می‌کند.
+  (اگر می‌خواهید زودتر از این کارت‌ها را بازگردانید، می‌توانید دکمه «unbury» را در صفحه [پیش‌نمایش دسته](studying.md#study-overview) بزنید.) این وقتی سودمند است که در حال حاضر نتوانید به کارت پاسخ دهید یا بخواهید زمان دیگری به آن برگردید. کنار گذاشتن می‌تواند برای کارت‌های یک یادداشتِ واحد به‌طور [خودکار نیز رخ دهد](studying.md#siblings-and-burying).
 
-- **Reset card**: Moves the current card to [the end of the new queue](browsing.md#cards).
+- **بازنشانی کارت (Reset card)**: کارت فعلی را به [انتهای صف کارت‌های جدید](browsing.md#cards) می‌برد.
 
-  The "Restore original position" option allows you to reset the card back to its original position when you reset it.
+  گزینه "Restore original position" کارت را هنگام بازنشانی به جایگاه اصلی‌اش برمی‌گرداند.
 
-  The "Reset repetition and lapse count" option, if enabled, will set the review and failure counters
-  for the card back to zero. It does not remove the review history that is shown at the bottom of the
-  card info screen.
+  گزینه "Reset repetition and lapse count"، در صورت فعال‌بودن، شمارنده‌های مرور و شکست کارت را به صفر برمی‌گرداند. تاریخچه مروری را که در پایین صفحه اطلاعات کارت نمایش داده می‌شود حذف نمی‌کند.
 
-- **Set Due Date**: Puts cards in the review queue, and [makes them due on a certain date.](browsing.md#cards)
+- **تعیین تاریخ سررسید (Set Due Date)**: کارت‌ها را در صف مرور می‌گذارد و [آن‌ها را در تاریخ مشخصی سررسید می‌کند.](browsing.md#cards)
 
-- **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
-  manually unsuspended (by clicking the suspend button in the browser).
-  This is useful if you want to avoid reviewing the note for some time,
-  but don’t want to delete it.
+- **معلق‌کردن کارت / یادداشت (Suspend Card / Note)**: کارتی یا همه کارت‌های یادداشت را تا زمانی که به‌طور دستی از تعلیق درآورده شوند (با کلیک روی دکمه تعلیق در مرورگر) از مرور پنهان می‌کند. این وقتی سودمند است که بخواهید مدتی از مرور یادداشت پرهیز کنید، اما نمی‌خواهید آن را حذف کنید.
 
-- **Options**: Edit the [options](deck-options.md) for the current deck.
+- **گزینه‌ها (Options)**: [گزینه‌های](deck-options.md) دستهٔ فعلی را ویرایش می‌کند.
 
-- **Card Info**: Displays [statistical information](stats.md#card-info) about the card.
+- **اطلاعات کارت (Card Info)**: [اطلاعات آماری](stats.md#card-info) درباره کارت را نمایش می‌دهد.
 
-- **Previous Card Info**: Displays [statistical information](stats.md#card-info) about the previous card.
+- **اطلاعات کارت قبلی (Previous Card Info)**: [اطلاعات آماری](stats.md#card-info) درباره کارت قبلی را نمایش می‌دهد.
 
-- [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
-  browser. This is similar to flagging individual cards, but works with a tag
-  instead, so if the note has multiple cards, all cards will appear in a search
-  for the marked tag. Most users will want to use flags instead.
+- [**نشان‌گذاری یادداشت (Mark Note)**](editing.md#the-marked-tag): برچسب "marked" به یادداشت فعلی می‌افزاید تا به‌راحتی در مرورگر پیدا شود. این شبیه پرچم‌زدن کارت‌های منفرد است، اما در عوض با برچسب کار می‌کند؛ پس اگر یادداشت چند کارت داشته باشد، همه کارت‌ها در جست‌وجوی برچسب marked ظاهر می‌شوند. بیشتر کاربران ترجیح می‌دهند به‌جای آن از پرچم‌ها استفاده کنند.
 
-- **Create Copy**: Opens a [duplicate](browsing.md#finding-duplicates) of the current
-  note in the editor, which can be slightly modified to easily obtain variations of your cards.
-  By default, the duplicate card will be created in the same deck as the original.
+- **ساخت رونوشت (Create Copy)**: یک [نسخهٔ تکراری](browsing.md#finding-duplicates) از یادداشت فعلی در ویرایشگر باز می‌کند که می‌توانید با تغییراتی کوچک به‌راحتی گونه‌هایی از کارت‌هایتان به دست آورید. به‌طور پیش‌فرض، کارت تکراری در همان دستهٔ کارت اصل ساخته می‌شود.
 
-- **Delete Note**: Deletes the note and all of its cards.
+- **حذف یادداشت (Delete Note)**: یادداشت و همه کارت‌هایش را حذف می‌کند.
 
-- **Replay Audio**: If the card has audio on the front or back, play it again.
+- **پخش دوباره صدا (Replay Audio)**: اگر کارت در روی یا پشتش صدا دارد، آن را دوباره پخش می‌کند.
 
-- **Pause Audio**: Pauses the audio if it is playing.
+- **توقف صدا (Pause Audio)**: اگر صدا در حال پخش است، آن را متوقف می‌کند.
 
-- **Audio -5s / +5s**: Jump backwards / forward 5 seconds in the currently playing audio.
+- **جابه‌جایی صدا ۵ ثانیه (Audio -5s / +5s)**: ۵ ثانیه در صدای در حال پخش به عقب / جلو می‌رود.
 
-- **Record Own Voice**: Record from your microphone for the purposes of checking your
-  pronunciation. This recording is temporary and will go away when you
-  move to the next card. If you want to add audio to a card permanently,
-  you can do that in the edit window.
+- **ضبط صدای خودتان (Record Own Voice)**: برای بررسی تلفظ‌تان از میکروفن ضبط می‌کند. این ضبط موقتی است و وقتی به کارت بعدی بروید از بین می‌رود. اگر می‌خواهید صدایی را به‌طور دائم به کارتی اضافه کنید، می‌توانید این کار را در پنجره ویرایش انجام دهید.
 
-- **Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
-  the answer).
+- **پخش دوباره صدای خودتان (Replay Own Voice)**: ضبط قبلی صدای شما را دوباره پخش می‌کند (احتمالاً پس از نمایش پاسخ).
 
-## Display Order
+## ترتیب نمایش {#display-order}
 
-Studying will show cards from the selected deck and any decks it
-contains. Thus, if you select your “French” deck, the subdecks
-“French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
-well.
+مطالعه، کارت‌های دستهٔ انتخاب‌شده و هر دسته‌ای را که در بر دارد نمایش می‌دهد. بنابراین اگر دسته «French» را انتخاب کنید، زیردسته‌های "French::Vocab" و "French::My Textbook::Lesson 1" نیز نمایش داده می‌شوند.
 
-By default, for new cards, Anki gathers cards from the decks in
-alphabetical order. So in the above example, you would get cards first
-from “French”, then “My Textbook”, and finally “Vocab”. You can use this
-to control the order cards appear in, placing high priority cards in
-decks that appear higher in the list. When computers sort text
-alphabetically, the “-” character comes before alphabetical characters,
-and “\~” comes after them. So you could call the deck “-Vocab” to make
-them appear first, and you could call the other deck “\~My Textbook” to
-force it to appear after everything else.
+به‌طور پیش‌فرض، آنکی برای کارت‌های جدید، کارت‌ها را به ترتیب الفبا از دسته‌ها جمع می‌کند. پس در مثال بالا، ابتدا کارت‌هایی از "French" می‌گیرید، سپس "My Textbook" و در پایان "Vocab". می‌توانید از این برای کنترل ترتیب ظاهر شدن کارت‌ها استفاده کنید و کارت‌های با اولویت بالاتر را در دسته‌هایی بگذارید که در فهرست بالاترند. وقتی رایانه‌ها متن را به ترتیب الفبا مرتب می‌کنند، نویسهٔ "-" قبل از حروف الفبا و نویسهٔ "~" بعد از آن‌ها می‌آید. پس می‌توانید دسته را "-Vocab" بنامید تا زودتر ظاهر شود، و دستهٔ دیگر را "~My Textbook" تا بعد از همه‌چیز ظاهر شود.
 
-New cards and reviews are gathered separately, and Anki won’t wait until
-both queues are empty before moving on to the next deck, so it’s
-possible you’ll be exposed to new cards from one deck while seeing
-reviews from another deck, or vice versa. If you don’t want this, click
-directly on the deck you want to study instead of one of the parent
-decks.
+کارت‌های جدید و مرورها جداگانه جمع می‌شوند و آنکی منتظر خالی‌شدن هر دو صف نمی‌ماند تا به دستهٔ بعدی برود؛ پس ممکن است همزمان با دیدن مرورهای یک دسته، با کارت‌های جدید دستهٔ دیگری روبه‌رو شوید، یا برعکس. اگر این را نمی‌خواهید، به‌جای یکی از دسته‌های والد، مستقیماً روی همان دسته‌ای کلیک کنید که می‌خواهید مطالعه کنید.
 
-Since cards in learning are somewhat time-critical, they are fetched
-from all decks at once and shown in the order they are due.
+چون کارت‌های در حال یادگیری تا حدی حساس به زمان‌اند، همه‌شان یک‌جا از همه دسته‌ها واکشی می‌شوند و به ترتیب سررسیدشان نمایش داده می‌شوند.
 
-To control the order cards appear in, see [Display Order](./deck-options.md#display-order). For more fine-grained ordering of new cards, you
-can change the order in the [browser](browsing.md).
+برای کنترل ترتیب ظاهر شدن کارت‌ها، [ترتیب نمایش](./deck-options.md#display-order) را ببینید. برای ترتیب ظریف‌ترِ کارت‌های جدید، می‌توانید ترتیب را در [مرورگر](browsing.md) تغییر دهید.
 
-## Siblings and Burying
+## هم‌خانواده‌ها و کنار گذاشتن {#siblings-and-burying}
 
-Recall from [the basics](getting-started.md) that Anki can create more than one
-card for each thing you input, such as a front→back card and a
-back→front card, or two different cloze deletions from the same text.
-These related cards are called "siblings".
+به یاد بیاورید از [مبانی](getting-started.md) که آنکی می‌تواند برای هر چیزِ ورودی شما بیش از یک کارت بسازد؛ مثلاً کارتِ رو→پشت و پشت→رو، یا دو حذف اطلاعاتی متفاوت از یک متنِ واحد. به این کارت‌های مرتبط «هم‌خانواده» (sibling) گفته می‌شود.
 
-When you answer a card that has siblings, Anki can prevent the card’s
-siblings from being shown in the same session by automatically "burying"
-them. Buried cards are hidden from review until the clock rolls over to
-a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
-will bury siblings even if the siblings are not in the same deck (for
-instance, if you use the [deck override](templates/intro.md) feature).
+وقتی به کارتی پاسخ می‌دهید که هم‌خانواده دارد، آنکی می‌تواند با «کنار گذاشتنِ» خودکارِ هم‌خانواده‌ها مانع شود آن‌ها در همان جلسه نمایش داده شوند. کارت‌های کنار گذاشته‌شده تا وقتی ساعت به روز جدید برسد یا شما آن‌ها را با دکمه «Unbury» در پایین صفحه [پیش‌نمایش دسته](studying.md#study-overview) به‌طور دستی بازنگردانده باشید، از مرور پنهان می‌مانند. آنکی هم‌خانواده‌ها را حتی اگر در همان دسته نباشند کنار می‌گذارد (مثلاً اگر از قابلیت [بازنویسی دسته](templates/intro.md) استفاده کنید).
 
-You can enable burying from the [deck options](deck-options.md) screen -
-there are separate settings for new cards and reviews.
+می‌توانید کنار گذاشتن را از صفحه [گزینه‌های دسته](deck-options.md) فعال کنید — برای کارت‌های جدید و مرورها تنظیمات جداگانه‌ای وجود دارد.
 
-Anki will only bury siblings that are new or review cards. It will not
-hide cards in learning, as time is of the essence for those cards. On
-the other hand, when you study a learning card, any new/review siblings
-will be buried.
+آنکی فقط هم‌خانواده‌هایی را کنار می‌گذارد که جدید یا در حال مرور باشند. کارت‌های در حال یادگیری را پنهان نمی‌کند، چون زمان برای آن کارت‌ها اهمیت حیاتی دارد. از سوی دیگر، وقتی کارتی در حال یادگیری را مطالعه می‌کنید، هم‌خانواده‌های جدید/در حال مرورِ آن کنار گذاشته می‌شوند.
 
-Also note that a card cannot be buried and suspended at the same time. Suspending a
-buried card will unbury it. Suspended cards can't be buried.
+همچنین در نظر داشته باشید که یک کارت نمی‌تواند هم‌زمان کنار گذاشته‌شده و معلق باشد. معلق‌کردن کارتِ کنار گذاشته‌شده، آن را بازمی‌گرداند. کارت‌های معلق را نمی‌توان کنار گذاشت.
 
-## Keyboard Shortcuts
+## میانبرهای صفحه‌کلید {#keyboard-shortcuts}
 
-Most of the common operations in Anki have keyboard shortcuts. Most of
-them are discoverable in the interface: menu items list their shortcuts
-next to them, and hovering the mouse cursor over a button will generally
-show its shortcut in a tooltip.
+بیشتر کنش‌های رایج در آنکی میانبر صفحه‌کلید دارند. بیشتر آن‌ها در رابط کاربری قابل کشفاند: موارد منو میانبرهایشان را کنار خود فهرست می‌کنند و بردن نشانگر ماوس روی یک دکمه معمولاً میانبرش را در یک راهنمای ابزار (tooltip) نشان می‌دهد.
 
-When studying, either <kbd>Space</kbd> or <kbd>Enter</kbd> will show the answer. When the
-answer is shown, you can use <kbd>Space</kbd> or <kbd>Enter</kbd> to select the Good button.
-You can use the <kbd>1</kbd>-<kbd>4</kbd> keys to select a specific ease button. Many people
-find it convenient to answer most cards with <kbd>Space</kbd> and keep one finger
-on <kbd>1</kbd> for when they forget.
+هنگام مطالعه، <kbd>Space</kbd> یا <kbd>Enter</kbd> پاسخ را نمایش می‌دهد. وقتی پاسخ نمایش داده شد، می‌توانید با <kbd>Space</kbd> یا <kbd>Enter</kbd> دکمه Good را انتخاب کنید. با کلیدهای <kbd>1</kbd> تا <kbd>4</kbd> می‌توانید دکمهٔ سهولت مشخصی را برگزینید. بسیاری از افراد پاسخ‌دادن به بیشتر کارت‌ها را با <kbd>Space</kbd> و نگه‌داشتن یک انگشت روی <kbd>1</kbd> برای وقت‌های فراموشی راحت می‌دانند.
 
-The "Study Deck" item in the Tools menu allows you to quickly switch to
-a deck with the keyboard. You can trigger it with the <kbd>/</kbd> key. When
-opened, it will display all of your decks and show a filter area at the
-top. As you type characters, Anki will display only decks matching the
-characters you type. You can add a space to separate multiple search
-terms, and Anki will show only decks that match all the terms. So “ja 1”
-or “on1 ja” would both match a deck called “Japanese::Lesson1”.
+گزینه "Study Deck" در منوی Tools به شما اجازه می‌دهد سریع با صفحه‌کلید به دسته‌ای سوییچ کنید. می‌توانید آن را با کلید <kbd>/</kbd> فراخوانی کنید. هنگام باز شدن، همه دسته‌هایتان را نمایش می‌دهد و در بالای آن ناحیهٔ پالایش نشان می‌دهد. با تایپ نویسه‌ها، آنکی فقط دسته‌های منطبق با نویسه‌های تایپ‌شده را نمایش می‌دهد. می‌توانید با یک فاصله، چند واژهٔ جست‌وجو را از هم جدا کنید و آنکی فقط دسته‌های منطبق با همهٔ واژه‌ها را نشان می‌دهد. پس "ja 1" یا "on1 ja" هر دو با دسته‌ای به نام "Japanese::Lesson1" منطبق‌اند.
 
-## Falling Behind
+## عقب افتادن {#falling-behind}
 
-When you fall behind in your reviews, Anki by default prioritizes cards that have
-been waiting the longest. This ordering ensures that no cards will
-be left waiting indefinitely, but it means that if you introduce new
-cards, their reviews won’t appear until you’ve gotten through your
-backlog.
+وقتی در مرورهایتان عقب می‌افتید، آنکی به‌طور پیش‌فرض کارت‌هایی را که طولانی‌ترین زمان منتظر مانده‌اند در اولویت می‌گذارد. این ترتیب تضمین می‌کند هیچ کارتی تا ابد منتظر نماند، اما به این معناست که اگر کارت جدیدی معرفی کنید، مرورهایشان تا وقتی از عهدهٔ انبوه عقب‌مانده برنیامدهاید ظاهر نمی‌شوند.
 
-When you answer cards that have been waiting for a while, Anki factors
-in that delay when determining the next time a card should be shown. This means if you are returning to Anki after a long break, you don't have to start anew and can just start back from where you left.
+وقتی به کارت‌هایی پاسخ می‌دهید که مدتی منتظر مانده‌اند، آنکی آن تأخیر را در تعیین زمان نمایش بعدی کارت لحاظ می‌کند. یعنی اگر بعد از وقفه‌ای طولانی به آنکی برگردید، لازم نیست از نو شروع کنید و می‌توانید دقیقاً از همان‌جا که بودید ادامه دهید.

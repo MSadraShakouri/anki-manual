@@ -1,41 +1,39 @@
-# Installing & Upgrading Anki on macOS
+# نصب و ارتقای آنکی در macOS {#installing--upgrading-anki-on-macos}
 
 <!-- toc -->
 
-## Requirements
+## پیش‌نیازها {#requirements}
 
-macOS version requirements are listed on the download page.
+الزامات نسخه macOS در صفحه دانلود فهرست شده‌اند.
 
-If you're on an old machine, you can obtain the old version from the [releases page](https://github.com/ankitects/anki/releases). The Qt5 builds on 24.11 and earlier support macOS 10.14 and later. If your macOS
-is between 10.10 and 10.13, you'll need to use [Anki 2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35).
+اگر روی رایانه قدیمی هستید، می‌توانید نسخه قدیمی را از [صفحه انتشارها](https://github.com/ankitects/anki/releases) دریافت کنید. بیلدهای Qt5 در 24.11 و قبلتر از macOS 10.14 به بعد پشتیبانی می‌کنند. اگر macOS شما
+بین 10.10 و 10.13 است، باید از [Anki 2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35) استفاده کنید.
 
-## Installing
+## نصب {#installing}
 
-1. Download Anki from <https://apps.ankiweb.net>.
-2. Save the file to your desktop or downloads folder.
-3. Open it, and drag Anki to your Applications folder or desktop.
-4. Double-click on Anki in the location you placed it.
+1. آنکی را از <https://apps.ankiweb.net> دانلود کنید.
+2. پرونده را در پوشه میزکار یا دانلودتان ذخیره کنید.
+3. آن را باز کنید و آنکی را به پوشه Applications یا میزکارتان بکشید.
+4. در مکانی که گذاشتید، روی آنکی دوبار کلیک کنید.
 
-## Upgrading
+## ارتقا {#upgrading}
 
-To upgrade, close Anki if it is open, and then follow the steps above. Drag
-the Anki icon into the same location you previously stored it, and when prompted,
-overwrite the old version. Your card data will be preserved.
+برای ارتقا، آنکی را اگر باز است ببندید و سپس مراحل بالا را دنبال کنید. نشان
+آنکی را به همان مکانی که قبلاً گذاشته بودید بکشید و وقتی پرسیده شد، نسخه قدیمی را
+بازنویسی کنید. داده کارت‌هایتان حفظ می‌شود.
 
-## Homebrew
+## Homebrew {#homebrew}
 
-[Homebrew](https://brew.sh/) users can install Anki using
-`brew install --cask anki` in their preferred Terminal application.
+کاربران [Homebrew](https://brew.sh/) می‌توانند آنکی را با
+`brew install --cask anki` در برنامه ترمینال مورد علاقه‌شان نصب کنند.
 
-Upgrading can be done using `brew upgrade`, and for uninstalling: `brew uninstall --cask anki`
+ارتقا با `brew upgrade` انجام می‌شود و برای حذف: `brew uninstall --cask anki`
 
-## Add-on Compatibility
+## سازگاری افزونه‌ها {#add-on-compatibility}
 
-Some add-ons may not always work with the latest Anki release. If you upgrade to
-the latest Anki version and find an add-on you cannot live without stops working,
-you can download older Anki versions from the [releases page](https://github.com/ankitects/anki/releases).
+بعضی افزونه‌ها ممکن است همیشه با آخرین نسخه آنکی کار نکنند. اگر به آخرین نسخه آنکی ارتقا دهید و ببینید افزونه‌ای که بدونش نمی‌توانید از کار افتاده، می‌توانید نسخه‌های قدیمی‌تر آنکی را از [صفحه انتشارها](https://github.com/ankitects/anki/releases) دانلود کنید.
 
-## Problems
+## مشکلات {#problems}
 
-If you encounter any issues when installing or starting Anki, please see:
-- [Display Issues](display-issues.md)
+اگر هنگام نصب یا شروع آنکی با مشکلی روبه‌رو شدید، لطفاً ببینید:
+- [مشکلات نمایش](display-issues.md)

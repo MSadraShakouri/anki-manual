@@ -1,9 +1,9 @@
-# Platform Notes
+# نکات مربوط به پلتفرم {#platform-notes}
 
-This section explains the way Anki is installed, and the possible problems you may encounter, depending on your OS:
+این بخش نحوه نصب آنکی و مشکلات احتمالی‌ای را که بسته به سیستم‌عامل‌تان ممکن است با آن‌ها روبه‌رو شوید توضیح می‌دهد:
 
-- [Windows](./windows/intro.md)
+- [ویندوز](./windows/intro.md)
 - [macOS](./mac/intro.md)
-- [Linux](./linux/intro.md)
+- [لینوکس](./linux/intro.md)
 
-If you have already installed Anki, you can skip to the [Getting Started](../getting-started.md) section.
+اگر از قبل آنکی را نصب کرده‌اید، می‌توانید به بخش [شروع به کار](../getting-started.md) بروید.

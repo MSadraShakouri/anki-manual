@@ -1,26 +1,14 @@
-# Add-ons
+# افزونه‌ها {#add-ons}
 
-Anki's capabilities can be extended with add-ons. Add-ons can provide
-features like extra support for specific languages, extra control over
-scheduling, and so on.
+قابلیت‌های آنکی را می‌توان با افزونه‌ها گسترش داد. افزونه‌ها می‌توانند قابلیت‌هایی مانند پشتیبانی اضافه از زبان‌های مشخص، کنترل بیشتر بر زمان‌بندی و غیره فراهم کنند.
 
-To browse the list of available add-ons, select **Tools > Add-ons**, then click on **Get Add-ons**.
-Alternatively, open [ankiweb.net/shared/addons](https://ankiweb.net/shared/addons) in a web browser.
+برای مرور فهرست افزونه‌های موجود، **Tools > Add-ons** را انتخاب کنید، سپس روی **Get Add-ons** کلیک کنید.
+همچنین می‌توانید [ankiweb.net/shared/addons](https://ankiweb.net/shared/addons) را در مرورگر وب باز کنید.
 
-If you have downloaded an add-on that is not working properly, or if you
-accidentally made a mistake when editing an add-on, you can use the
-**Delete** option in the menu to remove it.
+اگر افزونه‌ای دانلود کرده‌اید که درست کار نمی‌کند، یا اگر هنگام ویرایش افزونه‌ای به‌طور تصادفی اشتباهی کرده‌اید، می‌توانید با گزینه **Delete** در منو آن را حذف کنید.
 
-Add-ons use and modify arbitrary parts of Anki’s codebase, so in some
-cases, updating Anki can break the compatibility with older add-ons. If
-one of your add-ons stops working after updating Anki, please consider
-reporting the issue to the add-on author. If you rely on this add-on,
-you will need to keep using an older Anki version until the add-on gets
-an update.
+افزونه‌ها از بخش‌های دلخواهی از کدپایه آنکی استفاده و آن‌ها را تغییر می‌دهند؛ پس در بعضی موارد، به‌روزرسانی آنکی می‌تواند سازگاری با افزونه‌های قدیمی‌تر را بشکند. اگر یکی از افزونه‌هایتان پس از به‌روزرسانی آنکی از کار افتاد، لطفاً گزارش مشکل به نویسنده افزونه را در نظر بگیرید. اگر به این افزونه وابسته‌اید، تا زمانی که افزونه به‌روزرسانی شود باید از نسخه قدیمی‌تر آنکی استفاده کنید.
 
-There is a **Contact Author** button on most add-ons pages on AnkiWeb,
-and many authors include their email address in the add-on, so if you
-need to get in touch with the author, editing the add-on and looking at
-the top of the file may help.
+روی بیشتر صفحات افزونه‌ها در AnkiWeb دکمه **Contact Author** هست و بسیاری از نویسندگان نشانی ایمیلشان را در افزونه می‌گنجانند؛ پس اگر لازم است با نویسنده تماس بگیرید، ویرایش افزونه و نگاه به بالای پرونده ممکن است کمک کند.
 
-To learn how to write your own add-ons, see the [add-on writing guide](https://addon-docs.ankiweb.net).
+برای یادگیری نوشتن افزونه‌های خودتان، [راهنمای نوشتن افزونه](https://addon-docs.ankiweb.net) را ببینید.

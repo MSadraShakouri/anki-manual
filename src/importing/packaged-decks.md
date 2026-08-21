@@ -1,53 +1,31 @@
-# Packaged Decks
+# دسته‌های بسته‌بندی‌شده {#packaged-decks}
 
 <!-- toc -->
 
-Anki packages (.apkg files) enable you to import decks, notes, note types, and cards from
-other users. They are commonly shared on [AnkiWeb](https://ankiweb.net/shared/decks).
+بسته‌های آنکی (پرونده‌های .apkg) به شما اجازه می‌دهند دسته‌ها، یادداشت‌ها، انواع یادداشت و کارت‌ها را از کاربران دیگر درون‌ریزی کنید. این‌ها معمولاً در [AnkiWeb](https://ankiweb.net/shared/decks) به اشتراک گذاشته می‌شوند.
 
-## Scheduling
+## زمان‌بندی {#scheduling}
 
-Anki packages may also contain scheduling information, which is useful if you want to
-transfer decks between devices or profiles. However, when importing
-a deck shared by someone else, you typically do not want to adopt their card intervals
-or review history.
+بسته‌های آنکی ممکن است اطلاعات زمان‌بندی هم در بر داشته باشند که برای انتقال دسته‌ها میان دستگاه‌ها یا نمایه‌ها سودمند است. اما هنگام درون‌ریزی دسته‌ای که شخص دیگری به اشتراک گذاشته، معمولاً نمی‌خواهید فاصله‌های کارت یا تاریخچه مرور او را بپذیرید.
 
-If you encounter imported cards with unexpectedly large intervals, the deck author may
-accidentally have included their scheduling information. You can use the
-[Set Due Date feature](../browsing.md#cards) to reset the imported cards. On Anki
-23.10 and later, you can remove any scheduling information during the import process
-by leaving the "Import any learning progress" option unselected. This will also remove
-any "leech" or "marked" tags from the imported cards.
+اگر با کارت‌های درون‌ریزی‌شده‌ای با فاصله‌های به‌طرز غیرمنتظره‌ای بزرگ روبه‌رو شدید، ممکن است سازنده دسته به‌طور تصادفی اطلاعات زمان‌بندی‌اش را گنجانده باشد. می‌توانید از [قابلیت Set Due Date](../browsing.md#cards) برای بازنشانی کارت‌های درون‌ریزی‌شده استفاده کنید. در آنکی 23.10 و بعدتر، می‌توانید هرگونه اطلاعات زمان‌بندی را در فرایند درون‌ریزی حذف کنید با علامت‌نزدن‌نکردن گزینه "Import any learning progress". این کار برچسب‌های "leech" یا "marked" را هم از کارت‌های درون‌ریزی‌شده حذف می‌کند.
 
-## Updating
+## به‌روزرسانی {#updating}
 
-When you import an .apkg file, Anki will identify any notes in it that are
-already in your collection due to a previous import. If the notes in the file
-are newer than your local copy, the notes will be updated with the contents of
-the file by default.
+وقتی پرونده .apkg را درون‌ریزی می‌کنید، آنکی یادداشت‌هایی را در آن که به‌دلیل درون‌ریزی قبلی هم‌اکنون در مجموعه شما هستند تشخیص می‌دهد. اگر یادداشت‌های پرونده از رونوشت محلی‌تان جدیدتر باشند، به‌طور پیش‌فرض یادداشت‌ها با محتوای پرونده به‌روزرسانی می‌شوند.
 
-This updating process is generally not possible if the note type is changed (e.g. if either
-you or the deck author do things like add an extra field to the note type).
-You will still be able to import any missing notes from the file, but
-notes you have imported previously will not be updated if the deck author
-has made changes.
+این فرایند به‌روزرسانی معمولاً اگر نوع یادداشت تغییر کرده باشد ممکن نیست (مثلاً اگر شما یا سازنده دسته کارهایی مانند افزودن فیلد اضافی به نوع یادداشت کرده باشید).
+باز هم می‌توانید یادداشت‌های مفقود را از پرونده درون‌ریزی کنید، اما یادداشت‌هایی که قبلاً درون‌ریزی کرده‌اید اگر سازنده دسته تغییری داده باشد به‌روزرسانی نخواهند شد.
 
-### Anki 23.10 and Later
+### آنکی 23.10 و بعدتر {#anki-2310-and-later}
 
-Anki 23.10 introduced more flexibility: You can choose to unconditionally
-update notes and note types, always overwriting your modifications,
-or, on the other hand, never update existing objects.
+آنکی 23.10 انعطاف بیشتری معرفی کرد: می‌توانید انتخاب کنید یادداشت‌ها و انواع یادداشت‌ها بی‌قیدوشرط به‌روزرسانی شوند و همیشه تغییرات شما بازنویسی شوند، یا برعکس، هرگز اشیای موجود به‌روزرسانی نشوند.
 
-Also, if both you and the deck author modified the same note type, you can now decide to
-_merge_ the two versions. This will preserve all templates and fields contained in
-either one, but will require a full sync, and may mark other existing notes as modified.
+همچنین اگر هم شما و هم سازنده دسته نوع یادداشتِ یکسانی را تغییر داده باشید، اکنون می‌توانید تصمیم بگیرید دو نسخه را _ادغام_ کنید. این کار همه قالب‌ها و فیلدهای موجود در هر کدام را حفظ می‌کند، اما به همگام‌سازی کامل نیاز دارد و ممکن است سایر یادداشت‌های موجود را به‌عنوان تغییریافته علامت بزند.
 
-#### Note to Deck Authors
+#### یادداشتی به سازندگان دسته {#note-to-deck-authors}
 
-Merging relies on template and field ids, which were introduced in Anki 2.1.67.
-If a template or field lacks an id, because it has been created with an earlier
-release, Anki attempts to find an equivalent by comparing names.
+ادغام به شناسه‌های قالب و فیلد تکیه دارد که در آنکی 2.1.67 معرفی شدند.
+اگر قالبی یا فیلدی شناسه ندارد — چون با نسخه‌ای قدیمی‌تر ساخته شده — آنکی می‌کوشد با مقایسه نام‌ها هم ارزشی بیابد.
 
-See this [this add-on](https://ankiweb.net/shared/info/2063785767) for why it is
-advantageous to share note types with field and template ids, and how to add them to
-existing ones.
+برای اینکه چرا اشتراک‌گذاری انواع یادداشت با شناسه‌های فیلد و قالب سودمند است و چگونه می‌توان آن‌ها را به انواع موجود افزود، [این افزونه](https://ankiweb.net/shared/info/2063785767) را ببینید.

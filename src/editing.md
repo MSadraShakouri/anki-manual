@@ -1,598 +1,339 @@
-# Adding/Editing
+# افزودن/ویرایش {#addingediting}
 
 <!-- toc -->
 
-## Adding Cards and Notes
+## افزودن کارت‌ها و یادداشت‌ها {#adding-cards-and-notes}
 
-Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click **Add** in the [main window](studying.md#decks),
-and the Add Notes window will appear.
+به یاد بیاورید از [مبانی](getting-started.md) که در آنکی ما یادداشت می‌افزاییم نه کارت، و آنکی کارت‌ها را برایمان می‌سازد. در [پنجره اصلی](studying.md#decks) روی **Add** (افزودن) کلیک کنید تا پنجره Add Notes باز شود.
 
-![Add Screen](media/add_screen.png)
+![صفحه افزودن](media/add_screen.png)
 
-The top left of the window shows us the current [note type](getting-started.md#note-types). If it does
-not say "Basic," then you may have added some note types when you
-downloaded a shared deck. The text below assumes that "Basic" is
-selected.
+بالا-چپ پنجره [نوع یادداشت](getting-started.md#note-types) فعلی را به ما نشان می‌دهد. اگر "Basic" نیست، احتمالاً هنگام دانلود دستهٔ اشتراکی، برخی انواع یادداشت به شما افزوده شده است. متن زیر فرض می‌کند "Basic" انتخاب شده است.
 
-The top right of the window shows us the [deck](getting-started.md#decks) cards will be added to. If
-you would like to add cards to a new deck, you can click on the deck name
-button and then click **Add**.
+بالا-راست پنجره [دسته‌ای](getting-started.md#decks) را نشان می‌دهد که کارت‌ها به آن افزوده می‌شوند. اگر می‌خواهید کارت‌ها را به دستهٔ تازه‌ای بیفزایید، می‌توانید روی دکمه نام دسته کلیک و سپس **Add** را بزنید.
 
-Below the note type, you'll see some buttons, and an area labelled
-"Front" and "Back". Front and Back are called [fields](getting-started.md#notes--fields), and you can add,
-remove, and rename them by clicking the "Fields…​" button above.
+زیر نوع یادداشت، چند دکمه و ناحیه‌ای با برچسب "Front" و "Back" می‌بینید. به Front و Back [فیلد](getting-started.md#notes--fields) گفته می‌شود و می‌توانید با کلیک روی دکمه "Fields…​" در بالا، آن‌ها را بیفزایید، حذف و تغییر نام دهید.
 
-Below the fields is another area labelled "**tags**". Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says
+زیر فیلدها ناحیه دیگری با برچسب "**tags**" (برچسب‌ها) است. برچسب‌ها عبارت‌هایی هستند که می‌توانید به یادداشت‌هایتان بچسبانید تا سازمان‌دهی و یافتن یادداشت‌ها آسان‌تر شود. در صورت تمایل می‌توانید برچسب‌ها را خالی بگذارید، یا یکی یا چندتای آن‌ها را بیفزایید. برچسب‌ها با فاصله از هم جدا می‌شوند. اگر ناحیه برچسب‌ها بگوید
 
     vocab check_with_tutor
 
-…​then the note you add would have two tags.
-
-When you have entered text into the front and back, you can click the
-**Add** button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you would like to edit a card you
-added, you can click the history button to search for a recently added
-card in the [browser](browsing.md).
-
-For more information on the buttons between the note type and the
-fields, see the [editor](editing.md) section.
-
-### Duplicate Check
-
-Anki checks the first field for uniqueness, so it will warn you if you
-enter two cards with a Front field of "apple" (for example). The
-uniqueness check is limited to the current note type, so if you're
-studying multiple languages, two cards with the same Front would not be
-listed as duplicates as long as you had a different note type for each
-language.
-
-Anki does not check for duplicates in other fields automatically for
-efficiency reasons, but the browser has a "Find Duplicates" function,
-which you can run periodically.
-
-### Effective Learning
-
-Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this article](https://super-memory.com/articles/20rules.htm) on the SuperMemo
-site. In particular:
-
-- **Keep it simple**: The shorter your cards, the easier they are to
-  review. You may be tempted to include lots of information "just in
-  case," but reviews will quickly become painful.
-
-- **Don't memorize without understanding**: If you are studying a
-  language, try to avoid large lists of words. The best way to learn
-  languages is in context, which means seeing those words used in a
-  sentence. Likewise, imagine you're studying a computer course. If
-  you attempt to memorize the mountain of acronyms, you'll find it
-  very difficult to make progress. But if you take the time to
-  understand the concepts behind the acronyms, learning the acronyms
-  will become a lot easier.
-
-## Adding a Note Type
-
-While basic note types are sufficient for simple cards with only a word
-or phrase on each side, as soon as you find yourself wanting to include
-more than one piece of information on the front or back, it's better to
-split that information up into more fields.
-
-You may find yourself thinking "but I only want one card, so why can't I
-just include the audio, a picture, a hint, and the translation in the
-Front field?" If you'd prefer to do that, that's fine. But the
-disadvantage of that approach is that all the information is stuck
-together. If you wanted to sort your cards by the hint, you wouldn't be
-able to do that as it is mixed in with the other content. You also
-wouldn't be able to do things such as moving the audio from the front to the
-back, except by laboriously copying and pasting it for every note. By
-keeping content in separate fields, you make it much easier to adjust
-the layout of your cards in the future.
-
-To create a new type of note, choose **Tools > Manage Note Types** from the
-main Anki window. Then click **Add** to add a new type of note. You will now
-see another screen that gives you a choice of note types to base the new
-type on. "Add" means to base the newly created type on one that comes
-with Anki. "Clone" means to base the newly created type on one that is
-already in your collection. For instance, if you'd created a French
-vocab type already, you might want to clone that when creating a German
-vocab type.
-
-After choosing OK, you will be asked to name the new type. The subject
-material that you are studying is a good choice here – things like "Japanese",
-"Trivia", and so on. Once you have chosen a name, close the Note Types
-window, and you will return to the adding window.
-
-## Customizing Fields
-
-To customize fields, click the **Fields...** button when adding or editing
-a note, or while the note type is selected in the Manage Note Types
-window.
-
-![Fields](media/fields.png)
-
-You can add, remove, or rename fields by clicking the appropriate
-buttons.
-
-To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter "1".
-
-Alternatively you can also drag and drop the field names to reorder them. To do
-that, use your mouse or finger to drag the field to the desired position. An indicator will
-show you where the field will be moved to.
-
-Do not use "Tags", "Type", "Deck", "Card", or "FrontSide" as field
-names, as they are [special fields](templates/fields.md#special-fields) and will not work
-properly.
-
-The options at the bottom of the screen allow you to edit various
-properties of the fields to be used when adding and editing the cards.
-This is _not_ where you customize what appears on your cards when
-reviewing; for that, see [templates](templates/intro.md).
-
-- **Editing Font** allows you to customize the font and size used when
-  editing notes. This is useful if you want to make unimportant
-  information smaller, or increase the size of non-Latin characters which
-  are hard to read. The changes you make here do not affect how cards
-  appear when reviewing: to do that, see the
-  [templates](templates/intro.md) section. If you have enabled the "type in the
-  answer" function, however, the text you type will use the font size
-  defined here. (For information about how to change the actual font face
-  when typing the answer, see the [checking your answer](templates/fields.md#checking-your-answer) section.)
-
-- **Sort by this field…​** tells Anki to show this field in the Sort Field
-  column of the browser. You can use this to sort cards by that field.
-  Only one field can be the sort field at once.
-
-- **Reverse text direction** is useful if you are studying languages that
-  display text from right to left (RTL), such as Arabic or Hebrew. This
-  setting currently only controls editing; to make sure the text displays
-  correctly during review, you'll need to adjust your
-  [template](templates/styling.md#text-direction).
-
-- **Use HTML editor by default** is useful if you prefer to edit the fields
-  directly in HTML.
-
-- **Collapse by default**. Fields can be collapsed/expanded.
-  The animation can be disabled in the [preferences.](preferences.md)
-
-- **Exclude from unqualified searches (slower)** can be used if you want
-  the content of a certain field not to appear in unqualified [(not limited to a specific field)](searching.md#limiting-to-a-field)
-  searches.
-
-After you have added fields, you will probably want to add them to the front
-or back of your cards. For more information on that, see the
-[templates](templates/intro.md) section.
-
-## Changing Deck / Note Type
-
-While adding, you can click on the top left button to change note type,
-and the top right button to change deck. The window that opens up will
-not only allow you to select a deck or note type, but also to add new
-decks or manage your note types.
-
-## Organizing Content
-
-### Using Decks Appropriately
-
-[Decks](getting-started.md#decks) are designed to divide your content up into
-broad categories that you wish to study separately, such as English, Geography,
-and so on. You may be tempted to create lots of little decks to keep your
-content organized, such as "my geography book chapter 1", or "food verbs", but
-this is not recommended, for the following reasons:
-
-- Lots of little decks may mean you end up seeing cards in a
-  recognizable order. On older scheduler versions, new cards can only
-  be introduced in deck order. And if you were planning to click on each deck
-  in turn (which is slow), you will end up seeing all the "chapter 1" or
-  "food verb" reviews together. This makes it easier to answer the
-  cards, as you can guess them from the context, which leads to weaker
-  memories. When you need to recall the word or phrase outside Anki,
-  you won't always have the luxury of being shown related content first!
-
-- While less of a problem than it was in earlier Anki versions,
-  adding hundreds of decks may cause slowdowns, and very large deck
-  trees with thousands of items can actually break the display of
-  the deck list in Anki versions before 2.1.50.
-
-### Using Tags
-
-Instead of creating lots of little decks, it's a better idea to use tags
-and/or fields to classify your content. Tags are a useful way to boost
-search results, find specific content, and keep your collection
-organized.
-There are many ways of using tags and flags effectively, and
-thinking in advance about how you want to use them will help you decide
-what will work best for you.
-
-Some people prefer using decks and subdecks to keep their cards organized,
-but using tags offers a big advantage over decks for that: you can add several
-tags to a single note, but a single card can only belong to one deck, which
-makes tags a more powerful and flexible categorization system than
-decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#decks).
-
-For example, instead of creating a "food verbs" deck, you could add those
-cards to your main language study deck, and tag the cards with "food" and
-"verb". Since each card can have multiple tags, you can do things like
-[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all
-food-related vocabulary, or all verbs that are related to food.
-
-You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
-delete, rename, or organize tags there. Note that
-tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
-all the siblings will be tagged as well. If you need to tag a single card,
-but not its siblings, you should consider using flags instead.
-
-### Using Flags
-
-Flags are similar to tags, but they will appear during study in the review
-window, showing a colored flag icon on the upper right area of the screen.
-You can also search for flagged cards in the Browse screen, rename flags
-from the browser and create filtered decks from flagged cards, but unlike tags,
-a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#cards) level, so flagging a card that has siblings
-won't have any effect on the card's siblings.
-
-You can flag / unflag cards directly while in review mode (by pressing
-<kbd>Ctrl</kbd>+<kbd>1-7</kbd> on Windows or <kbd>Cmd</kbd>+<kbd>1-7</kbd> on Mac)
-and from the [Browser.](browsing.md)
-
-### The "Marked" Tag
-
-Anki treats a tag called "marked" specially. There are options in the review
-screen and browse screen to add and remove the "marked" tag. The study screen
-will show a star when the current card's note has that tag. And cards are
-shown in a different color in the browse screen when their note is marked.
-
-Note: Marking is mainly left around for compatibility with older Anki
-versions; most users will want to use [flags](editing.md#using-flags) instead.
-
-### Using Fields
-
-For those who like to stay very organized, you can add fields to your
-notes to classify your content, such as "book", "page", and so on. Anki
-supports searching in specific fields, which means you can do a search
-for `"book:my book" page:63` and immediately find what you're looking
-for.
-
-### Custom Study and Filtered Decks
-
-Using [custom study and filtered deck](filtered-decks.md) you can create
-temporary decks out of search
-terms. This allows you to review your content mixed together in a single
-deck most of the time (for optimum memory), but also create temporary
-decks when you need to focus on particular material, such as before a
-test. The general rule is that if you always want to be able to study
-some content separately, it should be in a normal deck; if you only
-occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then filtered decks created from tags, flags,
-marks or fields are better.
-
-## Editing Features
-
-The editor is shown when [adding notes](editing.md), [editing a note](studying.md#editing-and-more) during reviews, or [browsing](browsing.md).
-
-![Editor icons](media/editor_icons.png)
-
-On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
-[cards](templates/intro.md) windows.
-
-On the right are buttons that control formatting. Bold, italic and
-underline work like they do in a word processing program. The next two
-buttons allow you to subscript or superscript text, which is useful for
-chemical compounds like H<sub>2</sub>O or simple mathematical equations like
-x<sup>2</sup>. Then, there are two buttons to allow you to change text colour.
-
-The rubber eraser button clears any formatting in the currently selected text — including the colour
-of the text, whether the selected text is bold, etc. The next three buttons allow creating lists, text alignment and text indent.
-
-You can use the paper-clip button to select audio, images, and videos from
-your computer's hard drive and attach them to your notes. Alternatively, you
-can copy the media onto your computer's clipboard (for instance, by
-right-clicking an image on the web and choosing "Copy Image") and paste
-it into the field that you want to place it in. For more information
-about media, see the [media](media.md) section.
-
-The microphone icon allows you to record from your computer's microphone
-and attach the recording to the note.
-
-The Fx button shows shortcuts to add MathJax or
-[LaTeX](math.md) to your notes.
-
-The \[…​\] buttons are visible when a cloze note type is selected.
-![Cloze icons](media/cloze_icons.png)
-
-The `</>` button allows editing the underlying HTML of a field.
-![HTML icon](media/html_icon.png)
-
-Anki 2.1.45+ supports adjusting sticky fields directly from the editing screen.
-If you click on the pin icon on the right of a field, Anki will not clear out
-the field's content after a note is added. If you find yourself entering the
-same content into multiple notes, you may find this useful. On previous Anki
-versions, sticky fields were toggled from the Fields screen.
-
-![Pin icon](media/Pin_icon.png)
-
-Most of the buttons have shortcut keys. You can hover the mouse cursor
-over a button to see its shortcut.
-
-When pasting text, Anki will keep most formatting by default. If you
-hold down the <kbd>Shift</kbd> key while pasting, Anki will strip most of the
-formatting. Under Preferences, you can toggle "Paste without shift
-key strips formatting" to modify the default behaviour.
-
-## Cloze Deletion
-
-_Cloze deletion_ is the process of hiding one or more words in a
-sentence. For example, if you have the sentence:
+…​آنگاه یادداشتی که می‌افزایید دو برچسب خواهد داشت.
+
+وقتی متن را در روی و پشت وارد کردید، می‌توانید دکمه **Add** را بزنید یا <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> روی مک) را بفشارید تا یادداشت به مجموعه‌تان افزوده شود. با این کار، کارتی نیز ساخته می‌شود و در دسته‌ای که انتخاب کردید قرار می‌گیرد. اگر بخواهید کارتی را که افزوده‌اید ویرایش کنید، می‌توانید روی دکمه تاریخچه کلیک کنید تا کارت اخیراً افزوده‌شده را در [مرورگر](browsing.md) بیابید.
+
+برای اطلاعات بیشتر درباره دکمه‌های میان نوع یادداشت و فیلدها، بخش [ویرایشگر](editing.md) را ببینید.
+
+### بررسی تکراری {#duplicate-check}
+
+آنکی فیلد اول را از نظر یکتا بودن بررسی می‌کند؛ پس مثلاً اگر دو کارت با فیلدِ رویِ "apple" وارد کنید به شما هشدار می‌دهد. بررسی یکتایی به نوع یادداشت فعلی محدود است؛ پس اگر چند زبان می‌آموزید، دو کارت با همان فیلدِ رویِ یکسان، تکراری فهرست نمی‌شوند، به شرط آنکه برای هر زبان نوع یادداشت متفاوتی داشته باشید.
+
+آنکی به‌دلیل بهره‌وری، به‌طور خودکار بقیه فیلدها را از نظر تکراری نبودن بررسی نمی‌کند، اما مرورگر عملکرد "Find Duplicates" را دارد که می‌توانید به‌طور دوره‌ای اجرایش کنید.
+
+### یادگیری مؤثر {#effective-learning}
+
+افراد مختلف راه‌های مختلفی برای مرور ترجیح می‌کنند، اما چند مفهوم کلی هست که باید در نظر داشت. مقدمه‌ای عالی، [این مقاله](https://super-memory.com/articles/20rules.htm) در وب‌سایت SuperMemo است. به‌ویژه:
+
+- **ساده نگهش دارید**: هرچه کارت‌هایتان کوتاه‌تر باشند، مرورشان آسان‌تر است. شاید وسوسه شوید اطلاعات زیادی را «فقط محض احتیاط» بگنجانید، اما مرورها به‌سرعت دردناک می‌شوند.
+
+- **بدون فهمیدن حفظ نکنید**: اگر زبان می‌آموزید، سعی کنید از فهرست‌های بلند واژه پرهیز کنید. بهترین راه یادگیری زبان‌ها، یادگیری در زمینه است؛ یعنی دیدن آن واژه‌ها در جمله. همچنین تصور کنید در حال گذراندن درس رایانه‌ای هستید. اگر بخواهید کوهی از مخفف‌ها را حفظ کنید، پیشرفت برایتان بسیار دشوار می‌شود. اما اگر وقتی بگذارید و مفاهیم پشت مخفف‌ها را بفهمید، یادگیری خود مخفف‌ها خیلی آسان‌تر می‌شود.
+
+## افزودن نوع یادداشت {#adding-a-note-type}
+
+در حالی که انواع یادداشت پایه برای کارت‌های ساده‌ای که فقط یک واژه یا عبارت در هر طرف دارند کافی‌اند، به‌محض اینکه خواستید بیش از یک قطعه اطلاعات در روی یا پشت بیاورید، بهتر است آن اطلاعات را به فیلدهای بیشتری بشکنید.
+
+شاید بیندیشید «ولی من فقط یک کارت می‌خواهم، پس چرا نتوانم صدا، تصویر، راهنما و ترجمه را همه در فیلدِ روی بگذارم؟» اگر ترجیح می‌دهید این کار را بکنید، اشکالی ندارد. اما عیب این روش آن است که همه اطلاعات به هم چسبیده‌اند. اگر بخواهید کارت‌هایتان را بر اساس راهنما مرتب کنید، نمی‌توانید، چون با بقیه محتوا مخلوط شده. همچنین نمی‌توانید کارهایی مانند جابه‌جایی صدا از روی به پشت را انجام دهید، مگر با کپی و چسباندن زحمت‌کش آن برای هر یادداشت. با نگه‌داشتن محتوا در فیلدهای جداگانه، تنظیم چیدمان کارت‌هایتان در آینده را بسیار آسان‌تر می‌کنید.
+
+برای ساختن نوع جدیدی از یادداشت، از پنجره اصلی آنکی **Tools > Manage Note Types** را انتخاب کنید. سپس روی **Add** کلیک کنید تا نوع جدیدی از یادداشت افزوده شود. اکنون صفحه‌ای می‌بینید که انتخابی از انواع یادداشت برای مبنا قراردادن نوع جدید به شما می‌دهد. "Add" یعنی مبنا قراردادن نوع تازه‌ساخته بر نوعی که همراه آنکی می‌آید. "Clone" یعنی مبنا قراردادن نوع تازه‌ساخته بر نوعی که هم‌اکنون در مجموعه شماست. مثلاً اگر پیش‌تر نوع واژگان فرانسوی ساخته باشید، شاید هنگام ساختن نوع واژگان آلمانی بخواهید آن را همان‌طور کپی (clone) کنید.
+
+پس از انتخاب OK، از شما خواسته می‌شود نوع جدید را نام‌گذاری کنید. مطلبِ موضوعی‌ای که می‌آموزید انتخاب خوبی است — چیزهایی مانند "Japanese"، "Trivia" و غیره. وقتی نام را انتخاب کردید، پنجره Note Types را ببندید تا به پنجره افزودن بازگردید.
+
+## سفارشی‌سازی فیلدها {#customizing-fields}
+
+برای سفارشی‌سازی فیلدها، هنگام افزودن یا ویرایش یادداشت، یا وقتی نوع یادداشت در پنجره Manage Note Types انتخاب است، روی دکمه **Fields...** کلیک کنید.
+
+![فیلدها](media/fields.png)
+
+می‌توانید با کلیک روی دکمه‌های مربوط، فیلدها را بیفزایید، حذف یا تغییر نام دهید.
+
+برای تغییر ترتیبی که فیلدها در این گفت‌وگو و گفت‌وگوی افزودن یادداشت ظاهر می‌شوند، می‌توانید از دکمه بازآرایی موقعیت (reposition) استفاده کنید که موقعیت عددی موردنظر فیلد را می‌پرسد. پس اگر می‌خواهید فیلدی به اولین فیلدِ جدید تبدیل شود، "1" را وارد کنید.
+
+همچنین می‌توانید نام فیلدها را با کشیدن و رهاکردن بازآرایی کنید. برای این کار، با ماوس یا انگشت، فیلد را به موقعیت دلخواه بکشید. نشانگری به شما می‌گوید فیلد به کجا منتقل می‌شود.
+
+از "Tags"، "Type"، "Deck"، "Card" یا "FrontSide" به‌عنوان نام فیلد استفاده نکنید، چون [فیلدهای ویژه](templates/fields.md#special-fields)‌اند و درست کار نمی‌کنند.
+
+گزینه‌های پایین صفحه به شما اجازه می‌دهند ویژگی‌های گوناگون فیلدها را برای استفاده هنگام افزودن و ویرایش کارت‌ها ویرایش کنید. اینجا جای سفارشی‌سازی آنچه هنگام مرور روی کارت‌ها ظاهر می‌شود _نیست_؛ برای آن، [قالب‌ها](templates/intro.md) را ببینید.
+
+- **Editing Font** (قلم ویرایش) به شما اجازه می‌دهد قلم و اندازه استفاده‌شده هنگام ویرایش یادداشت‌ها را سفارشی کنید. این وقتی سودمند است که بخواهید اطلاعات کم‌اهمیت را کوچک‌تر کنید، یا اندازه نویسه‌های غیرلاتینِ سخت‌خوان را بزرگ کنید. تغییرهایی که اینجا می‌دهید بر ظاهر کارت‌ها هنگام مرور اثر نمی‌گذارند: برای آن، بخش [قالب‌ها](templates/intro.md) را ببینید. البته اگر عملکرد "تایپ‌کردن پاسخ" را فعال کرده باشید، متنی که تایپ می‌کنید از اندازه قلمِ تعریف‌شده اینجا استفاده می‌کند. (برای اطلاع از چگونگی تغییر خودِ قلم هنگام تایپ پاسخ، بخش [بررسی پاسخ شما](templates/fields.md#checking-your-answer) را ببینید.)
+
+- **Sort by this field…​** (مرتب‌سازی بر اساس این فیلد) به آنکی می‌گوید این فیلد را در ستون Sort Field مرورگر نشان دهد. می‌توانید با این، کارت‌ها را بر اساس آن فیلد مرتب کنید. هر بار فقط یک فیلد می‌تواند فیلد مرتب‌سازی باشد.
+
+- **Reverse text direction** (معکوس‌کردن جهت متن) برای زمانی سودمند است که زبان‌هایی می‌آموزید که متنشان را راست‌به‌چپ (RTL) نمایش می‌دهند؛ مانند عربی یا عبری. این تنظیم در حال حاضر فقط ویرایش را کنترل می‌کند؛ برای اطمینان از نمایش درست متن هنگام مرور، باید [قالب](templates/styling.md#text-direction) خود را تنظیم کنید.
+
+- **Use HTML editor by default** (استفاده از ویرایشگر HTML به‌طور پیش‌فرض) وقتی سودمند است که ترجیح می‌دهید فیلدها را مستقیماً در HTML ویرایش کنید.
+
+- **Collapse by default** (جمع‌شدن به‌طور پیش‌فرض). فیلدها را می‌توان جمع/باز کرد. انیمیشنش را می‌توان در [تنظیمات](preferences.md) خاموش کرد.
+
+- **Exclude from unqualified searches (slower)** (خارج‌کردن از جست‌وجوهای بدون قید — کندتر) را می‌توانید به‌کار ببرید اگر نمی‌خواهید محتوای فیلدی مشخص در جست‌وجوهای بدون قید [(محدودنشده به فیلدی خاص)](searching.md#limiting-to-a-field) ظاهر شود.
+
+پس از افزودن فیلدها، احتمالاً می‌خواهید آن‌ها را به روی یا پشت کارت‌هایتان بیفزایید. برای اطلاعات بیشتر، بخش [قالب‌ها](templates/intro.md) را ببینید.
+
+## تغییر دسته / نوع یادداشت {#changing-deck--note-type}
+
+هنگام افزودن، می‌توانید روی دکمه بالا-چپ کلیک کنید تا نوع یادداشت را تغییر دهید و روی دکمه بالا-راست تا دسته را. پنجره‌ای که باز می‌شود نه‌تنها اجازه انتخاب دسته یا نوع یادداشت را می‌دهد، بلکه افزودن دسته‌های جدید یا مدیریت انواع یادداشت‌تان را هم.
+
+## سازمان‌دهی محتوا {#organizing-content}
+
+### استفاده درست از دسته‌ها {#using-decks-appropriately}
+
+[دسته‌ها](getting-started.md#decks) برای آن طراحی شده‌اند که محتوایتان را به دسته‌های کلی‌ای که می‌خواهید جداگانه مطالعه کنید تقسیم کنند؛ مانند انگلیسی، جغرافیا و غیره. شاید وسوسه شوید دسته‌های کوچکِ زیادی بسازید تا محتوایتان منظم بماند؛ مانند "فصل ۱ کتاب جغرافیای من" یا «افعال غذا»، اما این کار به دلایل زیر توصیه نمی‌شود:
+
+- دسته‌های کوچکِ زیاد ممکن است به این بینجامد که کارت‌ها را در ترتیبی قابل حدس ببینید. در نسخه‌های قدیمی‌تر زمان‌بند، کارت‌های جدید فقط به ترتیب دسته معرفی می‌شوند. و اگر قصد داشتید یکی‌یکی روی هر دسته کلیک کنید (که کند است)، در نهایت همه مرورهای «فصل ۱» یا «افعال غذا» را با هم می‌بینید. این پاسخ‌دادن به کارت‌ها را آسان‌تر می‌کند، چون می‌توانید از زمینه حدسشان بزنید، و این به خاطره‌های ضعیف‌تر می‌انجامد. وقتی بیرون از آنکی نیاز به یادآوری آن واژه یا عبارت دارید، همیشه این مزیت را نخواهید داشت که ابتدا محتوای مرتبط به شما نشان داده شود!
+
+- هرچند کمتر از نسخه‌های پیشین آنکی مشکل‌ساز است، افزودن صدها دسته ممکن است کندی ایجاد کند و درخت‌های دستهٔ بسیار بزرگ با هزاران مورد می‌توانند در نسخه‌های پیش از 2.1.50 نمایش فهرست دسته‌ها را واقعاً بشکنند.
+
+### استفاده از برچسب‌ها {#using-tags}
+
+به‌جای ساختن دسته‌های کوچکِ زیاد، ایده بهتری است از برچسب‌ها و/یا فیلدها برای دسته‌بندی محتوایتان استفاده کنید. برچسب‌ها راهی سودمند برای تقویت نتایج جست‌وجو، یافتن محتوای مشخص و منظم‌نگه‌داشتن مجموعه‌تان هستند.
+راه‌های زیادی برای استفاده مؤثر از برچسب‌ها و پرچم‌ها وجود دارد و پیشاپیش فکرکردن به چگونگی استفاده از آن‌ها به شما کمک می‌کند تصمیم بگیرید چه چیزی برایتان بهتر کار می‌کند.
+
+بعضی‌ها ترجیح می‌دهند از دسته‌ها و زیردسته‌ها برای منظم‌نگه‌داشتن کارت‌هایشان استفاده کنند، اما برچسب‌ها نسبت به دسته‌ها یک مزیت بزرگ دارند: می‌توانید چند برچسب به یک یادداشت واحد بزنید، در حالی که یک کارت فقط می‌تواند به یک دسته تعلق داشته باشد؛ که این برچسب‌ها را در بیشتر موارد به سیستم دسته‌بندی قدرتمندتر و انعطاف‌پذیرتری از دسته‌ها تبدیل می‌کند. همچنین می‌توانید برچسب‌ها را [به همان شیوه دسته‌ها](getting-started.md#decks) به‌صورت درختی سازمان‌دهی کنید.
+
+مثلاً به‌جای ساختن دسته «افعال غذا»، می‌توانید آن کارت‌ها را به دسته اصلی مطالعه زبانتان بیفزایید و کارت‌ها را با برچسب‌های "food" و "verb" مشخص کنید. چون هر کارت می‌تواند چند برچسب داشته باشد، می‌توانید کارهایی مانند [جست‌وجو](searching.md#tags-decks-cards-and-notes) برای همه افعال، یا همه واژگان مرتبط با غذا، یا همه افعالی که به غذا مربوط‌اند انجام دهید.
+
+می‌توانید از پنجره ویرایش و از [مرورگر](browsing.md) برچسب بیفزایید و در آنجا برچسب‌ها را بیفزایید، حذف، تغییر نام یا سازمان‌دهی کنید. توجه داشته باشید که برچسب‌ها در سطح [یادداشت](getting-started.md#notes--fields) کار می‌کنند؛ یعنی وقتی کارتی را که هم‌خانواده دارد برچسب می‌زنید، همه هم‌خانواده‌هایش هم برچسب می‌خورند. اگر نیاز دارید تک‌کارت را برچسب بزنید ولی نه هم‌خانواده‌هایش را، بهتر است از پرچم‌ها استفاده کنید.
+
+### استفاده از پرچم‌ها {#using-flags}
+
+پرچم‌ها شبیه برچسب‌ها هستند، اما هنگام مطالعه در پنجره مرور ظاهر می‌شوند و نشانگر پرچمی رنگی در بخش بالا-راست صفحه نشان می‌دهند. همچنین می‌توانید در صفحه مرورگر کارت‌های پرچم‌خورده را جست‌وجو کنید، از مرورگر پرچم‌ها را تغییر نام دهید و از کارت‌های پرچم‌خورده دسته پالایش‌شده بسازید؛ اما برخلاف برچسب‌ها، یک کارت هر بار فقط یک پرچم می‌تواند داشته باشد. تفاوت مهم دیگر آنکه پرچم‌ها در سطح [کارت](getting-started.md#cards) کار می‌کنند؛ پس پرچم‌زدن کارتی که هم‌خانواده دارد، هیچ اثری بر هم‌خانواده‌های آن کارت ندارد.
+
+می‌توانید مستقیماً در حالت مرور کارت‌ها را پرچم بزنید/پرچمشان را بردارید (با فشردن <kbd>Ctrl</kbd>+<kbd>1-7</kbd> در ویندوز یا <kbd>Cmd</kbd>+<kbd>1-7</kbd> روی مک) و همین‌طور از [مرورگر.](browsing.md)
+
+### برچسب "Marked" {#the-marked-tag}
+
+آنکی با برچسبی به نام "marked" به‌طور ویژه رفتار می‌کند. در صفحه مرور و صفحه مرورگر گزینه‌هایی برای افزودن و حذف برچسب "marked" وجود دارد. صفحه مطالعه وقتی یادداشتِ کارت فعلی آن برچسب را داشته باشد ستاره‌ای نشان می‌دهد. و وقتی یادداشتشان نشان‌گذاری است، کارت‌ها در صفحه مرورگر با رنگی متفاوت نشان داده می‌شوند.
+
+توجه: نشان‌گذاری عمدتاً برای سازگاری با نسخه‌های قدیمی آنکی نگه داشته شده است؛ بیشتر کاربران ترجیح می‌دهند به‌جای آن از [پرچم‌ها](editing.md#using-flags) استفاده کنند.
+
+### استفاده از فیلدها {#using-fields}
+
+برای کسانی که دوست دارند خیلی منظم باشند، می‌توانید برای دسته‌بندی محتوایتان به یادداشت‌هایتان فیلد بیفزایید؛ مانند "book"، "page" و غیره. آنکی از جست‌وجو در فیلدهای مشخص پشتیبانی می‌کند؛ یعنی می‌توانید `"book:my book" page:63` را جست‌وجو کنید و فوراً به دنبالِ آنچه هستید بپردازید.
+
+### مطالعه سفارشی و دسته‌های پالایش‌شده {#custom-study-and-filtered-decks}
+
+با استفاده از [مطالعه سفارشی و دسته‌های پالایش‌شده](filtered-decks.md) می‌توانید از عبارت‌های جست‌وجو، دسته‌های موقتی بسازید. این به شما اجازه می‌دهد بیشترِ وقت، محتوایتان را مخلوط در یک دسته واحد مرور کنید (برای بهینه‌ترین حافظه)، اما وقتی لازم شد بر مطلب خاصی متمرکز شوید — مانند پیش از آزمون — دسته‌های موقتی بسازید. قاعده کلی این است که اگر همیشه بخواهید مطلبی را جداگانه مطالعه کنید، باید در دسته‌ای عادی باشد؛ اگر فقط گاهی لازم است جداگانه مطالعه‌اش کنید (برای آزمون، هنگام عقب‌افتادگی و غیره)، دسته‌های پالایش‌شدهٔ ساخته‌شده از برچسب‌ها، پرچم‌ها، نشان‌ها یا فیلدها بهترند.
+
+## امکانات ویرایش {#editing-features}
+
+ویرایشگر هنگام [افزودن یادداشت](editing.md)، [ویرایش یادداشت](studying.md#editing-and-more) در طول مرورها، یا [مرور](browsing.md) نشان داده می‌شود.
+
+![نشانگرهای ویرایشگر](media/editor_icons.png)
+
+در بالا-چپ دو دکمه است که پنجره‌های [فیلدها](editing.md#customizing-fields) و [کارت‌ها](templates/intro.md) را باز می‌کنند.
+
+در سمت راست، دکمه‌هایی که قالب‌بندی را کنترل می‌کنند هستند. درشت، مورب و زیرخط‌دار مانند برنامه‌های واژه‌پردازی کار می‌کنند. دو دکمه بعدی به شما اجازه می‌دهند متن را زیرنویس یا بالانویس کنید که برای ترکیب‌های شیمیایی مانند H<sub>2</sub>O یا معادله‌های ریاضی ساده مانند x<sup>2</sup> سودمند است. سپس دو دکمه برای تغییر رنگ متن وجود دارد.
+
+دکمه پاک‌کن، هر قالب‌بندی‌ای را در متنِ در حال انتخاب پاک می‌کند — از جمله رنگ متن، درشت‌بودنِ متن انتخاب‌شده و غیره. سه دکمه بعدی برای ساختن فهرست‌ها، تراز متن و تورفتگی متن هستند.
+
+می‌توانید با دکمه گیره کاغذی، صدا، تصویر و ویدیو را از هاردِ رایانه‌تان انتخاب کنید و به یادداشت‌هایتان بچسبانید. همچنین می‌توانید رسانه را به کلیپ‌بورد رایانه‌تان رونوشت کنید (مثلاً با راست‌کلیک روی تصویری در وب و انتخاب "Copy Image") و در فیلدی که می‌خواهید بچسبانید. برای اطلاعات بیشتر درباره رسانه‌ها، بخش [رسانه‌ها](media.md) را ببینید.
+
+نشانک میکروفن به شما اجازه می‌دهد از میکروفن رایانه‌تان ضبط کنید و ضبط را به یادداشت بچسبانید.
+
+دکمه Fx میان‌بر‌هایی برای افزودن MathJax یا [LaTeX](math.md) به یادداشت‌هایتان نشان می‌دهد.
+
+دکمه‌های \[…​\] وقتی نوع یادداشت cloze انتخاب شده باشد دیده می‌شوند.
+![نشانگرهای cloze](media/cloze_icons.png)
+
+دکمه `</>` اجازه ویرایش HTML زیرین یک فیلد را می‌دهد.
+![نشانگر HTML](media/html_icon.png)
+
+آنکی 2.1.45+ از تنظیم فیلدهای چسبان مستقیماً از صفحه ویرایش پشتیبانی می‌کند. اگر روی نشانک سنجاقِ سمت راست یک فیلد کلیک کنید، آنکی پس از افزوده‌شدن یادداشت، محتوای آن فیلد را پاک نمی‌کند. اگر می‌بینید که محتوای یکسانی را در یادداشت‌های متعدد وارد می‌کنید، این برایتان سودمند است. در نسخه‌های پیشین آنکی، فیلدهای چسبان از صفحه Fields تغییر وضعیت می‌دادند.
+
+![نشانک سنجاق](media/Pin_icon.png)
+
+بیشتر دکمه‌ها کلید میانبر دارند. می‌توانید نشانگر ماوس را روی دکمه‌ای نگه دارید تا میانبرش را ببینید.
+
+هنگام چسباندن متن، آنکی به‌طور پیش‌فرض بیشتر قالب‌بندی را نگه می‌دارد. اگر هنگام چسباندن کلید <kbd>Shift</kbd> را نگه دارید، آنکی بیشتر قالب‌بندی را حذف می‌کند. در تنظیمات (Preferences) می‌توانید «Paste without shift key strips formatting» را تغییر دهید تا رفتار پیش‌فرض عوض شود.
+
+## حذف اطلاعاتی (Cloze) {#cloze-deletion}
+
+_حذف اطلاعاتی_ فرایند پنهان‌کردن یک یا چند واژه در جمله است. مثلاً اگر این جمله را داشته باشید:
 
     Canberra was founded in 1913.
 
-…​and you create a cloze deletion on "1913", then the sentence would
-become:
+…​و روی "1913" حذف اطلاعاتی بسازید، جمله به این شکل درمی‌آید:
 
     Canberra was founded in [...].
 
-Sometimes sections that have been removed in this fashion are said to be
-"occluded".
+به بخش‌هایی که به این شیوه حذف شده‌اند گاهی «پوشانده» (occluded) گفته می‌شود.
 
-For more information on why you might want to use cloze deletion, see
-Rule 5 [here](https://super-memory.com/articles/20rules.htm).
+برای اطلاعات بیشتر درباره اینکه چرا ممکن است بخواهید از حذف اطلاعاتی استفاده کنید، قاعده ۵ را [اینجا](https://super-memory.com/articles/20rules.htm) ببینید.
 
-Anki provides a special cloze deletion type of note, to make creating
-clozes easy. To create a cloze deletion note, select the Cloze note
-type, and type some text into the "Text" field. Then drag the mouse over
-the text you want to hide to select it, and click the \[…​\] button.
-Anki will replace the text with:
+آنکی نوع یادداشتِ ویژهٔ حذف اطلاعاتی را فراهم کرده تا ساختن clozeها آسان شود. برای ساختن یادداشت حذف اطلاعاتی، نوع یادداشت Cloze را انتخاب کنید و متنی در فیلد "Text" تایپ کنید. سپس ماوس را روی متنی که می‌خواهید پنهان شود بکشید تا انتخاب شود و روی دکمه \[…​\] کلیک کنید. آنکی متن را با این جایگزین می‌کند:
 
     Canberra was founded in {{c1::1913}}.
 
-The "c1" part means that you have created one cloze deletion in the
-sentence. You can create more than one deletion if you'd like. For
-example, if you select Canberra and click \[…​\] again, the text will
-now look like:
+بخش "c1" یعنی شما یک حذف اطلاعاتی در جمله ساخته‌اید. اگر بخواهید می‌توانید بیش از یک حذف بسازید. مثلاً اگر Canberra را انتخاب کنید و دوباره \[…​\] را بزنید، 
 
     {{c2::Canberra}} was founded in {{c1::1913}}.
 
-When you add the above note, Anki will create two cards. The first card
-will show:
+وقتی یادداشت بالا را بیفزایید، آنکی دو کارت می‌سازد. کارت اول در پرسش این را نشان می‌دهد:
 
     Canberra was founded in [...].
 
-…​on the question, with the full sentence on the answer. The other card
-will have the following on the question:
+…​با جمله کامل در پاسخ. کارت دیگر این را در پرسش دارد:
 
     [...] was founded in 1913.
 
-You can also elide multiple sections on the same card. In the above
-example, if you change c2 to c1, only one card would be created, with
-both Canberra and 1913 hidden. If you hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on a Mac)
-while creating a cloze, Anki will automatically use the same number
-instead of incrementing it.
+همچنین می‌توانید چند بخش را روی همان کارت حذف کنید. در مثال بالا، اگر c2 را به c1 تغییر دهید، فقط یک کارت ساخته می‌شود که هم Canberra و هم 1913 پنهان است. اگر هنگام ساختن cloze کلید <kbd>Alt</kbd> (<kbd>Option</kbd> روی مک) را نگه دارید، آنکی به‌طور خودکار از همان شماره استفاده می‌کند، نه شماره بعدی.
 
-Cloze deletions don't need to fall on word boundaries, so if you select
-"anberra" rather than "Canberra" in the above example, the question
-would appear as "C\[…​\] was founded in 1913", giving you a hint.
+حذف‌های اطلاعاتی لازم نیست روی مرز واژه‌ها بیفتند؛ پس اگر در مثال بالا "anberra" را به‌جای "Canberra" انتخاب کنید، پرسش به شکل "C\[…​\] was founded in 1913" ظاهر می‌شود که به شما راهنمایی می‌دهد.
 
-You can also give yourself hints that don't match the text. If you
-replace the original sentence with:
+همچنین می‌توانید برای خودتان راهنماهایی بسازید که با متن مطابقت ندارند. اگر جمله اصلی را با این جایگزین کنید:
 
     Canberra::city was founded in 1913
 
-…​and then press \[…​\] after selecting "Canberra::city", Anki will
-treat the text after the two colons as a hint, changing the text into:
+…​و پس از انتخاب "Canberra::city" دکمه \[…​\] را بزنید، آنکی متنی را بعد از دونقطه به‌عنوان راهنما در نظر می‌گیرد و متن را به این تبدیل می‌کند:
 
     {{c1::Canberra::city}} was founded in 1913
 
-When the card comes up for review, it will appear as:
+وقتی کارت برای مرور بیاید، این‌طور ظاهر می‌شود:
 
     [city] was founded in 1913.
 
-For information on testing your ability to type in a cloze deletion
-correctly, see the section on [typing answers](templates/fields.md#checking-your-answer).
+برای اطلاع از سنجش توانایتان در تایپ درست یک حذف اطلاعاتی، بخش [تایپ پاسخ](templates/fields.md#checking-your-answer) را ببینید.
 
-From version 2.1.56, nested cloze deletions are supported. For example, the following is valid:
+از نسخه 2.1.56، حذف‌های اطلاعاتی تودرتو پشتیبانی می‌شوند. مثلاً مورد زیر معتبر است:
 
     {{c1::Canberra was {{c2::founded}}}} in 1913
 
-The inner cloze is entirely nested within the outer. There is no support for partial overlaps, such as:
+cloze درونی به‌طور کامل درون cloze بیرونی تودرتو است. هم‌پوشانی‌های جزئی پشتیبانی نمی‌شوند؛ مانند:
 
     [...] founded in 1913 -> Canberra was
     Canberra [...] in 1913 -> was founded
 
-with the word "was" appearing in both deletions.
+که واژه "was" در هر دو حذف ظاهر شده است.
 
-The current implementation can only handle a limited amount of nesting. In Anki 24.11, it is 3 levels.
-In other versions, the limit is around 8, but Anki may become slow as you approach the limit. It is
-not possible to extend the limit. If you use this feature, it is recommended you limit yourself to a
-few levels of nesting.
+پیاده‌سازی فعلی فقط می‌تواند مقدار محدودی تودرتویی را مدیریت کند. در آنکی 24.11، این مقدار ۳ سطح است. در نسخه‌های دیگر، حد حدود ۸ است، اما ممکن است آنکی با نزدیک‌شدن شما به حد کند شود. امکان افزایش این حد وجود ندارد. اگر از این قابلیت استفاده می‌کنید، توصیه می‌شود خودتان را به چند سطح تودرتویی محدود کنید.
 
-Prior to version 2.1.56, if you need to create clozes from overlapping text, add another Text
-field to your cloze, add it to the [template](templates/intro.md), and then when
-creating notes, paste the text into two separate fields, like so:
+پیش از نسخه 2.1.56، اگر لازم بود از متن هم‌پوشان cloze بسازید، فیلد Text دیگری به cloze خود بیفزایید، آن را به [قالب](templates/intro.md) اضافه کنید و سپس هنگام ساختن یادداشت‌ها، متن را در دو فیلد جداگانه بچسبانید؛ مانند:
 
     Text1 field: {{c1::Canberra was founded}} in 1913
 
     Text2 field: {{c2::Canberra}} was founded in 1913
 
-The default cloze note type has a second field called Extra, that is
-shown on the answer side of each card. It can be used for adding some
-usage notes or extra information.
+نوع یادداشت پیش‌فرض cloze فیلد دومی به نام Extra دارد که در سمت پاسخ هر کارت نشان داده می‌شود. می‌توان از آن برای افزودن چند یادداشت کاربردی یا اطلاعات اضافی استفاده کرد.
 
-The cloze note type is treated specially by Anki, and cannot be created
-based on a regular note type. If you wish to customize it, make
-sure to clone the existing Cloze type instead of another type of note.
-Things like formatting can be customized, but it is not possible to add
-extra card templates to the cloze note type.
+نوع یادداشت cloze توسط آنکی به‌طور ویژه در نظر گرفته شده و نمی‌توان آن را بر پایه نوع یادداشت معمولی ساخت. اگر می‌خواهید سفارشی‌اش کنید، حتماً نوع Cloze موجود را clone کنید، نه نوع یادداشت دیگری را. چیزهایی مانند قالب‌بندی را می‌توان سفارشی کرد، اما افزودن قالب‌های کارت اضافی به نوع یادداشت cloze ممکن نیست.
 
-Anki now supports a new syntax that allows a single cloze deletion to appear on 
-multiple cards:
+آنکی اکنون نحوه‌نامه جدیدی را پشتیبانی می‌کند که اجازه می‌دهد یک حذف اطلاعاتی واحد روی چند کارت ظاهر شود:
 
     {{c1::-té}}, {{c2::-sion}}, or {{c3::-tion}} are {{c1,2,3,4::feminine}}.
 
-This creates 4 cards, each hiding “feminine” in a different context.
-The same result can however still be achieved with the older nested syntax:
+این ۴ کارت می‌سازد که هرکدام "feminine" را در زمینه‌ای متفاوت پنهان می‌کنند. البته همان نتیجه همچنان با نحوه‌نامه تودرتوی قدیمی‌تر هم به دست می‌آید:
 
     {{c1::-té}}, {{c2::-sion}}, {{c3::-tion}} are {{c4::{{c3::{{c2::{{c1::feminine}}}}}}}}
 
-The new syntax is easier to read and write, while the old syntax is more 
-verbose.
+نحوی جدید خواندن و نوشتنش آسان‌تر است، در حالی که نحو قدیمی پرحرف‌تر است.
 
-## Image Occlusion
+## پوشاندن تصویر (Image Occlusion) {#image-occlusion}
 
-Anki 23.10+ supports Image Occlusion cards natively. An Image
-Occlusion (IO) note is a special case of cloze deletion based on images
-instead of text, and allows you to create cards that hide some parts
-of an image, testing your knowledge of that hidden information.
+آنکی 23.10+ به‌طور بومی از کارت‌های Image Occlusion پشتیبانی می‌کند. یادداشت Image Occlusion (IO) حالتی خاص از حذف اطلاعاتی است که به‌جای متن بر پایه تصویر است و به شما اجازه می‌دهد کارت‌هایی بسازید که بخش‌هایی از تصویر را می‌پوشانند و دانش شما از آن اطلاعات پنهان را می‌سنجند.
 
-![Image Occlusion](media/io.jpg)
+![پوشاندن تصویر](media/io.jpg)
 
-### Adding an image
+### افزودن تصویر {#adding-an-image}
 
-To add IO cards to your collection, open the Add screen, click on "Type"
-and choose "Image Occlusion" from the list of built-in note types.
-Then, click on **Select Image** to load an image file saved on your
-computer's hard drive, or on **Paste image from clipboard**
-if you have an image copied to the clipboard.
+برای افزودن کارت‌های IO به مجموعه‌تان، صفحه Add را باز کنید، روی "Type" کلیک کنید و "Image Occlusion" را از فهرست انواع یادداشت داخلی انتخاب کنید. سپس روی **Select Image** کلیک کنید تا پرونده تصویری که در هارد رایانه‌تان ذخیره شده بارگیری شود، یا روی **Paste image from clipboard** اگر تصویری در کلیپ‌بورد رونوشت کرده‌اید.
 
-### Adding IO cards
+### افزودن کارت‌های IO {#adding-io-cards}
 
-After loading an image, the IO editor will open. Click on the
-icons on the left to add as many areas to your image as you want.
-There are three basic shapes to choose from:
+پس از بارگیری تصویر، ویرایشگر IO باز می‌شود. روی نشانگرهای سمت راست کلیک کنید تا هر تعداد ناحیه که خواستید به تصویرتان بیفزایید. سه شکل پایه برای انتخاب وجود دارد:
 
-- Rectangle
-- Ellipse
-- Polygon
+- مستطیل
+- بیضی
+- چندضلعی
 
-You can also choose between two different IO modes for each note:
+همچنین می‌توانید برای هر یادداشت بین دو حالت IO یکی را انتخاب کنید:
 
-- **Hide All, Guess One**: All areas are hidden and only one
-  area at a time is revealed while learning.
-- **Hide One, Guess One**: Only one area at a time is hidden
-  and will be revealed during learning. The other areas will be visible.
+- **Hide All, Guess One** (همه را بپوشان، یکی را حدس بزن): همه ناحیه‌ها پنهان می‌شوند و هنگام یادگیری هر بار فقط یک ناحیه آشکار می‌شود.
+- **Hide One, Guess One** (یکی را بپوشان، یکی را حدس بزن): هر بار فقط یک ناحیه پنهان است و هنگام یادگیری آشکار می‌شود. بقیه ناحیه‌ها دیده خواهند شد.
 
-![Image Occlusion Modes](media/io_modes.jpg)
+![حالت‌های پوشاندن تصویر](media/io_modes.jpg)
 
 <!-- fields & tags are not intuitive to find in editor -->
-The default IO note type also has standard fields:
-**Header** (displayed above the image on the front and back of each card),
-**Back Extra** (displayed below the image on the back of each card),
-and **Comments** (not displayed on the cards). To access those from the IO editor,
-click the **Toggle Mask Editor** button.
-There you can also view and edit the **Tags** of the note.
+نوع یادداشت پیش‌فرض IO همچنین فیلدهای استانداردی دارد:
+**Header** (بالای تصویر در روی و پشت هر کارت نمایش داده می‌شود)،
+**Back Extra** (زیر تصویر در پشت هر کارت نمایش داده می‌شود)
+و **Comments** (روی کارت‌ها نمایش داده نمی‌شود). برای دسترسی به این‌ها از ویرایشگر IO، دکمه **Toggle Mask Editor** را بزنید.
+آنجا می‌توانید **Tags** یادداشت را هم ببینید و ویرایش کنید.
 
-Once you're done, click on the "Add" button, at the bottom of the screen.
-Anki will add a card for each shape or group of shapes you added in the previous step,
-and you can start reviewing them normally.
+وقتی کارتان تمام شد، روی دکمه "Add" در پایین صفحه کلیک کنید. آنکی برای هر شکل یا گروه اشکالی که در گام قبل افزوده‌اید کارتی می‌افزاید و می‌توانید مرورشان را به‌طور عادی شروع کنید.
 
-## Editing IO notes
+## ویرایش یادداشت‌های IO {#editing-io-notes}
 
-You can edit your IO notes by clicking on "Edit" while reviewing,
-or directly from the browser. There are several tools that you
-can use. Of note:
+می‌توانید یادداشت‌های IO خود را با کلیک روی "Edit" هنگام مرور، یا مستقیماً از مرورگر ویرایش کنید. چند ابزار هست که می‌توانید به‌کار ببرید. از میان آن‌ها:
 
-- Select: It allows you to select one or more shapes to move,
-  resize, delete or group them.
-- Zoom: You can freely move the image and zoom in or out using the mouse wheel.
-- Shapes (Rectangle, Ellipse or Polygon): Use them to add new shapes / cards.
-- Text: It adds text areas to your image. These text areas can be moved,
-  resized or deleted, but no card will be created when you use this tool.
-- Undo / Redo.
-- Zoom In / Out - Reset zoom.
-- Toggle Translucency: Use this tool to temporarily view the hidden areas.
-- Delete: Use this tool to delete selected shapes and text areas. Note
-  that deleting a shape won't delete its associated card automatically;
-  you will need to use Tools>Empty Cards afterwards, the same as
-  with regular cloze deletions.
-- Duplicate.
-- Group selection: Use this tool to create a cluster of shapes, which will
-  allow you to move, resize or delete them simultaneously. Note that
-  two or more single shapes will create only one card once grouped.
-- Ungroup selection: Select a group and then click this button to make each shape independent again.
-- Alignment: This tool can be used to align your shapes / text areas as desired.
+- انتخاب (Select): به شما اجازه می‌دهد یک یا چند شکل را برای جابه‌جایی، تغییر اندازه، حذف یا گروه‌بندی انتخاب کنید.
+- بزرگ‌نمایی (Zoom): می‌توانید تصویر را آزادانه جابه‌جا و با چرخ ماوس بزرگ یا کوچک کنید.
+- شکل‌ها (مستطیل، بیضی یا چندضلعی): از آن‌ها برای افزودن شکل‌ها/کارت‌های جدید استفاده کنید.
+- متن (Text): ناحیه‌های متنی به تصویرتان می‌افزاید. این ناحیه‌های متنی را می‌توان جابه‌جا کرد، تغییر اندازه داد یا حذف کرد، اما وقتی از این ابزار استفاده می‌کنید هیچ کارتی ساخته نمی‌شود.
+- واگرد/ازنو (Undo / Redo).
+- بزرگ‌نمایی/کوچک‌نمایی و بازنشانی بزرگ‌نمایی (Zoom In / Out - Reset zoom).
+- تغییر شفافیت (Toggle Translucency): از این ابزار برای دیدن موقت ناحیه‌های پنهان استفاده کنید.
+- حذف (Delete): از این ابزار برای حذف شکل‌ها و ناحیه‌های متنی انتخاب‌شده استفاده کنید. توجه داشته باشید که حذف یک شکل، کارتِ متناظرش را به‌طور خودکار حذف نمی‌کند؛ بعداً باید Tools>Empty Cards را به‌کار ببرید، همان‌طور که با حذف‌های اطلاعاتی معمولی است.
+- تکرار (Duplicate).
+- گروه‌بندی انتخاب (Group selection): با این ابزار خوشه‌ای از شکل‌ها می‌سازید که اجازه می‌دهد آن‌ها را هم‌زمان جابه‌جا، تغییر اندازه یا حذف کنید. توجه کنید که دو یا چند شکلِ منفرد پس از گروه‌شدن فقط یک کارت می‌سازند.
+- خروج از گروه (Ungroup selection): گروهی را انتخاب کنید و سپس این دکمه را بزنید تا هر شکل دوباره مستقل شود.
+- تراز (Alignment): این ابزار را می‌توان برای تراز شکل‌ها/ناحیه‌های متنی همان‌طور که می‌خواهید به‌کار برد.
 
-While reviewing IO Cards a "Toggle Masks" button will appear just below the image.
-This button will temporarily clear all shapes of the note when using "Hide All, Guess One" mode.
+هنگام مرور کارت‌های IO، دکمه "Toggle Masks" درست زیر تصویر ظاهر می‌شود. این دکمه در حالت "Hide All, Guess One" همه اشکال یادداشت را موقتاً پاک می‌کند.
 
-## Inputting Non-Latin Characters and Accents
+## ورود دادن نویسه‌های غیرلاتین و اعراب‌ها {#inputting-non-latin-characters-and-accents}
 
-All modern computers have built-in support for typing accents and
-non-Latin characters, and multiple ways to go about it. The method we
-recommend is by using a keyboard layout for the language you want to learn.
+همه رایانه‌های مدرن به‌طور داخلی از تایپ اعراب‌ها و نویسه‌های غیرلاتین پشتیبانی می‌کنند و راه‌های متعددی هم برای این کار دارند. روشی که توصیه می‌کنیم استفاده از چیدمان صفحه‌کلیدِ زبانی است که می‌خواهید بیاموزید.
 
-Languages with a separate script like Japanese, Chinese, Thai, and so on,
-have their own layouts specific to that language.
+زبان‌هایی با خط جداگانه مانند ژاپنی، چینی، تایلندی و غیره، چیدمان‌های مخصوص خودشان را دارند.
 
-European languages that use accents may have their own layout, but can
-often be typed on a generic "international keyboard" layout. These work
-by typing the accent, then the character you want accented - e.g. an
-apostrophe (<kbd>´</kbd>) then the letter a (<kbd>a</kbd>) gives á.
+زبان‌های اروپایی که از اعراب‌ها استفاده می‌کنند ممکن است چیدمان خودشان را داشته باشند، اما اغلب می‌توان آن‌ها را روی چیدمان عمومی «صفحه‌کلید بین‌المللی» تایپ کرد. این صفحه‌کلیدها این‌طور کار می‌کنند که ابتدا علامت اعراب، سپس نویسه‌ای را که می‌خواهید اعراب‌دار شود تایپ می‌کنید؛ مثلاً یک آپاستروف (<kbd>´</kbd>) و سپس حرف a (<kbd>a</kbd>) نتیجه‌اش á می‌شود.
 
-### Adding international keyboard layouts
-Instructions on how to use international keyboards vary depending on the operating
-system and desktop environment that you are using. To get started, see the
-links below.
+### افزودن چیدمان‌های صفحه‌کلید بین‌المللی {#adding-international-keyboard-layouts}
+دستورالعمل استفاده از صفحه‌کلیدهای بین‌المللی بسته به سیستم‌عامل و محیط میزکاری که استفاده می‌کنید متفاوت است. برای شروع، لینک‌های زیر را ببینید.
 
-Windows:
+ویندوز:
 - <https://thegeekpage.com/how-to-add-us-international-keyboard-in-windows-10/>
   
-Mac:
+مک:
 - <http://www.macworld.com/article/1147039/os-x/accentinput.html>
   
-Linux:
+لینوکس:
 - Gnome: <https://help.gnome.org/gnome-help/tips-specialchars.html>
 - KDE Plasma: <https://userbase.kde.org/Tutorials/ComposeKey>
 
-### Adding keyboard layouts for specific languages
-Keyboards for specific languages are added in a similar way, but we can
-not cover them all here. For more information, please try searching
-on the internet for "input Japanese on a mac", "type Chinese on Windows 10", and
-so on.
+### افزودن چیدمان‌های صفحه‌کلید برای زبان‌های مشخص {#adding-keyboard-layouts-for-specific-languages}
+صفحه‌کلیدها برای زبان‌های مشخص به شیوه‌ای مشابه افزوده می‌شوند، اما نمی‌توانیم همه را اینجا پوشش دهیم. برای اطلاعات بیشتر، لطفاً در اینترنت جست‌وجو کنید: "input Japanese on a mac"، "type Chinese on Windows 10" و غیره.
 
-For Linux it's best to look at the wiki pages of your distro, e.g.
-[Arch Linux](https://wiki.archlinux.org/title/Input_method) and
+برای لینوکس بهتر است صفحات ویکی توزیع‌تان را ببینید؛ مانند
+[Arch Linux](https://wiki.archlinux.org/title/Input_method) و
 [Debian Linux](https://wiki.debian.org/Keyboard#Modern_strategy).
-As an example, `apt install ibus-anthy` on Debian allows you to type hiragana characters.
+برای مثال، `apt install ibus-anthy` در دبیان به شما اجازه می‌دهد نویسه‌های هیراگانا را تایپ کنید.
 
-### Right-to-left Languages
-If you are learning a right-to-left language, there are lots of other
-things to consider. See [this page](http://dotancohen.com/howto/rtl_right_to_left.html)
-for more information.
+### زبان‌های راست‌به‌چپ {#right-to-left-languages}
+اگر زبان راست‌به‌چپی می‌آموزید، نکات دیگری هم هست که باید در نظر بگیرید. برای اطلاعات بیشتر [این صفحه](http://dotancohen.com/howto/rtl_right_to_left.html) را ببینید.
 
-### Limitations
-The toolkit on which Anki is built has trouble dealing with a few input
-methods, such as holding down keys to select accented characters on macOS,
-and typing characters by holding down the <kbd>Alt</kbd> key and typing a
-numeric code on Windows.
+### محدودیت‌ها {#limitations}
+جعبه‌ابداری که آنکی روی آن ساخته شده، در برخورد با چند روش ورودی مشکل دارد؛ مانند نگه‌داشتن کلیدها برای انتخاب نویسه‌های اعراب‌دار در macOS، و تایپ نویسه‌ها با نگه‌داشتن کلید <kbd>Alt</kbd> و وارد‌کردن کد عددی در ویندوز.
 
-## Unicode Normalization
+## یکسان‌سازی یونی‌کد {#unicode-normalization}
 
-Text like `á` can be represented in multiple ways on a computer, such as
-using a specific code for that symbol, or by using a standard `a` and then
-another code for the accent on top. This causes problems when mixing input
-from different sources, or using different computers - if your computer
-handles keyboard input in one form, but the content is stored in a different
-form, it will not match when searching, even though the end result appears
-identical.
+متنی مانند `á` می‌تواند روی رایانه به چند شیوه نمایش داده شود؛ مانند استفاده از کد مشخصی برای آن نماد، یا استفاده از `a` استاندارد و سپس کد دیگری برای اعرابِ رویش. این هنگام مخلوط‌کردن ورودی از منابع مختلف، یا استفاده از رایانه‌های مختلف مشکل ایجاد می‌کند — اگر رایانه شما ورودی صفحه‌کلید را به شکلی می‌گیرد ولی محتوا به شکلی دیگر ذخیره شده، هنگام جست‌وجو مطابقت نخواهند کرد، حتی اگر نتیجه نهایی یکسان به نظر برسد.
 
-To ensure content can easily be found in searches, Anki normalizes the text
-to a standard form. For most users this process is transparent, but if you
-are studying certain material like archaic Japanese symbols, the normalization
-process can end up converting them to a more modern equivalent.
+برای اطمینان از اینکه محتوا به‌راحتی در جست‌وجوها پیدا شود، آنکی متن را به شکل استانداردی یکسان‌سازی می‌کند. برای بیشتر کاربران این فرایند شفاف است، اما اگر مطالبی مانند نمادهای کهن ژاپنی می‌آموزید، ممکن است فرایند یکسان‌سازی آن‌ها را به معادل مدرن‌تری تبدیل کند.
 
-If you want character variants preserved, the following in the [debug console](./misc.md)
-will turn off normalization:
+اگر می‌خواهید گونه‌های نویسه حفظ شوند، دستور زیر در [کنسول اشکال‌زدایی](./misc.md) یکسان‌سازی را خاموش می‌کند:
 
 ```python
 mw.col.conf["normalize_note_text"] = False
 ```
 
-Any content added after that will remain untouched. The trade-off is that you may
-find it difficult to search for the content if you're switching between operating
-systems, or pasting content from mixed sources.
+هر محتوایی که پس از آن افزوده شود دست‌نخورده باقی می‌ماند. بهای آن این است که ممکن است یافتن محتوا در جست‌وجو برایتان سخت شود اگر میان سیستم‌عامل‌های مختلف جابه‌جا می‌شوید، یا محتوا را از منابع مخلوط می‌چسبانید.

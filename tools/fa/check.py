@@ -41,6 +41,11 @@ DEVIATIONS = {
         "dropped_links": [
             "https://web.archive.org/web/20250328102629/http://ankidroid.ir/anki.pdf",
         ],
+        # links to the English original, added on purpose
+        "added_links": [
+            "https://docs.ankiweb.net/",
+            "https://docs.ankiweb.net/",
+        ],
     },
 }
 PRODUCTS = {
@@ -66,6 +71,7 @@ def strip_code(text: str) -> str:
     text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
     text = re.sub(r"https?://\S+", " ", text)
     text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"(?m)^(?: {4,}|\t).*$", " ", text)  # indented code blocks
     return text
 
 
@@ -154,8 +160,9 @@ def check_file(rel: str):
         extra = fa_c - en_c
         if missing or extra:
             # inline code inside admonish bodies may legitimately be translated
-            warn_only = all(
-                any(x in b for _, b in ffa if (d or "").startswith("admonish"))
+            admonish_bodies = [b for dd, b in ffa if (dd or "").startswith("admonish")]
+            warn_only = missing and extra and all(
+                any(x in b for b in admonish_bodies)
                 for x in list(missing) + list(extra)
             )
             msg = f"inline code drift (missing={dict(missing)} extra={dict(extra)})"
@@ -164,18 +171,23 @@ def check_file(rel: str):
     # 4 links
     lfa, len_ = links(fa), links(en)
     dropped = set(DEVIATIONS.get(rel, {}).get("dropped_links", []))
+    added = Counter(DEVIATIONS.get(rel, {}).get("added_links", []))
     c_fa = Counter(t for _, t in lfa)
     c_en = Counter(t for _, t in len_)
     for t in dropped:
         c_en[t] -= 1
         if c_en[t] <= 0:
             del c_en[t]
+    for t, n in added.items():
+        c_fa[t] -= n
+        if c_fa[t] <= 0:
+            del c_fa[t]
     if list(c_fa.elements()) != list(c_en.elements()) and sorted(c_fa.elements()) != sorted(c_en.elements()):
         errs.append(f"link targets differ: fa={sorted(c_fa.elements())} en={sorted(c_en.elements())}")
 
-    # 5 images
-    if images(fa) != images(en):
-        errs.append("image refs differ (alt text must stay, paths must match)")
+    # 5 images (targets must match; alt text may be translated)
+    if [t for _, t in images(fa)] != [t for _, t in images(en)]:
+        errs.append("image targets differ")
 
     # 6 kbd
     if Counter(kbds(fa)) != Counter(kbds(en)):
@@ -185,13 +197,24 @@ def check_file(rel: str):
     hfa, hen = headers_with_slugs(fa), headers_with_slugs(en)
     if len(hfa) != len(hen):
         errs.append(f"header count differs: fa={len(hfa)} en={len(hen)}")
-    for (lvl_f, body_f, anch_f), (lvl_e, body_e, anch_e) in zip(hfa, hen):
-        # expected anchor: upstream's explicit anchor if present, else auto-slug
-        expected = anch_e if anch_e else slugify(body_e)
+    # expected anchors: upstream's explicit anchor if present, else auto-slug;
+    # mdBook appends -1, -2... when the same slug repeats in a file
+    seen = {}
+    expected_anchors = []
+    for lvl_e, body_e, anch_e in hen:
+        exp = anch_e if anch_e else slugify(body_e)
+        if exp in seen:
+            seen[exp] += 1
+            exp = f"{exp}-{seen[exp]}"
+        else:
+            seen[exp] = 0
+        expected_anchors.append(exp)
+    for (lvl_f, body_f, anch_f), expected in zip(hfa, expected_anchors):
         if anch_f != expected:
-            errs.append("header '" + body_e[:40] + "' needs anchor {#" + expected + "}, found " + repr(anch_f))
+            errs.append("header '" + body_f[:40] + "' needs anchor {#" + expected + "}, found " + repr(anch_f))
+    for (lvl_f, _, _), (lvl_e, _, _) in zip(hfa, hen):
         if lvl_f != lvl_e:
-            errs.append("header level differs around '" + body_e[:40] + "'")
+            errs.append("header level differs")
 
     # 8 hidden anchors
     if Counter(hidden_anchors(fa)) != Counter(hidden_anchors(en)):

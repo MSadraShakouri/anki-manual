@@ -1,67 +1,53 @@
-# Getting help
+# گرفتن کمک {#getting-help}
 
-## Asking good questions
+## پرسیدن پرسش‌های خوب {#asking-good-questions}
 
-With the exception of AnkiMobile, Anki and its support are provided free of
-charge, by people who generously volunteer their time. Please bear this in mind
-when posting - if you are rude and demanding, or have made no effort to solve
-the problem on your own, people are less likely to want to help you.
+به‌جز AnkiMobile، آنکی و پشتیبانی‌اش به‌صورت رایگان، توسط افرادی که داوطلبانه وقتشان را بخشیده‌اند، فراهم شده است. لطفاً هنگام نوشتن این را در نظر داشته باشید — اگر بی‌ادب و مستبد باشید، یا هیچ تلاشی برای حل مشکل به‌تنهایی نکرده باشید، کمتر کسی میل خواهد داشت به شما کمک کند.
 
-Start by trying to resolve the issue on your own:
+با تلاش برای حل مسئله به‌تنهایی شروع کنید:
 
-- Read the [getting started](./getting-started.md) section
-  of the manual, and check out the intro videos.
-- If you've encountered a bug, please follow [these steps](./troubleshooting.md).
-- Use the search button on this page to search frequently asked questions.
-- Use the search button in the manual.
-- Use the search button on the forums.
-- Search the internet for the issue.
+- بخش [شروع به کار](./getting-started.md) راهنما را بخوانید و ویدیوهای مقدماتی را ببینید.
+- اگر با اشکالی روبه‌رو شده‌اید، لطفاً [این مراحل](./troubleshooting.md) را دنبال کنید.
+- از دکمه جست‌وجو در این صفحه برای جست‌وجوی پرسش‌های متداول استفاده کنید.
+- از دکمه جست‌وجو در راهنما استفاده کنید.
+- از دکمه جست‌وجو در انجمن‌ها استفاده کنید.
+- اینترنت را برای مسئله جست‌وجو کنید.
 
-If you have tried the above and are still stuck, it's time to ask for help.
-When writing a post, please explain the problem you are having clearly, and in detail.
+اگر موارد بالا را امتحان کرده‌اید و هنوز گیر کرده‌اید، وقت درخواست کمک است.
+هنگام نوشتن پست، لطفاً مشکلی که دارید را واضح و با جزئیات توضیح دهید.
 
-Avoid vague questions like:
+از پرسش‌های مبهم مانند این بپرهیزید:
 
-> "My Anki doesn't work, what should I do?"
+> «آنکی‌ام کار نمی‌کند، چه کنم؟»
 
-Instead, provide as much detail as you can. For example:
+به‌جای آن، هر چه می‌توانید جزئیات بدهید. مثلاً:
 
-> "When I double-click on the Anki icon, an error message pops up. I tried
-> searching the internet for the error, but couldn't find anything useful. I
-> have copied and pasted the error message to the bottom of my post. I
-> followed the steps on the "When problems occur" page, but the error message
-> does not go away. What should I do?"
+> «وقتی روی نشان آنکی دوبار کلیک می‌کنم، پیام خطایی ظاهر می‌شود. برای خطا در اینترنت جست‌وجو کردم اما چیز مفیدی پیدا نکردم. متن پیام خطا را در انتهای پستم آورده‌ام. مراحل صفحه "When problems occur" را دنبال کردم اما پیام خطا از بین نمی‌رود. چه کنم؟»
 
-This is a much better question. It tells us:
+این پرسش بسیار بهتری است. به ما می‌گوید:
 
-- What you have tried.
-- What steps you are taking when the problem happens.
-- What problems/errors you are getting when things go wrong.
+- چه چیزهایی امتحان کرده‌اید.
+- هنگام رخ دادن مشکل چه مراحلی را برمی‌دارید.
+- وقتی خراب می‌شود چه مشکلات/خطاهایی می‌گیرید.
 
-Knowing these things makes it much easier to answer your question.
+دانستن این‌ها پاسخ‌دادن به پرسش‌تان را بسیار آسان‌تر می‌کند.
 
-The user forums use a different login to AnkiWeb, so please create an
-account there if it's your first time.
+انجمن‌های کاربری ورود به سیستم متفاوتی از AnkiWeb دارند؛ پس اگر اولین بارتان است، لطفاً آنجا حساب بسازید.
 
-## Anki Desktop (the computer version) and AnkiWeb
+## آنکی دسکتاپ (نسخه رایانه‌ای) و AnkiWeb {#anki-desktop-the-computer-version-and-ankiweb}
 
-After reading the above section, please post on the
-[user forums](https://forums.ankiweb.net) for assistance.
+پس از خواندن بخش بالا، لطفاً برای کمک در [انجمن‌های کاربری](https://forums.ankiweb.net) بنویسید.
 
-The user forums use a different login to AnkiWeb, so please create an
-account there if it's your first time.
+انجمن‌های کاربری ورود به سیستم متفاوتی از AnkiWeb دارند؛ پس اگر اولین بارتان است، لطفاً آنجا حساب بسازید.
 
-## AnkiDroid (Android devices)
+## AnkiDroid (دستگاه‌های اندروید) {#ankidroid-android-devices}
 
-See [AnkiDroid's support page](https://docs.ankidroid.org/help.html).
+[صفحه پشتیبانی AnkiDroid](https://docs.ankidroid.org/help.html) را ببینید.
 
-## AnkiMobile (iPhone/iPad)
+## AnkiMobile (آیفون/آیپد) {#ankimobile-iphoneipad}
 
-See [AnkiMobile's support page](https://docs.ankimobile.net/support.html).
+[صفحه پشتیبانی AnkiMobile](https://docs.ankimobile.net/support.html) را ببینید.
 
-## Private questions
+## پرسش‌های خصوصی {#private-questions}
 
-For security reports and business enquiries, you can post a private ticket
-[here](https://anki.tenderapp.com/discussions/private). If you have a question
-about Anki, AnkiWeb or AnkiDroid, please use the [user forums](https://forums.ankiweb.net)
-instead.
+برای گزارش‌های امنیتی و پرسش‌های تجاری، می‌توانید [اینجا](https://anki.tenderapp.com/discussions/private) تیکت خصوصی ثبت کنید. اگر درباره آنکی، AnkiWeb یا AnkiDroid پرسشی دارید، لطفاً به‌جای آن از [انجمن‌های کاربری](https://forums.ankiweb.net) استفاده کنید.

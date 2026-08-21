@@ -1,20 +1,19 @@
-# Windows startup issues
+# مشکلات راه‌اندازی در ویندوز {#windows-startup-issues}
 
 <!-- toc -->
 
-## No error, but app does not appear
+## بدون خطا، اما برنامه ظاهر نمی‌شود {#no-error-but-app-does-not-appear}
 
-If you start Anki and it fails to appear, without
-any error message, you can try the following:
+اگر آنکی را شروع می‌کنید و بدون هیچ پیام خطایی ظاهر نمی‌شود، می‌توانید موارد زیر را امتحان کنید:
 
-- Disconnect multiple/external displays.
-- Install the [latest Anki version](https://apps.ankiweb.net/).
-- Adjust [your decimal separator](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75), if it is not a period.
-- Install the old [2.1.35-alternate build](https://github.com/ankitects/anki/releases/tag/2.1.35) of Anki.
+- نمایشگرهای چندگانه/خارجی را جدا کنید.
+- [آخرین نسخه آنکی](https://apps.ankiweb.net/) را نصب کنید.
+- اگر جداکننده اعشار شما نقطه نیست، [جداکننده اعشار](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75)‌تان را تنظیم کنید.
+- بیلد قدیمی [2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35) آنکی را نصب کنید.
 
-## Windows updates
+## به‌روزرسانی‌های ویندوز {#windows-updates}
 
-When starting Anki, you may receive a message like the following:
+هنگام شروع آنکی ممکن است پیام‌هایی مانند زیر بگیرید:
 
 - _Error loading Python DLL_
 - _The program can't start because api-ms-win.... is missing_
@@ -22,76 +21,63 @@ When starting Anki, you may receive a message like the following:
 - _Failed to execute script pyi_rth_multiprocessing_
 - _Failed to execute script pyi_rth_win32comgenpy_
 
-These errors are usually because your computer is missing a Windows update
-or Windows library.
+این خطاها معمولاً به‌دلیل نبود به‌روزرسانی یا کتابخانه ویندوزی روی رایانه شماست.
 
-Open Windows update, and ensure your system has all updates installed.
-If any needed to be installed, restart your device after installing.
+Windows update را باز کنید و مطمئن شوید سیستم‌تان همه به‌روزرسانی‌ها را نصب دارد.
+اگر چیزی لازم بود نصب شود، پس از نصب، دستگاه‌تان را دوباره راه‌اندازی کنید.
 
-## Windows 7/8
+## ویندوز ۷/۸ {#windows-78}
 
-On Windows 7/8, you may need to manually install extra updates. Try:
+در ویندوز ۷/۸، شاید لازم باشد به‌طور دستی به‌روزرسانی‌های اضافی نصب کنید. امتحان کنید:
 
 - <https://www.microsoft.com/en-us/download/details.aspx?id=48234>
 - <https://aka.ms/vs/15/release/vc_redist.x64.exe>
 - <http://www.catalog.update.microsoft.com/Search.aspx?q=kb4474419>
 - <http://www.catalog.update.microsoft.com/Search.aspx?q=kb4490628>
 
-## Video driver issues
+## مشکلات درایور ویدیو {#video-driver-issues}
 
-Please see [display issues](./display-issues.md).
+لطفاً [مشکلات نمایش](./display-issues.md) را ببینید.
 
-## Multiple displays
+## نمایشگرهای چندگانه {#multiple-displays}
 
-If you get a _LoadLibrary failed with error 126_, this may be caused by the
-toolkit Anki is built on having trouble with [multiple displays](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967).
+اگر خطای _LoadLibrary failed with error 126_ می‌گیرید، این ممکن است به‌دلیل مشکل جعبه‌ابداری که آنکی روی آن ساخته شده با [نمایشگرهای چندگانه](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967) باشد.
 
-## Antivirus/firewall software
+## نرم‌افزار آنتی‌ویروس/فایروال {#antivirusfirewall-software}
 
-Third-party software on your machine may prevent Anki from loading. You can
-try adding an exception for Anki, or temporarily disabling your antivirus/firewall
-to see if it helps.
+نرم‌افزار شخص ثالثی روی رایانه شما ممکن است مانع بارگیری آنکی شود. می‌توانید برای آنکی استثنا بگذارید، یا آنتی‌ویروس/فایروال‌تان را موقتاً غیرفعال کنید تا ببینید کمک می‌کند یا نه.
 
-## Admin access
+## دسترسی مدیر {#admin-access}
 
-Some users have reported that Anki did not run for them until they right-clicked
-on the Anki icon and chose "Run as administrator". Anki stores all of its data in
-your user folder, and should not need administrator privileges, but it's something
-you can try if you've exhausted other options.
+بعضی کاربران گزارش کرده‌اند که آنکی برایشان اجرا نشد تا اینکه روی نشان آنکی راست‌کلیک کردند و "Run as administrator" را انتخاب کردند. آنکی همه داده‌هایش را در پوشه کاربری شما ذخیره می‌کند و نباید به امتیازات مدیر نیاز داشته باشد، اما چیزی است که می‌توانید در صورت پایان یافتن گزینه‌های دیگر امتحان کنید.
 
-## Multiple Anki installations present after updating
+## چند نصب آنکی پس از به‌روزرسانی {#multiple-anki-installations-present-after-updating}
 
-If the update process leaves you with multiple Anki installs (such as within
-`C:\Program Files\Anki` and `C:\Program Files (x86)\Anki`), they may be left in a
-non-working state, and Anki may refuse to start without showing an error message.
+اگر فرایند به‌روزرسانی چند نصب آنکی برایتان به جا بگذارد (مثلاً درون
+`C:\Program Files\Anki` و `C:\Program Files (x86)\Anki`)، ممکن است در وضعیت غیرکارآمدی مانده باشند و آنکی بدون نمایش پیام خطا از شروع سر باز بزند.
 
-Try uninstalling all copies of Anki from your computer. To do this, find them in Windows Settings > Apps & features (or Apps > Installed apps) and uninstall, or run `uninstall.exe` in each Anki program
-folder. Afterward, install Anki again.
+همه رونوشت‌های آنکی را از رایانه‌تان حذف کنید. برای این کار، آن‌ها را در Windows Settings > Apps & features (یا Apps > Installed apps) بیابید و حذف کنید، یا `uninstall.exe` را در هر پوشه برنامه آنکی اجرا کنید. پس از آن، آنکی را دوباره نصب کنید.
 
-## Debugging
+## اشکال‌زدایی {#debugging}
 
-Starting Anki from a terminal may reveal a bit more information about some
-errors. After installing the latest Anki version and ensuring all Windows
-updates are installed, instead of running Anki directly, press the <kbd>Windows</kbd> key (or open the Start menu), type `cmd`, and launch Command Prompt. When the terminal window opens, paste the following command, and press <kbd>Enter</kbd>. (The path will be different if Anki is installed in a location that is not the default.)
+شروع آنکی از ترمینال ممکن است کمی اطلاعات بیشتر درباره بعضی خطاها آشکار کند. پس از نصب آخرین نسخه آنکی و مطمئن‌شدن از نصب همه به‌روزرسانی‌های ویندوز، به‌جای اجرای مستقیم آنکی، کلید <kbd>Windows</kbd> را بزنید (یا منوی Start را باز کنید)، `cmd` را تایپ کنید و Command Prompt را اجرا کنید. وقتی پنجره ترمینال باز شد، دستور زیر را بچسبانید و <kbd>Enter</kbd> را بزنید. (مسیر متفاوت خواهد بود اگر آنکی در مکانی غیر از پیش‌فرض نصب شده باشد.)
 
 ```
 %LocalAppData%\Programs\Anki\anki-console.bat
 ```
 
-For Anki versions 25.07 to 25.09.4, paste
+برای نسخه‌های 25.07 تا 25.09.4 آنکی، این را بچسبانید
 
 ```
 %LocalAppData%\Programs\Anki\anki-console.exe
 ```
 
-Presumably Anki will fail to open like before, but the output in the terminal window may reveal something about
-what is causing the problem.
+احتمالاً آنکی مثل قبل باز نمی‌شود، اما خروجی پنجره ترمینال ممکن است چیزی درباره علت مشکل آشکار کند.
 
-## If all else fails
+## اگر هیچ‌کدام جواب نداد {#if-all-else-fails}
 
-If you are unable to start Anki after trying the above workarounds, you have
-two remaining options:
+اگر پس از امتحان راه‌حل‌های بالا نتوانستید آنکی را شروع کنید، دو گزینه پیش روی شماست:
 
-- You can try [running from Python](https://faqs.ankiweb.net/running-from-python.html).
-- You can try an older Anki version built with an older toolkit, such as
-  [2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35), or [2.1.15](https://github.com/ankitects/anki/releases/tag/2.1.15).
+- می‌توانید [اجرا از Python](https://faqs.ankiweb.net/running-from-python.html) را امتحان کنید.
+- می‌توانید نسخه قدیمی‌تر آنکی ساخته‌شده با جعبه‌ابزار قدیمی‌تر را امتحان کنید؛ مانند
+  [2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35) یا [2.1.15](https://github.com/ankitects/anki/releases/tag/2.1.15).

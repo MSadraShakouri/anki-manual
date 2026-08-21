@@ -1,41 +1,36 @@
-# Installing & Upgrading Anki on Linux
+# نصب و ارتقای آنکی در لینوکس {#installing--upgrading-anki-on-linux}
 
 <!-- toc -->
 
-## Requirements
+## پیش‌نیازها {#requirements}
 
-The packaged version requires a recent 64 bit Intel/AMD Linux with glibc 2.35+ or ARM/AArch64 with glibc 2.39+, and common
-libraries like libwayland-client and systemd. If you are on a different
-architecture, or a barebones Linux distro, you will not be able to use the
-packaged version, but you may be able to use the [Python wheels](https://betas.ankiweb.net/#via-pypipip)
-instead.
+نسخه بسته‌بندی‌شده به لینوکس ۶۴ بیتی Intel/AMD اخیر با glibc 2.35+ یا ARM/AArch64 با glibc 2.39+، و کتابخانه‌های رایجی مانند libwayland-client و systemd نیاز دارد. اگر روی معماری متفاوتی هستید، یا توزیع لینوکسِ حداقلی، نمی‌توانید از نسخه بسته‌بندی‌شده استفاده کنید، اما شاید بتوانید به‌جایش از [چرخ‌های Python](https://betas.ankiweb.net/#via-pypipip) استفاده کنید.
 
-Debian and derivatives, such as Ubuntu and [Chromebooks with Linux enabled](https://support.google.com/chromebook/answer/9145439), use the following before
-installing:
+دبیان و مشتقاتش — مانند اوبونتو و [کروم‌بوک‌ها با لینوکس فعال](https://support.google.com/chromebook/answer/9145439) — پیش از نصب از موارد زیر استفاده کنند:
 
 ```shell
 sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3 libxcb-icccm4 libxcb-keysyms1
 ```
-Arch and derivatives, such as Manjaro, please use the following before
-installing:
+
+آرچ و مشتقاتش — مانند Manjaro — لطفاً پیش از نصب از موارد زیر استفاده کنند:
 
 ```shell
 sudo pacman -S libxinerama xcb-util-cursor nss
 ```
 
-If Anki fails to start after installing, you may be [missing other libraries](./missing-libraries.md).
+اگر آنکی پس از نصب شروع نشد، ممکن است [کتابخانه‌های دیگری کم داشته باشید](./missing-libraries.md).
 
-If you're on Ubuntu 24.04 and Anki won't start, please see [this thread](https://forums.ankiweb.net/t/issues-running-on-ubuntu-24-04/40974).
+اگر روی اوبونتو 24.04 هستید و آنکی شروع نمی‌شود، لطفاً [این گفتگو](https://forums.ankiweb.net/t/issues-running-on-ubuntu-24-04/40974) را ببینید.
 
-Anki's build system only supports glibc, so musl-based distros are not currently supported.
+سیستم ساخت آنکی فقط از glibc پشتیبانی می‌کند؛ پس توزیع‌های مبتنی بر musl در حال حاضر پشتیبانی نمی‌شوند.
 
-## Installing
+## نصب {#installing}
 
-To install Anki:
+برای نصب آنکی:
 
-1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder.
-2. If zstd is not already installed on your system, you'll need to install it using your package manager (e.g `sudo apt install zstd` on Debian/Ubuntu, or `sudo pacman -S zstd` on Arch).
-3. Open a terminal and run the following commands, replacing the filename as appropriate.
+1. آنکی را از <https://apps.ankiweb.net> در پوشه Downloads دانلود کنید.
+2. اگر zstd از قبل روی سیستم‌تان نصب نیست، باید آن را با مدیر بسته نصب کنید (مثلاً `sudo apt install zstd` در دبیان/اوبونتو، یا `sudo pacman -S zstd` در آرچ).
+3. ترمینالی باز کنید و دستورهای زیر را با جایگزینی نام پرونده به‌تناسب اجرا کنید.
 
 ```shell
 tar xaf Downloads/anki-2XXX-linux-x86_64.tar.zst
@@ -43,48 +38,37 @@ cd anki-linux
 sudo ./install.sh
 ```
 
-On some Linux systems, you may need to use `tar xaf --use-compress-program=unzstd`.
+در بعضی سیستم‌های لینوکس، شاید لازم باشد از `tar xaf --use-compress-program=unzstd` استفاده کنید.
 
-4. You can then start Anki by typing `anki` and hitting <kbd>Enter</kbd>. If you encounter
-   any issues, please see the links on the left.
+4. سپس می‌توانید آنکی را با تایپ `anki` و زدن <kbd>Enter</kbd> شروع کنید. اگر با مشکلی روبه‌رو شدید، لطفاً پیوندهای سمت راست را ببینید.
 
-## Upgrading
+## ارتقا {#upgrading}
 
-If you were running Anki from a .deb/.rpm/etc in the past, make
-sure to remove the system version before installing the package
-provided here.
+اگر در گذشته آنکی را از .deb/.rpm/غیره اجرا می‌کردید، مطمئن شوید پیش از نصب بسته ارائه‌شده اینجا، نسخه سیستمی را حذف کنید.
 
-If you're upgrading from a previous package, simply repeat the
-installation steps to upgrade to the latest version. Your user data
-will be preserved.
+اگر از بسته قبلی ارتقا می‌دهید، برای ارتقا به آخرین نسخه کافی است مراحل نصب را تکرار کنید. داده‌های کاربری‌تان حفظ می‌شود.
 
-If you wish to downgrade to a previous version, make sure you
-[downgrade first](http://changes.ankiweb.net).
+اگر می‌خواهید به نسخه قبلی برگردید، مطمئن شوید ابتدا
+[نسخه را پایین می‌آورید](http://changes.ankiweb.net).
 
-## Add-on Compatibility
+## سازگاری افزونه‌ها {#add-on-compatibility}
 
-Some add-ons may not always work with the latest Anki release. If you upgrade to
-the latest Anki version and find an add-on you cannot live without stops working,
-you can download older Anki versions from the [releases page](https://github.com/ankitects/anki/releases).
+بعضی افزونه‌ها ممکن است همیشه با آخرین نسخه آنکی کار نکنند. اگر به آخرین نسخه آنکی ارتقا دهید و ببینید افزونه‌ای که بدونش نمی‌توانید از کار افتاده، می‌توانید نسخه‌های قدیمی‌تر آنکی را از [صفحه انتشارها](https://github.com/ankitects/anki/releases) دانلود کنید.
 
-## System Qt versions
+## نسخه‌های Qt سیستم {#system-qt-versions}
 
-Anki uses the official PyQt builds by default. This makes it easier to
-install Anki on distros that don't have the relevant Python/Qt versions, but means that
-you may not have access certain Qt features provided by your Linux distro, such as certain
-Qt themes, support for the FCITX input method, etc.
+آنکی به‌طور پیش‌فرض از بیلدهای رسمی PyQt استفاده می‌کند. این نصب آنکی را روی توزیع‌هایی که نسخه‌های مربوط Python/Qt را ندارند آسان‌تر می‌کند، اما یعنی ممکن است به بعضی قابلیت‌های Qtِ فراهم‌شده توسط توزیع لینوکس‌تان دسترسی نداشته باشید؛ مانند بعضی پوسته‌های Qt، پشتیبانی از روش ورودی FCITX و غیره.
 
-If your Linux distro provides up-to-date Anki packages, you may find using them easiest.
+اگر توزیع لینوکس‌تان بسته‌های به‌روز آنکی فراهم می‌کند، شاید استفاده از آن‌ها آسان‌تر باشد.
 
-## Problems
+## مشکلات {#problems}
 
-If you encounter any issues when installing or starting Anki, please see the
-following pages:
+اگر هنگام نصب یا شروع آنکی با مشکلی روبه‌رو شدید، لطفاً صفحات زیر را ببینید:
 
-- [Missing Libraries](missing-libraries.md)
-- [Display Issues](display-issues.md)
-- [Blank Main Window](blank-window.md)
-- [Linux Distro Packages](distro-packages.md)
-- [Incorrect GTK Theme](gtk-theme.md)
+- [کتابخانه‌های گمشده](missing-libraries.md)
+- [مشکلات نمایش](display-issues.md)
+- [پنجره اصلی خالی](blank-window.md)
+- [بسته‌های توزیع لینوکس](distro-packages.md)
+- [پوسته نادرست GTK](gtk-theme.md)
 - [Wayland](wayland.md)
-- [Input Methods](input-methods.md)
+- [روش‌های ورودی](input-methods.md)

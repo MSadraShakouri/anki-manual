@@ -1,171 +1,131 @@
-# Preferences
+# تنظیمات {#preferences}
 
 <!-- toc -->
 
-The preferences are available from the **Tools** menu on Windows/Linux, or
-the **Anki** menu on a Mac.
+تنظیمات از منوی **Tools** در ویندوز/لینوکس، یا منوی **Anki** در مک در دسترس‌اند.
 
-## Appearance
+## ظاهر {#appearance}
 
-### General
+### عمومی {#general}
 
-**Language**\
-Change your display language. You can help to improve translations [here](https://translating.ankiweb.net/)
+**زبان**\
+زبان نمایش را عوض کنید. می‌توانید به بهبود ترجمه‌ها [اینجا](https://translating.ankiweb.net/) کمک کنید
 
-### User Interface
+### رابط کاربری {#user-interface}
 
-**Theme**\
-Dark (night) mode will make Anki's interface dark, and will cause cards to be shown as white text on a
-black background. Some card templates may need to be modified to work
-properly with this option enabled - see [night mode styling](templates/styling.md#night-mode) for more information.
+**پوسته (Theme)**\
+حالت تیره (شب) رابط آنکی را تیره می‌کند و باعث می‌شود کارت‌ها به‌صورت متن سفید روی پس‌زمینه سیاه نشان داده شوند. بعضی قالب‌های کارت ممکن است برای درست کارکردن با این گزینه نیاز به تغییر داشته باشند — برای اطلاعات بیشتر [استایل حالت شب](templates/styling.md#night-mode) را ببینید.
 
-From 2.1.50+ there is an option to switch to day or night mode automatically.
+از 2.1.50+ گزینه‌ای برای تغییر خودکار به حالت روز یا شب وجود دارد.
 
-**User interface size**\
-If you find that the interface elements are too small for you, you can
-try to increase this setting.
+**اندازه رابط کاربری**\
+اگر می‌بینید که عناصر رابط برایتان خیلی کوچک‌اند، می‌توانید این تنظیم را افزایش دهید.
 
-**Reset Window Sizes**\
-This will reset all window sizes and locations to the default settings.
+**بازنشانی اندازه پنجره‌ها (Reset Window Sizes)**\
+اندازه و محل همه پنجره‌ها را به تنظیمات پیش‌فرض بازمی‌گرداند.
 
-**Video driver**\
-Anki's libraries need a video driver to draw content on the screen.
-Due to different hardware and software configurations, the driver that
-works best on your machine may vary. Software tends to be slower, but will
-work on some systems where the other options do not.
+**درایور ویدیو (Video driver)**\
+کتابخانه‌های آنکی برای ترسیم محتوا روی صفحه به درایور ویدیو نیاز دارند.
+به‌دلیل پیکربندی‌های سخت‌افزاری و نرم‌افزاری مختلف، درایوری که روی رایانه شما بهترین کار را می‌کند ممکن است متفاوت باشد. Software معمولاً کندتر است، اما روی بعضی سیستم‌ها کار می‌کند که گزینه‌های دیگر کار نمی‌کنند.
 
-Note: If you're on Windows, check [this page](./platform/windows/display-issues.md) as well.
+توجه: اگر روی ویندوز هستید، [این صفحه](./platform/windows/display-issues.md) را هم ببینید.
 
-### Distractions
+### موارد حواس‌پرتی {#distractions}
 
-These options allow you to remove some unnecessary elements from the screen during reviews. You can:
+این گزینه‌ها به شما اجازه می‌دهند بعضی عناصر غیرضروری را از صفحه هنگام مرور حذف کنید. می‌توانید:
 
-- Hide the top and bottom bar during reviews.
-- Enable the "minimalist" mode, making the interface more compact/less fancy.
-- Reduce motion, to disable some transitions/animations.
-- Switching between native styling and the Anki theme (only on Mac/Linux).
+- نوار بالا و پایین را هنگام مرور پنهان کنید.
+- حالت "minimalist" را فعال کنید تا رابط جمع‌وجورتر/ساده‌تر شود.
+- حرکت را کاهش دهید تا بعضی گذارها/انیمیشن‌ها خاموش شوند.
+- میان استایل بومی و پوسته آنکی جابه‌جا شوید (فقط در مک/لینوکس).
 
-## Review
+## مرور {#review}
 
-### Scheduler
+### زمان‌بند {#scheduler}
 
-**Next day starts at**\
-Controls when Anki should start showing the next day’s cards. The default
-setting of 4AM ensures that if you’re studying around midnight, you won’t have
-two days' worth of cards shown to you in one session. If you stay up very late
-or wake up very early, you may want to adjust this to a time you’re usually
-sleeping. Note that the start of the next day is relative to your current time zone.
-Also note that any cards that cross a day boundary [will appear at the start of
-the day they are scheduled for](./deck-options.md#day-boundaries), just like review cards do.
+**روز بعد از این ساعت شروع می‌شود**\
+کنترل می‌کند آنکی چه زمانی باید نشان‌دادن کارت‌های روز بعد را شروع کند. تنظیم پیش‌فرض ۴ صبح تضمین می‌کند که اگر حوالی نیمه‌شب مشغول مطالعه هستید، در یک جلسه کارت‌های دو روز را نبینید. اگر خیلی دیر می‌خوابید یا خیلی زود بیدار می‌شوید، شاید بخواهید این را به ساعتی تنظیم کنید که معمولاً خوابیده‌اید. توجه کنید شروع روز بعد نسبت به منطقه زمانی فعلی شماست.
+همچنین توجه کنید کارت‌هایی که از مرز روز می‌گذرند، درست مانند کارت‌های مروری، [در ابتدای روزِ زمان‌بندی‌شان ظاهر می‌شوند](./deck-options.md#day-boundaries).
 
-**Learn ahead limit**\
-Tells Anki how to behave when there is nothing left to study in the current deck
-but cards in learning. The default setting of 20 minutes tells Anki that cards
-should be shown early if they have a delay of less than 20 minutes and there’s
-nothing else to do. If you set this to 0, Anki will always wait the full delay,
-showing the congratulations screen until the remaining cards are ready to be
-reviewed.
+**حد مطالعه زودتر از موعد (Learn ahead limit)**\
+به آنکی می‌گوید وقتی در دسته فعلی چیزی برای مطالعه نمانده جز کارت‌های در حال یادگیری، چگونه رفتار کند. تنظیم پیش‌فرض ۲۰ دقیقه به آنکی می‌گوید اگر کارت‌هایی تأخیر کمتر از ۲۰ دقیقه دارند و کار دیگری نیست، زودتر نشان داده شوند. اگر این را ۰ بگذارید، آنکی همیشه کامل تأخیر را صبر می‌کند و صفحه تبریک را نشان می‌دهد تا کارت‌های باقی‌مانده آماده مرور شوند.
 
-**Timebox time limit**\
-Timeboxing is a technique to help you focus by dividing a longer activity (such
-as a 30 minute study session) into smaller blocks. If you set the timebox time
-limit to a non-zero number of minutes, Anki will periodically show you how many
-cards you’ve managed to study during the prescribed time limit.
+**حد زمانی تایم‌باکس**\
+تایم‌باکس تکنیکی است برای کمک به تمرکز شما با تقسیم فعالیت طولانی‌تر (مانند جلسه مطالعه ۳۰ دقیقه‌ای) به بلوک‌های کوچک‌تر. اگر حد زمانی تایم‌باکس را روی عددی ناصفر از دقیقه بگذارید، آنکی به‌طور دوره‌ای به شما نشان می‌دهد در محدوده زمانی مقرر موفق شده‌اید چند کارت مطالعه کنید.
 
-### Review
+### مرور {#review-1}
 
-**Show play buttons on cards with audio**\
-Whether a clickable (re)play button will be shown in the study screen
-for cards with audio.
+**نمایش دکمه‌های پخش روی کارت‌های دارای صدا**\
+اینکه دکمه (پخش مجددِ) قابل کلیکی در صفحه مطالعه برای کارت‌های دارای صدا نشان داده شود یا نه.
 
-**Interrupt current audio when answering**\
-Whether a currently playing audio file should be stopped when answering
-a card.
+**قطع صدای در حال پخش هنگام پاسخ**\
+اینکه پرونده صدای در حال پخش هنگام پاسخ‌دادن به کارت متوقف شود یا نه.
 
-**Show remaining card count**\
-Disable this option to hide the card count at the bottom of the screen.
+**نمایش شمار کارت‌های باقی‌مانده**\
+این گزینه را خاموش کنید تا شمار کارت در پایین صفحه پنهان شود.
 
-**Show next review time above answer buttons**\
-Useful to know how far in the future your cards are being pushed.
+**نمایش زمان مرور بعدی بالای دکمه‌های پاسخ**\
+سودمند برای دانستن اینکه کارت‌هایتان تا چه اندازه در آینده قرار می‌گیرند.
 
-**Spacebar (or enter) also answers card**\
-Defines whether a press on <kbd>Space</kbd> or <kbd>Enter</kbd> answers cards.
+**کلید Space (یا Enter) هم به کارت پاسخ می‌دهد**\
+مشخص می‌کند فشردن <kbd>Space</kbd> یا <kbd>Enter</kbd> به کارت‌ها پاسخ می‌دهد یا نه.
 
-## Editing
+## ویرایش {#editing}
 
-### Editing
+### ویرایش {#editing-1}
 
-**Paste clipboard images as PNG**\
-By default Anki pastes images on the clipboard as JPG files, to save disk space.
-You can use the option to paste as PNG images instead. PNG images support
-transparent backgrounds and are lossless, but they usually result in much larger
-file sizes.
+**چسباندن تصاویر کلیپ‌بورد به‌صورت PNG**\
+به‌طور پیش‌فرض آنکی تصاویر کلیپ‌بورد را برای صرفه‌جویی در فضای دیسک به‌صورت پرونده JPG می‌چسباند. می‌توانید از این گزینه برای چسباندن به‌صورت تصویر PNG استفاده کنید. تصاویر PNG از پس‌زمینه شفاف پشتیبانی می‌کنند و بدون افت کیفیت‌اند، اما معمولاً اندازه پرونده بسیار بزرگتری دارند.
 
-**Paste without Shift strips formatting**\
-By default, formatting like bold and colors are kept when pasting,
-unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.
+**چسباندن بدون Shift قالب‌بندی را حذف می‌کند**\
+به‌طور پیش‌فرض، قالب‌بندی‌هایی مانند درشتی و رنگ‌ها هنگام چسباندن نگه داشته می‌شوند، مگر آنکه کلید <kbd>Shift</kbd> نگه داشته شده باشد. این گزینه رفتار را معکوس می‌کند.
 
-**Default deck**\
-Controls how note types and decks interact. The default option **When adding, default
-to current deck** means that Anki saves the last-used note type for each deck and
-selects it again the next time you choose the deck (and, in addition, will
-start with the current deck selected when choosing **Add** from anywhere). The other
-option, **Change deck depending on note type**, saves the last-used deck for each
-note type (and opens the add window to the last-used note type when you choose
-**Add**). This may be more convenient if you always use a single note type for each
-deck.
+**دسته پیش‌فرض**\
+کنترل می‌کند انواع یادداشت و دسته‌ها چگونه با هم تعامل کنند. گزینه پیش‌فرض **When adding, default to current deck** یعنی آنکی آخرین نوع یادداشتِ استفاده‌شده برای هر دسته را ذخیره می‌کند و دفعه بعد که آن دسته را انتخاب می‌کنید دوباره همان را انتخاب می‌کند (و علاوه بر این، وقتی از هر جای برنامه **Add** را می‌زنید، با دسته فعلیِ انتخاب‌شده شروع می‌کند). گزینه دیگر، **Change deck depending on note type**، آخرین دستهٔ استفاده‌شده برای هر نوع یادداشت را ذخیره می‌کند (و وقتی **Add** را می‌زنید پنجره افزودن را روی آخرین نوع یادداشتِ استفاده‌شده باز می‌کند). این ممکن است راحت‌تر باشد اگر همیشه برای هر دسته از یک نوع یادداشت واحد استفاده می‌کنید.
 
-The last used deck/note type is updated when you add a card. If you change the deck
-and close the add window without adding a card, it won't be saved.
+آخرین دسته/نوع یادداشتِ استفاده‌شده وقتی به‌روزرسانی می‌شود که کارتی بیفزایید. اگر دسته را عوض کنید و پنجره افزودن را بدون افزودن کارت ببندید، ذخیره نمی‌شود.
 
-### Browsing
+### مرورگر {#browsing}
 
-**Default search text**\
-Allows you to customize the starting search text in the browser (eg, to start
-with "deck:current").
+**متن جست‌وجوی پیش‌فرض**\
+به شما اجازه می‌دهد متن جست‌وجوی آغازین مرورگر را سفارشی کنید (مثلاً شروع با "deck:current").
 
-**Ignore accents in search (slower)**\
-When enabled, simple text searches automatically [ignore accents](./searching.md#ignoring-accentscombining-characters).
+**نادیده‌گرفتن اعراب در جست‌وجو (کندتر)**\
+وقتی فعال است، جست‌وجوهای متن ساده به‌طور خودکار [اعراب‌ها را نادیده می‌گیرند](./searching.md#ignoring-accentscombining-characters).
 
-## Syncing
+## همگام‌سازی {#syncing}
 
-This tab contains options related to syncing with AnkiWeb.
+این زبانه گزینه‌های مربوط به همگام‌سازی با AnkiWeb را در بر دارد.
 
-### Synchronisation
+### همگام‌سازی {#synchronisation}
 
-**Synchronize audio and images too**\
-When enabled, media will also be synced with AnkiWeb.
+**همگام‌سازی صداها و تصاویر هم**\
+وقتی فعال است، رسانه‌ها هم با AnkiWeb همگام می‌شوند.
 
-**Automatically sync on profile open/close**\
-Disable this if you don't want an automatic sync with AnkiWeb when opening / closing a [profile](./profiles.md).
+**همگام‌سازی خودکار هنگام باز/بستن نمایه**\
+اگر نمی‌خواهید هنگام باز/بستن [نمایه](./profiles.md) همگام‌سازی خودکاری با AnkiWeb انجام شود، این را خاموش کنید.
 
-**Periodically sync media**\
-Enable this setting if you want to automatically sync your media every 15
-minutes. Without this preference enabled, media would sync in bulk during normal
-syncs. You might want to enable this to avoid large media download / upload on
-normal syncs, e.g. if you have a slower internet connection.
+**همگام‌سازی دوره‌ای رسانه‌ها**\
+اگر می‌خواهید رسانه‌هایتان هر ۱۵ دقیقه به‌طور خودکار همگام شوند، این تنظیم را فعال کنید. بدون این تنظیم، رسانه‌ها به‌صورت فله در همگام‌سازی‌های معمولی همگام می‌شوند. شاید بخواهید این را فعال کنید تا از دانلود/بارگذاری بزرگ رسانه در همگام‌سازی‌های معمولی اجتناب کنید؛ مثلاً اگر اینترنت کندتری دارید.
 
 ```admonish example
-Let's say you create new anki cards and many of those cards contain media files.
-If you add cards for an hour and have this setting turned on, then there will be
-4 smaller media uploads in total. Without this setting, you would have to upload
-the entire media with the next normal sync, which might take more time.
+فرض کنید کارت‌های جدیدی می‌سازید و بسیاری از آن کارت‌ها پرونده رسانه دارند.
+اگر یک ساعت کارت اضافه کنید و این تنظیم روشن باشد، در مجموع ۴ بارگذاری رسانهٔ
+کوچکتر خواهید داشت. بدون این تنظیم، باید کل رسانه‌ها را با همگام‌سازی معمولی بعدی
+بارگذاری کنید که ممکن است بیشتر طول بکشد.
 ```
 
-**On next sync, force changes in one direction**\
-When this option is enabled, the next sync will
-ask you whether you wish to upload or download. This is useful if
-you have made some changes accidentally, and wish to overwrite them
-with an older version that is on AnkiWeb.
+**در همگام‌سازی بعدی، تغییرات را در یک جهت به‌اجبار اعمال کن**\
+وقتی این گزینه فعال است، همگام‌سازی بعدی از شما می‌پرسد می‌خواهید بارگذاری یا دانلود کنید. این سودمند است اگر به‌طور تصادفی تغییراتی داده‌اید و می‌خواهید آن‌ها را با نسخه قدیمی‌تری که روی AnkiWeb است بازنویسی کنید.
 
-### AnkiWeb Account
+### حساب AnkiWeb {#ankiweb-account}
 
-When logged in, clicking on **Log Out** will log you out.
+وقتی وارد شده‌اید، کلیک روی **Log Out** شما را خارج می‌کند.
 
-### Self-hosted Sync Server
+### سرور همگام‌سازی خودمیزبان {#self-hosted-sync-server}
 
-For info on the custom sync server option, see [this section](./sync-server.md).
+برای اطلاعات درباره گزینه سرور همگام‌سازی سفارشی، [این بخش](./sync-server.md) را ببینید.
 
-## Backups
+## پشتیبان‌ها {#backups}
 
-See [this](backups.md#automatic-backups) section of the manual.
+[این بخش](backups.md#automatic-backups) راهنما را ببینید.

@@ -1,239 +1,157 @@
-# Text Files
+# پرونده‌های متنی {#text-files}
 
 <!-- toc -->
 
-Any **plain text** file that contains fields separated by commas,
-semicolons or tabs can be imported into Anki, provided some conditions
-are met.
+هر پرونده **متن ساده**‌ای که فیلدهایی جداشده با کاما، نقطه‌ویرگول یا تب داشته باشد، مشروط به برقراری چند شرط، می‌تواند در آنکی درون‌ریزی شود.
 
-- The files must be plain text (myfile.txt). Other formats like
-  myfile.xls, myfile.rtf, myfile.doc must be saved as a plain text
-  file first.
+- پرونده‌ها باید متن ساده باشند (myfile.txt). قالب‌های دیگر مانند
+  myfile.xls، myfile.rtf، myfile.doc باید ابتدا به‌صورت پرونده متنی ساده ذخیره شوند.
 
-- The files must be in UTF-8 format (see below).
+- پرونده‌ها باید در قالب UTF-8 باشند (پایین را ببینید).
 
-- Anki determines the number of fields in the file by looking at the first
-  (non-commented) line. If some of the later records in the file contain fewer
-  fields, Anki will treat the missing fields as if they were blank. If some of your
-  records contain extra fields, the extra content will not be imported.
+- آنکی شمار فیلدهای پرونده را با نگاه به نخستین خط (غیرتوضیحی) تعیین می‌کند. اگر بعضی رکوردهای بعدی پرونده فیلدهای کمتری داشته باشند، آنکی فیلدهای مفقود را خالی تلقی می‌کند. اگر بعضی رکوردهای شما فیلدهای اضافی داشته باشند، محتوای اضافی درون‌ریزی نمی‌شود.
 
-- Anki tries to guess which field separator (commas, tabs, etc.) your file uses. 
-  If it guesses wrongly, you can change it in the import options window and preview 
-  the results. Or you can add [file headers](#file-headers) to force a specific field separator.
+- آنکی می‌کوشد حدس بزند پرونده‌تان از کدام جداکننده فیلد (کاما، تب و غیره) استفاده می‌کند.
+  اگر اشتباه حدس بزند، می‌توانید در پنجره گزینه‌های درون‌ریزی آن را عوض کنید و نتیجه را پیش‌نمایش کنید. یا می‌توانید [سربرگ‌های پرونده](#file-headers) را بیفزایید تا جداکننده فیلد مشخصی را به‌اجبار اعمال کنید.
 
-Fields in your text file can be mapped to any field in your notes,
-including the tags field. You can choose which field in the text file
-corresponds to which field in the note when you import.
+فیلدهای پرونده متنی‌تان را می‌توان به هر فیلدی در یادداشت‌هایتان نگاشت کرد، از جمله فیلد برچسب‌ها. هنگام درون‌ریزی می‌توانید انتخاب کنید کدام فیلد پرونده متنی به کدام فیلد یادداشت مربوط است.
 
-When you import a text file, you can choose what deck to put the cards
-in. Keep in mind that if you have the deck override option set for one
-or more of your templates, the cards will go to that deck rather than
-the one you’ve selected.
+وقتی پرونده متنی را درون‌ریزی می‌کنید، می‌توانید انتخاب کنید کارت‌ها در کدام دسته قرار گیرند. در نظر داشته باشید که اگر گزینه بازنویسی دسته (deck override) برای یکی یا چند تا از قالب‌هایتان تنظیم شده باشد، کارت‌ها به آن دسته می‌روند نه دسته‌ای که انتخاب کرده‌اید.
 
-This is an example of a valid file with three fields:
+این مثالی از پرونده معتبری با سه فیلد است:
 
     apple;banana;grape
     first field;second field;third field
 
-There are two ways to include newlines or the field separator in fields.
+دو راه برای گنجاندن خط جدید یا جداکننده فیلد در فیلدها وجود دارد.
 
-**Escape the characters by placing the contents of the field in
-quotation marks**:
+**گریز دادن نویسه‌ها با قراردادن محتوای فیلد در گیومه**:
 
     hello;"this is
     a two line answer"
     two;this is a one line field
     "this includes a ; (semicolon)";another field
 
-Because quotes are used to mark where a field begins and ends, if you
-wish to include them inside your field, you need to replace a single
-doublequote with two doublequotes to "escape" them from the regular
-handling, like so:
+چون گیومه‌ها برای علامت‌گذاری شروع و پایان فیلد استفاده می‌شوند، اگر می‌خواهید داخل فیلد‌تان بیاورند، باید یک گیومه دوتایی را با دو گیومه دوتایی جایگزین کنید تا از برخورد معمول «گریز» شوند؛ مانند:
 
     field one;"field two with ""escaped quotes"" inside it"
 
-When you use a spreadsheet program like Libreoffice to create the CSV
-file for you, it will automatically take care of escaping double quotes.
+وقتی از برنامه صفحه‌گسترده‌ای مانند LibreOffice برای ساخت پرونده CSV استفاده می‌کنید، خودش گریز دادن گیومه‌های دوتایی را انجام می‌دهد.
 
-**Use HTML new lines**:
+**استفاده از خطوط جدید HTML**:
 
     hello; this is<br>a two line answer
     two; this is a one line one
 
-You need to turn on the **Allow HTML in fields** in the import
-dialog for HTML newlines to work.
+باید **Allow HTML in fields** را در گفت‌وگوی درون‌ریزی روشن کنید تا خطوط جدید HTML کار کنند.
 
-Escaped multi-lines will not work correctly if you are using cloze
-deletions that span multiple lines. In this case, use HTML
-newlines instead.
+خطوط چندتاییِ گریزشده اگر از حذف‌های اطلاعاتی چندخطی استفاده می‌کنید درست کار نمی‌کنند. در این حالت، به‌جایش از خطوط جدید HTML استفاده کنید.
 
-You can also include tags in another field and select it as a tags field
-in the import dialog:
+همچنین می‌توانید برچسب‌ها را در فیلد دیگری بیاورید و آن را در گفت‌وگوی درون‌ریزی به‌عنوان فیلد برچسب‌ها انتخاب کنید:
 
     first field;second field;tags
 
-This is an example of a valid file where the first line is ignored (\#):
+این مثالی از پرونده معتبری است که خط اولش نادیده گرفته می‌شود (\\#):
 
     # this is a comment and is ignored
     foo bar;bar baz;baz quux
     field1;field2;field3
 
-## Spreadsheets and UTF-8
+## صفحه‌گسترده‌ها و UTF-8 {#spreadsheets-and-utf-8}
 
-If you have non-Latin characters in your file (such as accents, Japanese
-and so on), Anki expects files to be saved in a "UTF-8 encoding". The
-easiest way to do this is to use the free LibreOffice spreadsheet
-program instead of Excel to edit your file, as it supports UTF-8 easily,
-and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, see [this doc](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
-for more information.
+اگر پرونده‌تان نویسه‌های غیرلاتین دارد (مانند اعراب‌ها، ژاپنی و غیره)، آنکی انتظار دارد پرونده‌ها با «کدگذاری UTF-8» ذخیره شده باشند. آسان‌ترین راه انجام این کار، استفاده از برنامه صفحه‌گسترده رایگان LibreOffice به‌جای Excel برای ویرایش پرونده‌تان است، چون به‌راحتی از UTF-8 پشتیبانی می‌کند و برخلاف Excel محتوای چندخطی را هم درست برون‌بری می‌کند. اگر می‌خواهید به استفاده از Excel ادامه دهید، برای اطلاعات بیشتر [این سند](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing) را ببینید.
 
-To save your spreadsheet to a file Anki can read with LibreOffice, go to
-**File &gt; Save As**, and then select CSV for the type of file. After
-accepting the default options, LibreOffice will save the file and you
-can then import the saved file into Anki.
+برای ذخیره صفحه‌گسترده‌تان به پرونده‌ای که آنکی بتواند با LibreOffice بخواند، به
+**File &gt; Save As** بروید و سپس CSV را برای نوع پرونده انتخاب کنید. پس از پذیرفتن گزینه‌های پیش‌فرض، LibreOffice پرونده را ذخیره می‌کند و سپس می‌توانید پرونده ذخیره‌شده را در آنکی درون‌ریزی کنید.
 
-## HTML
+## HTML {#html}
 
-Anki can treat text imported from text files as HTML (the language used
-for web pages). This means that text with bold, italics and other
-formatting can be exported to a text file and imported again. If you
-want to include HTML formatting, you can check the "allow HTML in
-fields" checkbox when importing. You may wish to turn this off if you’re
-trying to import cards whose content contains angle brackets or other
-HTML syntax.
+آنکی می‌تواند متن درون‌ریزی‌شده از پرونده‌های متنی را به‌عنوان HTML (زبانی که برای صفحات وب استفاده می‌شود) تلقی کند. این یعنی متن دارای درشتی، مورب و قالب‌بندی‌های دیگر را می‌توان به پرونده متنی برون‌بری و دوباره درون‌ریزی کرد. اگر می‌خواهید قالب‌بندی HTML بگنجانید، می‌توانید هنگام درون‌ریزی کادر "allow HTML in fields" را علامت بزنید. شاید بخواهید این را خاموش کنید اگر سعی دارید کارت‌هایی را درون‌ریزی کنید که محتوایشان شامل گیومه زاویه‌ای یا نحو HTML دیگری است.
 
-If you wish to use HTML for formatting your file but also wish to
-include angle brackets or ampersands, you may use the following replacements:
+اگر می‌خواهید از HTML برای قالب‌بندی پرونده‌تان استفاده کنید اما همچنین گیومه‌های زاویه‌ای یا امپرسندها را بیاورید، می‌توانید از جایگزینی‌های زیر استفاده کنید:
 
-| Character | Replacement |
-| --------- | ----------- |
-| &lt;      | `&lt;`      |
-| &gt;      | `&gt;`      |
-| &amp;     | `&amp;`     |
+| نویسه   | جایگزین   |
+| ------- | --------- |
+| &lt;    | `&lt;`    |
+| &gt;    | `&gt;`    |
+| &amp;   | `&amp;`   |
 
-## Importing Media
+## درون‌ریزی رسانه {#importing-media}
 
-If you want to include audio and pictures from a text file import, copy
-the files into the [collection.media folder](../files.md). **Do not put
-subdirectories in the media folder, or some features will not work.**
+اگر می‌خواهید صدا و تصویر را از درون‌ریزی پرونده متنی بگنجانید، پرونده‌ها را در [پوشه collection.media](../files.md) رونوشت کنید. **در پوشه رسانه زیرپوشه نگذارید، وگرنه بعضی قابلیت‌ها کار نخواهند کرد.**
 
-After you’ve copied the files, change one of the fields in your text
-file as follows.
+پس از رونوشت‌کردن پرونده‌ها، یکی از فیلدهای پرونده متنی‌تان را این‌گونه تغییر دهید.
 
     <img src="myimage.jpg">
 
-or
+یا
 
     [sound:myaudio.mp3]
 
-Alternatively, you can use the [find and replace](../browsing.md) feature
-in the browse screen to update all the fields at once. If each field
-contains text like "myaudio", and you wish to make it play a sound,
-you’d search for (.\*) and replace it with "\[sound:\\1.mp3\]", with the
-**regular expressions** option enabled.
+همچنین می‌توانید از قابلیت [یافتن و جایگزینی](../browsing.md) در صفحه مرورگر برای به‌روزرسانی همه فیلدها یک‌جا استفاده کنید. اگر هر فیلد متنی مانند "myaudio" دارد و می‌خواهید صدا پخش کند، به‌دنبال (.*) می‌گردید و با گزینه
+**عبارت‌های باقاعده** فعال، آن را با "\\[sound:\\\\1.mp3\\]" جایگزین می‌کنید.
 
-When importing a text file with these references, you must make sure to
-enable the "Allow HTML" option.
+هنگام درون‌ریزی پرونده متنی با این ارجاع‌ها، باید مطمئن شوید گزینه "Allow HTML" را فعال کرده‌اید.
 
-You might be tempted to do this in a template, like:
+شاید وسوسه شوید این کار را در قالب انجام دهید؛ مانند:
 
     <img src="{{field name}}">
 
-Anki doesn’t support this for two reasons: searching for used media is
-expensive, as each card has to be rendered, and such functionality isn’t
-obvious to shared deck users. Please use the find & replace technique
-instead.
+آنکی این را به دو دلیل پشتیبانی نمی‌کند: جست‌وجوی رسانه‌های استفاده‌شده پرهزینه است، چون هر کارت باید رندر شود، و چنین کارکردی برای کاربران دسته اشتراکی بدیهی نیست. لطفاً به‌جایش از تکنیک یافتن و جایگزینی استفاده کنید.
 
-## Bulk Media
+## رسانه فله {#bulk-media}
 
-Another option for importing large amounts of media at once is to use
-the [media import add-on](https://ankiweb.net/shared/info/129299120).
-This add-on will automatically create notes for all files in a folder
-you select, with the filenames on the front (minus the file extension,
-so if you have a file named apple.jpg, the front would say "apple") and
-the images or audio on the back. If you would like a different
-arrangement of media and filenames, you can [change the note type](../browsing.md) of the created cards afterwards.
+گزینه دیگر برای درون‌ریزی مقادیر زیادی رسانه یک‌جا، استفاده از
+[افزونه media import](https://ankiweb.net/shared/info/129299120) است.
+این افزونه برای همه پرونده‌های پوشه‌ای که انتخاب می‌کنید به‌طور خودکار یادداشت می‌سازد؛ با نام پرونده‌ها در روی (منهای پسوند پرونده؛ پس اگر پرونده‌ای به نام apple.jpg دارید، روی می‌گوید "apple") و تصویرها یا صداها در پشت. اگر چیدمان متفاوتی از رسانه و نام پرونده‌ها می‌خواهید، می‌توانید پس از ساخت کارت‌ها [نوع یادداشت‌شان را تغییر دهید](../browsing.md).
 
-## Duplicates and Updating
+## تکراری‌ها و به‌روزرسانی {#duplicates-and-updating}
 
-When importing text files, Anki uses the first field to determine if a
-note is unique. By default, if the file you are importing has a first
-field that matches one of the existing notes in your collection and that
-existing note is the same type as the type you’re importing, the
-existing note’s other fields will be updated based on content of the
-imported file. A drop-down box in the import screen allows you to change
-this behaviour, to either ignore duplicates completely, or import them
-as new notes instead of updating existing ones.
+هنگام درون‌ریزی پرونده‌های متنی، آنکی از فیلد اول برای تعیین یکتا بودن یادداشت استفاده می‌کند. به‌طور پیش‌فرض، اگر پرونده‌ای که درون‌ریزی می‌کنید فیلد اولی داشته باشد که با یکی از یادداشت‌های موجود مجموعه‌تان مطابقت داشته باشد و آن یادداشت موجود از همان نوعِ در حال درون‌ریزی باشد، بقیه فیلدهای یادداشت موجود بر اساس محتوای پرونده درون‌ریزی‌شده به‌روزرسانی می‌شوند. جعبه کشویی در صفحه درون‌ریزی به شما اجازه می‌دهد این رفتار را تغییر دهید: یا نادیده‌گرفتن کامل تکراری‌ها، یا درون‌ریزی‌شان به‌عنوان یادداشت‌های جدید به‌جای به‌روزرسانی موجودها.
 
-The **match scope** setting controls how duplicates are identified. When
-**note type** is selected, Anki will identify a duplicate if another note
-with the same note type has the same first field. When set to **note type and deck**,
-a duplicate will only be flagged if the existing note also happens to be
-in the deck you are importing into.
+تنظیم **match scope** تعیین می‌کند تکراری‌ها چگونه شناسایی شوند. وقتی
+**note type** انتخاب شده، آنکی اگر یادداشت دیگری با همان نوع یادداشت، همان فیلد اول را داشته باشد تکراری تشخیص می‌دهد. وقتی روی **note type and deck** است، فقط وقتی تکراری علامت می‌خورد که یادداشت موجود اتفاقاً در همان دسته‌ای هم باشد که به آن درون‌ریزی می‌کنید.
 
-If you have updating turned on and older versions of the notes you’re
-importing are already in your collection, they will be updated in place
-(in their current decks) rather than being moved to the deck you have
-set in the import dialog. If notes are updated in place, the existing
-scheduling information on all their cards will be preserved.
+اگر به‌روزرسانی را روشن گذاشته باشید و نسخه‌های قدیمی‌تری از یادداشت‌هایی که درون‌ریزی می‌کنید هم‌اکنون در مجموعه‌تان باشند، در همان‌جا (در دسته‌های فعلی‌شان) به‌روزرسانی می‌شوند نه اینکه به دسته‌ای که در گفت‌وگوی درون‌ریزی تنظیم کرده‌اید منتقل شوند. اگر یادداشت‌ها در همان‌جا به‌روزرسانی شوند، اطلاعات زمان‌بندی موجود روی همه کارت‌هایشان حفظ می‌شود.
 
-For info on how duplicates are handled in .apkg files, see the
-[Deck Packages](../exporting.md#packaged-decks) section.
+برای اطلاع از نحوه برخورد با تکراری‌ها در پرونده‌های .apkg، بخش
+[بسته‌های دسته](../exporting.md#packaged-decks) را ببینید.
 
-## File Headers
+## سربرگ‌های پرونده {#file-headers}
 
-Anki 2.1.54+ supports certain headers that can be included in the text file to
-make importing more powerful or convenient. They consist of `#key:value` pairs
-and must be listed in separate lines at the top of the file.
+آنکی 2.1.54+ از سربرگ‌های خاصی پشتیبانی می‌کند که می‌توان در پرونده متنی گنجاند تا درون‌ریزی قدرتمندتر یا راحت‌تر شود. این سربرگ‌ها از جفت‌های `#key:value` تشکیل شده‌اند و باید در خطوط جداگانه در بالای پرونده فهرست شوند.
 
-| Key               | Allowed Values                                                                             | Behaviour                                                                                                       |
-| ----------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| `separator`       | `Comma`, `Semicolon`, `Tab`, `Space`, `Pipe`, `Colon`, or the corresponding literal characters | Determines the field separator.                                                                                 |
-| `html`            | `true`, `false`                                                                            | Determines whether the file is treated as HTML.                                                                 |
-| `tags`            | List of tags, separated by spaces                                                          | Adds the listed tags to every imported note.                                                                      |
-| `columns`         | List of names, separated by the previously set separator                                   | Determines the number of columns and shows their given names when importing.                                    |
-| `notetype`        | Note type name or id                                                                        | Presets the note type, if it exists.                                                                             |
-| `deck`            | Deck name or id                                                                            | Presets the deck, if it exists.                                                                                 |
-| `notetype column` | `1`, `2`, `3`, ...                                                                         | Determines which column contains the note type name or id of each note, see [Notetype Column](#notetype-column). |
-| `deck column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the deck name or id of each note, see [Deck Column](#deck-column).             |
-| `tags column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the tags of each note.                                                         |
-| `guid column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the GUID of each note, see [GUID Column](#guid-column).                        |
+| کلید             | مقادیر مجاز                                                                                 | رفتار                                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `separator`     | `Comma`، `Semicolon`، `Tab`، `Space`، `Pipe`، `Colon`، یا نویسه‌های تحت‌اللفظی متناظر        | جداکننده فیلد را تعیین می‌کند.                                                                                       |
+| `html`          | `true`، `false`                                                                            | تعیین می‌کند آیا پرونده به‌عنوان HTML تلقی شود یا نه.                                                                  |
+| `tags`          | فهرست برچسب‌ها، جدا شده با فاصله                                                            | برچسب‌های فهرست‌شده را به هر یادداشت درون‌ریزی‌شده می‌افزاید.                                                           |
+| `columns`       | فهرست نام‌ها، جدا شده با جداکنندهٔ پیش‌تر تنظیم‌شده                                          | شمار ستون‌ها را تعیین و نام‌های داده‌شده‌شان را هنگام درون‌ریزی نشان می‌دهد.                                            |
+| `notetype`      | نام یا شناسه نوع یادداشت                                                                     | نوع یادداشت را از پیش تنظیم می‌کند، اگر وجود داشته باشد.                                                                 |
+| `deck`          | نام یا شناسه دسته                                                                            | دسته را از پیش تنظیم می‌کند، اگر وجود داشته باشد.                                                                       |
+| `notetype column` | `1`، `2`، `3`، ...                                                                         | تعیین می‌کند کدام ستون شامل نام یا شناسه نوع یادداشت هر یادداشت است؛ [ستون نوع یادداشت](#notetype-column) را ببینید.    |
+| `deck column`   | `1`، `2`، `3`، ...                                                                         | تعیین می‌کند کدام ستون شامل نام یا شناسه دسته هر یادداشت است؛ [ستون دسته](#deck-column) را ببینید.                     |
+| `tags column`   | `1`، `2`، `3`، ...                                                                         | تعیین می‌کند کدام ستون شامل برچسب‌های هر یادداشت است.                                                                   |
+| `guid column`   | `1`، `2`، `3`، ...                                                                         | تعیین می‌کند کدام ستون شامل GUID هر یادداشت است؛ [ستون GUID](#guid-column) را ببینید.                                  |
 
-Some headers have further implications.
+بعضی سربرگ‌ها پیامدهای بیشتری دارند.
 
-### Notetype Column
+### ستون نوع یادداشت {#notetype-column}
 
-Usually, all notes from a file will be mapped to a single note type. That changes, if there is a column with note type names or ids. 
+معمولاً همه یادداشت‌های یک پرونده به یک نوع یادداشت واحد نگاشت می‌شوند. این با وجود ستونی از نام‌ها یا شناسه‌های نوع یادداشت تغییر می‌کند.
 
-This allows you to
-import notes with different note types, and their fields will be mapped implicitly:
-The first regular column is used for the first field of any note regardless of
-its note type, the second regular column for the second field, and so on.
-A _regular column_ here being a column that does not contain special information
-like decks, tags, note types or GUIDs.
+این به شما اجازه می‌دهد یادداشت‌هایی با انواع یادداشت متفاوت درون‌ریزی کنید و فیلدهایشان ضمناً نگاشت می‌شوند:
+نخستین ستون منظم برای نخستین فیلد هر یادداشت — صرف‌نظر از نوع یادداشتش — استفاده می‌شود، دومین ستون منظم برای دومین فیلد و به همین ترتیب.
+_ستون منظم_ یعنی ستونی که اطلاعات ویژه‌ای مانند دسته‌ها، برچسب‌ها، انواع یادداشت یا GUID ندارد.
 
-### Deck Column
+### ستون دسته {#deck-column}
 
-Usually, any new cards created as a result of importing a text file will be placed
-in a single deck of your choice. If the file contains a deck column, however, new
-cards of a note will be placed in its specified deck instead. If the deck does not
-exist, a deck with the given name will be created.
+معمولاً هر کارت جدیدی که در نتیجه درون‌ریزی پرونده متنی ساخته شود، در یک دستهٔ انتخابی شما قرار می‌گیرد. اما اگر پرونده ستون دسته داشته باشد، کارت‌های جدید یک یادداشت در دسته مشخص‌شده‌اش قرار می‌گیرند. اگر دسته وجود نداشته باشد، دسته‌ای با نام داده‌شده ساخته می‌شود.
 
-### GUID Column
+### ستون GUID {#guid-column}
 
-GUID stands for _Globally Unique Identifier_. When you create notes in Anki, Anki
-assigns each note a unique ID, which can be used for duplicate checking. If you
-export your notes with the GUID included, you can make changes to the notes, and
-as long as you do not modify the GUID field, you'll be able to import the notes back
-in to update the existing notes.
+GUID مخفف _شناسه یکتای سراسری_ است. وقتی در آنکی یادداشت می‌سازید، آنکی به هر یادداشت شناسه یکتایی منتسب می‌کند که می‌توان برای بررسی تکراری استفاده کرد. اگر یادداشت‌هایتان را با GUID همراه برون‌بری کنید، می‌توانید در یادداشت‌ها تغییراتی ایجاد کنید و تا وقتی فیلد GUID را تغییر ندهید، می‌توانید یادداشت‌ها را دوباره درون‌ریزی کنید تا یادداشت‌های موجود به‌روزرسانی شوند.
 
-Note that the GUID is intended to be created by Anki. If you are creating
-your own IDs, such as `MYNOTE0001`, then it's recommended that you place the IDs
-in the first field, instead of assigning them to Anki's internal GUID. When importing,
-Anki is able to use either the first field or the GUID for duplicate checking, so you do not
-need to make IDs a GUID in order to be able to update your notes.
+توجه کنید GUID قرار است توسط آنکی ساخته شود. اگر شناسه‌های خودتان را می‌سازید — مانند `MYNOTE0001` — توصیه می‌شود شناسه‌ها را در فیلد اول بگذارید، نه اینکه آن‌ها را به GUID داخلی آنکی منتسب کنید. هنگام درون‌ریزی، آنکی می‌تواند از فیلد اول یا GUID برای بررسی تکراری استفاده کند؛ پس لازم نیست شناسه‌ها را GUID کنید تا بتوانید یادداشت‌هایتان را به‌روزرسانی کنید.
 
-One other thing to note is that the duplicate option will not work for rows that have a
-non-empty GUID. If a GUID is provided, and already exists in the collection, a duplicate will
-not be created.
+نکته دیگر اینکه گزینه تکراری برای سطرهایی که GUID ناخالی دارند کار نمی‌کند. اگر GUID داده شده و هم‌اکنون در مجموعه موجود باشد، تکراری ساخته نمی‌شود.

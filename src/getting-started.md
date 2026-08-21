@@ -1,310 +1,193 @@
-# Getting Started
+# شروع به کار {#getting-started}
 
 <!-- toc -->
 
-## Installing & Upgrading
+## نصب و ارتقا {#installing--upgrading}
 
-The Anki ecosystem is made up of Anki, AnkiMobile, AnkiDroid, and AnkiWeb, all
-of which are linked from our [official website](https://apps.ankiweb.net).
+اکوسیستم آنکی از آنکی، AnkiMobile، AnkiDroid و AnkiWeb تشکیل شده است که همگی از [وب‌سایت رسمی](https://apps.ankiweb.net) ما در دسترس‌اند.
 
-For instructions on how to install and upgrade Anki for your computer,
-read the links below:
+برای راهنمای نصب و ارتقای آنکی روی رایانه‌تان، لینک‌های زیر را بخوانید:
 
-- [Windows](./platform/windows/installing.md)
-- [Mac](./platform/mac/installing.md)
-- [Linux](./platform/linux/installing.md)
+- [ویندوز](./platform/windows/installing.md)
+- [مک](./platform/mac/installing.md)
+- [لینوکس](./platform/linux/installing.md)
 
-## Videos
+## ویدیوها {#videos}
 
-For a quick way to dive into Anki, have a look at these intro
-videos. Some were made with a previous Anki version, but the concepts
-are the same.
+برای آشنایی سریع با آنکی، نگاهی به این ویدیوهای مقدماتی بیندازید. برخی با نسخه‌های پیشین آنکی ساخته شده‌اند، اما مفاهیم یکسان است.
 
-- [Shared Decks and Review Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
+- [دسته‌های اشتراکی و اصول مرور](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
-- [Syncing](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
+- [همگام‌سازی](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
 
-- [Switching Card Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+- [تغییر ترتیب کارت‌ها](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
-- [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+- [استایل‌دهی کارت‌ها](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
-- [Typing in the Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+- [تایپ‌کردن پاسخ](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-## Key Concepts
+## مفاهیم کلیدی {#key-concepts}
 
-### Cards
+### کارت‌ها {#cards}
 
-A question and answer pair is called a _card_. It's similar to a paper
-flashcard with a question on the front and answer on the back. However, in
-Anki, a card doesn't look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you're studying basic chemistry, you might see a question like:
+به جفتِ «پرسش و پاسخ» یک _کارت_ گفته می‌شود. این شبیه فلش‌کارت کاغذی است که پرسش روی آن و پاسخ پشتش نوشته شده باشد؛ با این تفاوت که در آنکی کارت ظاهر یک کارت فیزیکی را ندارد و به‌طور پیش‌فرض وقتی پاسخ را نمایش می‌دهید، پرسش همچنان قابل مشاهده است. مثلاً اگر در حال یادگیری شیمی مقدماتی باشید، ممکن است با پرسشی مانند این روبه‌رو شوید:
 
     Q: Chemical symbol for oxygen?
 
-After deciding the answer is O, you click the
-**Show Answer** button, and Anki shows you:
+پس از آنکه تصمیم گرفتید پاسخ O است، دکمه **Show Answer** (نمایش پاسخ) را می‌زنید و آنکی این را به شما نشان می‌دهد:
 
     Q: Chemical symbol for oxygen?
     A: O
 
-After confirming that you are correct, you tell Anki how well you
-remembered the answer, and Anki will choose when to show you the card again. For example, Anki might decide to show you the card again in 3 days. In this case, we say the card now has a 3 day interval.
+بعد از تأیید درستی پاسخ، به آنکی می‌گویید پاسخ را چقدر خوب به‌خاطر سپرده‌اید و آنکی تعیین می‌کند چه زمانی کارت را دوباره به شما نشان دهد. مثلاً ممکن است آنکی تصمیم بگیرد کارت را ۳ روز بعد دوباره نشان دهد. در این حالت می‌گوییم کارت اکنون فاصله‌ای (interval) ۳ روزه دارد.
 
-#### Card States
+#### وضعیت‌های کارت {#card-states}
 
 <div id="types-of-cards" />
 
-- **New:** Cards that you have downloaded or created yourself, but have never studied before.
+- **جدید (New):** کارت‌هایی که دانلود کرده‌اید یا خودتان ساخته‌اید، اما هرگز مطالعه نشده‌اند.
 
-- **Learning:** Cards that were seen for the first time recently, and are still being learned.
+- **در حال یادگیری (Learning):** کارت‌هایی که به‌تازگی برای نخستین‌بار دیده شده‌اند و هنوز در حال یادگیری‌اند.
 
-- **Review:** Cards that you have finished learning. These cards will be shown again after their delay (interval) has elapsed.
-  There are two types of review cards:
-  - **Young:** A young card is one that has an interval of less than 21 days.
-  - **Mature:** A mature card is one that has an interval of 21 days or greater.
+- **مرور (Review):** کارت‌هایی که یادگیری‌شان کامل شده است. این کارت‌ها پس از سپری‌شدن تأخیرشان (فاصله) دوباره نمایش داده می‌شوند.
+  مرور دو نوع دارد:
+  - **نابالغ (Young):** کارت نابالغ کارتی است که فاصله‌اش کمتر از ۲۱ روز است.
+  - **بالغ (Mature):** کارت بالغ کارتی است که فاصله‌اش ۲۱ روز یا بیشتر است.
 
-- **Relearn:** Cards that you forgot in the review stage. These cards are returned to the relearning state to be learned again.
+- **یادگیری مجدد (Relearn):** کارت‌هایی که در مرحله مرور فراموششان کرده‌اید. این کارت‌ها برای آموختن دوباره به وضعیت یادگیری مجدد بازمی‌گردند.
 
-### Decks
+### دسته‌ها {#decks}
 
-A _deck_ is a group of cards. You can place cards in different decks to
-study parts of your card collection instead of studying everything at
-once. Each deck can have different settings, such as how many new cards
-to show each day, or how long to wait until cards are shown again.
+_دسته_ گروهی از کارت‌هاست. می‌توانید کارت‌ها را در دسته‌های مختلف قرار دهید تا به‌جای مطالعه همه‌چیز یک‌جا، بخشی از مجموعه کارت‌هایتان را مطالعه کنید. هر دسته می‌تواند تنظیمات خاص خودش را داشته باشد؛ مثلاً اینکه هر روز چند کارت جدید نمایش داده شود، یا چه مدت صبر شود تا کارت‌ها دوباره نشان داده شوند.
 
-Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses double colons ("::") to show different levels within the deck tree. For example, a deck called
-"Chinese::Hanzi" refers to a "Hanzi" deck, which is part of a "Chinese"
-deck. If you select "Hanzi", then only the Hanzi cards will be shown; if
-you select "Chinese", then all the Chinese cards will be shown, including the Hanzi cards.
+دسته‌ها می‌توانند در بر دارنده دسته‌های دیگر باشند که به شما اجازه می‌دهد دسته‌ها را به‌شکل درختی سازمان‌دهی کنید. آنکی برای نمایش سطوح مختلف درخت دسته‌ها از دونقطه پشت‌سرهم («::») استفاده می‌کند. مثلاً دسته‌ای به نام "Chinese::Hanzi" به دسته "Hanzi" اشاره دارد که بخشی از دسته "Chinese" است. اگر "Hanzi" را انتخاب کنید، فقط کارت‌های Hanzi نمایش داده می‌شوند؛ اگر "Chinese" را انتخاب کنید، همه کارت‌های Chinese — از جمله کارت‌های Hanzi — نمایش داده می‌شوند.
 
-To place decks within a tree, you can either name them with double colons between
-each level, or drag and drop them within the deck list. Decks that have
-been placed inside another deck are often called "subdecks", and top-level decks are called "parent decks".
+برای قرار دادن دسته‌ها در ساختار درختی، یا می‌توانید بین هر سطح در نام‌گذاری از دونقطه پشت‌سرهم استفاده کنید، یا دسته‌ها را با کشیدن و رهاکردن در فهرست دسته‌ها جابه‌جا کنید. به دسته‌هایی که داخل دسته دیگری قرار گرفته‌اند معمولاً «زیردسته» و به دسته‌های سطح بالا «دسته‌های والد» می‌گویند.
 
-Anki starts with a deck called "Default"; any cards which have somehow
-become separated from other decks will go here. Anki will hide the
-default deck if it contains no cards and you have added other decks.
-Alternatively, you may rename this deck and use it for other cards.
+آنکی با دسته‌ای به نام "Default" شروع می‌شود؛ هر کارتی که به هر دلیلی از دسته‌های دیگر جدا شود به اینجا می‌رود. اگر دسته پیش‌فرض کارتی نداشته باشد و شما دسته‌های دیگری افزوده باشید، آنکی این دسته را پنهان می‌کند. همچنین می‌توانید نام این دسته را تغییر دهید و از آن برای کارت‌های دیگری استفاده کنید.
 
-Decks in the deck list are sorted alphabetically. This can result in
-a surprising order if your deck names contain numbers. For example, "My Deck 10"
-will come before "My Deck 9", as 1 comes before 9. If you want "My deck 9" to appear earlier, you can rename it to "My deck 09", which appears before "My deck 10".
+دسته‌ها در فهرست دسته‌ها به ترتیب الفبا مرتب می‌شوند. اگر نام دسته‌هایتان شامل عدد باشد، این می‌تواند به ترتیبی شگفت‌آور بینجامد. مثلاً "My Deck 10" قبل از "My Deck 9" می‌آید، چون ۱ قبل از ۹ می‌آید. اگر می‌خواهید "My Deck 9" زودتر ظاهر شود، می‌توانید نامش را به "My Deck 09" تغییر دهید که قبل از "My Deck 10" ظاهر می‌شود.
 
-Decks are best used to hold broad categories of cards, rather than
-specific topics such as "food verbs" or "lesson 1". For more information about
-this, see the [using decks appropriately](editing.md#using-decks-appropriately) section.
+دسته‌ها بیشتر برای دسته‌بندی‌های کلی کارت‌ها مناسب‌اند، نه موضوعات مشخصی مانند «افعال غذا» یا «درس ۱». برای اطلاعات بیشتر درباره این موضوع، بخش [استفاده درست از دسته‌ها](editing.md#using-decks-appropriately) را ببینید.
 
-For information on how the order of decks affects the order cards are studied in,
-see the [display order](studying.md#display-order) section.
+برای اطلاع از اینکه ترتیب دسته‌ها چگونه بر ترتیب مطالعه کارت‌ها اثر می‌گذارد، بخش [ترتیب نمایش](studying.md#display-order) را ببینید.
 
-### Notes & Fields
+### یادداشت‌ها و فیلدها {#notes--fields}
 
-When making flashcards, it’s often desirable to make more than one card
-that relates to the same information. For example, if you’re learning
-French, and you learn that the word _bonjour_ means hello, you may
-wish to create one card that shows you "bonjour" and asks you to
-remember "hello", and another card that shows you "hello" and asks you
-to remember "bonjour". One card is testing your ability to recognize the
-French word, and the other card is testing your ability to produce it.
+هنگام ساختن کارت‌ها، اغلب مطلوب است بیش از یک کارتِ مرتبط با یک اطلاعات واحد بسازید. مثلاً اگر در حال یادگیری فرانسوی هستید و می‌آموزید که واژه _bonjour_ یعنی سلام، شاید بخواهید کارتی بسازید که "bonjour" را نشان دهد و از شما به‌خاطر سپردن «سلام» را بخواهد، و کارت دیگری که "hello" را نشان دهد و به‌خاطر سپردن "bonjour" را بخواهد. یک کارت توانایی شما در بازشناسی واژه فرانسوی را می‌سنجد و کارت دیگر توانایی شما را در تولید آن.
 
-When using paper flashcards, your only option in this case is to write
-out the information twice, once for each card. Some flashcard
-programs make life easier by providing a feature to flip the front and
-back sides. This is an improvement over the paper situation, but there
-are two major downsides:
+با فلش‌کارت‌های کاغذی، تنها گزینه شما در این حالت نوشتن دوباره اطلاعات است، یک بار به ازای هر کارت. برخی برنامه‌های فلش‌کارت کار را با فراهم‌کردن قابلیت جابه‌جا کردن روی و پشت آسان‌تر کرده‌اند. این نسبت به حالت کاغذی بهبودی است، اما دو عیب بزرگ دارد:
 
-- Because such programs don’t track your performance of recognition
-  and production separately, cards will tend not to be shown to you at
-  the optimum time, meaning you forget more than you’d like, or you
-  study more than is necessary.
+- چون چنین برنامه‌هایی عملکرد شما در بازشناسی و تولید را جداگانه پیگیری نمی‌کنند، کارت‌ها معمولاً در زمان بهینه به شما نمایش داده نمی‌شوند؛ یعنی بیش از آنچه دوست دارید فراموش می‌کنید، یا بیش از لازم مطالعه می‌کنید.
 
-- Reversing the question and answer only works when you want exactly
-  the same content on each side. This means it’s not possible to
-  display extra info on the back of each card for example.
+- جابه‌جا کردن پرسش و پاسخ فقط وقتی کار می‌کند که بخواهید دقیقاً محتوای یکسانی در هر طرف باشد. یعنی مثلاً امکان نمایش اطلاعات اضافه در پشت هر کارت وجود ندارد.
 
-Anki solves these problems by allowing you to split the content of your
-cards up into separate pieces of information. You can then tell Anki
-which pieces of information you want on each card, and Anki takes care of creating the cards for you, and updating them if you make any
-edits in the future.
+آنکی این مشکلات را با اجازه تفکیک محتوای کارت‌ها به قطعات جداگانه اطلاعات حل می‌کند. سپس به آنکی می‌گویید کدام قطعات اطلاعات را در هر کارت می‌خواهید و آنکی خودش کارت‌ها را برایتان می‌سازد و اگر بعداً ویرایشی انجام دهید، آن‌ها را به‌روزرسانی می‌کند.
 
-Imagine we want to study French vocabulary, and we want to include a textbook
-page number on the back of each card. We want our cards to look like
-this:
+تصور کنید می‌خواهیم واژگان فرانسوی مطالعه کنیم و می‌خواهیم شماره صفحه کتاب درسی را در پشت هر کارت بیاوریم. می‌خواهیم کارت‌هایمان این شکلی باشند:
 
     Q: Bonjour
     A: Hello
        Page #12
 
-And this:
+و این:
 
     Q: Hello
     A: Bonjour
        Page #12
 
-In both cards, we have the same three related pieces of information: a French
-word, an English meaning, and a page number. If we put them together,
-they’d look like this:
+در هر دو کارت، سه قطعه مرتبطِ یکسان داریم: یک واژه فرانسوی، یک معنی انگلیسی و یک شماره صفحه. اگر آن‌ها را کنار هم بگذاریم، این‌طور می‌شوند:
 
     French: Bonjour
     English: Hello
     Page: 12
 
-In Anki, this collection of related information is called a _note_ and each piece of information is contained in a _field_. In this example, the note
-has three fields: "French", "English", and "Page".
+در آنکی به این مجموعه اطلاعات مرتبط یک _یادداشت_ گفته می‌شود و هر قطعه اطلاعات درون یک _فیلد_ قرار دارد. در این مثال، یادداشت سه فیلد دارد: "French"، "English" و "Page".
 
-To add and edit fields, click the **Fields...** button while adding or
-editing notes. For more information on fields, see the
-[Customizing Fields](editing.md#customizing-fields) section.
+برای افزودن و ویرایش فیلدها، هنگام افزودن یا ویرایش یادداشت‌ها دکمه **Fields...** (فیلدها) را بزنید. برای اطلاعات بیشتر درباره فیلدها، بخش [سفارشی‌سازی فیلدها](editing.md#customizing-fields) را ببینید.
 
-### Card Types
+### انواع کارت {#card-types}
 
-In order for Anki to create cards based on our notes, we need to give it
-a blueprint that says which fields should be displayed on the front or
-back of each card. This blueprint is called a _card type_. Each type of
-note can have one or more card types; when you add a note, Anki will
-create one card for each card type.
+برای اینکه آنکی بر اساس یادداشت‌هایمان کارت بسازد، باید نقشه‌ای به آن بدهیم که بگوید کدام فیلدها باید در روی هر کارت یا پشت آن نمایش داده شوند. به این نقشه _نوع کارت_ گفته می‌شود. هر نوع یادداشت می‌تواند یک یا چند نوع کارت داشته باشد؛ وقتی یادداشتی می‌افزایید، آنکی برای هر نوع کارت یک کارت می‌سازد.
 
-All card types have two _templates_, one for the question and one for the
-answer. In the previous French example, we wanted the back of our recognition card to
-look like this:
+همه انواع کارت دو _قالب_ دارند: یکی برای پرسش و یکی برای پاسخ. در مثال فرانسویِ قبل، می‌خواستیم پشتِ کارتِ بازشناسی این‌طور باشد:
 
     Q: Bonjour
     A: Hello
        Page #12
 
-To do this, we can set the answer template to:
+برای این کار، قالب پاسخ را این‌طور تنظیم می‌کنیم:
 
     Q: {{French}}
     A: {{English}}<br>
        Page #{{Page}}
 
-In card templates, field names are wrapped in double curly brackets, like `{{French}}` or `{{English}}`. Anki replaces those with the actual text the fields contain. This is called a ["Field replacement"](templates/fields.md). Text not wrapped in double curly brackets appears the same on each card. For example, we won't need to add "Page \#" on every note because the template will add it automatically to every card. The `<br>` tag is
-a special code that tells Anki to move to the next line. For details, see the [templates](templates/intro.md) section.
+در قالب‌های کارت، نام فیلدها داخل آکولاد دوتایی قرار می‌گیرند، مانند `{{French}}` یا `{{English}}`، و آنکی آن‌ها را با متن واقعی‌ای که فیلدها در بر دارند جایگزین می‌کند. به این کار [«جایگزینی فیلد»](templates/fields.md) گفته می‌شود. متنی که داخل آکولاد دوتایی نباشد در هر کارت به یک شکل ظاهر می‌شود. مثلاً لازم نیست "Page \#" را به هر یادداشت اضافه کنیم، چون قالب به‌طور خودکار آن را به هر کارت می‌افزاید. برچسب `<br>` یک کد ویژه است که به آنکی می‌گوید به خط بعدی برود. برای جزئیات، بخش [قالب‌ها](templates/intro.md) را ببینید.
 
-The production card's templates will also work in a similar way:
+قالب‌های کارتِ تولید نیز به شکل مشابهی کار می‌کنند:
 
     Q: {{English}}
     A: {{French}}<br>
        Page #{{Page}}
 
-After a card type has been created, every time you add a new note, a card
-will be created based on that card type. Card types make it easy to keep
-the formatting of your cards consistent and can greatly reduce the
-amount of effort involved in adding information. They also mean Anki can
-ensure related cards don't appear too close to each other, and they
-allow you to fix a typing mistake or factual error once and have all the
-related cards update at once.
+پس از آنکه نوع کارتی ساخته شد، هر بار که یادداشت جدیدی بیفزایید، بر اساس آن نوع کارت، کارتی ساخته می‌شود. انواع کارت، یکسان‌ نگه‌داشتن قالب‌بندی کارت‌هایتان را آسان می‌کنند و می‌توانند میزان تلاش لازم برای افزودن اطلاعات را به‌شدت کاهش دهند. همچنین به آنکی اجازه می‌دهند مطمئن شود کارت‌های مرتبط بیش از حد به هم نزدیک ظاهر نمی‌شوند، و به شما اجازه می‌دهند یک اشتباه تایپی یا خطای واقعی را یک بار اصلاح کنید و همه کارت‌های مرتبط یک‌جا به‌روزرسانی شوند.
 
-To add and edit card types, click the **Cards...** button while adding or
-editing notes. For more information on card types, see the [Cards and Templates](templates/intro.md) section.
+برای افزودن و ویرایش انواع کارت، هنگام افزودن یا ویرایش یادداشت‌ها دکمه **Cards...** (کارت‌ها) را بزنید. برای اطلاعات بیشتر درباره انواع کارت، بخش [کارت‌ها و قالب‌ها](templates/intro.md) را ببینید.
 
-### Note Types
+### انواع یادداشت {#note-types}
 
-Anki allows you to create different types of notes for different
-material. Each type of note has its own set of fields and card types.
-It's a good idea to create a separate note type for each broad topic
-you're studying. In the previous French example, we might create a note
-type called "French" for that. If we wanted to learn capital cities, we
-could create a note type for that as well, with fields such as
-"Country" and "Capital City".
+آنکی به شما اجازه می‌دهد برای مواد مختلف، انواع مختلفی از یادداشت بسازید. هر نوع یادداشت مجموعه فیلدها و انواع کارت مخصوص به خودش را دارد. ایده خوبی است که برای هر موضوع کلی‌ای که مطالعه می‌کنید یک نوع یادداشت جدا بسازید. در مثال فرانسویِ قبل، شاید برای آن نوع یادداشتی به نام "French" بسازیم. اگر بخواهیم پایتخت‌ها را یاد بگیریم، می‌توانیم برای آن هم نوع یادداشتی با فیلدهایی مانند "Country" و "Capital City" بسازیم.
 
-Anki comes with some standard
-note types included. These note types are provided to make Anki easier for
-new users, but in the long run it's recommended you create your own note
-types specifically for the content you are learning. The standard note types are:
+آنکی با چند نوع یادداشت استاندارد عرضه می‌شود. این انواع یادداشت برای آسان‌تر شدن کار کاربران جدید فراهم شده‌اند، اما در درازمدت توصیه می‌شود انواع یادداشت خودتان را دقیقاً برای محتوایی که می‌آموزید بسازید. انواع استاندارد این‌ها هستند:
 
-- **Basic**\
-  Has "Front" and "Back" fields, and will create one card. Text you enter in
-  "Front" will appear on the front of the card, and text you enter in "Back"
-  will appear on the back of the card.
+- **Basic (پایه)**\
+  فیلدهای "Front" و "Back" را دارد و یک کارت می‌سازد. متنی که در "Front" وارد می‌کنید در روی کارت ظاهر می‌شود و متنی که در "Back" وارد می‌کنید در پشت کارت.
 
-- **Basic (and reversed card)**\
-  Like "Basic", but creates two cards for the text you enter:
-  front→back and back→front.
+- **Basic (and reversed card) (پایه با کارت معکوس)**\
+  مانند "Basic" است، اما برای متن واردشده دو کارت می‌سازد:
+  رو→پشت و پشت→رو.
 
-- **Basic (optional reversed card)**\
-  Like "Basic", but has a third field called "Add Reverse". If you enter any text into
-  that field, a reversed card (back→front) will also be created. For details, see the [Cards and Templates](templates/intro.md) section.
+- **Basic (optional reversed card) (پایه با کارت معکوس اختیاری)**\
+  مانند "Basic" است، اما فیلد سومی به نام "Add Reverse" دارد. اگر در آن فیلد متنی وارد کنید، کارت معکوس (پشت→رو) هم ساخته می‌شود. برای جزئیات، بخش [کارت‌ها و قالب‌ها](templates/intro.md) را ببینید.
 
-- **Basic (type in the answer)**\
-  This is essentially "Basic", with an extra text box on the front where you
-  can type your answer in. When you reveal the back, Anki will show you any differences between your input and the actual answer. For details, see the
-  [Checking Your Answer](templates/fields.md#checking-your-answer) section.
+- **Basic (type in the answer) (پایه با تایپ پاسخ)**\
+  در اصل همان "Basic" است، با یک جعبه متن اضافه در روی کارت که می‌توانید پاسخ را در آن تایپ کنید. وقتی پشت کارت را نمایش می‌دهید، آنکی تفاوت‌های ورودی شما با پاسخ واقعی را نشان می‌دهد. برای جزئیات، بخش [بررسی پاسخ شما](templates/fields.md#checking-your-answer) را ببینید.
 
-- **Cloze**\
-  A note type that allows you to select text and turn it into a cloze
-  deletion (e.g. "Humans landed on the moon in \[…​\]" → "Humans landed on the
-  moon in 1969"). For details, see the [cloze deletion](editing.md#cloze-deletion) section.
+- **Cloze (جای خالی)**\
+  نوع یادداشتی که به شما اجازه می‌دهد متنی را انتخاب کنید و به حذف اطلاعاتی (cloze) تبدیل کنید (مثلاً "Humans landed on the moon in \[…​\]" → "Humans landed on the moon in 1969"). برای جزئیات، بخش [حذف اطلاعاتی](editing.md#cloze-deletion) را ببینید.
 
-- **Image Occlusion**\
-  Like the cloze note type, but it works with images instead of text,
-  which is especially useful when studying material that heavily relies on images,
-  such as anatomy and geography. For details, see the [Image Occlusion](editing.md#image-occlusion)
-  section of the manual.
+- **Image Occlusion (پوشاندن تصویر)**\
+  مانند نوع cloze است، اما به‌جای متن با تصویر کار می‌کند که به‌ویژه هنگام مطالعه موادِ پرتصویر مانند کالبدشناسی و جغرافیا سودمند است. برای جزئیات، بخش [پوشاندن تصویر](editing.md#image-occlusion) راهنما را ببینید.
 
-To add your own note types and modify existing ones, you can use **Tools > Manage Note Types**
-from the main Anki window.
+برای افزودن انواع یادداشت خودتان و تغییر انواع موجود، می‌توانید از پنجره اصلی آنکی از **Tools > Manage Note Types** استفاده کنید.
 
-Notes and note types are common to your whole collection rather than
-limited to an individual deck. This means you can use different
-note types in a single deck, or have cards generated from the
-same note put into different decks. When you add notes using the
-Add window, you can select what note type to use and what deck to use,
-and these choices are completely independent of each other. You can also
-[change the note type of notes](browsing.md#notes) after you've already created them.
+یادداشت‌ها و انواع یادداشت در کل مجموعه شما مشترک‌اند و به دسته‌ای خاص محدود نیستند. یعنی می‌توانید در یک دسته از انواع مختلف یادداشت استفاده کنید، یا کارت‌های حاصل از یک یادداشتِ واحد را در دسته‌های مختلف قرار دهید. هنگام افزودن یادداشت با پنجره Add، می‌توانید انتخاب کنید از چه نوع یادداشتی و در چه دسته‌ای استفاده شود و این دو انتخاب به‌طور کامل مستقل از هم‌اند. همچنین می‌توانید پس از ساختن یادداشت‌ها، [نوع یادداشت آن‌ها را تغییر دهید](browsing.md#notes).
 
-### Collection
+### مجموعه {#collection}
 
-Your _collection_ is all the material stored in Anki: your cards,
-notes, decks, note types, deck options, and so on.
+_مجموعهٔ_ شما همه موادی است که در آنکی ذخیره شده است: کارت‌ها، یادداشت‌ها، دسته‌ها، انواع یادداشت، گزینه‌های دسته و غیره.
 
-## Shared Decks
+## دسته‌های اشتراکی {#shared-decks}
 
-You can watch a video about [Shared Decks and Review Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) on YouTube.
+می‌توانید ویدیوی [دسته‌های اشتراکی و اصول مرور](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) را در یوتیوب ببینید.
 
-The easiest way to get started with Anki is to download a deck of cards
-someone else has shared:
+آسان‌ترین راه شروع با آنکی، دانلود دسته‌ای از کارت‌هاست که شخص دیگری به اشتراک گذاشته است:
 
-1. Click the **Get Shared** button at the bottom of the deck list.
+1. دکمه **Get Shared** (دریافت از اشتراک) در پایین فهرست دسته‌ها را بزنید.
 
-2. When you've found a deck you're interested in, click the **Download**
-   button to download a deck package.
+2. وقتی دسته‌ای را که به آن علاقه دارید پیدا کردید، دکمه **Download** (دانلود) را بزنید تا بسته دسته دانلود شود.
 
-3. Double-click the downloaded package to import it into Anki, or go to
-   **File > Import**.
+3. روی بسته دانلودشده دوبار کلیک کنید تا در آنکی درون‌ریزی شود، یا به **File > Import** بروید.
 
-Note: It’s not currently possible to add shared decks
-directly to your AnkiWeb account. You need to first import them to the
-desktop app, AnkiMobile, or AnkiDroid, then [synchronize](./syncing.md) to upload the decks to AnkiWeb.
+توجه: در حال حاضر امکان افزودن مستقیم دسته‌های اشتراکی به حساب AnkiWeb شما وجود ندارد. باید ابتدا آن‌ها را در برنامه رایانه‌ای، AnkiMobile یا AnkiDroid درون‌ریزی کنید و سپس [همگام‌سازی](./syncing.md) کنید تا دسته‌ها به AnkiWeb بارگذاری شوند.
 
-Creating your own deck is the most effective way to learn a complex
-subject. Subjects like languages and the sciences can’t be understood
-simply by memorizing facts — you need explanation and context to
-learn them effectively. Furthermore, inputting the information yourself
-forces you to decide what the key points are, leading to a better
-understanding.
+ساختن دستهٔ خودتان مؤثرترین راه برای یادگیری یک موضوع پیچیده است. موضوع‌هایی مانند زبان‌ها و علوم صرفاً با حفظ‌کردن واقعیت‌ها فهمیده نمی‌شوند — برای یادگیری مؤثر آن‌ها به توضیح و زمینه نیاز دارید. علاوه بر این، واردکردن خودِ اطلاعات، شما را وادار می‌کند تصمیم بگیرید نکات کلیدی کدام‌اند، که به درک بهتری می‌انجامد.
 
-If you are a language learner, you may be tempted to download a long
-list of words and their translations, but this won’t teach you a
-language any more than memorizing scientific equations will teach you
-astrophysics. To learn properly, you might need textbooks, teachers, or
-exposure to real-world sentences.
+اگر زبان‌آموز هستید، شاید وسوسه شوید فهرست بلندی از واژه‌ها و ترجمه‌هایشان را دانلود کنید، اما این کار بیش از اینکه زبان یادتان بدهد، شبیه آن است که حفظ‌کردن معادلات علمی به شما اخترفیزیکی بیاموزد. برای یادگیری درست، ممکن است به کتاب‌های درسی، معلم یا مواجهه با جمله‌های دنیای واقعی نیاز داشته باشید.
 
     Do not learn if you do not understand.
     --SuperMemo
 
-Most shared decks are created by people who are learning material
-outside Anki, such as from textbooks, classes, TV, etc. They select the
-interesting points from what they learn and put them into Anki. They
-might not make any effort to add background information or explanations to the
-cards, because they already understand the material. So when someone
-else downloads their deck and tries to use it, they might find it very
-difficult as the background information and explanations are missing.
+بیشتر دسته‌های اشتراکی را کسانی ساخته‌اند که مطلب را بیرون از آنکی یاد می‌گیرند، مثلاً از کتاب‌های درسی، کلاس‌ها، تلویزیون و غیره. نکات جالبِ آموخته‌هایشان را انتخاب می‌کنند و در آنکی می‌گذارند. ممکن است هیچ تلاشی برای افزودن اطلاعات زمینه‌ای یا توضیحات به کارت‌ها نکنند، چون خودشان مطلب را می‌فهمند. پس وقتی دیگری دستهٔ آن‌ها را دانلود و سعی در استفاده از آن کند، ممکن است به‌دلیل نبودِ اطلاعات زمینه‌ای و توضیحات، کار با آن برایش بسیار دشوار باشد.
 
-That is not to say shared decks are useless. If you’re studying textbook ABC and
-someone has shared a deck of ideas from ABC, that’s a great way to save
-some time. And for simple subjects that are basically a list of facts,
-such as capital city names or country flags, you probably don’t need any
-external material. However, for complex subjects, shared decks should be used as a _supplement_ to external material, not as a _replacement_ for it.
+این به آن معنا نیست که دسته‌های اشتراکی بی‌فایده‌اند. اگر در حال مطالعه کتاب درسی ABC هستید و کسی دسته‌ای از نکات ABC را به اشتراک گذاشته است، این راهی عالی برای صرفه‌جویی در زمان است. و برای موضوع‌های ساده که اساساً فهرستی از واقعیت‌ها هستند — مانند نام پایتخت‌ها یا پرچم کشورها — احتمالاً به هیچ منبع بیرونی نیازی ندارید. با این حال، برای موضوع‌های پیچیده، دسته‌های اشتراکی باید _مکملِ_ منابع بیرونی باشند، نه _جانشینِ_ آن‌ها.

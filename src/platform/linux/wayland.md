@@ -1,9 +1,7 @@
-# Wayland
+# Wayland {#wayland}
 
-From Anki 2.1.48, you can force Anki to use Wayland by defining ANKI_WAYLAND=1
-before starting Anki. Wayland may give you better rendering across multiple
-displays, but it is currently off by default, due to the following issues:
+از آنکی 2.1.48 می‌توانید با تعریف ANKI_WAYLAND=1 پیش از شروع آنکی، آن را وادار به استفاده از Wayland کنید. Wayland ممکن است رندر بهتری روی چند نمایشگر بدهد، اما در حال حاضر به‌طور پیش‌فرض خاموش است، به‌دلیل مشکلات زیر:
 
-- On some distros, windows are rendered without borders.
-- Bringing windows to the front is not possible, so for example, clicking on Add
-  to reveal an existing Add Cards window will not work.
+- در بعضی توزیع‌ها، پنجره‌ها بدون حاشیه رندر می‌شوند.
+- آوردن پنجره‌ها به جلو ممکن نیست؛ پس مثلاً کلیک روی Add
+  برای آشکارکردن پنجره موجود Add Cards کار نمی‌کند.

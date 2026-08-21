@@ -1,58 +1,50 @@
-# Self-Hosted Sync Server
+# سرور همگام‌سازی خودمیزبان {#self-hosted-sync-server}
 
-Advanced users who cannot or do not wish to use AnkiWeb can use a self-hosted
-sync server instead.
+کاربران پیشرفته‌ای که نمی‌توانند یا نمی‌خواهند از AnkiWeb استفاده کنند، می‌توانند به‌جای آن از سرور همگام‌سازی خودمیزبان استفاده کنند.
 
-Things to be aware of:
+چیزهایی که باید بدانید:
 
-- This is an advanced feature, targeted at users who are comfortable with
-  networking and the command line. If you use this, the expectation is you
-  can resolve any setup/network/firewall issues you run into yourself, and
-  use of this is entirely at your own risk.
-- Newer clients may depend on changes to the sync protocol, so syncing may
-  stop working if you update your Anki clients without also updating the server.
-- Third-party sync servers also exist. No testing is done against them, and
-  they tend to take time to catch up when the sync protocol changes, so they
-  are not recommended.
-- The messages inside Anki will use the term "AnkiWeb" even if a custom server
-  has been configured, (e.g. "Cannot connect to AnkiWeb" when your server is down).
+- این قابلیتی پیشرفته است و متوجه کاربرانی است که با شبکه و خط فرمان راحت‌اند. اگر از آن استفاده می‌کنید، انتظار این است که هر مشکلی در راه‌اندازی/شبکه/فایروال که به آن می‌خورید خودتان حل کنید، و استفاده از آن کاملاً روی مسئولیت خودتان است.
+- کلاینت‌های جدیدتر ممکن است به تغییرات پروتکل همگام‌سازی وابسته باشند؛ پس اگر کلاینت‌های آنکی‌تان را بدون به‌روزرسانی سرور به‌روزرسانی کنید، ممکن است همگام‌سازی از کار بیفتد.
+- سرورهای همگام‌سازی شخص ثالث هم وجود دارند. آزمایشی علیه آن‌ها انجام نمی‌شود و وقتی پروتکل همگام‌سازی تغییر می‌کند معمولاً دیر به‌روز می‌شوند؛ پس توصیه نمی‌شوند.
+- پیام‌های درون آنکی حتی اگر سرور سفارشی پیکربندی شده باشد از واژه "AnkiWeb" استفاده می‌کنند (مثلاً "Cannot connect to AnkiWeb" وقتی سرور شما از کار افتاده است).
 
-## Installing/Running
+## نصب/اجرا {#installingrunning}
 
-There are various ways you can install and run the server. You can use either:
+راه‌های مختلفی برای نصب و اجرای سرور هست. می‌توانید از هر کدام استفاده کنید:
 
-- the sync server bundled with the desktop version of Anki
-- a separate minimal sync server that doesn't include Anki's GUI dependencies. Python and Rust implementations are available.
+- سرور همگام‌سازی همراه نسخه دسکتاپ آنکی
+- سرور همگام‌سازی مینیمال جداگانه که وابستگی‌های GUI آنکی را در بر ندارد. پیاده‌سازی Python و Rust موجود است.
 
-### From a Packaged Build
+### از بسته بسته‌بندی‌شده {#from-a-packaged-build}
 
-This uses the sync server built into the desktop version of Anki as of version 2.1.57+.
+این از سرور همگام‌سازی داخلی نسخه دسکتاپ آنکی از نسخه 2.1.57+ استفاده می‌کند.
 
-On Windows in a cmd.exe session:
+در ویندوز، در نشست cmd.exe:
 
 ```
 set SYNC_USER1=user:pass
 "\Program Files\anki\anki-console" --syncserver
 ```
 
-Or MacOS, in Terminal.app:
+یا macOS، در Terminal.app:
 
 ```
 SYNC_USER1=user:pass /Applications/Anki.app/Contents/MacOS/anki --syncserver
 ```
 
-Replace 'anki' with 'launcher' for versions 25.07 to 25.09.4.
+برای نسخه‌های 25.07 تا 25.09.4، 'anki' را با 'launcher' جایگزین کنید.
 
-Or Linux:
+یا لینوکس:
 
 ```
 SYNC_USER1=user:pass anki --syncserver
 ```
 
-### With Pip
+### با Pip {#with-pip}
 
-To avoid downloading desktop Anki's GUI dependencies, you can run a standalone Anki sync server using a Python package downloaded from PyPI instead.
-Make sure you have Python 3.9+ installed.
+برای پرهیز از دانلود وابستگی‌های GUI آنکی دسکتاپ، می‌توانید به‌جای آن سرور همگام‌سازی مستقل آنکی را با بسته Python‌ای از PyPI اجرا کنید.
+مطمئن شوید Python 3.9+ نصب دارید.
 
 ```
 python3 -m venv ~/syncserver
@@ -60,110 +52,95 @@ python3 -m venv ~/syncserver
 SYNC_USER1=user:pass ~/syncserver/bin/python -m anki.syncserver
 ```
 
-### With Cargo
+### با Cargo {#with-cargo}
 
-From Anki 2.1.66+, you can alternatively build a Rust implementation of the standalone sync server using the below command.
-Make sure you have Rustup installed.
+از آنکی 2.1.66+، می‌توانید به‌جای آن پیاده‌سازی Rust سرور همگام‌سازی مستقل را با دستور زیر بسازید.
+مطمئن شوید Rustup نصب دارید.
 
 ```
 cargo install --locked --git https://github.com/ankitects/anki.git --tag 25.02.5 anki-sync-server
 ```
 
-Replace 25.02.5 with whatever the latest Anki version is.
+25.02.5 را با آخرین نسخه آنکی جایگزین کنید.
 
-Protobuf (protoc) will need to be installed.
+Protobuf (protoc) باید نصب باشد.
 
-After building, you can run it with:
+پس از ساخت، می‌توانید آن را با دستور زیر اجرا کنید:
 
 ```
-SYNC_USER1=user:pass anki-sync-server
+anki-sync-server
 ```
 
-### From a source checkout
+و اجرا کنید.
 
-If you've cloned the Anki repo from GitHub, you can install from there:
+### از سورس چک‌اوت‌شده {#from-a-source-checkout}
+
+اگر مخزن آنکی را از GitHub کلون کرده‌اید، می‌توانید از همان‌جا نصب کنید:
 
 ```
 ./ninja extract:protoc ftl_repo
 cargo install --path rslib/sync
 ```
 
-### With Docker
+### با Docker {#with-docker}
 
-You can find a user-contributed Dockerfile and some instructions
-[here](https://github.com/ankitects/anki/tree/main/docs/syncserver).
+می‌توانید Dockerfile مشارکت‌شده کاربری و مقداری دستورالعمل را
+[اینجا](https://github.com/ankitects/anki/tree/main/docs/syncserver) بیابید.
 
-## Multiple Users
+## چند کاربر {#multiple-users}
 
-`SYNC_USER1` declares the first user and password, and must be set.
-You can optionally declare `SYNC_USER2`, `SYNC_USER3` and so on, if you
-wish to set up multiple accounts.
+`SYNC_USER1` نخستین کاربر و گذرواژه را اعلام می‌کند و باید تنظیم شود.
+در صورت تمایل به راه‌اندازی چند حساب، می‌توانید `SYNC_USER2`، `SYNC_USER3` و به همین ترتیب را هم اعلام کنید.
 
-## Hashed Passwords
+## گذرواژه‌های درهم‌سازی‌شده {#hashed-passwords}
 
-Advanced users may wish to use hashed passwords instead of plain text
-passwords. If you wish to do this, you'll need to use a separate tool (such as
-[this one](https://git.sr.ht/~laalsaas/pbkdf2-password-hash)) to generate a
-password hash. You can then tell the server to expect hashed passwords by
-setting the env var PASSWORDS_HASHED to 1 (or any other value).
+کاربران پیشرفته شاید بخواهند به‌جای گذرواژه‌های متن ساده از گذرواژه‌های درهم‌سازی‌شده استفاده کنند. اگر مایل به این کار هستید، باید از ابزاری جداگانه (مانند
+[این ابزار](https://git.sr.ht/~laalsaas/pbkdf2-password-hash)) برای تولید درهم‌سازی گذرواژه استفاده کنید. سپس با تنظیم متغیر محیطی PASSWORDS_HASHED روی ۱ (یا هر مقدار دیگر) به سرور بگویید گذرواژه‌های درهم‌سازی‌شده انتظار داشته باشد.
 
-When hashed passwords are used, SYNC_USER variables are expected to be in
-username:password_hash format, where password_hash is a hash of the password in
-the PHC Format.
+وقتی گذرواژه‌های درهم‌سازی‌شده استفاده می‌شوند، انتظار می‌رود متغیرهای SYNC_USER به قالب
+username:password_hash باشند، که password_hash درهم‌سازی گذرواژه در قالب PHC است.
 
-## Storage Location
+## محل ذخیره‌سازی {#storage-location}
 
-The server needs to store a copy of your collection and media in a folder.
-By default it is ~/.syncserver; you can change this by defining
-a `SYNC_BASE` environment variable.
+سرور باید رونوشتی از مجموعه و رسانه‌هایتان را در پوشه‌ای ذخیره کند.
+به‌طور پیش‌فرض ~/.syncserver است؛ می‌توانید با تعریف متغیر محیطی
+`SYNC_BASE` آن را تغییر دهید.
 
-- This must not be the same location as your normal Anki data folder, as the
-  server and client must store separate copies.
-- You must sync your data to the server, not manually copy files into the
-  server folder.
+- این نباید همان محل پوشه داده عادی آنکی شما باشد، چون سرور و کلاینت باید رونوشت‌های جداگانه ذخیره کنند.
+- باید داده‌هایتان را با سرور همگام کنید، نه اینکه پرونده‌ها را به‌طور دستی در پوشه سرور رونوشت کنید.
 
-## Public Access
+## دسترسی عمومی {#public-access}
 
-The server listens on an unencrypted HTTP connection, so it's not a good
-idea to expose it directly to the internet. You'll want to either restrict
-usage to your local network, or place some form of encryption in front of
-the server, such as a VPN (Tailscale is apparently easy), or a HTTPS
-reverse proxy.
+سرور روی اتصال HTTP رمزنگاری‌نشده گوش می‌دهد؛ پس ایده خوبی نیست که آن را مستقیماً در معرض اینترنت بگذارید. یا استفاده را به شبکه محلی‌تان محدود می‌کنید، یا شکلی از رمزنگاری را پیش از سرور می‌گذارید؛ مانند VPN (ظاهراً Tailscale آسان است)، یا پروکسی معکوس HTTPS.
 
-You can define `SYNC_HOST` and `SYNC_PORT` to change the host and port
-that the server binds to.
+می‌توانید `SYNC_HOST` و `SYNC_PORT` را برای تغییر میزبان و پورتی که سرور به آن مقید می‌شود تعریف کنید.
 
-## Client Setup
+## راه‌اندازی کلاینت {#client-setup}
 
-### Server URL
-You'll need to determine your computer's network IP address, and then
-point each of your Anki clients to the address, e.g something like
-`http://192.168.1.200:8080/`. The URL can be configured in the preferences.
+### نشانی سرور {#server-url}
+باید نشانی IP شبکه رایانه‌تان را تعیین کنید و سپس هر یک از کلاینت‌های آنکی‌تان را به آن نشانی اشاره دهید؛ مانند
+`http://192.168.1.200:8080/`. نشانی را می‌توان در تنظیمات پیکربندی کرد.
 
-If you're using AnkiMobile and are unable to connect to a server on your local
-network, please go into the iOS settings, locate Anki near the bottom, and
-toggle "Allow Anki to access local network" off and then on again.
+اگر از AnkiMobile استفاده می‌کنید و نمی‌توانید به سروری روی شبکه محلی‌تان وصل شوید، لطفاً به تنظیمات iOS بروید، Anki را نزدیک پایین بیابید، و "Allow Anki to access local network" را خاموش و دوباره روشن کنید.
 
-Older desktop clients required you to define `SYNC_ENDPOINT` and
-`SYNC_ENDPOINT_MEDIA`. If using an older client, you'd put it as e.g.
-`http://192.168.1.200:8080/sync/` and `http://192.168.1.200:8080/msync/`
-respectively. AnkiDroid clients before 2.16 require separate configuration for
-the two endpoints.
+کلاینت‌های دسکتاپ قدیمی‌تر نیاز داشتند `SYNC_ENDPOINT` و
+`SYNC_ENDPOINT_MEDIA` را تعریف کنید. اگر از کلاینت قدیمی‌ای استفاده می‌کنید، آن را مثلاً به‌صورت
+`http://192.168.1.200:8080/sync/` و `http://192.168.1.200:8080/msync/`
+به‌ترتیب می‌گذارید. کلاینت‌های AnkiDroid پیش از 2.16 به پیکربندی جداگانه برای
+دو نقطه پایانی نیاز دارند.
 
-### Credentials
-To be able to synchronize, put your user credential (`SYNC_USER1` for example)
-in the **AnkiWeb account** section of the preferences.
+### اعتبارنامه‌ها {#credentials}
+برای توانایی همگام‌سازی، اعتبار کاربری‌تان (مثلاً `SYNC_USER1`) را در بخش **AnkiWeb account** تنظیمات بگذارید.
 
-## Reverse Proxies
+## پروکسی‌های معکوس {#reverse-proxies}
 
-If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a subpath
-(e.g. `http://example.com/custom/` -> `http://localhost:8080/`), you must make sure to
-include a trailing slash when configuring Anki. If you put `http://example.com/custom`
-instead, it will not work.
+اگر از پروکسی معکوس برای فراهم‌کردن دسترسی HTTPS استفاده می‌کنید (مثلاً nginx) و به زیرمسیری مقید می‌شوید
+(مثلاً `http://example.com/custom/` -> `http://localhost:8080/`)، باید مطمئن شوید هنگام پیکربندی آنکی اسلش انتهایی را بیاورید. اگر به‌جایش `http://example.com/custom`
+بگذارید، کار نخواهد کرد.
 
-If you are using a caddy, increase 
-[the http read buffer size](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#read_buffer) 
-to avoid connection problems when downloading media files.
+اگر از caddy استفاده می‌کنید،
+[اندازه بافر خواندن http](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#read_buffer) را افزایش دهید
+تا هنگام دانلود پرونده‌های رسانه مشکل اتصالی پیش نیاید.
 ```caddyfile
 reverse_proxy http://127.0.0.1:8080 {
 	transport http {
@@ -172,22 +149,15 @@ reverse_proxy http://127.0.0.1:8080 {
 }
 ```
 
-On iOS, TLS 1.3 is not supported, so your reverse proxy will need to have TLS 1.2
-enabled, or you'll get an "error code -9836".
+در iOS، TLS 1.3 پشتیبانی نمی‌شود؛ پس پروکسی معکوس شما باید TLS 1.2 را فعال داشته باشد، وگرنه «error code -9836» می‌گیرید.
 
-## Large Requests
+## درخواست‌های بزرگ {#large-requests}
 
-The standard AnkiWeb limit on uploads is applied by default. You can optionally
-set `MAX_SYNC_PAYLOAD_MEGS` to something greater than 100 if you wish to
-increase the limit. Bear in mind that if you're using a reverse proxy, you may
-need to adjust the limit there as well.
+حد استاندارد AnkiWeb بر بارگذاری‌ها به‌طور پیش‌فرض اعمال می‌شود. در صورت تمایل می‌توانید
+`MAX_SYNC_PAYLOAD_MEGS` را روی چیزی بیشتر از ۱۰۰ بگذارید تا حد را افزایش دهید. در نظر داشته باشید که اگر از پروکسی معکوس استفاده می‌کنید، شاید لازم باشد حد را آنجا هم تنظیم کنید.
 
-## Contributing Changes
+## مشارکت در تغییرات {#contributing-changes}
 
-Because this server is bundled with Anki, simplicity is a design goal - it is
-targeted at individual/family use, and PRs that add things like a REST API or
-external databases are unlikely to be accepted at this time. If in doubt, please
-reach out before starting work on a PR.
+چون این سرور همراه آنکی است، سادگی یک هدف طراحی است — متوجه استفاده فردی/خانوادگی است، و PRهایی که چیزهایی مانند REST API یا پایگاه‌های داده بیرونی اضافه می‌کنند در حال حاضر محتمل نیست پذیرفته شوند. اگر شک دارید، لطفاً پیش از شروع کار روی PR در تماس باشید.
 
-If you're looking for an existing API solution, the AnkiConnect add-on may
-meet your needs.
+اگر به‌دنبال راه‌حل API موجود هستید، افزونه AnkiConnect ممکن است نیازتان را برآورده کند.

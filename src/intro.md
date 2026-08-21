@@ -1,5 +1,7 @@
 # مقدمه {#introduction}
 
+نسخهٔ اصلی و همیشه به‌روز این راهنما به زبان انگلیسی است: [docs.ankiweb.net](https://docs.ankiweb.net/)
+
 ## کلاینت‌های موبایل {#mobile-clients}
 
 این کتاب، راهنمای نسخه رایانه‌ای آنکی است. برای کلاینت‌های موبایل راهنماهای جداگانه‌ای موجود است:
@@ -20,6 +22,7 @@
 داوطلبانی از این راهنما به زبان‌های مختلف ترجمه ارائه کرده‌اند.
 ترجمه‌ها ممکن است همیشه به‌روز نباشند.
 
+- [English — نسخهٔ اصلی](https://docs.ankiweb.net/)
 - [Bahasa Indonesia](https://web.archive.org/web/20250228144632/https://apps.ankiweb.net/docs/manual.id.html)
 - [Deutsch](https://web.archive.org/web/20240413080739/https://www.dennisproksch.de/anki)
 - [Español](https://web.archive.org/web/20250130154657/https://apps.ankiweb.net/docs/manual.es.html)

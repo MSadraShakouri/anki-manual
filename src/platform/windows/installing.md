@@ -1,57 +1,47 @@
-# Installing & Upgrading Anki on Windows
+# نصب و ارتقای آنکی در ویندوز {#installing--upgrading-anki-on-windows}
 
 <!-- toc -->
 
-## Requirements
+## پیش‌نیازها {#requirements}
 
-Recent Anki releases require a computer running the 64 bit version of Windows
-10 or 11.
+نسخه‌های اخیر آنکی به رایانه‌ای با نسخه ۶۴ بیتی ویندوز ۱۰ یا ۱۱ نیاز دارند.
 
-- The last Anki release that supported Windows 7 and 8.1 was Anki 2.1.49.
-- The last Anki release that supported 32 bit Windows was [Anki 2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35).
+- آخرین نسخه آنکی که از ویندوز ۷ و 8.1 پشتیبانی می‌کرد، آنکی 2.1.49 بود.
+- آخرین نسخه آنکی که از ویندوز ۳۲ بیتی پشتیبانی می‌کرد، [Anki 2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35) بود.
 
-If you're on an old machine, you can obtain old releases from the [releases page](https://github.com/ankitects/anki/releases).
+اگر روی رایانه قدیمی هستید، می‌توانید نسخه‌های قدیمی را از [صفحه انتشارها](https://github.com/ankitects/anki/releases) دریافت کنید.
 
-## Installing
+## نصب {#installing}
 
-To install Anki:
+برای نصب آنکی:
 
-1. Download Anki from <https://apps.ankiweb.net>.
-2. Save the installer to your desktop or downloads folder.
-3. Double-click on the installer to run it. If you see an error
-   message, please see the [installation issues page](installation-issues.md).
-4. Once Anki is installed, double-click on the new star icon on your
-   desktop to start Anki.
+1. آنکی را از <https://apps.ankiweb.net> دانلود کنید.
+2. نصاب را در پوشه میزکار یا دانلودتان ذخیره کنید.
+3. روی نصاب دوبار کلیک کنید تا اجرا شود. اگر پیام خطایی دیدید، لطفاً [صفحه مشکلات نصب](installation-issues.md) را ببینید.
+4. پس از نصب آنکی، با دوبار کلیک روی نشان ستاره جدید روی
+   میزکارتان آنکی را شروع کنید.
 
-## Upgrading
+## ارتقا {#upgrading}
 
-If upgrading from Anki 2.1.6+, there is no need to uninstall the previous
-version first. All you need to do is close Anki if it is open, and then follow
-the installation steps above. Your cards will be preserved when you upgrade.
+اگر از آنکی 2.1.6+ ارتقا می‌دهید، نیازی به حذف نسخه قبلی نیست. تنها کافی است آنکی را اگر باز است ببندید و سپس مراحل نصب بالا را دنبال کنید. کارت‌هایتان هنگام ارتقا حفظ می‌شوند.
 
-If upgrading from an Anki version before 2.1.6, or switching from the standard
-to the alternate version or vice versa, we recommend uninstalling the old
-version first, which will remove Anki's program data, but not delete your card
-data.
+اگر از نسخه‌ای پیش از 2.1.6 ارتقا می‌دهید، یا از نسخه استاندارد به نسخه جایگزین (یا برعکس) جابه‌جا می‌شوید، توصیه می‌کنیم ابتدا نسخه قدیمی را حذف کنید؛ این کار داده‌های برنامه آنکی را برمی‌دارد، اما داده کارت‌هایتان را حذف نمی‌کند.
 
-If you wish to downgrade to a previous version, make sure you
-[downgrade first](http://changes.ankiweb.net).
+اگر می‌خواهید به نسخه قبلی برگردید، مطمئن شوید ابتدا
+[نسخه را پایین می‌آورید](http://changes.ankiweb.net).
 
-## Add-on Compatibility
+## سازگاری افزونه‌ها {#add-on-compatibility}
 
-Some add-ons may not always work with the latest Anki release. If you upgrade to
-the latest Anki version and find an add-on you cannot live without stops working,
-you can download older Anki versions from the [releases page](https://github.com/ankitects/anki/releases).
+بعضی افزونه‌ها ممکن است همیشه با آخرین نسخه آنکی کار نکنند. اگر به آخرین نسخه آنکی ارتقا دهید و ببینید افزونه‌ای که بدونش نمی‌توانید از کار افتاده، می‌توانید نسخه‌های قدیمی‌تر آنکی را از [صفحه انتشارها](https://github.com/ankitects/anki/releases) دانلود کنید.
 
-## Problems
+## مشکلات {#problems}
 
-If you encounter any issues when installing or starting Anki, please see the
-following pages:
-- [Installation Issues](installation-issues.md)
-- [Startup Issues](startup-issues.md)
-- [Display Issues](display-issues.md)
-- [Permission Problems](permission-problems.md)
+اگر هنگام نصب یا شروع آنکی با مشکلی روبه‌رو شدید، لطفاً صفحات زیر را ببینید:
+- [مشکلات نصب](installation-issues.md)
+- [مشکلات راه‌اندازی](startup-issues.md)
+- [مشکلات نمایش](display-issues.md)
+- [مشکلات مجوز](permission-problems.md)
 
-If you encounter any interface issues when using Anki, please see the following pages:
-- [Copy and Paste Issues](copy-and-paste.md)
-- [Text Size Issues](text-size.md)
+اگر هنگام استفاده از آنکی با مشکلات رابط کاربری روبه‌رو شدید، لطفاً صفحات زیر را ببینید:
+- [مشکلات کپی و چسباندن](copy-and-paste.md)
+- [مشکلات اندازه متن](text-size.md)

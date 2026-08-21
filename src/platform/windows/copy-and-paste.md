@@ -1,6 +1,3 @@
-# Copy and paste issues
+# مشکلات کپی و چسباندن {#copy-and-paste-issues}
 
-If you are experiencing problems with copying and pasting, please check if you
-are running other programs on your computer that monitor the clipboard, such as
-dictionary programs, clipboard managers or clipping tools. The toolkit Anki uses
-can have trouble when such programs are running.
+اگر با رونوشت و چسباندن مشکل دارید، لطفاً بررسی کنید آیا برنامه‌های دیگری روی رایانه‌تان اجرا می‌کنید که کلیپ‌بورد را پایش می‌کنند؛ مانند برنامه‌های فرهنگ لغت، مدیران کلیپ‌بورد یا ابزارهای برش. جعبه‌ابداری که آنکی استفاده می‌کند وقتی چنین برنامه‌هایی در حال اجرا باشند ممکن است دچار مشکل شود.

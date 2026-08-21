@@ -1,64 +1,50 @@
-# Deck Options
+# گزینه‌های دسته {#deck-options}
 
 <!-- toc -->
 
-Deck options primarily control the way Anki schedules cards. It is recommended
-that you spend a few weeks with the defaults to get a feel for how Anki works
-before you start adjusting the options. Make sure you understand the options
-before changing them, as mistakes can reduce Anki's effectiveness.
+گزینه‌های دسته در درجه اول شیوه زمان‌بندی کارت‌ها توسط آنکی را کنترل می‌کنند. توصیه می‌شود چند هفته با پیش‌فرض‌ها کار کنید تا با نحوه کار آنکی آشنا شوید، پیش از آنکه شروع به تنظیم گزینه‌ها کنید. مطمئن شوید پیش از تغییر، گزینه‌ها را می‌فهمید، چون اشتباه می‌تواند اثربخشی آنکی را کاهش دهد.
 
-On your computer, do any of the following to open deck options:
+روی رایانه‌تان، برای باز کردن گزینه‌های دسته یکی از این کارها را انجام دهید:
 
-- Click the gear icon on the Decks screen.
-- Select a deck on the Decks screen, and then click **Options**
-  at the bottom of the screen.
-- Click **More > Options** while in review mode.
-- Press <kbd>O</kbd> while in review mode.
+- روی نشانک چرخ‌دنده در صفحه دسته‌ها کلیک کنید.
+- در صفحه دسته‌ها دسته‌ای را انتخاب کنید، سپس روی **Options** (گزینه‌ها) در پایین صفحه کلیک کنید.
+- در حالت مرور، **More > Options** را بزنید.
+- در حالت مرور، <kbd>O</kbd> را فشار دهید.
 
-Here are some community posts about deck options that have been contributed in the past:
+در اینجا چند نوشته community درباره گزینه‌های دسته هست که در گذشته ارائه شده‌اند:
 
 - [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
 - [Deck Options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
 
-## Presets
+## پیش‌تنظیم‌ها {#presets}
 
-Anki allows you to share options between different decks, to make
-it easier to update options in many decks at once. To do this, options are
-grouped into _presets_. If you change an option in a preset, the change is applied to all decks that use the same preset. All newly created decks use the "Default" preset.
+آنکی به شما اجازه می‌دهد گزینه‌ها را میان دسته‌های مختلف مشترک کنید تا به‌روزرسانی هم‌زمان گزینه‌ها در دسته‌های زیاد آسان‌تر شود. برای این کار، گزینه‌ها در _پیش‌تنظیم‌ها_ گروه‌بندی می‌شوند. اگر گزینه‌ای را در یک پیش‌تنظیم تغییر دهید، تغییر بر همه دسته‌هایی که از همان پیش‌تنظیم استفاده می‌کنند اعمال می‌شود. همه دسته‌های تازه‌ساخته‌شده از پیش‌تنظیم "Default" استفاده می‌کنند.
 
-To change the options in one deck but not other decks, click the
-arrow icon in the top right of the Deck Options window. You can do the following:
+برای تغییر گزینه‌ها در یک دسته ولی نه بقیه دسته‌ها، روی نشانک فلش در بالا-راست پنجره Deck Options کلیک کنید. می‌توانید کارهای زیر را انجام دهید:
 
-- **Save**: Save all modifications you've made in deck options.
-- **Add Preset**: Add a new preset for this deck, with the default options.
-- **Clone**: Clone your current preset, which is useful if you
-  want to modify some of the options but keep the rest as they are.
-- **Rename**: Change the name of the current preset.
-- **Delete**: Delete the current preset. This will make your next sync
-  a [one-way sync](./syncing.md#conflicts).
-- **Save to All Subdecks**: Like **Save**, but also assigns the selected preset to all
-  subdecks of the currently selected deck.
+- **Save** (ذخیره): همه تغییراتی را که در گزینه‌های دسته داده‌اید ذخیره می‌کند.
+- **Add Preset** (افزودن پیش‌تنظیم): پیش‌تنظیم تازه‌ای با گزینه‌های پیش‌فرض برای این دسته می‌افزاید.
+- **Clone** (شبیه‌سازی): نسخه‌ای از پیش‌تنظیم فعلی‌تان می‌سازد؛ سودمند است اگر بخواهید برخی گزینه‌ها را تغییر دهید ولی بقیه را همان‌طور نگه دارید.
+- **Rename** (تغییر نام): نام پیش‌تنظیم فعلی را تغییر می‌دهد.
+- **Delete** (حذف): پیش‌تنظیم فعلی را حذف می‌کند. این کار باعث می‌شود همگام‌سازی بعدیتان یک [همگام‌سازی یک‌طرفه](./syncing.md#conflicts) باشد.
+- **Save to All Subdecks** (ذخیره برای همه زیردسته‌ها): مانند **Save** است، اما علاوه بر آن، پیش‌تنظیم انتخاب‌شده را به همه زیردسته‌های دستهٔ در حال انتخاب انتساب می‌دهد.
 
-Deck options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed before
-changing this option will still have the old delay, not the new one.
+گزینه‌های دسته گذشته‌نگر نیستند. مثلاً اگر گزینه‌ای را تغییر دهید که تأخیر پس از شکست یک کارت را کنترل می‌کند، کارت‌هایی که پیش از تغییر این گزینه شکست خورده‌اند همچنان تأخیر قدیمی را خواهند داشت، نه جدید را.
 
-## Subdecks
+## زیردسته‌ها {#subdecks}
 
-If your deck has subdecks, and you wish one or more of them to have different settings from the parent deck, you can assign those subdecks to separate presets.
-When Anki shows a card, it will check which subdeck the card is in, and use the options
-for that deck. There are two exceptions:
+اگر دسته‌تان زیردسته دارد و می‌خواهید یکی یا چندتای آن‌ها تنظیماتی متفاوت با دستهٔ والد داشته باشند، می‌توانید آن زیردسته‌ها را به پیش‌تنظیم‌های جداگانه منتسب کنید.
+وقتی آنکی کارتی را نشان می‌دهد، بررسی می‌کند کارت در کدام زیردسته است و از گزینه‌های همان دسته استفاده می‌کند. دو استثنا وجود دارد:
 
-- The **New cards/day** and **Maximum reviews/day** [limits](#daily-limits) of a subdeck affect the number of cards that can be gathered from that subdeck. But the total number of cards you see during your study session is controlled by the limits of the deck you select to study.
-- The [display order](#display-order) options are taken from the
-  deck you select to study, not the deck of the current card.
+- [حدود](#daily-limits) **New cards/day** و **Maximum reviews/day** یک زیردسته بر شمار کارت‌هایی که می‌توان از آن زیردسته جمع کرد اثر می‌گذارند. اما شمار کل کارت‌هایی که در جلسه مطالعه می‌بینید، توسط حدود دسته‌ای که برای مطالعه انتخاب کرده‌اید کنترل می‌شود.
+- گزینه‌های [ترتیب نمایش](#display-order) از دسته‌ای گرفته می‌شوند که برای مطالعه انتخاب کرده‌اید، نه دستهٔ کارت فعلی.
 
-For example, let's say you have this collection:
+مثلاً فرض کنید این مجموعه را دارید:
 
     - Deck A (Preset 1)
       - Deck A::Subdeck B (Preset 2)
 
-Preset 1 and Preset 2 are identical, with two exceptions:
+پیش‌تنظیم ۱ و پیش‌تنظیم ۲ یکسان‌اند، به‌جز دو مورد:
 
 - Preset 1:
   - **Learning steps**: `1m 10m`
@@ -67,622 +53,432 @@ Preset 1 and Preset 2 are identical, with two exceptions:
   - **Learning steps**: `20m 2h`
   - **New/review order**: `Show after reviews`
 
-If you choose to study Subdeck B:
+اگر بخواهید Subdeck B را مطالعه کنید:
 
-- Learning steps for all new cards will be `20m 2h` (Preset 2 applies).
-- All new cards will be shown after reviews (Preset 2 applies).
+- گام‌های یادگیری همه کارت‌های جدید `20m 2h` خواهد بود (پیش‌تنظیم ۲ اعمال می‌شود).
+- همه کارت‌های جدید بعد از مرورها نشان داده می‌شوند (پیش‌تنظیم ۲ اعمال می‌شود).
 
-If you choose to study Deck A:
+اگر بخواهید Deck A را مطالعه کنید:
 
-- Learning steps for new cards in Deck A will be `1m 10m` (Preset 1 applies).
-- Learning steps for new cards in Subdeck B will be `20m 2h` (Preset 2 applies).
-- All new cards will be mixed with reviews (Preset 1 applies).
+- گام‌های یادگیری کارت‌های جدید در Deck A برابر `1m 10m` خواهد بود (پیش‌تنظیم ۱ اعمال می‌شود).
+- گام‌های یادگیری کارت‌های جدید در Subdeck B برابر `20m 2h` خواهد بود (پیش‌تنظیم ۲ اعمال می‌شود).
+- همه کارت‌های جدید با مرورها مخلوط می‌شوند (پیش‌تنظیم ۱ اعمال می‌شود).
 
-## Daily Limits
+## حدود روزانه {#daily-limits}
 
-### New Cards/Day
+### کارت‌های جدید در روز {#new-cardsday}
 
-This option controls how many new cards can be introduced each day you open the program. If you
-study fewer than the limit, or miss a day, the next day the counts will be back
-to their original setting: you won't be given more cards than your limit allows.
+این گزینه کنترل می‌کند هر روز که برنامه را باز می‌کنید، چند کارت جدید می‌تواند معرفی شود. اگر کمتر از حد مطالعه کنید یا روزی را از دست بدهید، روز بعد شمارنده‌ها به تنظیم اصلی‌شان برمی‌گردند: کارت‌هایی بیش از آنچه حدتان اجازه می‌دهد نمی‌گیرید.
 
-When studying a deck that has subdecks inside it, the limits set on each subdeck control the maximum number of cards drawn from that particular deck. The selected deck's limits control the total number of cards that will be shown.
+هنگام مطالعه دسته‌ای که زیردسته دارد، حدود تنظیم‌شده روی هر زیردسته، بیشینه شمار کارت‌های برگرفته از همان دسته را کنترل می‌کنند. حدودِ دستهٔ انتخابی، شمار کل کارت‌هایی را که نشان داده می‌شوند کنترل می‌کند.
 
-For earlier versions, see [this FAQ page](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
+برای نسخه‌های پیشین، [این صفحه پرسش‌های متداول](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) را ببینید.
 
-Studying new cards will temporarily increase the number of reviews you need to
-do a day, as newly-learned material needs to be repeated a number of times
-before the delay between repetitions can increase appreciably. If you are
-consistently learning 20 new cards a day, you can expect your daily reviews to
-be roughly about 200 cards/day. You can decrease the reviews required by
-introducing fewer new cards each day until your review burden decreases. More than one Anki user has excitedly studied
-hundreds of new cards over their first few days of using the program, and then has
-become overwhelmed by the reviews required.
+مطالعه کارت‌های جدید به‌طور موقتی شمار مرورهای روزانه‌تان را افزایش می‌دهد، چون مطالب تازه‌آموخته باید چند بار تکرار شوند تا تأخیر میان تکرارها به‌طور محسوسی افزایش یابد. اگر پیوسته روزی ۲۰ کارت جدید بیاموزید، می‌توانید انتظار داشته باشید مرورهای روزانه‌تان حدوداً حدود ۲۰۰ کارت در روز باشد. می‌توانید مرورهای لازم را با معرفی کارت‌های جدید کمتر هر روز کاهش دهید تا بار مرورتان کم شود. بیش از یک کاربر آنکی در روزهای اول استفاده از برنامه با هیجان صدها کارت جدید مطالعه کرده‌اند و سپس زیر بار مرورهای لازم خسته و درمانده شده‌اند.
 
-### Maximum Reviews/Day
+### بیشینه مرورها در روز {#maximum-reviewsday}
 
-Allows you to set an upper limit on the number of review cards to show each day.
-When this limit is reached, Anki will not show any more review cards for the
-day, even if there are more waiting. If you study consistently, this setting can
-help to smooth out occasional peaks in due card counts, and can save you from a
-heart attack when returning to Anki after taking a week off. When reviews have been
-hidden due to this option, a message will appear in the congratulations screen,
-suggesting you consider increasing the limit if you have time.
+به شما اجازه می‌دهد سقفی برای شمار کارت‌های مروری که هر روز نشان داده می‌شوند تعیین کنید. وقتی به این حد رسید، آنکی دیگر هیچ کارت مروری برای آن روز نشان نمی‌دهد، حتی اگر کارت‌های بیشتری منتظر باشند. اگر پیوسته مطالعه می‌کنید، این تنظیم می‌تواند قله‌های گاه‌به‌گاه شمار کارت‌های سررسید را هموار کند و شما را از یک سکته قلبی هنگام بازگشت به آنکی پس از یک هفته غیبت نجات دهد. وقتی مرورها به‌دلیل این گزینه پنهان شده باشند، پیامی در صفحه تبریک ظاهر می‌شود که پیشنهاد می‌کند در صورت داشتن وقت، افزایش حد را در نظر بگیرید.
 
-When studying a deck that has subdecks inside it, the review limit behaves similarly to the new card limit.
+هنگام مطالعه دسته‌ای که زیردسته دارد، حد مرور مشابه حد کارت جدید رفتار می‌کند.
 
-Anki includes any learning cards that have [crossed the day boundary](./preferences.md#scheduler) (interday learning cards) in the review count,
-so those learning cards will be subject to the review limit.
+آنکی کارت‌های در حال یادگیری‌ای را که از [مرز روز گذشته‌اند](./preferences.md#scheduler) (کارت‌های یادگیری بین‌روزه) در شمار مرور می‌گنجاند، پس آن کارت‌های یادگیری تابع حد مرور خواهند بود.
 
-### Per-Deck Daily Limits
+### حدود روزانه برای هر دسته {#per-deck-daily-limits}
 
-It is possible to use the same preset for different decks, with customized limits for each of them. This eliminates the need to create cloned presets just for that purpose, and makes it easier to set custom limits on subdecks.
+ممکن است از یک پیش‌تنظیم برای دسته‌های مختلف، با حدود سفارشی برای هرکدام استفاده کنید. این نیاز به ساختن پیش‌تنظیم‌های clone‌شده فقط برای همین هدف را از بین می‌برد و تنظیم حدود سفارشی روی زیردسته‌ها را آسان‌تر می‌کند.
 
-Anki provides three options for daily limits:
+آنکی سه گزینه برای حدود روزانه فراهم می‌کند:
 
-- **Preset**: applies to all the decks using a preset.
-- **This deck**: specific to a particular deck.
-- **Today only**: specific to a particular deck, and temporary.
+- **Preset** (پیش‌تنظیم): بر همه دسته‌هایی که از یک پیش‌تنظیم استفاده می‌کنند اعمال می‌شود.
+- **This deck** (این دسته): مخصوص دسته‌ای خاص.
+- **Today only** (فقط امروز): مخصوص دسته‌ای خاص، و موقتی.
 
-### New Cards Ignore Review Limit
+### کارت‌های جدید حد مرور را نادیده می‌گیرند {#new-cards-ignore-review-limit}
 
-By default, the review limit also applies to new cards, and no new cards will be shown when the review limit has been reached. If this option is enabled, new cards will be shown regardless of the review limit.
+به‌طور پیش‌فرض، حد مرور بر کارت‌های جدید هم اعمال می‌شود و وقتی حد مرور پر شده، کارت جدیدی نشان داده نمی‌شود. اگر این گزینه فعال شود، کارت‌های جدید بدون توجه به حد مرور نشان داده خواهند شد.
 
-If you have a backlog of overdue review cards, it is recommended that you stop introducing new cards until you
-catch up with that backlog. Continuing to introduce new cards when you're already behind can
-make the backlog worse.
+اگر انبوهی از کارت‌های مروریِ عقب‌افتاده دارید، توصیه می‌شود معرفی کارت‌های جدید را متوقف کنید تا از عهده آن انبوه برآیید. ادامه دادن به معرفی کارت جدید وقتی از قبل عقب هستید، می‌تواند انبوه را بدتر کند.
 
-### Limits Start From Top
+### حدود از بالا شروع می‌شوند {#limits-start-from-top}
 
-By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on the parent deck do not affect the number of new cards you can study from its subdeck.
+به‌طور پیش‌فرض، حدود روزانهٔ دستهٔ سطح بالاتر اعمال نمی‌شوند اگر یکی از زیردسته‌هایش را انتخاب کنید. یک دستهٔ والد می‌تواند حد کارت جدید ۱۰ کارت در روز داشته باشد و زیردسته‌هایش حد کارت جدید ۲۰ کارت در روز. حدود تنظیم‌شده روی دستهٔ والد، بر شمار کارت‌های جدیدی که می‌توانید از زیردسته‌اش مطالعه کنید اثر نمی‌گذارد.
 
-When this option is enabled, the limits set on higher-level decks also apply to their subdecks when a subdeck is selected. In the previous example, you will be able to study only 10 new cards from the subdecks instead of 20 new cards.
+وقتی این گزینه فعال باشد، حدود تنظیم‌شده روی دسته‌های سطح بالاتر هنگام انتخاب زیردسته، بر زیردسته‌ها هم اعمال می‌شوند. در مثال قبل، به‌جای ۲۰ کارت جدید، فقط می‌توانید ۱۰ کارت جدید از زیردسته‌ها مطالعه کنید.
 
-This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards in all the subdecks.
+این گزینه می‌تواند سودمند باشد اگر بخواهید زیردسته‌های منفرد را مطالعه کنید، اما یک حد کلّی بر کارت‌های همه زیردسته‌ها اعمال شود.
 
-## New Cards
+## کارت‌های جدید {#new-cards}
 
-The options here only affect new cards and
-[learning cards](getting-started.md#card-states). Once a card
-has graduated (that is, gone through all the learning steps), the options in this section no longer apply to the card.
+گزینه‌های این بخش فقط بر کارت‌های جدید و [کارت‌های در حال یادگیری](getting-started.md#card-states) اثر می‌گذارند. وقتی کارتی فارغ‌التحصیل شد (یعنی همه گام‌های یادگیری را گذراند)، گزینه‌های این بخش دیگر بر کارت اعمال نمی‌شوند.
 
-### Learning Steps
+### گام‌های یادگیری {#learning-steps}
 
-Controls the number of learning repetitions, and the delay
-between them. One or more delays, separated by spaces must be entered.
-Each time you click **Good** during review, the card moves to the next step. Each time you click **Again**, the card goes back to the first step.
+شمار تکرارهای یادگیری و تأخیر میان آن‌ها را کنترل می‌کند. باید یک یا چند تأخیر، با فاصله جدا شده، وارد شوند.
+هر بار که در مرور روی **Good** کلیک کنید، کارت به گام بعد می‌رود. هر بار که روی **Again** کلیک کنید، کارت به گام اول برمی‌گردد.
 
-For example, let's say that your learning steps are `1m 10m 1d`.
+مثلاً فرض کنید گام‌های یادگیری‌تان `1m 10m 1d` است.
 
-- When you click **Again**, the card goes through the first step, and is shown
-  again 1 minute later.
-- When you click **Good** on a new card or after the 1 minute step, it moves
-  to the next step, and is shown again in 10 minutes.
-- When you click **Good** on a card after the 10 minute step, it is delayed
-  until the next day.
-- When you click **Good** on the card the next day, it graduates and
-  becomes a review card. The card is shown again after the delay configured by the
-  _graduating interval_.
+- وقتی **Again** را می‌زنید، کارت از گام اول می‌گذرد و ۱ دقیقه بعد دوباره نشان داده می‌شود.
+- وقتی روی کارت جدید یا پس از گام ۱ دقیقه‌ای **Good** را می‌زنید، به گام بعد می‌رود و ۱۰ دقیقه بعد دوباره نشان داده می‌شود.
+- وقتی پس از گام ۱۰ دقیقه‌ای روی کارت **Good** را می‌زنید، تا روز بعد به تأخیر می‌افتد.
+- وقتی روز بعد روی کارت **Good** را می‌زنید، فارغ‌التحصیل می‌شود و کارت مروری می‌شود. کارت پس از تأخیرِ تنظیم‌شده توسط _فاصله فارغ‌التحصیلی_ دوباره نشان داده می‌شود.
 
-The **Hard** button works differently depending on which step you're on.
+دکمه **Hard** بسته به این که روی کدام گام هستید متفاوت کار می‌کند.
 
-- When you're on the first step, the **Hard** button shows a delay of `6m`. The `6m` delay is the average of first two steps: `1m` and `10m`.
-  - Exception: When there's only one learning step, the **Hard** button shows a delay 1.5 times that step. This delay is at most 1 day longer than the learning step.
-- When you're on any other step, the **Hard** button repeats that step.
+- وقتی روی گام اول هستید، دکمه **Hard** تأخیر `6m` را نشان می‌دهد. تأخیر `6m` میانگین دو گام اول است: `1m` و `10m`.
+  - استثنا: وقتی فقط یک گام یادگیری وجود دارد، دکمه **Hard** تأخیری ۱٫۵ برابرِ همان گام نشان می‌دهد. این تأخیر حداکثر ۱ روز بیشتر از گام یادگیری است.
+- وقتی روی هر گام دیگری هستید، دکمه **Hard** همان گام را تکرار می‌کند.
 
-If there’s nothing else to study, Anki will show learning cards up to 20 minutes
-early by default. To turn this off or change the amount of time to look ahead, see [Preferences](preferences.md).
+اگر چیز دیگری برای مطالعه نباشد، آنکی به‌طور پیش‌فرض کارت‌های در حال یادگیری را تا ۲۰ دقیقه زودتر نشان می‌دهد. برای خاموش‌کردن این یا تغییر میزان زمانِ نگاه به جلو، [تنظیمات](preferences.md) را ببینید.
 
-#### Day Boundaries
+#### مرزهای روز {#day-boundaries}
 
-Anki treats small steps and steps that [cross a day boundary](./preferences.md#review) differently.
-With small steps, the cards are shown as soon as the delay has passed,
-in preference to review cards and new cards. This is done so that
-you can answer the card as closely to your requested delay as possible.
-In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if the next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.
+آنکی با گام‌های کوچک و گام‌هایی که [از مرز روز می‌گذرند](./preferences.md#review) متفاوت رفتار می‌کند.
+با گام‌های کوچک، کارت‌ها به‌محض سپری‌شدن تأخیر، با اولویت نسبت به کارت‌های مرور و کارت‌های جدید نشان داده می‌شوند. این کار برای آن است که بتوانید در نزدیک‌ترین زمان ممکن به تأخیر درخواستی‌تان به کارت پاسخ دهید. در مقابل، اگر گام از مرز روز بگذرد، تأخیر به‌طور خودکار به روز تبدیل می‌شود. مثلاً اگر روز بعد از ۵ ساعت دیگر شروع شود و تأخیر ۶ ساعت باشد، آنکی تأخیر را به ۱ روز تبدیل می‌کند.
 
-### Graduating Interval
+### فاصله فارغ‌التحصیلی {#graduating-interval}
 
-The number of days to wait before showing a card again, after the Good button is used on the final learning step. This means that it is the first interval
-after the learning card graduates. See the example
-from [earlier in this section](deck-options.md#learning-steps).
+شمار روزهایی که پیش از نشان‌دادن دوباره کارت باید صبر شود، پس از آنکه دکمه Good در آخرین گام یادگیری زده شود. یعنی این اولین فاصله پس از فارغ‌التحصیلی کارتِ در حال یادگیری است. مثال را از [ابتدای همین بخش](deck-options.md#learning-steps) ببینید.
 
-### Easy Interval
+### فاصله آسان {#easy-interval}
 
-The number of days to wait before showing a card again, after the Easy button is used on it.
+شمار روزهایی که پیش از نشان‌دادن دوباره کارت باید صبر شود، پس از آنکه دکمه Easy روی آن زده شود.
 
-The **Easy** button turns learning cards into a review cards regardless of which step you're on,
-and assigns them the delay you have configured in this option. Easy interval should always be at least
-as long as the graduating interval, and typically a few days longer.
+دکمه **Easy** کارت‌های در حال یادگیری را بدون توجه به اینکه روی کدام گام هستید به کارت مروری تبدیل می‌کند و تأخیرِ تنظیم‌شده در این گزینه را به آن‌ها منتسب می‌کند. فاصله آسان همیشه باید دست‌کم به‌اندازه فاصله فارغ‌التحصیلی و معمولاً چند روز بیشتر باشد.
 
-### Insertion Order
+### ترتیب درج {#insertion-order}
 
-Controls whether Anki should add new cards into the deck randomly, or sequentially.
-When you change this option, Anki will re-sort the decks in the current preset.
+کنترل می‌کند که آنکی کارت‌های جدید را تصادفی به دسته اضافه کند یا ترتیبی. وقتی این گزینه را تغییر می‌دهید، آنکی دسته‌های پیش‌تنظیم فعلی را دوباره مرتب می‌کند.
 
-On recent Anki versions, you should leave this option set to `Sequential`, and adjust the [display order](deck-options.md#display-order) instead.
+در نسخه‌های اخیر آنکی، بهتر است این گزینه را روی `Sequential` بگذارید و در عوض [ترتیب نمایش](deck-options.md#display-order) را تنظیم کنید.
 
-## Lapses
+## لغزش‌ها {#lapses}
 
-When you click **Again** on a review card, it is called a _lapse_. The options listed here affect such lapsed cards.
+وقتی روی کارتِ مروری **Again** می‌زنید، به آن _لغزش_ گفته می‌شود. گزینه‌های این بخش بر کارت‌های لغزش‌خورده اثر می‌گذارند.
 
-### Relearning Steps
+### گام‌های یادگیری مجدد {#relearning-steps}
 
-The same as learning steps, but for lapsed cards. When you fail a review card
-(press **Again**), the card goes through _relearning steps_, before it becomes a review card again.
+مانند گام‌های یادگیری است، اما برای کارت‌های لغزش‌خورده. وقتی کارت مروری را خراب می‌کنید (**Again** می‌زنید)، کارت پیش از آنکه دوباره کارت مروری شود، از _گام‌های یادگیری مجدد_ می‌گذرد.
 
-If you leave the steps blank, the card will skip relearning, and will be assigned
-a new interval of 1 day by default.
+اگر گام‌ها را خالی بگذارید، کارت یادگیری مجدد را رد می‌کند و به‌طور پیش‌فرض فاصله جدید ۱ روز می‌گیرد.
 
-### Minimum Interval
+### حداقل فاصله {#minimum-interval}
 
-Specifies a minimum number of days a card should wait after it finishes relearning.
-The default is one day, meaning once relearning is finished, it will be shown again
-the next day.
+حداقل شمار روزهایی را مشخص می‌کند که کارت باید پس از پایان یادگیری مجدد صبر کند. پیش‌فرض یک روز است؛ یعنی وقتی یادگیری مجدد تمام شد، روز بعد دوباره نشان داده می‌شود.
 
-### Leeches
+### انگل‌ها {#leeches}
 
-Control the way Anki handles leeches. For details, see the [leeches](leeches.md)
-section.
+شیوه برخورد آنکی با انگل‌ها را کنترل می‌کند. برای جزئیات، بخش [انگل‌ها](leeches.md) را ببینید.
 
-## Display Order
+## ترتیب نمایش {#display-order}
 
-The options in this section are taken from the deck you select to study, not
-the deck of the currently displayed card.
+گزینه‌های این بخش از دسته‌ای گرفته می‌شوند که برای مطالعه انتخاب کرده‌اید، نه دستهٔ کارتِ در حال نمایش.
 
-Some further information about display order is available in the [studying section](studying.md#display-order).
+اطلاعات بیشتری درباره ترتیب نمایش در [بخش مطالعه](studying.md#display-order) موجود است.
 
-### New Card Gather Order
+### ترتیب جمع‌آوری کارت جدید {#new-card-gather-order}
 
-Controls how Anki gathers new cards from a deck. The options are:
+کنترل می‌کند آنکی چگونه کارت‌های جدید را از دسته جمع می‌کند. گزینه‌ها:
 
-- **Deck**: Gathers cards from each subdeck in order, starting from the top. Cards from
-  each subdeck are gathered in ascending position. If the daily limit of the selected
-  deck is reached, gathering may stop before all subdecks have been checked. This
-  order is fastest in large collections, and allows you to prioritize subdecks that
-  are closer to the top.
+- **Deck** (دسته): کارت‌ها را از هر زیردسته به ترتیب، از بالا شروع، جمع می‌کند. کارت‌های هر زیردسته به ترتیب صعودی موقعیت جمع می‌شوند. اگر حد روزانه دستهٔ انتخابی پر شود، جمع‌آوری ممکن است پیش از بررسی همه زیردسته‌ها متوقف شود. این ترتیب در مجموعه‌های بزرگ سریع‌ترین است و به شما اجازه می‌دهد زیردسته‌های نزدیک‌تر به بالا را در اولویت بگذارید.
 
-  Decks/subdecks are always ordered alphabetically, so you can give them a numeric prefix like
-  001 to control the order they appear in. You can also use `_` and `~` as a
-  prefix to place items at the top or bottom.
+  دسته‌ها/زیردسته‌ها همیشه به ترتیب الفبا مرتب‌اند؛ پس می‌توانید پیشوندی عددی مانند 001 به آن‌ها بدهید تا ترتیب ظاهرشدن‌شان را کنترل کنید. همچنین می‌توانید از `_` و `~` به‌عنوان پیشوند برای قراردادن موارد در بالا یا پایین استفاده کنید.
 
-  Although position order depends initially on the insertion order option, you can manually
-  [reposition](./browsing.md#cards) cards in different
-  ways.
+  هرچند ترتیب موقعیت در ابتدا به گزینه ترتیب درج وابسته است، می‌توانید کارت‌ها را به شیوه‌های مختلف به‌طور دستی [جابه‌جا](./browsing.md#cards) کنید.
 
-- **Deck, then random notes**: Gathers cards from each subdeck in order, starting from the top.
-  Cards from each subdeck are gathered from randomly selected notes.
+- **Deck, then random notes** (دسته، سپس یادداشت‌های تصادفی): کارت‌ها را از هر زیردسته به ترتیب، از بالا شروع، جمع می‌کند. کارت‌های هر زیردسته از یادداشت‌های تصادفاً انتخاب‌شده جمع می‌شوند.
 
-- **Ascending position**: Gathers cards by ascending position (due #), which is typically the oldest-added first.
+- **Ascending position** (موقعیت صعودی): کارت‌ها را بر اساس موقعیت صعودی (شماره سررسید) جمع می‌کند؛ که معمولاً یعنی ابتدا قدیمی‌ترین افزوده‌شده‌ها.
 
-- **Descending position**: Gathers cards by descending position (due #), which is typically the latest-added first.
+- **Descending position** (موقعیت نزولی): کارت‌ها را بر اساس موقعیت نزولی (شماره سررسید) جمع می‌کند؛ که معمولاً یعنی ابتدا جدیدترین افزوده‌شده‌ها.
 
-- **Random notes**: Gathers cards from randomly selected notes.
+- **Random notes** (یادداشت‌های تصادفی): کارت‌ها را از یادداشت‌های تصادفاً انتخاب‌شده جمع می‌کند.
 
-- **Random cards**: Gathers cards in a random order.
+- **Random cards** (کارت‌های تصادفی): کارت‌ها را به ترتیبی تصادفی جمع می‌کند.
 
-### New Card Sort Order
+### ترتیب مرتب‌سازی کارت جدید {#new-card-sort-order}
 
-Controls how the new cards are sorted after they have been gathered. The options are:
+کنترل می‌کند کارت‌های جدید پس از جمع‌آوری چگونه مرتب شوند. گزینه‌ها:
 
-- **Card type, then order gathered**: Shows cards in order of card type number. Cards of each card type number are shown in the order they were gathered. If you have sibling burying disabled, this ensures all front→back cards are seen before any back→front cards.
-  This order is useful if you don't want sibling cards to appear too close to each other.
+- **Card type, then order gathered** (نوع کارت، سپس ترتیب جمع‌آوری): کارت‌ها را به ترتیب شماره نوع کارت نشان می‌دهد. کارت‌های هر شماره نوع کارت به ترتیبی جمع‌آوری‌شده نشان داده می‌شوند. اگر کنار گذاشتن هم‌خانواده‌ها را خاموش کرده باشید، این تضمین می‌کند همه کارت‌های رو→پشت پیش از هر کارت پشت→رو دیده شوند.
+  این ترتیب سودمند است اگر نمی‌خواهید کارت‌های هم‌خانواده بیش از حد به هم نزدیک ظاهر شوند.
 
-- **Order gathered**: Shows cards exactly as they were gathered. If sibling burying is disabled, this typically results in all sibling cards appearing one after the other.
+- **Order gathered** (ترتیب جمع‌آوری): کارت‌ها را دقیقاً همان‌طور که جمع‌آوری شده‌اند نشان می‌دهد. اگر کنار گذاشتن هم‌خانواده خاموش باشد، این معمولاً به نمایش همه کارت‌های هم‌خانواده پشت‌سرهم می‌انجامد.
 
-- **Card type, then random**: Shows cards in order of card type number, but shuffles the cards of each card type number.
-  This order is useful if you don't want sibling cards to appear too close to each other, but still want the cards to appear in a random order.
+- **Card type, then random** (نوع کارت، سپس تصادفی): کارت‌ها را به ترتیب شماره نوع کارت نشان می‌دهد، اما کارت‌های هر شماره نوع کارت را به‌هم می‌ریزد.
+  این ترتیب سودمند است اگر نمی‌خواهید کارت‌های هم‌خانواده بیش از حد نزدیک هم باشند، اما همچنان می‌خواهید کارت‌ها به ترتیبی تصادفی ظاهر شوند.
 
-- **Random note, then card type**: Picks notes at random, then shows all of their siblings in order.
+- **Random note, then card type** (یادداشت تصادفی، سپس نوع کارت): یادداشت‌ها را تصادفی برمی‌دارد، سپس همه هم‌خانواده‌هایشان را به ترتیب نشان می‌دهد.
 
-- **Random**: Fully shuffles the gathered cards.
+- **Random** (تصادفی): کارت‌های جمع‌آوری‌شده را کاملاً به‌هم می‌ریزد.
 
-### New/Review Order
+### ترتیب جدید/مرور {#newreview-order}
 
-Whether new cards should be mixed in with review cards, shown before them, or shown after them.
+اینکه کارت‌های جدید با کارت‌های مروری مخلوط شوند، پیش از آن‌ها نشان داده شوند یا پس از آن‌ها.
 
-### Interday Learning/Review Order
+### ترتیب یادگیری بین‌روزه/مرور {#interday-learningreview-order}
 
-Whether (re)learning cards that cross a day boundary should be mixed in with review cards,
-shown before them, or shown after them. Because learning cards tend to be harder than
-review cards, some users prefer to see them at the end (getting the easy stuff done
-first), or at the start (allowing more time to review forgotten ones).
+اینکه کارت‌های (یادگیری مجددِ) در حال یادگیری‌ای که از مرز روز می‌گذرند با کارت‌های مروری مخلوط شوند، پیش از آن‌ها باشند یا پس از آن‌ها. چون کارت‌های در حال یادگیری معمولاً سخت‌تر از کارت‌های مروری‌اند، بعضی کاربران ترجیح می‌دهند آن‌ها را در پایان ببینند (اول تمام‌کردن کارهای آسان)، یا در آغاز (وقت بیشتر برای مرور فراموش‌شده‌ها).
 
-### Review Sort Order
+### ترتیب مرتب‌سازی مرور {#review-sort-order}
 
-Controls how the review cards are sorted. The options are:
+کنترل می‌کند کارت‌های مروری چگونه مرتب شوند. گزینه‌ها:
 
-- **Due date, then random**: The default order prioritizes cards that have been waiting
-  longer, and it's the recommended order when you are up to date, or when you only have a small
-  backlog. If you have taken an extended break or have fallen behind in your reviews,
-  you may want to consider changing the sort order temporarily.
-- **Due date, then deck**: This also prioritizes cards that have been waiting
-  longer, and then shows review cards for each subdeck in turn.
-- **Deck, then due date**: Shows review cards for each
-  subdeck in turn. This order is generally not recommended, as having material appear
-  consistently in the same order makes it easier to guess the answer based on context,
-  and leads to weaker memories.
-- **Ascending intervals**: Shows cards with shorter intervals first.
-- **Descending intervals**: Shows cards with longer intervals first.
-- **Ascending ease**: Shows more difficult cards first.
-- **Descending ease**: Shows less difficult cards first.
-- **Relative overdueness**: Shows cards that you're more likely to have forgotten first. This is generally recommended if
-  you have a large backlog that may take some time to get through, and you want to
-  reduce the chances of forgetting more cards.
+- **Due date, then random** (تاریخ سررسید، سپس تصادفی): ترتیب پیش‌فرض کارت‌هایی را که طولانی‌تر منتظر مانده‌اند در اولویت می‌گذارد و ترتیب توصیه‌شده وقتی به‌روز هستید یا انبوه کوچکی دارید. اگر وقفه‌ای طولانی داشته‌اید یا در مرورهایتان عقب افتاده‌اید، شاید بخواهید تغییر موقت ترتیب مرتب‌سازی را در نظر بگیرید.
+- **Due date, then deck** (تاریخ سررسید، سپس دسته): این هم کارت‌های طولانی‌تر منتظرمانده را در اولویت می‌گذارد و سپس کارت‌های مروری هر زیردسته را به نوبت نشان می‌دهد.
+- **Deck, then due date** (دسته، سپس تاریخ سررسید): کارت‌های مروری هر زیردسته را به نوبت نشان می‌دهد. این ترتیب عموماً توصیه نمی‌شود، چون ظاهرشدن پیوسته مطالب به همان ترتیب، حدس‌زدن پاسخ را بر پایه زمینه آسان‌تر می‌کند و به خاطره‌های ضعیف‌تر می‌انجامد.
+- **Ascending intervals** (فاصله‌های صعودی): ابتدا کارت‌هایی با فاصله‌های کوتاه‌تر را نشان می‌دهد.
+- **Descending intervals** (فاصله‌های نزولی): ابتدا کارت‌هایی با فاصله‌های بلندتر را نشان می‌دهد.
+- **Ascending ease** (سهولت صعودی): ابتدا کارت‌های سخت‌تر را نشان می‌دهد.
+- **Descending ease** (سهولت نزولی): ابتدا کارت‌های آسان‌تر را نشان می‌دهد.
+- **Relative overdueness** (عقب‌افتادگی نسبی): ابتدا کارت‌هایی را نشان می‌دهد که به‌احتمال بیشتر فراموششان کرده‌اید. این عموماً توصیه می‌شود اگر انبوه بزرگی دارید که گذراندن از آن ممکن است زمان ببرد و می‌خواهید احتمال فراموشی کارت‌های بیشتر را کاهش دهید.
 
-  When using the SM-2 algorithm, overdueness is determined by comparing how
-  overdue cards are, and how long their interval is. For example, a card with a
-  current interval of 5 days that is overdue by 2 days, will display before a card
-  with a current interval of 10 days that is overdue by 3 days.
+  با الگوریتم SM-2، عقب‌افتادگی با مقایسه میزان عقب‌افتادگی کارت‌ها و طول فاصله‌شان تعیین می‌شود. مثلاً کارتی با فاصله فعلی ۵ روز که ۲ روز عقب افتاده، پیش از کارتی با فاصله فعلی ۱۰ روز که ۳ روز عقب افتاده نمایش داده می‌شود.
 
-  When FSRS is enabled, this sort order is removed; the FSRS equivalent is **Ascending retrievability**,
-  which is calculated based on each card's retrievability (probability of recall) and the desired retention in the preset.
+  وقتی FSRS فعال است، این ترتیب مرتب‌سازی حذف می‌شود؛ معادل FSRS آن **Ascending retrievability** (بازیابی‌پذیری صعودی) است که بر پایه بازیابی‌پذیری هر کارت (احتمال یادآوری) و حفظ مطلوب پیش‌تنظیم محاسبه می‌شود.
 
-## Burying
+## کنار گذاشتن {#burying}
 
-When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then review cards, and finally new cards. This affects how burying works:
+وقتی آنکی کارت‌ها را جمع می‌کند، ابتدا کارت‌های یادگیری درون‌روزه، سپس کارت‌های یادگیری بین‌روزه، سپس کارت‌های مروری و در پایان کارت‌های جدید را جمع می‌کند. این بر نحوه کار کنار گذاشتن اثر می‌گذارد:
 
-- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
-- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
+- اگر همه گزینه‌های کنار گذاشتن فعال باشند، هم‌خانواده‌ای که زودتر در این فهرست می‌آید نمایش داده می‌شود. مثلاً کارت مروری به کارت جدید ترجیح داده می‌شود.
+- هم‌خانواده‌های پایین‌تر در فهرست نمی‌توانند انواع کارتِ بالاتر را کنار بگذارند. مثلاً اگر کنار گذاشتن کارت‌های جدید را خاموش کنید و کارت جدیدی را مطالعه کنید، هیچ کارت یادگیری بین‌روزه یا مروری را کنار نمی‌گذارد و ممکن است در همان جلسه هم هم‌خانوادهٔ مروری و هم هم‌خانوادهٔ جدید ببینید.
 
-The options are:
+گزینه‌ها:
 
-- **Bury new siblings**: Whether other new cards of the same note (e.g. reverse cards, adjacent cloze deletions) will be delayed until the next day.
-- **Bury review siblings**: Whether other review cards of the same note will be delayed until the next day.
-- **Bury interday learning siblings**: Whether other learning cards of the same note that crossed a day boundary will be delayed until the next day.
+- **Bury new siblings** (کنار گذاشتن هم‌خانواده‌های جدید): اینکه کارت‌های جدید دیگرِ همان یادداشت (مثلاً کارت‌های معکوس، حذف‌های اطلاعاتی مجاور) تا روز بعد به تأخیر بیفتند یا نه.
+- **Bury review siblings** (کنار گذاشتن هم‌خانواده‌های مرور): اینکه کارت‌های مروری دیگرِ همان یادداشت تا روز بعد به تأخیر بیفتند یا نه.
+- **Bury interday learning siblings** (کنار گذاشتن هم‌خانواده‌های یادگیری بین‌روزه): اینکه کارت‌های در حال یادگیری دیگرِ همان یادداشت که از مرز روز گذشته‌اند تا روز بعد به تأخیر بیفتند یا نه.
 
-For more info about burying cards, see [this section](./studying.md#siblings-and-burying) of the manual.
+برای اطلاعات بیشتر درباره کنار گذاشتن کارت‌ها، [این بخش](./studying.md#siblings-and-burying) راهنما را ببینید.
 
-## Audio
+## صدا {#audio}
 
-- **Don't play audio automatically**: By default, Anki automatically plays any audio you have on
-  cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>R</kbd> or <kbd>F5</kbd>.
+- **Don't play audio automatically** (پخش نکردن خودکار صدا): به‌طور پیش‌فرض، آنکی هر صدویی که روی کارت‌ها دارید به‌طور خودکار پخش می‌کند. اگر این گزینه را روشن کنید، آنکی تا زمانی که کلید پخش دوباره صدا — <kbd>R</kbd> یا <kbd>F5</kbd> — را نزنید، صدا را پخش نمی‌کند.
 
-- **Skip question when replaying answer**: Controls whether audio from
-  the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](./templates/fields.md#special-fields) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
+- **Skip question when replaying answer** (پرش از پرسش هنگام پخش دوباره پاسخ): کنترل می‌کند صدا از سمت پرسش هنگام استفاده از کنش پخش دوباره در سمت پاسخ پخش شود یا نه. توجه داشته باشید آنکی صدا از فیلد `{{FrontSide}}` را [به‌طور خودکار پخش نمی‌کند](./templates/fields.md#special-fields). این گزینه بر رفتار پخش خودکار اثر نمی‌گذارد.
 
-## Timers
+## زمان‌سنج‌ها {#timers}
 
 <a id="timer"></a>
 
-Anki monitors how long it takes you to answer each card, so that it
-can show you how long was spent studying each day. The time taken does
-not influence scheduling.
+آنکی مدت زمان پاسخ‌دادن شما به هر کارت را پایش می‌کند تا بتواند نشان دهد هر روز چقدر صرف مطالعه شده. زمان صرف‌شده بر زمان‌بندی اثر نمی‌گذارد.
 
-### Internal Timer
+### زمان‌سنج داخلی {#internal-timer}
 
-- Maximum answer seconds: The default limit is 60 seconds. If you take
-  longer than that, Anki assumes you have walked away from your computer
-  or have been distracted, and caps the recorded time at 60 seconds, so
-  that you don’t end up with inaccurate statistics.
-- This internal timer runs from when the question is shown until you press a button to grade your answer. If you consistently
-  spend longer than 60 seconds on a card,
-  you may want to consider either raising
-  this limit, or even better, making your cards simpler.
+- بیشینه ثانیه‌های پاسخ: حد پیش‌فرض ۶۰ ثانیه است. اگر بیشتر طول بکشد، آنکی فرض می‌کند از رایانه‌تان دور شده‌اید یا حواستان پرت شده و زمان ثبت‌شده را در ۶۰ ثانیه محدود می‌کند تا با آمار نادرست نمانید.
+- این زمان‌سنج داخلی از زمانی که پرسش نشان داده می‌شود تا وقتی دکمه‌ای برای نمره‌دادن به پاسختان می‌زنید کار می‌کند. اگر پیوسته بیش از ۶۰ ثانیه روی کارتی می‌گذارید، شاید بخواهید این حد را بالا ببرید، یا حتی بهتر: کارت‌هایتان را ساده‌تر کنید.
 
-### On-screen Timer
+### زمان‌سنج روی صفحه {#on-screen-timer}
 
-- Show on-screen timer: On the Study screen, show a timer that counts the time
-  you're taking to study each card. (This timer will stop when it reaches the Maximum answer seconds set for the internal timer.)
-- Stop on-screen timer on answer: Whether the on-screen timer should continue running from when you show
-  the answer until you press a button to grade your answer. This option does not impact the time that is recorded for your statistics.
+- Show on-screen timer (نمایش زمان‌سنج روی صفحه): در صفحه مطالعه، زمان‌سنجی نشان می‌دهد که زمان مطالعه هر کارت را می‌شمارد. (این زمان‌سنج وقتی به بیشینه ثانیه‌های پاسخِ تنظیم‌شده برای زمان‌سنج داخلی برسد می‌ایستد.)
+- Stop on-screen timer on answer (توقف زمان‌سنج هنگام پاسخ): اینکه زمان‌سنج روی صفحه از زمان نمایش پاسخ تا فشردن دکمه نمره ادامه یابد یا نه. این گزینه بر زمان ثبت‌شده برای آمارتان اثر نمی‌گذارد.
 
-## Auto Advance
+## پیشروی خودکار {#auto-advance}
 
-Requires Anki 23.12 or later. Auto Advance allows you to automatically take some actions after a certain amount of time has passed. To use it, you must first set a non-zero
-time in **Seconds to show question for** and/or **Seconds to show answer for**. Then, in the
-study screen, use the Auto Advance action from the **More** button to start advancing.
+نیازمند آنکی 23.12 یا جدیدتر است. پیشروی خودکار به شما اجازه می‌دهد پس از گذشت مدت معینی، به‌طور خودکار کنش‌هایی انجام شود. برای استفاده از آن، ابتدا باید زمانی ناصفر در **Seconds to show question for** (ثانیه‌های نمایش پرسش) و/یا **Seconds to show answer for** (ثانیه‌های نمایش پاسخ) تنظیم کنید. سپس در صفحه مطالعه، کنش Auto Advance را از دکمه **More** برای شروع پیشروی به‌کار ببرید.
 
-## Easy Days
+## روزهای آسان {#easy-days}
 
-If you want to spend less time on Anki on some days of the week, such as Sundays, this feature can help you do that.
-After the interval is calculated, it will be adjusted by a small amount to change the due date.
-Note that setting all days to "Reduced" or "Minimum" will result in the same workload as setting all days to "Normal".
-This feature works with both FSRS and the legacy SM-2 algorithm.
-Changing your Easy Days configuration doesn't retroactively change existing intervals and will only affect future intervals. Simply put, you will not see immediate changes in the number of due cards.
+اگر می‌خواهید در بعضی روزهای هفته — مانند یکشنبه‌ها — وقت کمتری روی آنکی بگذارید، این قابلیت می‌تواند کمک کند.
+پس از محاسبه فاصله، مقدار کمی برای تغییر تاریخ سررسید آن تنظیم می‌شود.
+توجه کنید تنظیم همه روزها روی "Reduced" یا "Minimum" همان بارِ کاریِ تنظیم همه روزها روی "Normal" را به همراه دارد.
+این قابلیت هم با FSRS و هم با الگوریتم قدیمی SM-2 کار می‌کند.
+تغییر پیکربندی روزهای آسان، فاصله‌های موجود را گذشته‌نگر تغییر نمی‌دهد و فقط بر فاصله‌های آینده اثر می‌گذارد. به‌سادگی: تغییر فوری در شمار کارت‌های سررسید نخواهید دید.
 
-## FSRS
+## FSRS {#fsrs}
 
-The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki/wiki/ABC-of-FSRS) is an alternative to Anki's legacy
-SuperMemo 2 (SM-2) algorithm. By more accurately determining how much information you are likely
-to forget, it can help you remember more material in the same amount of time.
+[زمان‌بند تکرار بافاصله آزاد (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki/wiki/ABC-of-FSRS) جایگزینی برای الگوریتم قدیمی SuperMemo 2 (SM-2) آنکی است. با تعیین دقیق‌ترِ میزان اطلاعاتی که محتمل است فراموش کنید، می‌تواند به شما کمک کند در همان مقدار زمان، مطالب بیشتری به‌خاطر بسپارید.
 
-When you turn on FSRS, some new options
-become available, and SM-2 specific options, such as **Graduating interval**,
-**Easy bonus**, etc. are hidden. This option is shared by all presets.
+وقتی FSRS را روشن می‌کنید، بعضی گزینه‌های جدید در دسترس می‌شوند و گزینه‌های مخصوص SM-2 مانند **Graduating interval** و **Easy bonus** و غیره پنهان می‌شوند. این گزینه میان همه پیش‌تنظیم‌ها مشترک است.
 
-**Before Enabling**
+**پیش از فعال‌کردن**
 
-- Ensure all of your Anki clients support FSRS. Anki 23.10, AnkiMobile 23.10,
-  and AnkiWeb all support it. AnkiDroid supports it in 2.17+. If
-  one of your clients doesn't support it, things will not work correctly.
-- If you previously used the "custom scheduling" version of FSRS, make
-  sure you clear out the custom scheduling section before enabling FSRS.
+- مطمئن شوید همه کلاینت‌های آنکی شما از FSRS پشتیبانی می‌کنند. آنکی 23.10، AnkiMobile 23.10 و AnkiWeb همگی از آن پشتیبانی می‌کنند. AnkiDroid در 2.17+ پشتیبانی می‌کند. اگر یکی از کلاینت‌هایتان از آن پشتیبانی نکند، چیزها درست کار نخواهند کرد.
+- اگر قبلاً از نسخه «زمان‌بندی سفارشی» FSRS استفاده می‌کردید، مطمئن شوید پیش از فعال‌کردن FSRS بخش زمان‌بندی سفارشی را پاک کنید.
 
-### A Short Guide
+### راهنمای کوتاه {#a-short-guide}
 
-- Enable FSRS under the "FSRS" section, at the bottom of the deck options page. FSRS can only be enabled globally; you cannot enable it for some presets and disable it for others.
-- Ensure that all your learning and re-learning steps are shorter than 1d and can be completed on the same day. 23h is not recommended even though it's less than one day because you won't be able to finish this step on the same day as your first review. Steps such as 10m or 30m are good.
-- Click the "Optimize" button under the "FSRS parameters" field. If you see a message that says "The FSRS parameters currently appear to be optimal", that's fine.
-- Choose a value of desired retention: the proportion of cards recalled successfully when they are due. **This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.** The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming. You can use ["Compute minimum recommended retention"](#compute-minimum-recommended-retention) to help you choose the value of desired retention.
+- FSRS را در بخش "FSRS" در پایین صفحه گزینه‌های دسته فعال کنید. FSRS فقط به‌صورت سراسری قابل فعال‌کردن است؛ نمی‌توانید برای بعضی پیش‌تنظیم‌ها فعالش کنید و برای بعضی خاموش.
+- مطمئن شوید همه گام‌های یادگیری و یادگیری مجدد شما کوتاه‌تر از 1d هستند و می‌توان در همان روز کاملشان کرد. 23h توصیه نمی‌شود حتی که کمتر از یک روز است، چون نمی‌توانید این گام را همان روزِ نخستین مرورتان تمام کنید. گام‌هایی مانند 10m یا 30m خوب‌اند.
+- روی دکمه "Optimize" در زیر فیلد "FSRS parameters" کلیک کنید. اگر پیامی دیدید که می‌گوید "The FSRS parameters currently appear to be optimal"، مشکلی نیست.
+- مقداری برای حفظ مطلوب انتخاب کنید: نسبت کارت‌هایی که هنگام سررسید با موفقیت یادآوری می‌شوند. **این مهم‌ترین تنظیم FSRS است. حفظ بالاتر به فاصله‌های کوتاه‌تر و مرورهای بیشتر در روز می‌انجامد.** پیش‌فرض ۹۰٪ است که توازن خوبی میان حفظ و بار کاری فراهم می‌کند. بالای ۹۰٪ بار کاری خیلی سریع زیاد می‌شود و بالای ۹۷٪ بار کاری می‌تواند غرق‌کننده باشد. می‌توانید از ["Compute minimum recommended retention"](#compute-minimum-recommended-retention) برای کمک به انتخاب مقدار حفظ مطلوب استفاده کنید.
 
-Parameters and desired retention are preset-specific, so you can create multiple presets with different settings.
+پارامترها و حفظ مطلوب مخصوص هر پیش‌تنظیم‌اند، پس می‌توانید چند پیش‌تنظیم با تنظیمات مختلف بسازید.
 
-FSRS can adapt to almost any habit, except for one: pressing "Hard" instead of "Again" when you forget the information. When you press "Hard", FSRS assumes you have recalled the information correctly (though with hesitation and a lot of mental effort). If you press "Hard" when you have failed to recall the information, all intervals will be unreasonably high. So, if you have this habit, please change it and use "Again" when you forget the information.
+FSRS می‌تواند خود را با تقریباً هر عادتی وفق دهد، جز یک مورد: زدن "Hard" به‌جای "Again" وقتی اطلاعات را فراموش می‌کنید. وقتی "Hard" را می‌زنید، FSRS فرض می‌کند اطلاعات را درست به یاد آورده‌اید (هرچند با تردید و زحمت ذهنی زیاد). اگر وقتی نتوانسته‌اید اطلاعات را به یاد بیاورید "Hard" بزنید، همه فاصله‌ها به‌طور غیرمنطقی بالا می‌روند. پس اگر چنین عادتی دارید، لطفاً آن را تغییر دهید و وقتی اطلاعات را فراموش می‌کنید از "Again" استفاده کنید.
 
-Regarding add-on compatibility, as a general rule of thumb, if an add-on affects intervals and scheduling in some way, it shouldn't be used with FSRS.
+درباره سازگاری افزونه‌ها، به‌عنوان قاعده سرانگشتی، اگر افزونه‌ای به نحوی بر فاصله‌ها و زمان‌بندی اثر بگذارد، نباید با FSRS استفاده شود.
 
-### Desired Retention
+### حفظ مطلوب {#desired-retention}
 
-Desired retention controls how likely you are to remember cards when they are scheduled for a review.
-The default value of 90% will schedule cards so you have a 90% chance of
-remembering them when they come up for review again. This should normally
-translate to remembering around 90% cards when they are reviewed, and only
-failing around 10%.
+حفظ مطلوب کنترل می‌کند چقدر محتمل است کارت‌ها را به یاد بیاورید وقتی برای مرور زمان‌بندی شده‌اند.
+مقدار پیش‌فرض ۹۰٪ کارت‌ها را طوری زمان‌بندی می‌کند که شانس ۹۰٪ داشته باشید وقتی دوباره برای مرور می‌آیند به یادشان بیاورید. این معمولاً به یادآوری حدود ۹۰٪ کارت‌ها هنگام مرور و شکست فقط حدود ۱۰٪ ترجمه می‌شود.
 
-Here is a graph that shows how adjusting desired retention will affect your
-workload:
+در اینجا نموداری هست که نشان می‌دهد تنظیم حفظ مطلوب چگونه بر بار کاری‌تان اثر می‌گذارد:
 
-![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
+![نموداری که نشان می‌دهد بار کاری با نزدیک‌شدن حفظ مطلوب به یک، به‌طور نمایی افزایش می‌یابد.](./media/FSRS_retention.png)
 
-The exact shape of the graph is different for everyone. However, the overall
-shape is more or less the same. In general, at lower desired retention you will
-have to do significantly fewer reviews per day, but you will also forget more
-cards. As desired retention approaches 100%, the workload increases drastically.
-For this reason, we suggest you be conservative when adjusting this number, 
-and recommend you keep it lower than 97%.
+شکل دقیق نمودار برای هر کس متفاوت است. با این حال، شکل کلی کم‌وبیش یکسان است. به‌طور کلی، در حفظ مطلوب پایین‌تر، مرورهای روزانه‌تان به‌طور محسوسی کمتر خواهد بود، اما کارت‌های بیشتری هم فراموش می‌کنید. وقتی حفظ مطلوب به ۱۰۰٪ نزدیک می‌شود، بار کاری به‌شدت بالا می‌رود.
+به همین دلیل پیشنهاد می‌کنیم در تنظیم این عدد محتاط باشید و توصیه می‌کنیم آن را کمتر از ۹۷٪ نگه دارید.
 
-In the latest version of Anki, you can set different values of desired retention
-for different decks within the same preset.
+در آخرین نسخه آنکی می‌توانید مقدار حفظ مطلوب متفاوتی برای دسته‌های مختلفِ درون یک پیش‌تنظیم تعیین کنید.
 
-### Help Me Decide
+### کمکم کن تصمیم بگیرم {#help-me-decide}
 
-**Help Me Decide (Experimental)** allows you to simulate workload at different
-levels of retention. In other words, you can find out what your own,
-personalized retention-workload graph looks like. This can help you choose what
-value of desired retention is the best for your needs.
+**Help Me Decide (Experimental)** به شما اجازه می‌دهد بار کاری را در سطوح مختلف حفظ شبیه‌سازی کنید. به عبارت دیگر، می‌توانید بفهمید نمودارِ حفظ-بارِکاریِ شخصیِ خودتان چه شکلی است. این می‌تواند به انتخاب مقدار حفظ مطلوبی که برای نیازهایتان بهترین است کمک کند.
 
-If you are unsure what to do with this information, you can ask yourself "How
-many reviews can I realistically do per day?" or "How many minutes can I
-realistically spend on reviews per day?", and check the corresponding workload
-graph to see what value of desired retention gives you a tolerable workload.
+اگر مطمئن نیستید با این اطلاعات چه کنید، می‌توانید از خودتان بپرسید «واقع‌بینانه چند مرور در روز می‌توانم انجام دهم؟» یا «واقع‌بینانه چند دقیقه در روز می‌توانم صرف مرور کنم؟» و نمودار بار کاری مربوط را ببینید تا معلوم شود چه مقدار حفظ مطلوبی بار کاریِ قابل‌تحملی به شما می‌دهد.
 
-Alternatively, you can check the amount of reviews/day (or time/day) at your
-*current* desired retention, then check how it will change if you change desired
-retention, and ask yourself "Do I want to study this much more to remember this
-much more?" or "Do I want to study this much less if it means remembering this
-much less?".
+همچنین می‌توانید شمار مرورها/روز (یا زمان/روز) را در حفظ مطلوبِ *فعلی* بررسی کنید، سپس ببینید با تغییر حفظ مطلوب چگونه تغییر می‌کند، و از خودتان بپرسید «می‌خواهم این‌قدر بیشتر بخوانم تا این‌قدر بیشتر به یاد بسپارم؟» یا «می‌خواهم این‌قدر کمتر بخوانم، حتی اگر یعنی این‌قدر کمتر به یاد بسپارم؟».
 
-For more information about the simulator, please read
-[this section](./deck-options.md#the-simulator).
+برای اطلاعات بیشتر درباره شبیه‌ساز، لطفاً [این بخش](./deck-options.md#the-simulator) را بخوانید.
 
-### FSRS Parameters
+### پارامترهای FSRS {#fsrs-parameters}
 
-FSRS parameters affect how cards are scheduled. Do not change the parameters manually or copy them from someone else.
+پارامترهای FSRS بر نحوه زمان‌بندی کارت‌ها اثر می‌گذارند. پارامترها را دستی تغییر ندهید یا از کس دیگر رونوشت نکنید.
 
-**Optimize FSRS Parameters**
+**Optimize FSRS Parameters** (بهینه‌سازی پارامترهای FSRS)
 
-The FSRS optimizer uses machine learning to learn your memory patterns and 
-find parameters that best fit your review history. 
-To do this, the optimizer requires several reviews to fine-tune the parameters.
+بهینه‌ساز FSRS از یادگیری ماشین برای یادگیری الگوهای حافظه شما و یافتن پارامترهایی که بهترین برازش با تاریخچه مرورتان را دارند استفاده می‌کند.
+برای این کار، بهینه‌ساز به چند مرور نیاز دارد تا پارامترها را تنظیم کند.
 
-When you click the **Optimize** button, FSRS will analyze your review history, 
-and generate parameters that are optimal for your memory and the content you're
-studying. If you have decks that vary wildly in subjective difficulty, it
-is recommended to assign them separate presets, as the parameters for easier
-decks will be different from harder decks. There is no need to optimize your
-parameters frequently: once every month is sufficient.
+وقتی دکمه **Optimize** را می‌زنید، FSRS تاریخچه مرورتان را تحلیل و پارامترهایی بهینه برای حافظه و محتوایی که می‌آموزید تولید می‌کند. اگر دسته‌هایی با تفاوت زیاد در سختی ذهنی دارید، توصیه می‌شود پیش‌تنظیم‌های جدا برای آن‌ها بگذارید، چون پارامترهای دسته‌های آسان‌تر با دسته‌های سخت‌تر متفاوت خواهد بود. نیازی به بهینه‌سازی مکرر پارامترها نیست: ماهی یک بار کافی است.
 
-By default, parameters are calculated from the review history of all
-decks using the current preset. You can optionally [adjust the search](./searching.md)
-before optimizing the parameters, if you'd like to change which cards
-are used for optimization.
+به‌طور پیش‌فرض، پارامترها از تاریخچه مرور همه دسته‌هایی که از پیش‌تنظیم فعلی استفاده می‌کنند محاسبه می‌شوند. می‌توانید در صورت تمایل [جست‌وجو را تغییر دهید](./searching.md) پیش از بهینه‌سازی پارامترها، اگر می‌خواهید کارت‌های استفاده‌شده برای بهینه‌سازی عوض شوند.
 
-You can also optimize the parameters for all of your presets at once by clicking on **Optimize All Presets**.
+همچنین می‌توانید پارامترهای همه پیش‌تنظیم‌هایتان را یک‌جا با کلیک روی **Optimize All Presets** بهینه‌سازی کنید.
 
-**Health Check**
+**Health Check** (بررسی سلامت)
 
-You can enable **Check health when optimizing (slow)** to check how well FSRS
-can adapt to your review history. Some common reasons why FSRS may not perform
-well:
-- Low number of reviews (less than a few hundred). As a machine learning
-algorithm, FSRS needs data to learn from.
-- [Hard misuse](https://docs.ankiweb.net/studying.html#answer-buttons). Hard
-should **not** be used when you forgot the answer; it is a passing grade, not a
-failing grade.
-- Not using Again when you forgot the answer. Anki assumes that if you forgo
-the answer, you will press Again, and if you recalled it, you will press
-Hard/Good/Easy.
+می‌توانید **Check health when optimizing (slow)** را فعال کنید تا بررسی شود FSRS چقدر می‌تواند خود را با تاریخچه مرورتان وفق دهد. برخی دلایل رایج اینکه FSRS ممکن است خوب عمل نکند:
+- شمار کم مرورها (کمتر از چند صد). FSRS به‌عنوان الگوریتم یادگیری ماشین برای یادگیری به داده نیاز دارد.
+- [سوءاستفاده از Hard](https://docs.ankiweb.net/studying.html#answer-buttons). Hard وقتی پاسخ را فراموش کرده‌اید **نباید** به‌کار رود؛ نمره قبولی است، نه نمره شکست.
+- استفاده نکردن از Again وقتی پاسخ را فراموش می‌کنید. آنکی فرض می‌کند اگر پاسخ را رها کرده‌اید Again می‌زنید و اگر به یاد آورده‌اید، Hard/Good/Easy.
 
-### Reschedule Cards on Change
+### زمان‌بندی دوباره کارت‌ها هنگام تغییر {#reschedule-cards-on-change}
 
-This option controls whether the due dates of cards will be changed when you
-enable FSRS, change desired retention, or change the parameters. The default is
-not to reschedule cards: future reviews will use the new scheduling, but there
-will be no immediate change to your workload. If rescheduling is enabled, the
-due dates of cards will be changed. Depending on your desired retention, it will
-often result in a large number of cards becoming due, so **this option is not
-recommended** when first switching from SM-2.
+این گزینه کنترل می‌کند آیا تاریخ سررسید کارت‌ها هنگام فعال‌کردن FSRS، تغییر حفظ مطلوب یا تغییر پارامترها تغییر کند یا نه. پیش‌فرض، زمان‌بندی دوباره کارت‌هاست: مرورهای آینده از زمان‌بندی جدید استفاده می‌کنند، اما تغییری فوری در بار کاری شما ایجاد نمی‌شود. اگر زمان‌بندی دوباره فعال باشد، تاریخ سررسید کارت‌ها تغییر می‌کند. بسته به حفظ مطلوب شما، این اغلب به سررسید شدن شمار زیادی کارت می‌انجامد؛ پس **این گزینه هنگام نخستین جابه‌جایی از SM-2 توصیه نمی‌شود**.
 
-Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
+از این گزینه به‌صورت محدود استفاده کنید، چون به هر کارت شما یک ورودی مرور می‌افزاید و اندازه مجموعه‌تان را بزرگ می‌کند.
 
-If you're first switching from SM-2 and still wish to use this option, we
-recommend you first create a backup, enable FSRS with rescheduling, and then if
-needed, you can undo or restore from the backup.
+اگر برای نخستین‌بار از SM-2 می‌آیید و همچنان می‌خواهید از این گزینه استفاده کنید، توصیه می‌کنیم ابتدا یک نسخه پشتیبان بسازید، FSRS را با زمان‌بندی دوباره فعال کنید و سپس در صورت نیاز، واگرد کنید یا از پشتیبان بازگردانی کنید.
 
 ### Compute Minimum Recommended Retention (<25.07) {#compute-minimum-recommended-retention}
 
-> ***Removed Feature***
+> ***قابلیت حذف‌شده***
 >
-> This feature has been removed as of anki version 25.07
+> این قابلیت از نسخه 25.07 آنکی حذف شده است
 
-Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learned, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.
+Compute minimum recommended retention (CMRR) می‌کوشد مقدار حفظ مطلوبی را بیابد که به بیشترین مطلبِ آموخته‌شده در کمترین زمان می‌انجامد. عدد محاسبه‌شده می‌تواند به‌عنوان مرجعی برای تصمیم درباره مقدار حفظ مطلوبتان باشد. شاید حفظ مطلوب بالاتری را برگزینید، اگر حاضر باشید وقت مطالعه بیشتری را با نرخ حفظ بیشتر معامله کنید. اما تنظیم حفظ مطلوب کمتر از حداقل توصیه نمی‌شود، چون به‌دلیل فراموشی بیشتر، بیش از لازم وقت مطالعه خواهید گذاشت.
 
-### The Simulator
+### شبیه‌ساز {#the-simulator}
 
-You can use the simulator to get an estimate of your workload,
-either in reviews per day or in minutes of studying per day.
+می‌توانید از شبیه‌ساز برای برآورد بار کاری‌تان استفاده کنید؛ چه بر حسب مرور در روز و چه بر حسب دقیقه مطالعه در روز.
 
-- **Days to simulate** controls the duration of the simulated study history.
-- **Additional new cards to simulate** controls whether the simulator should
-  simulate more cards than this preset already has. For example, if you currently have 100 cards under this preset,
-  and you set **Additional new cards to simulate** to 50, the simulator will simulate a total of 150 cards.
-  This can be useful if you plan to create more new cards in the future.
-- **New cards/day** and **Maximum reviews/day** control how many new cards will be learned each day and
-  the maximum number of reviews per day.
-- **Maximum interval** controls the maximum interval length (in days).
+- **Days to simulate** (روزهای شبیه‌سازی) مدت تاریخچه مطالعه شبیه‌سازی‌شده را کنترل می‌کند.
+- **Additional new cards to simulate** (کارت‌های جدید اضافی برای شبیه‌سازی) کنترل می‌کند شبیه‌ساز کارت‌های بیشتری از آنچه این پیش‌تنظیم دارد شبیه‌سازی کند یا نه. مثلاً اگر در حال حاضر ۱۰۰ کارت زیر این پیش‌تنظیم دارید و **Additional new cards to simulate** را روی ۵۰ بگذارید، شبیه‌ساز در مجموع ۱۵۰ کارت را شبیه‌سازی می‌کند.
+  این می‌تواند سودمند باشد اگر برنامه دارید در آینده کارت‌های جدید بیشتری بسازید.
+- **New cards/day** و **Maximum reviews/day** کنترل می‌کنند هر روز چند کارت جدید آموخته شود و بیشینه شمار مرور در روز چقدر باشد.
+- **Maximum interval** بیشینه طول فاصله (بر حسب روز) را کنترل می‌کند.
 
-To make the simulation as realistic as possible, the simulator takes into account the real memory states (difficulty, stability, retrievability) of your cards.
-It also uses your FSRS parameters and the value of desired retention, therefore changing them will affect the simulation.
+برای واقعی‌ترین شدن شبیه‌سازی، شبیه‌ساز حالت‌های حافظه واقعی (دشواری، پایداری، بازیابی‌پذیری) کارت‌هایتان را در نظر می‌گیرد.
+همچنین از پارامترهای FSRS و مقدار حفظ مطلوب شما استفاده می‌کند؛ پس تغییر آن‌ها بر شبیه‌سازی اثر می‌گذارد.
 
-#### Learning and Relearning Steps
+#### گام‌های یادگیری و یادگیری مجدد {#learning-and-relearning-steps}
 
-(Re)learning steps of 1 day or greater are not recommended when using FSRS. The main
-reason they were popular with the legacy SM-2 algorithm is because repeatedly
-failing a card after it has graduated from the learning phase could reduce
-its ease a lot, leading to what some people called "ease hell". This is not
-a problem that FSRS suffers from. By keeping your learning steps under a
-day, you will allow FSRS to schedule cards at times it has calculated are
-optimal for your material and memory. Another reason not to use longer
-learning steps is because FSRS may end up scheduling the first review for a
-shorter time than your last learning step, leading to the **Hard** button
-showing a longer time than **Good**.
+گام‌های (یادگیری مجددِ) یک روز یا بیشتر هنگام استفاده از FSRS توصیه نمی‌شوند. دلیل اصلی محبوبیت‌شان با الگوریتم قدیمی SM-2 این بود که شکست مکرر کارت پس از فارغ‌التحصیلی از مرحله یادگیری می‌توانست سهولتش را زیاد کاهش دهد و به چیزی که برخی «جهنم سهولت» (ease hell) می‌نامیدند بینجامد. این مشکلی نیست که FSRS با آن روبه‌رو باشد. با کوتاه‌نگه‌داشتن گام‌های یادگیری زیر یک روز، به FSRS اجازه می‌دهید کارت‌ها را در زمان‌هایی که برای ماده و حافظه‌تان بهینه محاسبه کرده زمان‌بندی کند. دلیل دیگرِ استفاده نکردن از گام‌های یادگیری طولانی‌تر این است که FSRS ممکن است نخستین مرور را برای زمانی کوتاه‌تر از آخرین گام یادگیری‌تان زمان‌بندی کند و این به نمایش زمانی طولانی‌تر از **Good** توسط دکمه **Hard** بینجامد.
 
-We also recommend you keep the number of learning steps to a minimum. Evidence
-shows that repeating a card multiple times in a single day does not significantly
-contribute to long-term memory, so your time is
-better spent on other cards or a shorter study session.
+همچنین توصیه می‌کنیم شمار گام‌های یادگیری را در حداقل نگه دارید. شواهد نشان می‌دهد تکرار چندباره یک کارت در یک روز به حافظه بلندمدت سهم چشمگیری نمی‌افزاید؛ پس وقت شما بهتر است صرف کارت‌های دیگر یا جلسه مطالعه کوتاه‌تر شود.
 
-In the latest version of Anki you can let FSRS control short-term scheduling by leaving the (re)learning steps field empty. This is an experimental feature.
-Note that just because FSRS-5 _can_ give you intervals shorter than one day doesn't necessarily mean that it _will_. Your **Again** interval can be one day long, or even longer.
+در آخرین نسخه آنکی می‌توانید با خالی‌گذاشتن فیلد گام‌های (یادگیری مجدد)، زمان‌بندی کوتاه‌مدت را به FSRS بسپارید. این قابلیتی آزمایشی است.
+توجه کنید صرف اینکه FSRS-5 _می‌تواند_ فاصله‌های کوتاه‌تر از یک روز بدهد، لزوماً به این معنا نیست که _می‌دهد_. فاصله **Again** شما می‌تواند یک روز یا حتی بیشتر باشد.
 
-#### Add-On Compatibility
+#### سازگاری افزونه‌ها {#add-on-compatibility}
 
-Some add-ons can cause conflicts with FSRS. As a general rule of thumb,
-if an add-on affects a card's intervals, it shouldn't be used with FSRS.
-A list of commonly used add-ons and their FSRS compatibility can be found in [Add-on Compatibility](https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility).
+بعضی افزونه‌ها می‌توانند با FSRS ناسازگاری ایجاد کنند. به‌عنوان قاعده سرانگشتی، اگر افزونه‌ای بر فاصله‌های کارت اثر بگذارد، نباید با FSRS استفاده شود.
+فهرست افزونه‌های پرکاربرد و سازگاری FSRS آن‌ها در [Add-on Compatibility](https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility) موجود است.
 
-#### More
+#### بیشتر {#more}
 
-Several frequently asked questions about FSRS have been answered in [its FAQ](https://faqs.ankiweb.net/frequently-asked-questions-about-fsrs.html).
+چند پرسش متداول درباره FSRS در [پرسش‌های متداول آن](https://faqs.ankiweb.net/frequently-asked-questions-about-fsrs.html) پاسخ داده شده‌اند.
 
-For more info on FSRS, check:
+برای اطلاعات بیشتر درباره FSRS، این‌ها را ببینید:
 
 - [FSRS4Anki Wiki](https://github.com/open-spaced-repetition/fsrs4anki/wiki)
-- [FSRS4Anki on Github](https://github.com/open-spaced-repetition/fsrs4anki)
+- [FSRS4Anki در گیت‌هاب](https://github.com/open-spaced-repetition/fsrs4anki)
 
-## Advanced
+## پیشرفته {#advanced}
 
-### Maximum Interval
+### بیشینه فاصله {#maximum-interval}
 
-The maximum number of days a review card will wait before it's shown again. When reviews have reached the limit, **Hard**, **Good** and **Easy** will all give the same delay. The shorter you set this, the greater your workload will be. The default is 100 years; you can decrease this to a smaller number if you’re willing to trade extra study time for higher retention.
+بیشینه شمار روزهایی که کارت مروری پیش از نمایش دوباره صبر می‌کند. وقتی مرورها به این حد رسیده باشند، **Hard**، **Good** و **Easy** همه تأخیر یکسانی می‌دهند. هرچه این را کوتاه‌تر تنظیم کنید، بار کاری‌تان بیشتر خواهد بود. پیش‌فرض ۱۰۰ سال است؛ اگر حاضرید وقت مطالعه اضافی را با حفظ بالاتر معامله کنید، می‌توانید آن را به عدد کوچک‌تری کاهش دهید.
 
-### Historical Retention
+### حفظ تاریخی {#historical-retention}
 
-This setting is hidden unless FSRS is turned on.
+این تنظیم پنهان است مگر آنکه FSRS روشن باشد.
 
-When some of your review history is missing, FSRS needs to fill in the gaps. By default, it will assume that when you did those old reviews, you remembered 90% of the material. If your old retention was appreciably higher or lower than 90%, adjusting this option will allow FSRS to better approximate the missing reviews.
+وقتی بخشی از تاریخچه مرور شما غایب است، FSRS باید جای خالی‌ها را پر کند. به‌طور پیش‌فرض فرض می‌کند هنگام انجام آن مرورهای قدیمی، ۹۰٪ مطالب را به یاد داشته‌اید. اگر حفظ قدیمی‌تان به‌طور محسوسی بیشتر یا کمتر از ۹۰٪ بوده، تنظیم این گزینه به FSRS اجازه می‌دهد مرورهای غایب را بهتر تقریب بزند.
 
-Your review history may be incomplete for two reasons:
+تاریخچه مرور شما ممکن است به دو دلیل ناقص باشد:
 
-- Because you're using the **Ignore cards reviewed before** option.
-- Because you previously deleted review logs to free up space, or imported material from a different SRS program.
+- به‌دلیل استفاده از گزینه **Ignore cards reviewed before**.
+- به این دلیل که قبلاً گزارش‌های مرور را برای آزادکردن فضا حذف کرده‌اید، یا مطلبی را از برنامه SRS دیگری درون‌ریزی کرده‌اید.
 
-The latter is quite rare, so unless you're using the former option, you probably don't need to adjust this setting.
+دومی بسیار نادر است؛ پس مگر آنکه از گزینه اول استفاده می‌کنید، احتمالاً نیازی به تنظیم این گزینه ندارید.
 
-### Ignore Cards Reviewed Before
+### نادیده‌گرفتن کارت‌های مرورشده قبل از {#ignore-cards-reviewed-before}
 
-If set, cards reviewed before the provided date will be ignored when optimizing FSRS parameters. This can be useful if you imported someone else's scheduling data, or have changed the way you use the answer buttons.
+در صورت تنظیم، کارت‌هایی که پیش از تاریخ داده شده مرور شده‌اند هنگام بهینه‌سازی پارامترهای FSRS نادیده گرفته می‌شوند. این می‌تواند سودمند باشد اگر داده‌های زمان‌بندی شخص دیگری را درون‌ریزی کرده‌اید، یا شیوه استفاده‌تان از دکمه‌های پاسخ را تغییر داده‌اید.
 
-### Starting Ease
+### سهولت آغازین {#starting-ease}
 
-Controls the ease that cards start out with. It is
-set when a card graduates from learning for the first time. It defaults
-to 2.50, meaning that once you have finished learning a card, answering
-**Good** on subsequent reviews will increase the delay by approximately
-2.5x (e.g. if the last delay was 10 days, the next delay would be around 25
-days). Based upon how you rate the card in subsequent reviews, the
-ease may increase or decrease from its starting value.
+سهولتی را کنترل می‌کند که کارت‌ها با آن شروع می‌کنند. هنگامی تنظیم می‌شود که کارت برای نخستین‌بار از یادگیری فارغ‌التحصیل شود. پیش‌فرض ۲٫۵۰ است؛ یعنی وقتی یادگیری کارتی را تمام کردید، پاسخ **Good** در مرورهای بعدی تأخیر را تقریباً ۲٫۵ برابر می‌کند (مثلاً اگر آخرین تأخیر ۱۰ روز بود، تأخیر بعدی حدود ۲۵ روز می‌شود). بر اساس نمره‌ای که در مرورهای بعدی به کارت می‌دهید، سهولت ممکن است از مقدار آغازینش بالا یا پایین برود.
 
-### Easy Bonus
+### پاداش آسان {#easy-bonus}
 
-An extra multiplier applied to the interval when a review card is answered
-**Easy**. With the default value of 1.30, **Easy** will give an interval that is
-1.3 times the Good interval (e.g. if the Good interval was 10 days, the Easy
-interval would be around 13 days).
+ضریب اضافه‌ای که هنگام **Easy** پاسخ‌دادن به کارت مروری بر فاصله اعمال می‌شود. با مقدار پیش‌فرض ۱٫۳۰، **Easy** فاصله‌ای ۱٫۳ برابرِ فاصله Good می‌دهد (مثلاً اگر فاصله Good ده روز بود، فاصله Easy حدود ۱۳ روز می‌شود).
 
-### Interval Modifier
+### اصلاح‌گر فاصله {#interval-modifier}
 
-An extra multiplier that is applied to all reviews. At its default of 1.00 it
-does nothing. If you set it to 0.80, intervals will be generated at
-80% of their normal size (so a 10 day interval would become 8 days).
-You can thus use the multiplier to make your reviews less or more frequent.
+ضریب اضافه‌ای که بر همه مرورها اعمال می‌شود. در مقدار پیش‌فرض ۱٫۰۰ کاری نمی‌کند. اگر آن را روی ۰٫۸۰ بگذارید، فاصله‌ها در ۸۰٪ اندازه عادی‌شان تولید می‌شوند (پس فاصله ۱۰ روزه‌ای ۸ روز می‌شود). بنابراین می‌توانید از این ضریب برای کمتر یا بیشترکردن تناوب مرورهایتان استفاده کنید.
 
-For moderately difficult material, the average user should find they
-remember approximately 90% of mature cards when they come up for review. You
-can find out your own performance by opening the graphs/statistics for a
-deck and looking at the Answer Buttons graph - mature retention is the
-correct% on the right side of the graph. If you haven’t been studying for
-long, you may not have any mature cards yet. As performance with new
-cards and younger cards can vary considerably, it’s a good idea to wait
-until you have a reasonable amount of mature reviews before you start
-drawing conclusions about your retention rate.
+برای مطالب متوسط‌سخت، کاربر معمولی باید انتظار داشته باشد حدود ۹۰٪ کارت‌های بالغ را هنگام مرور به یاد بیاورد. می‌توانید عملکرد خودتان را با باز کردن نمودارها/آمار یک دسته و نگاه به نمودار Answer Buttons بیابید — حفظ بالغ‌ها همان درصد صحیحِ سمت راست نمودار است. اگر مدت زیادی مشغول مطالعه نبوده‌اید، ممکن است هنوز کارت بالغی نداشته باشید. چون عملکرد با کارت‌های جدید و نابالغ می‌تواند بسیار متغیر باشد، ایده خوبی است صبر کنید تا مقدار معقولی مرور بالغ داشته باشید، پیش از آنکه درباره نرخ حفظ‌تان نتیجه‌گیری کنید.
 
-On the SuperMemo website, they suggest that you can find an appropriate
-multiplier for a desired retention rate. Their formula boils down to:
+در وب‌سایت SuperMemo پیشنهاد می‌کنند می‌توانید ضریب مناسبی برای نرخ حفظ مطلوب بیابید. فرمول آن‌ها به این فرو می‌کاهد:
 
     log(desired retention%) / log(current retention%)
 
-Imagine we have a current retention rate of 85% and we want to increase
-it to 90%. We’d calculate the modifier as:
+تصور کنید نرخ حفظ فعلی ۸۵٪ داریم و می‌خواهیم آن را به ۹۰٪ برسانیم. اصلاح‌گر را این‌طور محاسبه می‌کنیم:
 
     log(90%) / log(85%) = 0.65
 
-You can use any [search engine to calculate this](https://duckduckgo.com/?q=log(0.90)+%2F+log(0.85)).
+می‌توانید از هر [موتور جست‌وجویی برای محاسبه این کار](https://duckduckgo.com/?q=log(0.90)+%2F+log(0.85)) استفاده کنید.
 
-If you enter the resulting 65% into the interval modifier, you should
-find over time that your retention moves closer to your desired
-retention.
+اگر ۶۵٪ حاصل را در اصلاح‌گر فاصله وارد کنید، باید به‌مرور ببینید که حفظ‌تان به حفظ مطلوب نزدیک‌تر می‌شود.
 
-One important thing to note however is that the trade-off between time
-spent studying and retention is not linear: we can see here that to
-increase our retention by 5 percentage points, we would have to study 35%
-more frequently. If the material you are learning is very important then
-it may be worth the extra effort – that is, of course, something you will need to
-decide for yourself. If you are simply worried that you are forgetting too
-much, then you may find investing more time at the initial learning stage, or using mnemonics will give you more gain for less effort.
+اما یک نکته مهم این است که مبادله میان زمان صرف‌شده برای مطالعه و حفظ خطی نیست: اینجا می‌بینیم که برای افزایش ۵ واحد درصدی حفظ، باید ۳۵٪ مکررتر مطالعه کنیم. اگر مطلبی که می‌آموزید بسیار مهم است، شاید ارزش تلاش اضافه را داشته باشد — که البته چیزی است که خودتان باید درباره‌اش تصمیم بگیرید. اگر صرفاً نگرانید که زیاد فراموش می‌کنید، ممکن است سرمایه‌گذاری وقت بیشتر در مرحله یادگیری اولیه، یا استفاده از حافظه‌یار (mnemonic) بازدهی بیشتر با تلاش کمتر به شما بدهد.
 
-One final thing to note is that Anki forces a new interval to be at
-least 1 day longer than it was previously, so that you do not get stuck
-reviewing with the same interval forever. If your goal is to repeat a
-card once a day for multiple days, you can do that by setting more
-learning mode steps, instead of by adjusting this modifier.
+نکته پایانی اینکه آنکی فاصله جدید را مجبور می‌کند دست‌کم ۱ روز بیشتر از قبلی باشد تا برای همیشه با همان فاصله به مرور یک کارت نمانید. اگر هدفتان تکرار روزانه یک کارت برای چند روز است، می‌توانید آن را با افزودن گام‌های یادگیری بیشتر انجام دهید، نه با تنظیم این اصلاح‌گر.
 
-### Hard Interval
+### فاصله Hard {#hard-interval}
 
-The multiplier applied when you use the **Hard** button. The percentage is relative
-to the previous interval, e.g. with a default of 1.20, a card with a 10-day interval
-will be given 12 days.
+ضریبی که هنگام استفاده از دکمه **Hard** اعمال می‌شود. درصد نسبت به فاصله قبلی است؛ مثلاً با پیش‌فرض ۱٫۲۰، کارتی با فاصله ۱۰ روزه، ۱۲ روز می‌گیرد.
 
-### New Interval
+### فاصله جدید {#new-interval}
 
-The multiplier applied when you use the **Again** button on a review card. The
-default 0.00 means that a review card's delay is reset to zero when you forget it
-(which then becomes 1 day after the [minimum interval](#minimum-interval) is
-applied).
+ضریبی که هنگام زدن دکمه **Again** روی کارت مروری اعمال می‌شود. پیش‌فرض 0.00 یعنی تأخیر کارت مروری وقتی فراموشش می‌کنید به صفر بازنشانی می‌شود (که پس از اعمال [حداقل فاصله](#minimum-interval) به ۱ روز تبدیل می‌شود).
 
-If changed from the default, it is possible for forgotten cards to preserve part
-of their previous delay. For example, if a card had a 100 day interval, and you set
-the **New Interval** to 0.20, the new interval would be 20 days.
+اگر از پیش‌فرض تغییر کند، ممکن است کارت‌های فراموش‌شده بخشی از تأخیر قبلی‌شان را حفظ کنند. مثلاً اگر کارتی فاصله ۱۰۰ روزه داشت و شما **New Interval** را روی 0.20 بگذارید، فاصله جدید ۲۰ روز خواهد بود.
 
-While preserving part of the interval may seem to make sense, SuperMemo has observed
-that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.
+هرچند حفظ بخشی از فاصله ممکن است منطقی به نظر برسد، SuperMemo مشاهده کرده که حفظ بخشی از تأخیر در واقع می‌تواند [نتیجه معکوس داشته باشد](https://supermemo.guru/wiki/Post-lapse_stability). به همین دلیل، توصیه می‌کنیم روی تنظیم پیش‌فرضش بگذارید.
 
-### Custom Scheduling
+### زمان‌بندی سفارشی {#custom-scheduling}
 
-You can have more control over Anki's scheduling of cards by using your own JavaScript in the custom scheduling field. This is a global option, so code entered here applies to every preset.
+می‌توانید با استفاده از جاوااسکریپت خودتان در فیلد زمان‌بندی سفارشی، کنترل بیشتری بر زمان‌بندی کارت‌ها توسط آنکی داشته باشید. این یک گزینه سراسری است؛ پس کدی که اینجا وارد می‌شود بر همه پیش‌تنظیم‌ها اعمال می‌شود.
 
-Here is an example custom scheduling script. Note that, for Qt5 versions of Anki, the code needs to be transpiled.
+در اینجا یک نمونه کد زمان‌بندی سفارشی آمده. توجه کنید که برای نسخه‌های Qt5 آنکی، کد نیاز به ترجمه (transpile) دارد.
 
 ```javascript
 // print the existing states
@@ -712,6 +508,6 @@ if (states.good.normal?.review) {
 }
 ```
 
-You can also see [FSRS custom scheduling code](https://github.com/open-spaced-repetition/fsrs4anki/blob/main/fsrs4anki_scheduler.js) as an example.
+همچنین می‌توانید [کد زمان‌بندی سفارشی FSRS](https://github.com/open-spaced-repetition/fsrs4anki/blob/main/fsrs4anki_scheduler.js) را به‌عنوان نمونه ببینید.
 
-The various scheduling states of cards are described in [SchedulingStates](https://github.com/ankitects/anki/blob/main/proto/anki/scheduler.proto).
+حالت‌های گوناگون زمان‌بندی کارت‌ها در [SchedulingStates](https://github.com/ankitects/anki/blob/main/proto/anki/scheduler.proto) توصیف شده‌اند.

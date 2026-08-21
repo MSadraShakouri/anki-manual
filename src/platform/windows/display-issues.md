@@ -1,42 +1,34 @@
-# Windows Display Issues
+# مشکلات نمایش در ویندوز {#windows-display-issues}
 
 <!-- toc -->
 
-On Windows, there are three ways of content being displayed on screen. The
-default is _software_, which is slower, but the most compatible. There are two
-other options that are faster: _OpenGL_ and _ANGLE_. They are faster, but they
-may not work, or may cause display issues such as missing menubars, blank
-windows, and so on. Which one works best will depend on your computer.
+در ویندوز، سه راه برای نمایش محتوا روی صفحه هست. پیش‌فرض _software_ است که کندتر است اما سازگارترین. دو گزینه دیگر که سریع‌ترند: _OpenGL_ و _ANGLE_ این‌ها سریع‌ترند، اما ممکن است کار نکنند یا مشکلات نمایشی مانند نوارهای منوی گمشده، پنجره‌های خالی و غیره ایجاد کنند. اینکه کدام بهتر کار می‌کند به رایانه شما بستگی دارد.
 
 
-## Changing the Driver From the Preferences Screen
-In Anki 23.10+, you can change the graphics driver from preferences screen by
-navigating to **Tools → Preferences** and then selecting the driver from the
-dropdown menu.
+## تغییر درایور از صفحه تنظیمات {#changing-the-driver-from-the-preferences-screen}
+در آنکی 23.10+ می‌توانید درایور گرافیک را از صفحه تنظیمات با رفتن به
+**Tools → Preferences** و سپس انتخاب درایور از فهرست کشویی عوض کنید.
 
 
-## Changing the Driver From the Command Line
-If you run into display issues, you can try switching to software mode via cmd:
+## تغییر درایور از خط فرمان {#changing-the-driver-from-the-command-line}
+اگر به مشکلات نمایشی برخوردید، می‌توانید تغییر به حالت software را از طریق cmd امتحان کنید:
 
 ```bat
 echo software > %APPDATA%\Anki2\gldriver6
 ```
 
-Or you can do it via PowerShell:
+یا می‌توانید از طریق PowerShell:
 
 ```powershell
 echo software > $env:APPDATA\Anki2\gldriver6
 ```
 
-It will not print anything. You can then start Anki again.
+چیزی چاپ نمی‌کند. سپس می‌توانید آنکی را دوباره شروع کنید.
 
-To revert to the default behaviour, change `software` to `auto`, or delete that file.
+برای بازگشت به رفتار پیش‌فرض، `software` را به `auto` تغییر دهید، یا آن پرونده را حذف کنید.
 
-## Full Screen
+## تمام‌صفحه {#full-screen}
 
-Anki 2.1.50+ comes with a full screen mode, but due to various issues, it had to
-be disabled while `OpenGL` is used. Turning on software rendering as described
-above will allow the full screen option to be used, though please bear in mind
-that rendering performance may suffer.
+آنکی 2.1.50+ با حالت تمام‌صفحه می‌آید، اما به‌دلیل مشکلات گوناگون، هنگام استفاده از `OpenGL` باید غیرفعال می‌شد. روشن‌کردن رندر نرم‌افزاری همان‌طور که در بالا توضیح داده شد اجازه استفاده از گزینه تمام‌صفحه را می‌دهد، البته در نظر داشته باشید که کارایی رندر ممکن است افت کند.
 
-In Anki 23.10+, full screen mode is supported with the default Direct3D driver.
+در آنکی 23.10+، حالت تمام‌صفحه با درایور پیش‌فرض Direct3D پشتیبانی می‌شود.

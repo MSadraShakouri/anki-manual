@@ -1,116 +1,83 @@
-# Exporting
+# برون‌بری {#exporting}
 
 <!-- toc -->
 
-Exporting allows you to save part of your collection as a text file or
-packaged Anki deck. To export, click the File menu and choose **Export**.
+برون‌بری به شما اجازه می‌دهد بخشی از مجموعه‌تان را به‌صورت پرونده متنی یا دسته بسته‌بندی‌شدهٔ آنکی ذخیره کنید. برای برون‌بری، منوی File را کلیک و **Export** را انتخاب کنید.
 
-## Text Files
+## پرونده‌های متنی {#text-files}
 
-If you choose "Notes in Plain Text", Anki will write the contents of the
-notes into a text file. Each field is separated by a tab. If you edit
-the resulting file and don't modify the first field, you can later
-import that file back into Anki and Anki will update your notes based on
-your edits, provided you import back into the same note type.
+اگر "Notes in Plain Text" را انتخاب کنید، آنکی محتوای یادداشت‌ها را در پرونده متنی می‌نویسد. هر فیلد با یک تب جدا می‌شود. اگر پرونده حاصل را ویرایش کنید و فیلد اول را تغییر ندهید، بعداً می‌توانید آن پرونده را به آنکی درون‌ریزی کنید و آنکی یادداشت‌هایتان را بر اساس ویرایش‌هایتان به‌روزرسانی می‌کند، به‌شرط آنکه درون‌ریزی را به همان نوع یادداشت انجام دهید.
 
-If you find yourself needing to edit the first field as well, you'll
-need to change the format of your note type so that the first field is
-an ID number rather than actual text. (You can install
-the [Add note id](https://ankiweb.net/shared/info/8897764)
-add-on to make this easier.)
+اگر دیدید لازم است فیلد اول را هم ویرایش کنید، باید قالب نوع یادداشت‌تان را طوری تغییر دهید که فیلد اول شماره شناسه باشد نه متن واقعی. (می‌توانید برای آسان‌تر شدن این کار افزونه [Add note id](https://ankiweb.net/shared/info/8897764) را نصب کنید.)
 
-In order for formatting to be preserved when you import text back in,
-the text is exported with all the HTML formatting embedded in it.
+برای اینکه قالب‌بندی هنگام درون‌ریزی مجدد متن حفظ شود، متن با همه قالب‌بندی HTML تعبیه‌شده در آن برون‌بری می‌شود.
 
-## Packaged Decks
+## دسته‌های بسته‌بندی‌شده {#packaged-decks}
 
-A "packaged deck" consists of cards, notes, note types, and any sounds or
-images bundled up into a file ending with .apkg or .colpkg. You can use
-packaged decks to transfer cards between people, or for backing up parts
-of your collection.
+یک «دسته بسته‌بندی‌شده» از کارت‌ها، یادداشت‌ها، انواع یادداشت و هر صدا یا تصویری تشکیل شده که در پرونده‌ای با پسوند .apkg یا .colpkg بسته‌بندی شده‌اند. می‌توانید از دسته‌های بسته‌بندی‌شده برای انتقال کارت‌ها میان افراد، یا برای پشتیبان‌گرفتن از بخش‌هایی از مجموعه‌تان استفاده کنید.
 
-There are two different kinds of packaged decks.
+دو نوع متفاوت دسته بسته‌بندی‌شده وجود دارد.
 
-### Collection (.colpkg)
+### مجموعه (.colpkg) {#collection-colpkg}
 
-`.colpkg` stands for "Anki Collection Package". Exporting it will export your
-entire collection. The collection contains all decks with scheduling included.
-You can use the collection package to back up your collection, or copy it to
-another device.
+`.colpkg` مخفف "Anki Collection Package" (بسته مجموعه آنکی) است. برون‌بری آن، کل مجموعه‌تان را برون‌بری می‌کند. مجموعه شامل همه دسته‌ها همراه با زمان‌بندی است.
+می‌توانید از بسته مجموعه برای پشتیبان‌گرفتن از مجموعه‌تان، یا رونوشت‌کردن آن روی دستگاهی دیگر استفاده کنید.
 
 ```admonish info
-Collection packages created with previous versions of Anki were called
-`collection.apkg`.
+بسته‌های مجموعه‌ای که با نسخه‌های قبلی آنکی ساخته شده بودند `collection.apkg` نامیده می‌شدند.
 ```
 
-#### What Happens on Import?
+#### هنگام درون‌ریزی چه می‌شود؟ {#what-happens-on-import}
 
-If you import a `.colpkg` file, then all of your current cards in Anki will be
-deleted and replaced by the cards from the `.colpkg` file. This is useful for
-copying your collection back and forth between devices.
+اگر پرونده `.colpkg` را درون‌ریزی کنید، همه کارت‌های فعلی‌تان در آنکی حذف و با کارت‌های پرونده `.colpkg` جایگزین می‌شوند. این برای رونوشت‌برداری رفت‌وبرگشتی مجموعه‌تان میان دستگاه‌ها سودمند است.
 
-Existing media in your collection is not deleted when you import a
-collection package. To delete unused media, use **Tools > Check Media**.
+رسانه‌های موجود در مجموعه‌تان هنگام درون‌ریزی بسته مجموعه حذف نمی‌شوند. برای حذف رسانه‌های بلااستفاده، از **Tools > Check Media** استفاده کنید.
 
-#### Export Options
+#### گزینه‌های برون‌بری {#export-options}
 
-##### Include Media
-If true, local media will be included.
-If false, the `.colpkg` will not contain any audio, images or other media.
+##### شامل رسانه‌ها {#include-media}
+در صورت فعال‌بودن، رسانه‌های محلی شامل می‌شوند.
+در صورت غیرفعال‌بودن، پرونده `.colpkg` هیچ صدا، تصویر یا رسانه دیگری نخواهد داشت.
 
-##### Support older Anki versions (slower/larger files)
-If true, a legacy version of the file is created. Turn this on if you need to
-support older clients.
-If false, a modern version of the file is created. Imports and exports will be
-faster, and media files will be compressed, but the resulting file will not be
-readable by older Anki clients.
+##### پشتیبانی از نسخه‌های قدیمی‌تر آنکی (کندتر/پرونده‌های بزرگ‌تر) {#support-older-anki-versions-slowerlarger-files}
+در صورت فعال‌بودن، نسخه قدیمی (legacy) پرونده ساخته می‌شود. اگر نیاز به پشتیبانی کلاینت‌های قدیمی‌تر دارید روشنش کنید.
+در صورت غیرفعال‌بودن، نسخه مدرن پرونده ساخته می‌شود. درون‌ریزی و برون‌بری سریع‌تر خواهد بود و پرونده‌های رسانه فشرده می‌شوند، اما پرونده حاصل توسط کلاینت‌های قدیمی‌تر آنکی خوانا نخواهد بود.
 
-### Deck (.apkg)
+### دسته (.apkg) {#deck-apkg}
 
-`.apkg` stands for "Anki Deck Package". You can use it to export a single deck
-(and any child decks it may have).
+`.apkg` مخفف "Anki Deck Package" (بسته دسته آنکی) است. می‌توانید از آن برای برون‌بری یک دسته (و هر دسته فرزندی که ممکن است داشته باشد) استفاده کنید.
 
 ```admonish note
-If the filename is `collection.apkg`, then it is a collection package instead.
-All other filenames ending with `.apkg` are deck packages.
+اگر نام پرونده `collection.apkg` باشد، پس آن یک بسته مجموعه است.
+همه نام‌های دیگر پرونده با پسوند `.apkg` بسته دسته‌اند.
 ```
 
-#### What Happens on Import?
+#### هنگام درون‌ریزی چه می‌شود؟ {#what-happens-on-import-1}
 
-When you import a deck package, Anki will add the contents into your collection,
-rather than overwriting your collection.
+وقتی بسته دسته را درون‌ریزی می‌کنید، آنکی محتوا را به مجموعه‌تان می‌افزاید، به‌جای اینکه مجموعه‌تان را بازنویسی کند.
 
-If some notes in the deck package have previously been imported, Anki
-will keep the version with the most recent modification time.
+اگر بعضی یادداشت‌های بسته دسته قبلاً درون‌ریزی شده باشند، آنکی نسخه‌ای را که جدیدترین زمان تغییر را دارد نگه می‌دارد.
 
 ```admonish example
-You have a deck with the name _Biology_ and use it in Anki. You now download an
-updated version of that same deck. If you import the updated deck, then Anki
-will incorporate all the edits into your own Anki collection.
+دسته‌ای با نام _زیست‌شناسی_ دارید و از آن در آنکی استفاده می‌کنید. اکنون نسخه به‌روزشده همان دسته را دانلود می‌کنید. اگر دسته به‌روزشده را درون‌ریزی کنید، آنکی همه ویرایش‌ها را در مجموعه آنکی خودتان جای می‌دهد.
 
-If you re-import an unchanged `.apkg` after making changes in your own
-collection (e.g. editing cards), then Anki will keep the changes in your
-collection instead of overwriting them.
+اگر پس از تغییراتی در مجموعه خودتان (مثلاً ویرایش کارت‌ها) یک `.apkg` تغییرنکرده را دوباره درون‌ریزی کنید، آنکی تغییرات مجموعه شما را به‌جای بازنویسی، نگه می‌دارد.
 ```
 
-#### Export Options
+#### گزینه‌های برون‌بری {#export-options-1}
 
-##### Include Scheduling Information
-If true, scheduling information such as your review history will be exported.
-If false, Anki will assume that you are sharing the deck with other people, and
-will remove the entire scheduling information, including marked and leech tags.
-That way users will have a clean copy of your deck.
+##### شامل اطلاعات زمان‌بندی {#include-scheduling-information}
+در صورت فعال‌بودن، اطلاعات زمان‌بندی مانند تاریخچه مرورتان برون‌بری می‌شود.
+در صورت غیرفعال‌بودن، آنکی فرض می‌کند که دسته را با دیگران به اشتراک می‌گذارید و کل اطلاعات زمان‌بندی — از جمله برچسب‌های marked و leech — را حذف می‌کند.
+به این ترتیب کاربران رونوشتی تمیز از دسته شما خواهند داشت.
 
-##### Include Deck Presets
-If true, deck presets will be included.
+##### شامل پیش‌تنظیم‌های دسته {#include-deck-presets}
+در صورت فعال‌بودن، پیش‌تنظیم‌های دسته شامل می‌شوند.
 
-##### Include Media
-If true, local media will be included.
-If false, the `.apkg` will not contain any audio, images or other media.
+##### شامل رسانه‌ها {#include-media-1}
+در صورت فعال‌بودن، رسانه‌های محلی شامل می‌شوند.
+در صورت غیرفعال‌بودن، پرونده `.apkg` هیچ صدا، تصویر یا رسانه دیگری نخواهد داشت.
 
-##### Support older Anki versions (slower/larger files)
-If true, a legacy version of the file is created. Turn this on if you need to
-support older clients.
-If false, a modern version of the file is created. Imports and exports will be
-faster, and media files will be compressed, but the resulting file will not be
-readable by older Anki clients.
+##### پشتیبانی از نسخه‌های قدیمی‌تر آنکی (کندتر/پرونده‌های بزرگ‌تر) {#support-older-anki-versions-slowerlarger-files-1}
+در صورت فعال‌بودن، نسخه قدیمی (legacy) پرونده ساخته می‌شود. اگر نیاز به پشتیبانی کلاینت‌های قدیمی‌تر دارید روشنش کنید.
+در صورت غیرفعال‌بودن، نسخه مدرن پرونده ساخته می‌شود. درون‌ریزی و برون‌بری سریع‌تر خواهد بود و پرونده‌های رسانه فشرده می‌شوند، اما پرونده حاصل توسط کلاینت‌های قدیمی‌تر آنکی خوانا نخواهد بود.

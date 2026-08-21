@@ -1,315 +1,230 @@
-# Browsing
+# مرورگر {#browsing}
 
 <!-- toc -->
 
-The Browse window allows you to search through your cards and notes, and edit
-them. It is opened by clicking **Browse** in the main window, or by pressing
-<kbd>B</kbd>. It is comprised of three sections: the _sidebar_ on the
-left, the _card/note table_ on the top right, and the _editing area_ on the bottom
-right. By positioning the mouse between two sections, it is possible to click
-and drag to expand one section and shrink the other.
+پنجره مرورگر (Browse) به شما اجازه می‌دهد در کارت‌ها و یادداشت‌هایتان جست‌وجو کنید و آن‌ها را ویرایش کنید. این پنجره با کلیک روی **Browse** در پنجره اصلی، یا با فشردن <kbd>B</kbd> باز می‌شود. از سه بخش تشکیل شده است: _نوار کناری_ در چپ، _جدول کارت/یادداشت_ در بالا-راست و _ناحیه ویرایش_ در پایین-راست. با قراردادن ماوس میان دو بخش، می‌توان کلیک و کشید تا یک بخش بزرگ و بخش دیگر کوچک شود.
 
-## Table Modes
+## حالت‌های جدول {#table-modes}
 
-![Table Modes](media/browser_table_modes.png)
+![حالت‌های جدول](media/browser_table_modes.png)
 
-Anki 2.1.45+ offers two modes: either cards or notes are shown in the data table.
-You can change the current mode by clicking the switch at the top, to the left
-of the search area, or pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> or
-<kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>T</kbd>. The switch also indicates if **C**ards
-or **N**otes are currently shown.
+آنکی 2.1.45+ دو حالت فراهم می‌کند: در جدول داده، یا کارت‌ها نشان داده می‌شوند یا یادداشت‌ها.
+می‌توانید حالت فعلی را با کلیک روی کلید تغییر حالت در بالا، سمت چپ ناحیه جست‌وجو عوض کنید، یا با فشردن <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> یا
+<kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>T</kbd>. کلید تغییر حالت همچنین نشان می‌دهد الان **C**ards (کارت‌ها) نشان داده می‌شوند یا **N**otes (یادداشت‌ها).
 
-**Note**: For the sake of simplicity, this manual generally assumes the Cards
-mode to be the active one. Whenever selecting/finding/etc. "cards" is mentioned,
-the reader may substitute it for "cards or notes depending on the active mode".
+**نکته**: برای سادگی، این راهنما عموماً فرض می‌کند حالت Cards فعال است. هر جا از انتخاب/یافتن/… «کارت‌ها» گفتیم، خواننده می‌تواند به‌جای آن «کارت‌ها یا یادداشت‌ها بسته به حالت فعال» بگذارد.
 
-## Sidebar
+## نوار کناری {#sidebar}
 
-The _sidebar_ on the left allows quick access to common search terms. On Anki
-2.1.45+, it also provides a searchbar, facilities to edit tags and decks, and a
-choice of two different tools, which are discussed in the following sections.
-You can switch tools using the toolbar at the top of the sidebar or the shortcuts
-<kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd>.
+_نوار کناری_ در چپ، دسترسی سریع به عبارت‌های جست‌وجوی رایج را فراهم می‌کند. در آنکی 2.1.45+، نوار جست‌وجو، امکانات ویرایش برچسب‌ها و دسته‌ها و انتخاب یکی از دو ابزار متفاوت را هم فراهم می‌کند که در بخش‌های بعدی بحث می‌شوند. می‌توانید با نوار ابزار بالای نوار کناری یا میان‌برهای <kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd> ابزار را عوض کنید.
 
-### Search Tool
+### ابزار جست‌وجو {#search-tool}
 
-![Search Tool](media/browser_search_tool.png)
+![ابزار جست‌وجو](media/browser_search_tool.png)
 
-With this tool, the sidebar behaves as in previous versions: Clicking on an item
-will search for it.
+با این ابزار، نوار کناری مانند نسخه‌های قبلی رفتار می‌کند: کلیک روی موردی، آن را جست‌وجو می‌کند.
 
-You can hold down <kbd>Ctrl</kbd> (<kbd>Command</kbd> on Mac) while clicking in
-order to append the clicked item to the current search with an AND condition,
-instead of starting a new search. If you wanted to show _learning_ cards that were
-also in the German deck for instance, you could click on "Learning",
-then <kbd>Ctrl</kbd>-click on "German".
+می‌توانید هنگام کلیک <kbd>Ctrl</kbd> (<kbd>Command</kbd> روی مک) را نگه دارید تا موردِ کلیک‌شده با شرط AND به جست‌وجوی فعلی افزوده شود، به‌جای اینکه جست‌وجوی جدیدی شروع شود. مثلاً اگر بخواهید کارت‌های _در حال یادگیری‌ای_ را که در دسته آلمانی هم هستند ببینید، می‌توانید روی "Learning" کلیک کنید، سپس با نگه‌داشتن <kbd>Ctrl</kbd> روی "German" کلیک کنید.
 
-You can hold down <kbd>Shift</kbd> to create an OR search instead of an AND. For
-example, you could click one deck, then <kbd>Shift</kbd>-click another to show
-cards from either of the decks in the same view.
+می‌توانید <kbd>Shift</kbd> را نگه دارید تا به‌جای AND، جست‌وجوی OR ساخته شود. مثلاً می‌توانید روی یک دسته کلیک کنید، سپس با <kbd>Shift</kbd> روی دسته‌ای دیگر کلیک کنید تا کارت‌های هر دو دسته در یک نما نمایش داده شوند.
 
-You can hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on Mac) in order to reverse the
-search (prepend a `-`): for example, to show all cards in a current deck that
-do _not_ have a certain tag. <kbd>Alt</kbd>/<kbd>Option</kbd> can be combined with
-either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g. clicking with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>
-will result in adding a new search term that is negated).
+می‌توانید <kbd>Alt</kbd> (<kbd>Option</kbd> روی مک) را نگه دارید تا جست‌وجو معکوس شود (یک `-` به ابتدا اضافه می‌شود): مثلاً برای نمایش همه کارت‌های دسته فعلی که برچسب معینی را _ندارند_. <kbd>Alt</kbd>/<kbd>Option</kbd> را می‌توان با <kbd>Ctrl</kbd> یا <kbd>Shift</kbd> ترکیب کرد (مثلاً کلیک با <kbd>Ctrl</kbd>+<kbd>Alt</kbd> به افزودن عبارت جست‌وجوی جدیدِ نفی‌شده می‌انجامد).
 
-On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
-<kbd>Shift</kbd> together when clicking a search term to replace all occurrences of the
-same kind of search with the new one.
-Let's say you had previously typed in a complicated search expression like
+در آنکی 2.1.39+، می‌توانید هنگام کلیک روی عبارت جست‌وجو، <kbd>Ctrl</kbd> و <kbd>Shift</kbd> را با هم نگه دارید تا همه نمونه‌های همان نوع جست‌وجو با جست‌وجوی جدید جایگزین شوند.
+فرض کنید قبلاً عبارت جست‌وجوی پیچیده‌ای مانند
 `deck:Swahili (is:due or tag:important)`
-and now want to perform the same search for your Urdu deck. You can hold down
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd> while clicking the Urdu deck in the sidebar to obtain the
-following search expression:
+نوشته‌اید و حالا می‌خواهید همان جست‌وجو را برای دسته اردوی خود انجام دهید. می‌توانید هنگام کلیک روی دسته اردو در نوار کناری، <kbd>Ctrl</kbd>+<kbd>Shift</kbd> را نگه دارید تا این عبارت جست‌وجو به دست آید:
 `deck:Urdu (is:due or tag:important)`.
 
-### Selection Tool
+### ابزار انتخاب {#selection-tool}
 
-![Selection Tool](media/browser_selection_tool2.png)
+![ابزار انتخاب](media/browser_selection_tool2.png)
 
-The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>
-or <kbd>Shift</kbd> while clicking. It also enables drag-and-drop to reorder decks and
-tags.
+ابزار انتخاب اجازه می‌دهد چند مورد هم‌زمان با نگه‌داشتن <kbd>Ctrl</kbd> یا <kbd>Shift</kbd> هنگام کلیک انتخاب شوند. همچنین کشیدن و رهاکردن برای بازآرایی دسته‌ها و برچسب‌ها را فعال می‌کند.
 
-Here is an example: Say you have the tags `Math`, `Calculus`, and `Algebra`.
-Click on the `Calculus` tag, then <kbd>Ctrl</kbd>-click on the `Algebra` tag. Now both
-tags are selected, click and drag any of the two onto the `Math` tag to make them
-both children of this tag. Behind the scenes, Anki has renamed the two tags to
-`Math::Calculus` and `Math::Algebra` respectively and updated your notes accordingly.
+مثالی بزنیم: فرض کنید برچسب‌های `Math`، `Calculus` و `Algebra` را دارید.
+روی برچسب `Calculus` کلیک کنید، سپس با <kbd>Ctrl</kbd> روی برچسب `Algebra` کلیک کنید. حالا هر دو برچسب انتخاب شده‌اند؛ هر کدام از این دو را بکشید و روی برچسب `Math` رها کنید تا هر دو فرزندِ این برچسب شوند. در پشت صحنه، آنکی نام دو برچسب را به‌ترتیب به
+`Math::Calculus` و `Math::Algebra` تغییر داده و یادداشت‌هایتان را متناسب به‌روزرسانی کرده است.
 
-Another use case for selecting multiple items is searching: If you right-click on
-a selection of items, you can choose **Search &gt; All/Any Selected**. This
-can be combined with keyboard modifiers as described in [Search Tool](#search-tool)
-to append the resulting search to the current search.
+مورد استفاده دیگری برای انتخاب چند مورد، جست‌وجوست: اگر روی انتخابی از موارد راست‌کلیک کنید، می‌توانید **Search > All/Any Selected** را برگزینید. این را می‌توان با کلیدهای تغییردهنده همان‌طور که در [ابزار جست‌وجو](#search-tool) توضیح داده شد ترکیب کرد تا جست‌وجوی حاصل به جست‌وجوی فعلی افزوده شود.
 
-### Saved Searches
+### جست‌وجوهای ذخیره‌شده {#saved-searches}
 
-If you regularly search for the same thing,
-you can save the current search by right-clicking the topmost item in the sidebar,
-choosing **Save Current Search** and typing in a name.
-You can also drag and drop any sidebar item onto this area to add an equivalent
-saved search, effectively pinning it at the top.
+اگر مرتباً چیز یکسانی را جست‌وجو می‌کنید، می‌توانید جست‌وجوی فعلی را با راست‌کلیک روی بالاترین مورد نوار کناری، انتخاب **Save Current Search** و تایپ نامی ذخیره کنید.
+همچنین می‌توانید هر مورد نوار کناری را به این ناحیه بکشید و رها کنید تا جست‌وجوی ذخیره‌شده معادل آن افزوده شود و عملاً در بالا سنجاق شود.
 
-### Editing Items
+### ویرایش موارد {#editing-items}
 
-You can delete or rename tags, decks, and saved searches directly from the sidebar,
-from the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and
-<kbd>F2</kbd> on Windows). Deletion even works for multiple items at once
-(see [Selection Tool](#selection-tool)).
+می‌توانید برچسب‌ها، دسته‌ها و جست‌وجوهای ذخیره‌شده را مستقیماً از نوار کناری، از منوی راست‌کلیک، یا با کلید میانبر (<kbd>Del</kbd> و <kbd>F2</kbd> در ویندوز) حذف یا تغییر نام دهید. حذف حتی برای چند مورد هم‌زمان کار می‌کند
+(ببینید [ابزار انتخاب](#selection-tool)).
 
-### Finding Items
+### یافتن موارد {#finding-items}
 
-To find a certain item in the sidebar tree, type part of its name into the searchbar
-at the top.
+برای یافتن موردی مشخص در درخت نوار کناری، بخشی از نامش را در نوار جست‌وجوی بالای آن تایپ کنید.
 
-## Search Box
+## جعبه جست‌وجو {#search-box}
 
-Above the card list is a search box. You can type in various things
-there to search for cards. For information on the search syntax,
-see [Searching](searching.md).
+بالای فهرست کارت‌ها جعبه جست‌وجویی است. می‌توانید چیزهای مختلفی در آن تایپ کنید تا کارت‌ها جست‌وجو شوند. برای اطلاعات درباره نحو جست‌وجو،
+[جست‌وجو](searching.md) را ببینید.
 
-## Card/Note Table
+## جدول کارت/یادداشت {#cardnote-table}
 
-The table's rows represent cards or notes that match the current search.
-When you click on a row, the corresponding note will be shown in the bottom section.
+سطرهای جدول، کارت‌ها یا یادداشت‌های منطبق با جست‌وجوی فعلی را نشان می‌دهند.
+وقتی روی سطری کلیک می‌کنید، یادداشت مربوط در بخش پایین نشان داده می‌شود.
 
-### Rows
+### سطرها {#rows}
 
-If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple
-rows, the editor will be temporarily hidden. Various operations (such as
-changing the deck) can operate on multiple cards or notes at once, independent
-of the active mode. Therefore in Cards mode, a note is considered to be selected
-if any of its cards is selected, and in Notes mode, a card is considered to be selected
-if its note is selected.
+اگر ماوس را بکشید یا <kbd>Ctrl</kbd> یا <kbd>Command</kbd> را نگه دارید تا چند سطر انتخاب شود، ویرایشگر موقتاً پنهان می‌شود. کنش‌های مختلف (مانند تغییر دسته) می‌توانند هم‌زمان روی چند کارت یا یادداشت کار کنند، مستقل از حالت فعال. بنابراین در حالت Cards، یادداشتی انتخاب‌شده تلقی می‌شود که هر کدام از کارت‌هایش انتخاب شده باشد، و در حالت Notes، کارتی انتخاب‌شده تلقی می‌شود که یادداشتش انتخاب شده باشد.
 
-Other operations (like showing card information) only operate on a single card
-or note. This is called the _current_ card or note, which is usually the one that
-was last selected or clicked.
-In Cards Mode, again, the current note is the note of the current card and in Notes
-mode, the current card is the first card of the current note.
+کنش‌های دیگر (مانند نمایش اطلاعات کارت) فقط روی یک کارت یا یادداشت کار می‌کنند. به این، کارت یا یادداشتِ _فعلی_ می‌گویند که معمولاً آخرین موردی است که انتخاب یا کلیک شده است.
+باز هم در حالت Cards، یادداشت فعلی یادداشتِ کارت فعلی است و در حالت Notes، کارت فعلی اولین کارتِ یادداشت فعلی است.
 
-The background colour will change depending on the card and note. In Cards mode,
-the first match will be used:
+رنگ پس‌زمینه بسته به کارت و یادداشت تغییر می‌کند. در حالت Cards، اولین تطبیق استفاده می‌شود:
 
-1. if the card is **flagged**, use the flag colour,
-2. if the card is **suspended**, yellow,
-3. if the card's note is **marked**, purple.
+1. اگر کارت **پرچم‌خورده** است، رنگ پرچم،
+2. اگر کارت **معلق** است، زرد،
+3. اگر یادداشت کارت **نشان‌گذاری‌شده** است، بنفش.
 
-In Notes mode, colour is only applied to marked notes.\
-For more information about marked notes and suspended cards, see [Editing and More](studying.md#editing-and-more).
+در حالت Notes، رنگ فقط روی یادداشت‌های نشان‌گذاری‌شده اعمال می‌شود.\
+برای اطلاعات بیشتر درباره یادداشت‌های نشان‌گذاری‌شده و کارت‌های معلق، [ویرایش و بیشتر](studying.md#editing-and-more) را ببینید.
 
-### Columns
+### ستون‌ها {#columns}
 
-The columns are configurable: right click on one (or <kbd>Ctrl</kbd>-click on a
-Mac) to choose which columns you'd like to see.
-You can drag columns to reorder them. Clicking on a column will sort by that column;
-click again to reverse the sort order. Note that you cannot sort by the Question
-and Answer columns.
+ستون‌ها قابل پیکربندی‌اند: روی یکی راست‌کلیک کنید (یا در مک با <kbd>Ctrl</kbd> کلیک کنید) تا انتخاب کنید کدام ستون‌ها را می‌خواهید ببینید.
+می‌توانید ستون‌ها را برای بازآرایی بکشید. کلیک روی ستونی، بر اساس آن ستون مرتب می‌کند؛ دوباره کلیک کنید تا ترتیب مرتب‌سازی معکوس شود. توجه کنید که نمی‌توانید بر اساس ستون‌های Question و Answer مرتب کنید.
 
-All columns are available for both [Cards and Notes mode](#table-modes)
-but sometimes with slightly different names and data. The following table lists
-the behaviours for both modes.
+همه ستون‌ها هم برای [حالت کارت‌ها و هم حالت یادداشت‌ها](#table-modes) در دسترس‌اند، اما گاهی با نام‌ها و داده‌های کمی متفاوت. جدول زیر رفتار هر دو حالت را فهرست می‌کند.
 
 <!-- prettier-ignore -->
 
-| Column          | Cards mode                                                                                                                                                                                                                             | Notes mode                                                                                                                                                                                                     |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Answer          | The back side of the card in one line with the question stripped. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead.                                                      | The same as in Cards mode, only for the first card of the note.                                                                                                                                                |
-| Card(s)         | The name of the card's template.                                                                                                                                                                                                       | The number of cards the note has.                                                                                                                                                                              |
-| Card Modified   | The last time changes were made to the card (e.g. when you reviewed the card and the review history and interval were updated).                                                                                                        | The last time changes were made to one of the note's cards.                                                                                                                                                    |
-| Created         | The same as in Notes mode for the card's note.                                                                                                                                                                                         | The date the note was created.                                                                                                                                                                                 |
-| Deck            | The name of the deck the card is in.                                                                                                                                                                                                   | The number of different decks the note's cards are in, or the deck name if all cards are in the same deck.                                                                                                     |
-| Due             | The due date for cards in review or (re)learning, and the position in the new card queue for new cards. The line is wrapped in brackets if the card is suspended or buried. Sorting is done by type and only then by date or position. | The due date for the note's next due review or (re)learning card that is not suspended, buried or in a filtered deck.                                                                                          |
-| (Avg.) Ease     | The card's ease if it is not new.                                                                                                                                                                                                      | The average ease for the note's cards that are not new.                                                                                                                                                        |
-| (Avg.) Interval | The card's interval if the card is in review or relearning.                                                                                                                                                                            | The average interval for the note's cards that are in review or relearning.                                                                                                                                    |
-| Lapses          | How often the card was rated “Again”.                                                                                                                                                                                                  | The total lapses for all cards of the note.                                                                                                                                                                    |
-| Note            | The same as in Notes mode for the card's note.                                                                                                                                                                                         | The name of the note's note type.                                                                                                                                                                               |
-| Note Modified   | The same as in Notes mode for the card's note.                                                                                                                                                                                         | The last time the note (e.g. the content of a field) was edited.                                                                                                                                               |
-| Question        | The front side of the card in one line. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead.                                                                                | The same as in Cards mode, only for the first card of the note.                                                                                                                                                |
-| Reviews         | How often the card has been reviewed.                                                                                                                                                                                                  | The total review count for all cards of the note.                                                                                                                                                              |
-| Sort Field      | The same as in Notes mode for the card's note.                                                                                                                                                                                         | The content of the note's field that is defined as the note type's sort field. Only this one field can be displayed and sorted by. You can change the sort field by clicking **Fields...** in the editing area. |
-| Tags            | The same as in Notes mode for the card's note.                                                                                                                                                                                         | The note's tags.                                                                                                                                                                                               |
+| ستون           | حالت Cards                                                                                                                                                                                                       | حالت Notes                                                                                                                                                                              |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Answer         | پشت کارت در یک خط، بدون پرسش. به‌جای آن می‌توانید [قالب سفارشی](templates/styling.md#browser-appearance) در ویرایشگر نوع کارت انتخاب کنید.                                                                       | مانند حالت Cards، فقط برای اولین کارت یادداشت.                                                                                                                                           |
+| Card(s)        | نام قالب کارت.                                                                                                                                                                                                     | شمار کارت‌هایی که یادداشت دارد.                                                                                                                                                          |
+| Card Modified  | آخرین باری که روی کارت تغییری اعمال شده (مثلاً وقتی کارت را مرور کردید و تاریخچه مرور و فاصله به‌روزرسانی شد).                                                                                                      | آخرین باری که روی یکی از کارت‌های یادداشت تغییری اعمال شده.                                                                                                                               |
+| Created        | مانند حالت Notes برای یادداشتِ کارت.                                                                                                                                                                                | تاریخی که یادداشت ساخته شده.                                                                                                                                                             |
+| Deck           | نام دسته‌ای که کارت در آن است.                                                                                                                                                                                     | شمار دسته‌های متفاوتِ کارت‌های یادداشت، یا نام دسته اگر همه کارت‌ها در یک دسته باشند.                                                                                                     |
+| Due            | تاریخ سررسید کارت‌های در حال مرور یا (یادگیری مجدد)، و موقعیت در صف کارت‌های جدید برای کارت‌های جدید. اگر کارت معلق یا کنار گذاشته‌شده باشد، خط در کروشه قرار می‌گیرد. مرتب‌سازی ابتدا بر اساس نوع و سپس تاریخ یا موقعیت است. | تاریخ سررسیدِ کارتِ بعدیِ سررسیدِ مرور یا (یادگیری مجددِ) یادداشت که معلق، کنار گذاشته‌شده یا در دسته پالایش‌شده نباشد.                                                                     |
+| (Avg.) Ease    | سهولت کارت اگر جدید نباشد.                                                                                                                                                                                         | میانگین سهولت کارت‌های یادداشت که جدید نیستند.                                                                                                                                            |
+| (Avg.) Interval | فاصله کارت اگر در حال مرور یا یادگیری مجدد باشد.                                                                                                                                                                   | میانگین فاصله کارت‌های یادداشت که در حال مرور یا یادگیری مجدد‌اند.                                                                                                                         |
+| Lapses         | چند بار کارت "Again" گرفته است.                                                                                                                                                                                    | مجموع لغزش‌های همه کارت‌های یادداشت.                                                                                                                                                     |
+| Note           | مانند حالت Notes برای یادداشتِ کارت.                                                                                                                                                                                | نام نوع یادداشتِ یادداشت.                                                                                                                                                                |
+| Note Modified  | مانند حالت Notes برای یادداشتِ کارت.                                                                                                                                                                                | آخرین باری که یادداشت (مثلاً محتوای فیلدی) ویرایش شده است.                                                                                                                                 |
+| Question       | روی کارت در یک خط. به‌جای آن می‌توانید [قالب سفارشی](templates/styling.md#browser-appearance) در ویرایشگر نوع کارت انتخاب کنید.                                                                                    | مانند حالت Cards، فقط برای اولین کارت یادداشت.                                                                                                                                           |
+| Reviews        | چند بار کارت مرور شده است.                                                                                                                                                                                         | مجموع شمار مرورهای همه کارت‌های یادداشت.                                                                                                                                                 |
+| Sort Field     | مانند حالت Notes برای یادداشتِ کارت.                                                                                                                                                                                | محتوای فیلد یادداشت که به‌عنوان فیلد مرتب‌سازی نوع یادداشت تعریف شده. فقط همین یک فیلد می‌تواند نمایش داده و مبنای مرتب‌سازی باشد. فیلد مرتب‌سازی را می‌توانید با کلیک روی **Fields...** در ناحیه ویرایش تغییر دهید. |
+| Tags           | مانند حالت Notes برای یادداشتِ کارت.                                                                                                                                                                                | برچسب‌های یادداشت.                                                                                                                                                                       |
 
-## Editing Area
+## ناحیه ویرایش {#editing-area}
 
-The bottom right area displays the note of the currently selected row. For
-more information about cards and notes, see [Getting Started](getting-started.md).
-For more information on formatting buttons, see [Editing](editing.md).
+ناحیه پایین-راست، یادداشتِ سطرِ در حال انتخاب را نمایش می‌دهد. برای اطلاعات بیشتر درباره کارت‌ها و یادداشت‌ها، [شروع به کار](getting-started.md) را ببینید.
+برای اطلاعات بیشتر درباره دکمه‌های قالب‌بندی، [ویرایش](editing.md) را ببینید.
 
-You can see a preview of what the currently selected card would look
-like when reviewing by clicking the **Preview** button at the top of the editing area.
-Note that this will not display any type-the-answer fields on your
-cards, which makes it easier to preview the cards quickly.
-In Notes mode, the preview is shown for the first card of the selected note.
+می‌توانید با کلیک روی دکمه **Preview** در بالای ناحیه ویرایش، پیش‌نمایشی از ظاهر کارتِ در حال انتخاب هنگام مرور ببینید.
+توجه کنید این نمایش‌دهنده هیچ فیلد تایپ-پاسخی روی کارت‌هایتان نخواهد بود، که پیش‌نمایش سریع کارت‌ها را آسان‌تر می‌کند.
+در حالت Notes، پیش‌نمایش برای اولین کارتِ یادداشتِ انتخاب‌شده نشان داده می‌شود.
 
-## Menus and Actions
+## منوها و کنش‌ها {#menus-and-actions}
 
-At the top of the browser window, you find a toolbar with various menus which in
-turn offer various actions that can be performed in the browser.
+در بالای پنجره مرورگر، نوار ابزاری با منوهای گوناگون می‌یابید که به نوبه خود کنش‌های مختلفی را که می‌توان در مرورگر انجام داد ارائه می‌کنند.
 
-### Edit
+### Edit {#edit}
 
 <!-- prettier-ignore -->
 
-| Name                 | Action                                                                                                                                                                                                                        |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Undo                 | Revert the most recently performed operation.                                                                                                                                                                                 |
-| Select All           | Select all rows displayed.                                                                                                                                                                                                    |
-| Select Notes         | Show only the currently selected notes and select all rows.                                                                                                                                                                   |
-| Invert Selection     | Select those rows not selected, and deselect the currently selected rows.                                                                                                                                                     |
-| Create Filtered Deck | Show the [filtered deck](filtered-decks.md#creating-manually) dialog and set the current browser search as a filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead.|
+| نام               | کنش                                                                                                                                                            |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Undo              | واگرد کردن آخرین کنش انجام‌شده.                                                                                                                                  |
+| Select All        | انتخاب همه سطرهای نمایش‌داده‌شده.                                                                                                                                |
+| Select Notes      | نمایش فقط یادداشت‌های در حال انتخاب و انتخاب همه سطرها.                                                                                                          |
+| Invert Selection  | انتخاب سطرهایی که انتخاب نشده‌اند، و خارج‌کردن سطرهای انتخاب‌شده از انتخاب.                                                                                       |
+| Create Filtered Deck | گفت‌وگوی [دسته پالایش‌شده](filtered-decks.md#creating-manually) را نشان می‌دهد و جست‌وجوی فعلی مرورگر را به‌عنوان پالایه تنظیم می‌کند. برای تنظیم پالایه دوم از <kbd>Alt</kbd> / <kbd>Option</kbd> استفاده کنید. |
 
-### Notes
+### Notes {#notes}
 
-Most of the following actions operate on the selected notes. They are also available through
-a context menu when a selected row is right-clicked in Notes mode. In Cards mode,
-they can be found in a submenu of the context menu.
+بیشتر کنش‌های زیر روی یادداشت‌های انتخاب‌شده کار می‌کنند. این کنش‌ها از طریق منوی زمینه‌ای هم در دسترس‌اند وقتی سطرِ انتخاب‌شده‌ای در حالت Notes راست‌کلیک شود. در حالت Cards، در زیرمنویی از منوی زمینه‌ای پیدا می‌شوند.
 
 <!-- prettier-ignore -->
 
-| Name              | Action                                                                                                                                                                                                                                                                                                                                                     |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Add Notes         | Open the [Add](editing.md#adding-cards-and-notes) dialog.                                                                                                                                                                                                                                                                                                  |
-| Create Copy       | Open a [duplicate](browsing.md#finding-duplicates) of the current note in the [editor](editing.md#adding-cards-and-notes), which can be slightly modified to easily obtain variations of your cards. By default, the duplicate card will be created in the same deck as the original.                                                                      |
-| Export Notes      | Open the [Export](exporting.md) dialog.                                                                                                                                                                                                                                                                                                                    |
-| Add Tags          | Add provided tags to all selected notes.                                                                                                                                                                                                                                                                                                                   |
-| Remove Tags       | Enter tags and remove them from all selected notes.                                                                                                                                                                                                                                                                                                        |
-| Clear Unused Tags | Remove all tags from the sidebar that are not used by any notes.                                                                                                                                                                                                                                                                                           |
-| Toggle Mark       | If the current note is marked (i.e., has the _Marked_ tag), unmark all selected notes. If the current is not marked, mark all selected notes.                                                                                                                                                                                                              |
-| Change Note Type   | Convert the selected notes from one type to another. For example, imagine you have a _Russian_ note type and a _Computer_ note type, and you accidentally added some computer-related text into a _Russian_ note. You can use this option to fix that mistake. The scheduling of cards is not affected. Changing the type of a note requires a one-way sync. |
-| Find Duplicates   | Open the [Duplicates](#finding-duplicates) dialog.                                                                                                                                                                                                                                                                                                         |
-| Find and Replace  | Open the [Find and Replace](#find-and-replace) dialog.                                                                                                                                                                                                                                                                                                     |
-| Manage Note Types  | Open the [Note Types](editing.md#adding-a-note-type) dialog.                                                                                                                                                                                                                                                                                                |
-| Delete            | Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the [templates](templates/intro.md).                                                                                                                                                                                       |
+| نام                | کنش                                                                                                                                                                                                                                                           |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Add Notes          | گفت‌وگوی [Add](editing.md#adding-cards-and-notes) را باز می‌کند.                                                                                                                                                                                                 |
+| Create Copy        | نسخه‌ای [تکراری](browsing.md#finding-duplicates) از یادداشت فعلی را در [ویرایشگر](editing.md#adding-cards-and-notes) باز می‌کند که با تغییراتی کوچک می‌توان به‌راحتی گونه‌هایی از کارت‌هایتان به دست آورد. به‌طور پیش‌فرض، کارت تکراری در همان دستهٔ اصل ساخته می‌شود.                          |
+| Export Notes       | گفت‌وگوی [Export](exporting.md) را باز می‌کند.                                                                                                                                                                                                                   |
+| Add Tags           | برچسب‌های داده‌شده را به همه یادداشت‌های انتخاب‌شده می‌افزاید.                                                                                                                                                                                                     |
+| Remove Tags        | برچسب‌ها را وارد کنید و از همه یادداشت‌های انتخاب‌شده حذف می‌شوند.                                                                                                                                                                                                  |
+| Clear Unused Tags  | همه برچسب‌هایی را که هیچ یادداشتی از آن‌ها استفاده نمی‌کند از نوار کناری حذف می‌کند.                                                                                                                                                                                |
+| Toggle Mark        | اگر یادداشت فعلی نشان‌گذاری‌شده باشد (یعنی برچسب _Marked_ را داشته باشد)، نشان همه یادداشت‌های انتخاب‌شده برداشته می‌شود. اگر نشان‌گذاری نباشد، همه یادداشت‌های انتخاب‌شده نشان‌گذاری می‌شوند.                                                                          |
+| Change Note Type   | یادداشت‌های انتخاب‌شده را از نوعی به نوعی دیگر تبدیل می‌کند. مثلاً تصور کنید نوع یادداشت _روسی_ و نوع یادداشت _رایانه_ دارید و ناخواسته متنی رایانه‌ای در یادداشت _روسی_ افزوده‌اید. می‌توانید با این گزینه آن اشتباه را درست کنید. زمان‌بندی کارت‌ها تحت تأثیر قرار نمی‌گیرد. تغییر نوع یادداشت نیازمند همگام‌سازی یک‌طرفه است. |
+| Find Duplicates    | گفت‌وگوی [تکراری‌ها](#finding-duplicates) را باز می‌کند.                                                                                                                                                                                                        |
+| Find and Replace   | گفت‌وگوی [یافتن و جایگزینی](#find-and-replace) را باز می‌کند.                                                                                                                                                                                                    |
+| Manage Note Types  | گفت‌وگوی [Note Types](editing.md#adding-a-note-type) را باز می‌کند.                                                                                                                                                                                              |
+| Delete             | همه یادداشت‌های انتخاب‌شده و کارت‌هایشان را حذف می‌کند. حذف کارت‌های منفرد ممکن نیست، چون کارت‌های منفرد توسط [قالب‌ها](templates/intro.md) کنترل می‌شوند.                                                                                                            |
 
-### Cards
+### Cards {#cards}
 
-The following actions operate on the currently selected cards. They are also available through
-a context menu when a selected row is rightclicked in Cards mode. In Notes mode,
-they can be found in a submenu of the context menu.
+کنش‌های زیر روی کارت‌های در حال انتخاب کار می‌کنند. این کنش‌ها از طریق منوی زمینه‌ای هم در دسترس‌اند وقتی سطرِ انتخاب‌شده‌ای در حالت Cards راست‌کلیک شود. در حالت Notes، در زیرمنویی از منوی زمینه‌ای پیدا می‌شوند.
 
 <!-- prettier-ignore -->
 
-| Name           | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Change Deck    | Move currently selected cards to a different deck.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Set Due Date   | Turns cards into review cards if they are new, and makes them due on a certain date. This can be useful for moving cards forward or back a few days when your study schedule is interrupted. Entering a range like `60-90` will make the selected cards due between 60 and 90 days from now. New cards will have their interval set to the same delay, but review cards will be rescheduled without changing their current interval, unless an exclamation mark (`!`) is included at the end of the range. Note that the answer time is not recorded when manually scheduling cards, since the action can be performed even outside of review, and Anki isn't aware of which card may or may not be shown at the time.                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Reset        | Move currently selected cards to the end of the new queue. The existing review history is preserved. In 2.1.50+, there are options to restore the original card position, and to reset the card's lapse and repetition counters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Reposition     | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync. |
-| Toggle Suspend | [Suspend](studying.md#editing-and-more) or unsuspend all selected cards, depending on whether the current card is suspended or not.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Flag           | Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Info           | Show various information about the current card, including its review history. For more information, see [Card Info](stats.md#card-info).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| نام             | کنش                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Change Deck    | کارت‌های در حال انتخاب را به دسته دیگری منتقل می‌کند.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Set Due Date   | اگر کارت‌ها جدید باشند به کارت مروری تبدیلشان می‌کند و در تاریخ معینی سررسیدشان می‌کند. این می‌تواند برای جابه‌جایی کارت‌ها چند روز به جلو یا عقب وقتی برنامه مطالعه‌تان مختل شده سودمند باشد. ورود بازه‌ای مانند `60-90` کارت‌های انتخاب‌شده را بین ۶۰ تا ۹۰ روز دیگر سررسید می‌کند. کارت‌های جدید فاصله‌ای برابر همان تأخیر می‌گیرند، اما کارت‌های مروری بدون تغییر فاصله فعلی‌شان دوباره زمان‌بندی می‌شوند، مگر آنکه علامت تعجب (`!`) در انتهای بازه بیاید. توجه کنید زمان پاسخ هنگام زمان‌بندی دستی کارت‌ها ثبت نمی‌شود، چون این کنش حتی بیرون از مرور هم قابل انجام است و آنکی نمی‌داند در آن لحظه کدام کارت ممکن است نشان داده شود یا نشود.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Reset          | کارت‌های در حال انتخاب را به انتهای صف جدید منتقل می‌کند. تاریخچه مرور موجود حفظ می‌شود. در 2.1.50+ گزینه‌هایی برای بازگرداندن موقعیت اصلی کارت و صفرکردن شمارنده‌های لغزش و تکرار کارت وجود دارد.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Reposition     | ترتیب ظاهر شدن کارت‌های جدید را تغییر می‌دهد. موقعیت‌های موجود را می‌توانید با فعال‌کردن ستون _due_، همان‌طور که در بخش [جدول](#cardnote-table) بالا توضیح داده شد، ببینید. اگر فرمان reposition را وقتی چند کارت انتخاب شده اجرا کنید، به هر کارت به نوبت شماره‌های فزاینده اعمال می‌شود. به‌طور پیش‌فرض شماره برای هر کارت یکی افزایش می‌یابد، اما این را می‌توان با تغییر تنظیم "step" تعدیل کرد. گزینه **Shift position of existing cards** به شما اجازه می‌دهد کارت‌ها را میان کارت‌های موجود فعلی درج کنید و کارت‌های موجود فعلی را از هم باز کنید. مثلاً اگر پنج کارت دارید و می‌خواهید ۳، ۴ و ۵ را بین ۱ و ۲ ببرید، انتخاب این تنظیم باعث می‌شود کارت‌ها در نهایت به ترتیب ۱، ۳، ۴، ۵، ۲ قرار گیرند. در مقابل، اگر این گزینه را خاموش کنید، ۱ و ۲ شماره موقعیت یکسان می‌گیرند (و بنابراین غیرقابل پیش‌بینی است کدام‌یک از کارت‌های هم‌شماره اول بیاید). توجه کنید وقتی فعال است، هر کارتی با موقعیت بالاتر تغییر می‌کند و همه آن کارت‌های تغییرکرده باید دفعه بعد که همگام‌سازی می‌کنید فرستاده شوند. |
+| Toggle Suspend | [معلق‌کردن](studying.md#editing-and-more) یا خارج‌کردن از تعلیق همه کارت‌های انتخاب‌شده، بسته به اینکه کارت فعلی معلق باشد یا نه.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Flag           | پرچم همه کارت‌های انتخاب‌شده را تغییر وضعیت می‌دهد. اینکه پرچمی افزوده یا حذف شود بستگی دارد به اینکه کارت فعلی پرچمِ انتخاب‌شده را داشته باشد یا نه.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Info           | اطلاعات مختلفی درباره کارت فعلی، از جمله تاریخچه مرورش نشان می‌دهد. برای اطلاعات بیشتر، [اطلاعات کارت](stats.md#card-info) را ببینید.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
-### Go
+### Go {#go}
 
-This menu exists to provide keyboard shortcuts to jump to various
-parts of the browser, and to go up and down the card list.
+این منو برای فراهم‌کردن میانبرهای صفحه‌کلید برای پرش به بخش‌های مختلف مرورگر، و بالا و پایین رفتن در فهرست کارت‌ها وجود دارد.
 
-## Find and Replace
+## یافتن و جایگزینی {#find-and-replace}
 
-This dialog allows for replacing text on notes. As described above, it is available
-from the toolbar and the table's context menu.
+این گفت‌وگو اجازه جایگزینی متن روی یادداشت‌ها را می‌دهد. همان‌طور که در بالا گفته شد، از نوار ابزار و منوی زمینه‌ای جدول در دسترس است.
 
-The first input field is for the text that is going to be replaced, the second
-one for the replacement. Next, there is a dropdown menu that allows you to specify
-where Anki should look for text to replace: in a note's tags (requires Anki 2.1.45+),
-in all fields, or just in a specific field (only fields belonging to a selected
-note will be listed).
+اولین فیلد ورودی برای متنی است که قرار است جایگزین شود و دومی برای جایگزین. سپس، فهرست کشویی‌ای هست که به شما اجازه می‌دهد مشخص کنید آنکی کجا به‌دنبال متن برای جایگزینی بگردد: در برچسب‌های یادداشت (نیازمند آنکی 2.1.45+)، در همه فیلدها، یا فقط در فیلدی مشخص (فقط فیلدهای متعلق به یادداشتی انتخاب‌شده فهرست می‌شوند).
 
-By default, only selected notes will be affected. If you want to lift that
-restriction, you can untick the "selected notes only" checkbox (requires Anki 2.1.45+).
+به‌طور پیش‌فرض، فقط یادداشت‌های انتخاب‌شده تحت تأثیر قرار می‌گیرند. اگر می‌خواهید این محدودیت را بردارید، می‌توانید تیک کادر "selected notes only" را بردارید (نیازمند آنکی 2.1.45+).
 
-The regular expression option allows you to perform complex replacements.
-For example, assume there is the following text in a field:
+گزینه عبارت باقاعده به شما اجازه می‌دهد جایگزینی‌های پیچیده انجام دهید.
+مثلاً فرض کنید متن زیر در فیلدی هست:
 
     <img src="pic.jpg" />
 
-We use these settings:
+ما این تنظیمات را استفاده می‌کنیم:
 
-![Find and Replace dialog](media/find_and_replace.png)
+![گفت‌وگوی یافتن و جایگزینی](media/find_and_replace.png)
 
-(Note that on Anki versions prior to 2.1.28, you would need to replace `${1}`
-with `\1`.)
+(توجه کنید که در نسخه‌های پیش از 2.1.28 آنکی، باید `${1}` را با `\1` جایگزین می‌کردید.)
 
-Then the assumed field content will change to:
+آنگاه محتوای فرضی فیلد به این تغییر می‌کند:
 
     pic.jpg
 
-A full discussion on regular expressions is outside the scope of this document.
-There are a number of syntax guides available on the web:
+بحث کامل درباره عبارت‌های باقاعده خارج از حیطه این سند است.
+تعداد زیادی راهنمای نحو در وب موجود است:
 
-- For Anki 2.1.28+, see <https://docs.rs/regex/latest/regex/index.html#syntax>.
-- For older Anki versions, see <http://docs.python.org/library/re.html>.
+- برای آنکی 2.1.28+، <https://docs.rs/regex/latest/regex/index.html#syntax> را ببینید.
+- برای نسخه‌های قدیمی‌تر آنکی، <http://docs.python.org/library/re.html> را ببینید.
 
-## Finding Duplicates
+## یافتن تکراری‌ها {#finding-duplicates}
 
-You can use the **Notes > Find Duplicates** option to search for notes that
-have the same content. When you open the window, Anki will look at all
-of your note types and present a list of all possible fields. If you
-want to look for duplicates in the _Back_ field, you’d select it from
-the list and then click **Search**.
+می‌توانید از گزینه **Notes > Find Duplicates** برای جست‌وجوی یادداشت‌هایی که محتوای یکسان دارند استفاده کنید. وقتی پنجره را باز می‌کنید، آنکی به همه انواع یادداشت‌هایتان نگاه می‌کند و فهرستی از همه فیلدهای ممکن ارائه می‌دهد. اگر می‌خواهید در فیلد _Back_ به‌دنبال تکراری بگردید، آن را از فهرست انتخاب و سپس روی **Search** کلیک می‌کنید.
 
-By default, it will search in all note types that have the field you provided.
-This differs from the duplicate check when you add cards manually, which
-is limited to a single note type.
+به‌طور پیش‌فرض، در همه انواع یادداشتی که فیلدِ شما را دارند جست‌وجو می‌شود. این با بررسی تکراری هنگام افزودن دستی کارت‌ها فرق دارد که به یک نوع یادداشت محدود است.
 
-The **Optional filter** text box allows you to narrow down where Anki will
-look for duplicates. If you only want to search for duplicates in the
-"French Vocab" and "French Verbs" note types, you would enter:
+جعبه متن **Optional filter** به شما اجازه می‌دهد محدوده جست‌وجوی تکراری‌ها محدود کند. اگر فقط بخواهید در انواع یادداشت "French Vocab" و "French Verbs" به‌دنبال تکراری بگردید، وارد می‌کنید:
 
     "note:french vocab" or "note:french verbs"
 
-Or you might want to look only for duplicates in a particular deck, so
-you could use:
+یا شاید بخواهید فقط در دسته‌ای مشخص به‌دنبال تکراری بگردید؛ پس می‌توانید استفاده کنید:
 
     "deck:myDeck"
 
-The search syntax is the same as used when searching in the browser.
-For more information, see [Searching](searching.md).
+نحو جست‌وجو همان نحوی است که هنگام جست‌وجو در مرورگر استفاده می‌شود.
+برای اطلاعات بیشتر، [جست‌وجو](searching.md) را ببینید.
 
-You can click one of the links in the search results list to display the
-duplicate notes in that set. If the search brings up a large number of
-duplicates, you may wish to instead click the **Tag Duplicates** button,
-which will tag all matching notes with _duplicate_. You can then search
-for this tag in the browser and handle them all from the same screen.
+می‌توانید روی یکی از پیوندهای فهرست نتایج جست‌وجو کلیک کنید تا یادداشت‌های تکراریِ آن مجموعه نمایش داده شوند. اگر جست‌وجو شمار زیادی تکراری بیاورد، شاید به‌جای آن بخواهید روی دکمه **Tag Duplicates** کلیک کنید که همه یادداشت‌های منطبق را با برچسب _duplicate_ می‌نشاند. سپس می‌توانید در مرورگر به‌دنبال این برچسب بگردید و همه را از همان صفحه مدیریت کنید.

@@ -1,5 +1,3 @@
-# Importing
+# درون‌ریزی {#importing}
 
-Anki can import text files, packaged Anki decks created by the export
-feature and Mnemosyne 2.0 .db files. To import a
-file, click the File menu and then "Import".
+آنکی می‌تواند پرونده‌های متنی، دسته‌های بسته‌بندی‌شدهٔ آنکیِ ساخته‌شده توسط قابلیت برون‌بری و پرونده‌های .db منموزین 2.0 را درون‌ریزی کند. برای درون‌ریزی پرونده، منوی File و سپس "Import" را کلیک کنید.

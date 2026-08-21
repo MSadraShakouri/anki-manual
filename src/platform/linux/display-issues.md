@@ -1,17 +1,14 @@
-## Display Issues on Linux
+## مشکلات نمایش در لینوکس {#display-issues-on-linux}
 
-Hardware acceleration defaults to on. If you experience blank screens
-or display issues, you can try enabling software rendering.
+شتاب سخت‌افزاری به‌طور پیش‌فرض روشن است. اگر صفحه‌های خالی یا مشکلات نمایش می‌بینید، می‌توانید رندر نرم‌افزاری را امتحان کنید.
 
-### Changing the Driver From the Preferences Screen
-In Anki 23.10+, you can change the graphics driver from preferences screen by
-navigating to **Tools → Preferences** and then selecting the driver from the
-dropdown menu.
+### تغییر درایور از صفحه تنظیمات {#changing-the-driver-from-the-preferences-screen}
+در آنکی 23.10+ می‌توانید درایور گرافیک را از صفحه تنظیمات با رفتن به
+**Tools → Preferences** و سپس انتخاب درایور از فهرست کشویی عوض کنید.
 
-### Changing the Driver From the Terminal
+### تغییر درایور از ترمینال {#changing-the-driver-from-the-terminal}
 ```
 echo software > ~/.local/share/Anki2/gldriver6
 ```
 
-If you wish to switch back to the default, change `software` to `auto`, or
-remove that file.
+اگر می‌خواهید به پیش‌فرض برگردید، `software` را به `auto` تغییر دهید، یا آن پرونده را حذف کنید.

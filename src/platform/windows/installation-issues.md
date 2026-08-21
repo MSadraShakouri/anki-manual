@@ -1,16 +1,15 @@
-# Windows installation issues
+# مشکلات نصب در ویندوز {#windows-installation-issues}
 
-Some error messages you may encounter when installing Anki:
+بعضی پیام‌های خطایی که ممکن است هنگام نصب آنکی ببینید:
 
 <!-- toc -->
 
-Also see [startup issues](./startup-issues.md).
+همچنین [مشکلات راه‌اندازی](./startup-issues.md) را ببینید.
 
-## "Error opening file for writing"
+## «Error opening file for writing» {#error-opening-file-for-writing}
 
-If closing Anki and your browser does not help, please try restarting your
-computer, then running the installer again.
+اگر بستن آنکی و مرورگرتان کمکی نکرد، لطفاً رایانه‌تان را دوباره راه‌اندازی و نصاب را دوباره اجرا کنید.
 
-## Antivirus issues
+## مشکلات آنتی‌ویروس {#antivirus-issues}
 
-Antivirus programs may sometimes report a [false positive](https://faqs.ankiweb.net/my-antivirus-program-says-anki-is-infected.html).
+برنامه‌های آنتی‌ویروس گاهی ممکن است [هشدار کاذب](https://faqs.ankiweb.net/my-antivirus-program-says-anki-is-infected.html) بدهند.

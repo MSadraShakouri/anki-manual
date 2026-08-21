@@ -1,93 +1,72 @@
-# Backups
+# پشتیبان‌ها {#backups}
 
 <!-- toc -->
 
-## Automatic backups
+## پشتیبان‌های خودکار {#automatic-backups}
 
-Anki will create automatic backups of your card data. These include the text
-on your cards and your scheduling information, but do not include sounds or
-image files.
+آنکی از داده‌های کارت‌هایتان پشتیبان‌های خودکار می‌سازد. این‌ها شامل متن کارت‌ها و اطلاعات زمان‌بندی‌تان هستند، اما صداها یا پرونده‌های تصویری را شامل نمی‌شوند.
 
-Automatic backups can be useful to recover from mistakes, but you should not
-rely solely on them. Because they are stored on your local device, they will not
-protect you if your device breaks or is stolen. We recommend you combine them with
-[manual backups](#manual-colpkg-backups).
+پشتیبان‌های خودکار می‌توانند برای بازیابی از اشتباهات سودمند باشند، اما نباید صرفاً به آن‌ها تکیه کنید. چون روی دستگاه محلی‌تان ذخیره می‌شوند، اگر دستگاه‌تان خراب یا دزدیده شود از شما محافظت نمی‌کنند. توصیه می‌کنیم آن‌ها را با [پشتیبان‌های دستی](#manual-colpkg-backups) ترکیب کنید.
 
-### Restoring
+### بازگردانی {#restoring}
 
-To restore from an automatic backup:
+برای بازگردانی از پشتیبان خودکار:
 
-- Open Anki, and choose Switch Profile from the File menu.
-- Click on the "Open Backup" button.
-- Select the backup you wish to restore from.
+- آنکی را باز کنید و از منوی File گزینه Switch Profile را انتخاب کنید.
+- روی دکمه "Open Backup" کلیک کنید.
+- پشتیبانی را که می‌خواهید از آن بازگردانی کنید انتخاب کنید.
 
 
 ```admonish caution
-When restoring from a backup, any changes made since the backup was created will be lost.
+هنگام بازگردانی از پشتیبان، هر تغییری که پس از ساخت پشتیبان انجام شده باشد از دست می‌رود.
 ```
 
-Anki disables automatic syncing and backups when you restore from a backup. Once you're
-happy that you've restored the correct backup, close and re-open Anki to return to normal.
+آنکی هنگام بازگردانی از پشتیبان، همگام‌سازی و پشتیبان‌گیری خودکار را غیرفعال می‌کند. وقتی مطمئن شدید پشتیبان درست را بازگردانده‌اید، آنکی را ببندید و دوباره باز کنید تا به حالت عادی برگردد.
 
-### Creating
+### ساخت {#creating}
 
-Backups are created periodically. You can configure the time between backups
-in the [preferences](preferences.md) screen. The default is 30 minutes.
+پشتیبان‌ها به‌طور دوره‌ای ساخته می‌شوند. زمان میان پشتیبان‌ها را می‌توانید در صفحه [تنظیمات](preferences.md) پیکربندی کنید. پیش‌فرض ۳۰ دقیقه است.
 
-Certain operations will trigger a backup, even if the configured time has not
-elapsed yet:
+برخی عملیات حتی اگر زمان پیکربندی‌شده نگذشته باشد پشتیبان می‌سازند:
 
-- A one-way sync download
-- Importing a .colpkg file using **File > Import**
+- دانلود همگام‌سازی یک‌طرفه
+- درون‌ریزی پرونده .colpkg با **File > Import**
 - **Tools > Check Database**
 
-After backups are two days old, Anki will start removing some of the older ones.
-You can control how many daily, weekly and monthly backups you'd like to keep.
+پس از دو روز شدن پشتیبان‌ها، آنکی شروع به حذف برخی از قدیمی‌ترها می‌کند.
+می‌توانید کنترل کنید چند پشتیبان روزانه، هفتگی و ماهانه نگه دارید.
 
 ```admonish info
-Backups created with 2.1.50 will not be importable into older Anki versions.
+پشتیبان‌های ساخته‌شده با 2.1.50 در نسخه‌های قدیمی‌تر آنکی قابل درون‌ریزی نخواهند بود.
 ```
 
-## Manual colpkg backups
+## پشتیبان‌های دستی colpkg {#manual-colpkg-backups}
 
-### Restoring
+### بازگردانی {#restoring-1}
 
-You can restore from a manual backup by using **File > Import**.
+می‌توانید با **File > Import** از پشتیبان دستی بازگردانی کنید.
 
-### Creating
+### ساخت {#creating-1}
 
-In Anki 2.1.50+, you can use **File > Create Backup** to trigger an immediate backup. This
-functions like regular automatic backups, and does not include media files.
+در آنکی 2.1.50+ می‌توانید از **File > Create Backup** برای پشتیبان فوری استفاده کنید. این مانند پشتیبان‌های خودکار معمولی کار می‌کند و پرونده‌های رسانه را شامل نمی‌شود.
 
-To create a backup that includes your sounds and images:
+برای ساختن پشتیبانی که صداها و تصاویرتان را هم در بر بگیرد:
 
-- Select Export from the File menu.
-- Ensure "Anki collection package (.colpkg)" is selected.
-- Enable the "include media" option.
+- Export را از منوی File انتخاب کنید.
+- مطمئن شوید "Anki collection package (.colpkg)" انتخاب شده است.
+- گزینه "include media" را فعال کنید.
 
-This will create a .colpkg file that contains all of your cards and any sounds/images they
-use. We recommend you store the file somewhere safe, like a different device, or a cloud-based
-file storage service like Dropbox or Google Drive.
+این کار پرونده .colpkg‌ای می‌سازد که همه کارت‌هایتان و هر صدا/تصویری که استفاده می‌کنند را در بر دارد. توصیه می‌کنیم پرونده را جایی امن ذخیره کنید؛ مانند دستگاهی دیگر، یا خدمت ذخیره‌سازی پرونده ابری مانند Dropbox یا Google Drive.
 
-## AnkiWeb
+## AnkiWeb {#ankiweb}
 
-[Synchronising](./syncing.md) your collection with AnkiWeb provides some level of protection
-against your device being lost or stolen. If you need to restore your collection from AnkiWeb,
-you can force a one-way sync in the preferences screen, or sync from a new device, and then choose
-"Download".
+[همگام‌سازی](./syncing.md) مجموعه‌تان با AnkiWeb سطحی از محافظت در برابر گم‌شدن یا دزدیده‌شدن دستگاه‌تان فراهم می‌کند. اگر لازم باشد مجموعه‌تان را از AnkiWeb بازگردانی کنید، می‌توانید در صفحه تنظیمات همگام‌سازی یک‌طرفه را به‌اجبار اعمال کنید، یا از دستگاهی جدید همگام کنید و سپس "Download" را انتخاب کنید.
 
-## Deletion log
+## گزارش حذف {#deletion-log}
 
-Anki logs deleted notes to a text file called `deleted.txt` in your
-profile folder. These notes are in a text format that can be read by
-**File > Import**. Historically, Anki only supported a single note type
-at one time. So, if you had deleted notes from different note types,
-you needed to split the file into separate files for each note type
-first.
+آنکی یادداشت‌های حذف‌شده را در پرونده متنی به نام `deleted.txt` در پوشه نمایه‌تان ثبت می‌کند. این یادداشت‌ها به قالبی متنی‌اند که **File > Import** می‌تواند بخواند. در گذشته، آنکی هم‌زمان فقط از یک نوع یادداشت پشتیبانی می‌کرد. پس اگر یادداشت‌هایی از انواع یادداشت متفاوت حذف کرده بودید، ابتدا باید پرونده را برای هر نوع یادداشت به پرونده‌های جداگانه می‌شکستید.
 
-However, profiles created in Anki versions newer than 25.09.2 have the
-following snippet at the top of `deleted.txt` (hence allowing you to
-import `deleted.txt` without the need to split the file):
+اما نمایه‌هایی که در نسخه‌های جدیدتر از 25.09.2 آنکی ساخته شده‌اند، این قطعه را در بالای `deleted.txt` دارند (و در نتیجه می‌توانید `deleted.txt` را بدون نیاز به شکستن پرونده درون‌ریزی کنید):
 
 ```
 #guid column:1
@@ -95,6 +74,5 @@ import `deleted.txt` without the need to split the file):
 ```
 
 ```admonish note
-`deleted.txt` is unique to each profile and is not interchangeable between
-different user profiles.
+`deleted.txt` برای هر نمایه یکتاست و میان نمایه‌های کاربری متفاوت قابل مبادله نیست.
 ```

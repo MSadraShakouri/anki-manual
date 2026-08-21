@@ -1,77 +1,56 @@
-# Troubleshooting
+# رفع اشکال {#troubleshooting}
 
-If you encounter a problem with Anki, please try the following steps in order:
+اگر با مشکلی در آنکی روبه‌رو شدید، لطفاً این مراحل را به ترتیب امتحان کنید:
 
-### 1. Restart Anki
+### ۱. آنکی را دوباره راه‌اندازی کنید {#1-restart-anki}
 
-Close Anki, then start it again.
+آنکی را ببندید، سپس دوباره اجرایش کنید.
 
-If you are unable to close Anki because of an error message, you can either
-terminate Anki using your task manager, or restart your computer. Anki saves
-periodically, so you should not lose more than a few minutes of work in most
-circumstances.
+اگر به‌دلیل پیام خطایی نمی‌توانید آنکی را ببندید، می‌توانید یا با مدیر وظیفه آنکی را پایان دهید، یا رایانه‌تان را دوباره راه‌اندازی کنید. آنکی به‌طور دوره‌ای ذخیره می‌کند؛ پس در بیشتر شرایط نباید بیش از چند دقیقه از کارتان را از دست بدهید.
 
-If the problem does not occur again, you can skip the following steps.
+اگر مشکل دوباره رخ نداد، می‌توانید از مراحل بعد بگذرید.
 
-### 2. Check add-ons
+### ۲. افزونه‌ها را بررسی کنید {#2-check-add-ons}
 
-Close Anki, then open it in safe mode by holding down the
-<kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down
-until the on-screen message informs you that Anki has started in safe mode.
-If you're on Linux and that didn't work, run `anki --safemode`.
+آنکی را ببندید، سپس با نگه‌داشتن کلید <kbd>Shift</kbd> هنگام اجرای آنکی، آن را در حالت ایمن باز کنید. <kbd>Shift</kbd> را نگه دارید تا وقتی پیام روی صفحه به شما بگوید آنکی در حالت ایمن شروع شده است.
+اگر روی لینوکس هستید و این کار نکرد، `anki --safemode` را اجرا کنید.
 
-If the problem goes away, that indicates an add-on is causing the problem.
-Remove any add-ons you don't need, and disable half of the others. If the
-problem continues, try the other half. Repeat the process until you've figured
-out which add-on is causing the problem. Then please report the issue to the
-add-on author, using the Copy Debug Info button, and pasting that into the
-report.
+اگر مشکل از بین رفت، یعنی افزونه‌ای مشکل را ایجاد می‌کند.
+افزونه‌های بی‌نیاز را حذف کنید و نیمی از بقیه را غیرفعال کنید. اگر مشکل ادامه داشت، نیمه دیگر را امتحان کنید. این فرایند را تکرار کنید تا بفهمید کدام افزونه مشکل را می‌سازد. سپس لطفاً با دکمه Copy Debug Info و چسباندنش در گزارش، مشکل را به نویسنده افزونه گزارش دهید.
 
-### 3. Check your Anki version
+### ۳. نسخه آنکی‌تان را بررسی کنید {#3-check-your-anki-version}
 
-You can find the version you're using in the **Help → About** or **Anki →
-About** menu. If the version you're using is not the latest version published on
-<https://apps.ankiweb.net>, please close Anki, install the latest version, and
-then start Anki again to see if the problem has gone away.
+نسخه‌ای که استفاده می‌کنید را می‌توانید در منوی **Help → About** یا **Anki → About** بیابید. اگر نسخه‌تان آخرین نسخه منتشرشده روی
+<https://apps.ankiweb.net> نیست، لطفاً آنکی را ببندید، آخرین نسخه را نصب و سپس دوباره آنکی را اجرا کنید تا ببینید مشکل رفته است یا نه.
 
-If you're using Linux, make sure you can reproduce the error using the
-packaged version on the Anki website, as distros often distribute [broken versions](platform/linux/distro-packages.md).
+اگر از لینوکس استفاده می‌کنید، مطمئن شوید می‌توانید خطا را با نسخه بسته‌بندی‌شده روی وب‌سایت آنکی بازتولید کنید، چون توزیع‌ها اغلب [نسخه‌های معیوب](platform/linux/distro-packages.md) توزیع می‌کنند.
 
-### 4. Check your database
+### ۴. پایگاه داده‌تان را بررسی کنید {#4-check-your-database}
 
-After restarting Anki, try the **Tools → Check Database** menu item to
-make sure your collection doesn't have any problems.
+پس از راه‌اندازی دوباره آنکی، مورد منوی **Tools → Check Database** را امتحان کنید تا مطمئن شوید مجموعه‌تان مشکلی ندارد.
 
-### 5. Restart your computer
+### ۵. رایانه‌تان را دوباره راه‌اندازی کنید {#5-restart-your-computer}
 
-Sometimes restarting your computer may help.
+گاهی راه‌اندازی دوباره رایانه ممکن است کمک کند.
 
-### 6. Change the Video Driver
+### ۶. درایور ویدیو را عوض کنید {#6-change-the-video-driver}
 
-Crashes and display issues can be caused by the video driver. Changing to a
-different video driver may help. Make sure you try all the driver options and
-restart Anki after each change.
+خرابی‌ها و مشکلات نمایش می‌توانند به‌دلیل درایور ویدیو باشند. تغییر به درایور ویدیوی دیگری ممکن است کمک کند. مطمئن شوید همه گزینه‌های درایور را امتحان می‌کنید و پس از هر تغییر آنکی را دوباره راه‌اندازی می‌کنید.
 
-If you're using Anki version 23.10 or above, the easiest way is to open
-**Tools → Preferences** (or **Anki → Preferences** if you're on a Mac) and
-change the driver from the dropdown menu.
+اگر از آنکی نسخه 23.10 یا بالاتر استفاده می‌کنید، آسان‌ترین راه این است که
+**Tools → Preferences** را باز کنید (یا **Anki → Preferences** اگر روی مک هستید) و درایور را از فهرست کشویی عوض کنید.
 
-If you are on an older Anki version or if you cannot access the preferences for
-some reason, you can use the command-line instructions instead and manually
-change the gldriver file:
+اگر روی نسخه قدیمی‌تر آنکی هستید یا به دلیلی به تنظیمات دسترسی ندارید، می‌توانید به‌جای آن از دستورالعمل‌های خط فرمان استفاده کنید و پرونده gldriver را به‌طور دستی تغییر دهید:
 
-- [Windows](https://docs.ankiweb.net/platform/windows/display-issues.html)
-- [Mac](https://docs.ankiweb.net/platform/mac/display-issues.html)
-- [Linux](https://docs.ankiweb.net/platform/linux/display-issues.html)
+- [ویندوز](https://docs.ankiweb.net/platform/windows/display-issues.html)
+- [مک](https://docs.ankiweb.net/platform/mac/display-issues.html)
+- [لینوکس](https://docs.ankiweb.net/platform/linux/display-issues.html)
 
-### 7. Reset window sizes
+### ۷. اندازه پنجره‌ها را بازنشانی کنید {#7-reset-window-sizes}
 
-Sometimes pressing **reset window sizes** button in the preferences screen
-immediately after starting Anki will help.
+گاهی فشردن دکمه **reset window sizes** در صفحه تنظیمات، درست پس از شروع آنکی، کمک می‌کند.
 
-### 8. If the problem remains
+### ۸. اگر مشکل باقی ماند {#8-if-the-problem-remains}
 
-If you've confirmed you are using the latest Anki version, and are still
-receiving errors even with add-ons disabled,
-please [report the problem](./getting-help.md), including the next error you
-receive in your post.
+اگر مطمئن شدید از آخرین نسخه آنکی استفاده می‌کنید و همچنان حتی با غیرفعال‌بودن افزونه‌ها خطا می‌گیرید،
+لطفاً [مشکل را گزارش کنید](./getting-help.md) و خطای بعدی‌ای که می‌گیرید را در پست‌تان بگنجانید.

@@ -1,240 +1,140 @@
-# Syncing with AnkiWeb
+# همگام‌سازی با AnkiWeb {#syncing-with-ankiweb}
 
 <!-- toc -->
 
-AnkiWeb is a service that allows you to keep your collection
-synchronized across multiple devices, and to study online. Sign
-up for a [free account](https://ankiweb.net/) before following the steps
-below.
+AnkiWeb خدماتی است که به شما اجازه می‌دهد مجموعه‌تان را میان چند دستگاه همگام نگه دارید و برخط مطالعه کنید. پیش از دنبال‌کردن مراحل زیر، برای [حساب رایگان](https://ankiweb.net/) ثبت‌نام کنید.
 
-## Intro Videos
+## ویدیوهای مقدماتی {#intro-videos}
 
-For a quick introduction to syncing, check out the
-[syncing intro videos](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on).
+برای آشنایی سریع با همگام‌سازی،
+[ویدیوهای مقدماتی همگام‌سازی](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on) را ببینید.
 
-## Setup
+## راه‌اندازی {#setup}
 
-To start syncing your collection across devices, click the sync button
-(the top right one on the [main screen](studying.md#decks), or press <kbd>Y</kbd> on your keyboard.
-You’ll be prompted for your AnkiWeb ID and password, which you created
-in the signup process.
+برای شروع همگام‌سازی مجموعه‌تان میان دستگاه‌ها، دکمه همگام‌سازی را بزنید (بالایی-راست در [صفحه اصلی](studying.md#decks))، یا کلید <kbd>Y</kbd> را روی صفحه‌کلیدتان فشار دهید.
+از شما شناسه و گذرواژه AnkiWeb‌تان پرسیده می‌شود؛ همان که در فرایند ثبت‌نام ساختید.
 
-When you synchronize your collection for the first time, Anki will ask
-you if you want to upload or download. If you have cards on your
-computer and your AnkiWeb account is empty, choose **Upload** to send your
-data to AnkiWeb. If you have cards on AnkiWeb from another device, and
-no cards on your computer, choose **Download** to replace the empty local
-collection with the cards that are on AnkiWeb. If you have different
-cards on both devices, [more work is required](#merging-conflicts) to
-avoid losing data.
+وقتی برای نخستین‌بار مجموعه‌تان را همگام می‌کنید، آنکی می‌پرسد می‌خواهید بارگذاری یا دانلود کنید. اگر روی رایانه‌تان کارت دارید و حساب AnkiWeb‌تان خالی است، **Upload** (بارگذاری) را انتخاب کنید تا داده‌هایتان به AnkiWeb فرستاده شود. اگر از دستگاه دیگری روی AnkiWeb کارت دارید و روی رایانه‌تان کارتی نیست، **Download** (دانلود) را انتخاب کنید تا مجموعه محلیِ خالی با کارت‌های روی AnkiWeb جایگزین شود. اگر روی هر دو دستگاه کارت‌های متفاوتی دارید، برای جلوگیری از از دست رفتن داده‌ها [کار بیشتری لازم است](#merging-conflicts).
 
-Once the initial one-way sync is completed, Anki will be able to merge
-changes from multiple locations with a few exceptions.
+پس از تکمیل همگام‌سازی یک‌طرفهٔ اولیه، آنکی می‌تواند — با چند استثنا — تغییرات چند مکان را ادغام کند.
 
-If you have multiple people using Anki on one machine and have created a
-profile for each user, each user will need to create their own AnkiWeb
-account to sync with. If you attempt to synchronize multiple profiles
-with a single AnkiWeb account, you will lose data.
+اگر چند نفر روی یک رایانه از آنکی استفاده می‌کنند و برای هر کاربر نمایه‌ای ساخته‌اید، هر کاربر باید برای همگام‌سازی حساب AnkiWeb خودش را بسازد. اگر تلاش کنید چند نمایه را با یک حساب AnkiWeb همگام کنید، داده از دست می‌دهید.
 
-## Automatic Syncing
+## همگام‌سازی خودکار {#automatic-syncing}
 
-Once syncing is enabled, Anki will automatically sync each time your
-collection is closed or opened. If you would prefer to synchronize
-manually, you can disable automatic syncing in Anki’s [preferences.](preferences.md#syncing)
+وقتی همگام‌سازی فعال شد، آنکی هر بار که مجموعه‌تان بسته یا باز می‌شود به‌طور خودکار همگام می‌کند. اگر ترجیح می‌دهید دستی همگام کنید، می‌توانید همگام‌سازی خودکار را در [تنظیمات](preferences.md#syncing) آنکی خاموش کنید.
 
-## Button Color
+## رنگ دکمه {#button-color}
 
-The sync button will change to blue when a normal sync is required,
-and red when a full sync is required.
+دکمه همگام‌سازی وقتی همگام‌سازی معمولی لازم است آبی و وقتی همگام‌سازی کامل لازم است قرمز می‌شود.
 
-## Media
+## رسانه‌ها {#media}
 
-You can watch a [related video](https://www.youtube.com/watch?v=phP9GGG-PxY) on this topic.
+می‌توانید [ویدیوی مرتبط](https://www.youtube.com/watch?v=phP9GGG-PxY) درباره این موضوع را ببینید.
 
-Anki will synchronize any sounds and images used by your notes. It will
-notice when media has been added, removed or replaced in your [media folder](files.md#user-data), but
-will not notice if you have made edits to existing files. To get your edits synced, you
-need to add, remove or replace a file as well.
+آنکی هر صدا و تصویری که یادداشت‌هایتان استفاده می‌کنند همگام می‌کند. افزودن، حذف یا جایگزینی رسانه در [پوشه رسانه](files.md#user-data)‌تان را متوجه می‌شود، اما اگر روی پرونده‌های موجود ویرایشی کرده باشید متوجه نمی‌شود. برای همگام‌شدن ویرایش‌هایتان، باید پرونده‌ای را نیز اضافه، حذف یا جایگزین کنید.
 
-One-way syncs (where you're prompted to upload or download) have no influence over how media
-syncs - media changes are always merged.
+همگام‌سازی‌های یک‌طرفه (که در آن‌ها از شما بارگذاری یا دانلود پرسیده می‌شود) هیچ تأثیری بر نحوه همگام‌سازی رسانه ندارند — تغییرات رسانه همیشه ادغام می‌شوند.
 
-To prevent accidental data loss, deletions will only sync to other devices if they are made after
-media is fully in sync. If you delete files before your device is fully in sync, and the deleted
-files are already on AnkiWeb, they will be downloaded the next time you sync.
+برای جلوگیری از از دست رفتن تصادفی داده‌ها، حذف‌ها فقط در صورتی به دستگاه‌های دیگر همگام می‌شوند که پس از همگام‌سازی کاملِ رسانه انجام شده باشند. اگر پیش از همگام‌سازی کامل دستگاه‌تان پرونده‌ها را حذف کنید و پرونده‌های حذف‌شده هم‌اکنون روی AnkiWeb باشند، دفعه بعد که همگام کنید دانلود می‌شوند.
 
-If you have accidentally deleted media files, and want to restore them, open the preferences
-and log out. The next time you sync, Anki will restore any deleted files, if they are available
-on AnkiWeb still.
+اگر به‌طور تصادفی پرونده‌های رسانه را حذف کرده‌اید و می‌خواهید بازگردانیدشان، تنظیمات را باز کنید و خارج شوید (log out). دفعه بعد که همگام کنید، آنکی هر پرونده حذف‌شده‌ای را — اگر هنوز روی AnkiWeb موجود باشد — بازمی‌گرداند.
 
-If you’re running Anki off a [USB flash drive](files.md#running-from-a-flash-drive), you should use an NTFS
-file system, as Anki may not be able to detect media changes on a FAT32
-filesystem.
+اگر آنکی را از روی [درایو USB](files.md#running-from-a-flash-drive) اجرا می‌کنید، بهتر است از سیستم پرونده NTFS استفاده کنید، چون آنکی ممکن است نتواند تغییرات رسانه را روی FAT32 تشخیص دهد.
 
-## Conflicts
+## ناسازگاری‌ها {#conflicts}
 
-You can watch a [related video](https://www.youtube.com/watch?v=UEAcpfMQnjo) on this topic.
+می‌توانید [ویدیوی مرتبط](https://www.youtube.com/watch?v=UEAcpfMQnjo) درباره این موضوع را ببینید.
 
-Under normal circumstances, reviews and note edits can be merged, so if
-you review or edit on two different devices before syncing, Anki will
-preserve your changes from both locations. If the same card has been
-reviewed in two different locations, both reviews will be marked in the
-revision history, and the card will be kept in the state it was when it
-was most recently answered.
+در شرایط عادی، مرورها و ویرایش‌های یادداشت قابل ادغام‌اند؛ پس اگر پیش از همگام‌سازی روی دو دستگاه متفاوت مرور یا ویرایش کنید، آنکی تغییرات‌تان را از هر دو مکان حفظ می‌کند. اگر کارت یکسانی در دو مکان متفاوت مرور شده باشد، هر دو مرور در تاریخچه ثبت می‌شوند و کارت در حالتی نگه داشته می‌شود که آخرین بار در آن پاسخ داده شده است.
 
-There are certain changes that Anki is unable to merge. These mainly
-relate to the format of notes: things like adding a new field, or
-removing a card template. When you perform an operation that can’t be
-merged, Anki will warn you, and give you the option of aborting the
-operation. If you choose to continue, you’ll be asked to choose whether
-to keep the local copy or the copy on AnkiWeb when your collection is
-next synchronized.
+تغییراتی هست که آنکی نمی‌تواند ادغام کند. این‌ها عمدتاً به قالب یادداشت‌ها مربوط‌اند: چیزهایی مانند افزودن فیلد جدید یا حذف قالب کارت. وقتی عملیاتی انجام می‌دهید که قابل ادغام نیست، آنکی به شما هشدار می‌دهد و گزینه لغو عملیات را می‌دهد. اگر ادامه دهید، هنگام همگام‌سازی بعدی مجموعه‌تان از شما پرسیده می‌شود که رونوشت محلی را نگه دارید یا رونوشت روی AnkiWeb را.
 
-If certain problems are detected while syncing, Anki forces a
+اگر هنگام همگام‌سازی مشکلاتی تشخیص داده شود، آنکی همگام‌سازی
 
-one-way sync. If you find this consistently happening, post on our
-[support site](https://forums.ankiweb.net).
+یک‌طرفه را به‌اجبار اعمال می‌کند. اگر دیدید این مداوم رخ می‌دهد، در [سایت پشتیبانی](https://forums.ankiweb.net) ما بنویسید.
 
-When a one-way sync is required, you need to choose whether you wish to
-keep the collection on your local device, or the collection on AnkiWeb.
-If changes have been made on both ends, only changes on one end can be
-preserved.
+وقتی همگام‌سازی یک‌طرفه لازم است، باید انتخاب کنید مجموعه روی دستگاه محلی‌تان را نگه دارید یا مجموعه روی AnkiWeb را.
+اگر در هر دو سمت تغییری کرده باشد، فقط تغییرات یک سمت قابل حفظ است.
 
-If you choose **Upload**, the content on your local device will be sent to
-AnkiWeb. You then need to sync your other devices, and choose **Download**
-to have them grab a copy of that content.
+اگر **Upload** را انتخاب کنید، محتوای دستگاه محلی‌تان به AnkiWeb فرستاده می‌شود. سپس باید دستگاه‌های دیگرتان را همگام کنید و **Download** را انتخاب کنید تا رونوشتی از آن محتوا را بردارند.
 
-If you choose **Download**, it will replace any local changes you’ve made
-with the data that is on AnkiWeb.
+اگر **Download** را انتخاب کنید، تغییرات محلی‌ای که داده‌اید با داده‌های روی AnkiWeb جایگزین می‌شود.
 
-Once all devices are in sync, future syncs will return to the normal
-behaviour of merging changes from both ends.
+وقتی همه دستگاه‌ها همگام شدند، همگام‌سازی‌های بعدی به رفتار عادیِ ادغام تغییرات از هر دو سمت برمی‌گردند.
 
-If you wish to force a full upload or download (for example, because you
-accidentally deleted a deck on one side and want to restore the deck
-rather than having its deletion synchronized), you can check the "On
-next sync, force changes in one direction" box in
-**Tools &gt; Preferences &gt; Network**, then sync as usual. (You’ll be given
-the option to choose which side you want to use.)
+اگر می‌خواهید بارگذاری یا دانلود کامل را به‌اجبار اعمال کنید (مثلاً چون به‌طور تصادفی دسته‌ای را در یک سمت حذف کرده‌اید و می‌خواهید به‌جای همگام‌شدن حذفش، دسته را بازگردانید)، می‌توانید کادر "On next sync, force changes in one direction" را در
+**Tools &gt; Preferences &gt; Network** علامت بزنید، سپس مثل همیشه همگام کنید. (به شما گزینه انتخاب سمتِ موردنظر داده می‌شود.)
 
-Forcing a one way sync only affects card syncing - media is synced as
-normal. If you have files that you want to remove from AnkiWeb,
-ensure your client is fully in sync first. After syncing is up to date,
-any files you remove (e.g. via the **Check Media** function) will be removed
-from AnkiWeb on the following sync.
+اعمال اجباری همگام‌سازی یک‌طرفه فقط بر همگام‌سازی کارت‌ها اثر دارد — رسانه‌ها مثل همیشه همگام می‌شوند. اگر پرونده‌هایی دارید که می‌خواهید از AnkiWeb حذف شوند، ابتدا مطمئن شوید کلاینت‌تان کاملاً همگام است. پس از به‌روز بودن همگام‌سازی، هر پرونده‌ای که حذف کنید (مثلاً با عملکرد **Check Media**) در همگام‌سازی بعدی از AnkiWeb حذف خواهد شد.
 
-## Merging Conflicts
+## ادغام ناسازگاری‌ها {#merging-conflicts}
 
-Because the [first sync](#setup) can only sync changes in one
-direction, if you have added different content to different devices or
-profiles before setting syncing up, content on one device will be lost
-if you overwrite it with the content from the other device. With some
-work, it is possible to manually merge data into a single collection.
+چون [نخستین همگام‌سازی](#setup) فقط می‌تواند تغییرات را در یک جهت همگام کند، اگر پیش از راه‌اندازی همگام‌سازی محتوای متفاوتی به دستگاه‌ها یا نمایه‌های متفاوت افزوده‌اید، محتوای یک دستگاه از بین می‌رود اگر با محتوای دستگاه دیگر بازنویسی‌اش کنید. با کمی کار، ممکن است داده‌ها را به‌طور دستی در یک مجموعه ادغام کنید.
 
-Start by taking a backup on each device/profile, in case something goes
-wrong. With the computer version you can use **File &gt; Export** to export
-"all decks" with scheduling information and media files included, and
-save the file somewhere safe. In AnkiMobile, the Add/Export button on
-the decks list screen will let you export all decks with media.
+با گرفتن پشتیبان روی هر دستگاه/نمایه شروع کنید، مبادا چیزی خراب شود. در نسخه رایانه‌ای می‌توانید از **File &gt; Export** برای برون‌بری "all decks" همراه با اطلاعات زمان‌بندی و پرونده‌های رسانه استفاده کنید و پرونده را جایی امن ذخیره کنید. در AnkiMobile، دکمه Add/Export در صفحه فهرست دسته‌ها به شما اجازه می‌دهد همه دسته‌ها را با رسانه برون‌بری کنید.
 
-Next, if one of your devices is a mobile device, synchronize it first.
-If there’s a conflict, choose **Upload** to overwrite any existing data on
-AnkiWeb with the data from your mobile device. If both devices/profiles
-are on your computer, synchronize the device/profile with the most
-number of decks first.
+سپس، اگر یکی از دستگاه‌هایتان موبایل است، اول آن را همگام کنید.
+اگر ناسازگاری‌ای هست، **Upload** را انتخاب کنید تا داده‌های موجود روی AnkiWeb با داده‌های دستگاه موبایل‌تان بازنویسی شود. اگر هر دو دستگاه/نمایه روی رایانه‌تان هستند، ابتدا دستگاه/نمایه‌ای را که بیشترین شمار دسته را دارد همگام کنید.
 
-Now return to the other device/profile. If automatic syncing is enabled,
-a message may pop up asking if you want to upload or download. Click the
-cancel button - we don’t want to sync yet.
+حالا به دستگاه/نمایه دیگر برگردید. اگر همگام‌سازی خودکار فعال باشد، ممکن است پیامی ظاهر شود و بپرسد می‌خواهید بارگذاری یا دانلود کنید. دکمه لغو را بزنید — هنوز نمی‌خواهیم همگام کنیم.
 
-Once you’re looking at the deck list, click the cog icon next to the
-first deck, and choose **Export**. Export the content with scheduling
-information and media included, and save the `.apkg` file somewhere. Now
-you’ll need to repeat this for each top-level deck.
+وقتی به فهرست دسته‌ها نگاه می‌کنید، روی نشانک چرخ‌دنده کنار نخستین دسته کلیک کنید و **Export** را انتخاب کنید. محتوا را همراه با اطلاعات زمان‌بندی و رسانه برون‌بری کنید و پرونده `.apkg` را جایی ذخیره کنید. حالا باید این کار را برای هر دسته سطح بالایی تکرار کنید.
 
-Once all top-level decks have been exported, click the sync button at
-the top right, and choose **Download**, which will overwrite the local
-content with the content you synced from your other device.
+وقتی همه دسته‌های سطح بالا برون‌بری شدند، دکمه همگام‌سازی را در بالا-راست بزنید و **Download** را انتخاب کنید تا محتوای محلی با محتوایی که از دستگاه دیگرتان همگام کرده بودید بازنویسی شود.
 
-You can now use **File &gt; Import** to import the `.apkg` files you exported
-earlier, which will merge the exported content with the existing
-content, so everything will be in one place.
+اکنون می‌توانید با **File &gt; Import** پرونده‌های `.apkg`‌ای را که قبلاً برون‌بری کردید درون‌ریزی کنید؛ این کار محتوای برون‌بری‌شده با محتوای موجود ادغام می‌شود تا همه‌چیز در یک جا باشد.
 
-## AnkiWeb Data Deletion
+## حذف داده‌های AnkiWeb {#ankiweb-data-deletion}
 
-As AnkiWeb is a free service, we need to periodically delete unused account data
-to keep costs down. If you haven't accessed your account or synced in the last 6 months,
-the data on your account might get deleted.
+از آنجا که AnkiWeb خدمتی رایگان است، باید به‌طور دوره‌ای داده‌های حساب‌های بلااستفاده را حذف کنیم تا هزینه‌ها پایین بماند. اگر در ۶ ماه گذشته به حسابتان دسترسی نداشته یا همگام نکرده‌اید، داده‌های حسابتان ممکن است حذف شوند.
 
-### What Gets Deleted
+### چه چیزی حذف می‌شود {#what-gets-deleted}
 
-Only your data stored on AnkiWeb is deleted. Your account itself will remain and can be used again.
+فقط داده‌های ذخیره‌شده روی AnkiWeb حذف می‌شوند. خود حسابتان می‌ماند و می‌توان دوباره از آن استفاده کرد.
 
-Any cards you have stored on your computer, phone or tablet will remain on those devices. Items shared from your account, including decks and add-ons will also remain on AnkiWeb.
+هر کارتی که روی رایانه، گوشی یا تبلت‌تان ذخیره کرده‌اید روی همان دستگاه‌ها می‌ماند. موارد به‌اشتراک‌گذاشته از حسابتان — از جمله دسته‌ها و افزونه‌ها — هم روی AnkiWeb می‌مانند.
 
-### Returning to AnkiWeb
+### بازگشت به AnkiWeb {#returning-to-ankiweb}
 
-Once your deck data has expired, it is not possible for us to recover your data from AnkiWeb,
-but you may be able to recover it if you have a local copy or a [backup](./backups.md).
+وقتی داده‌های دسته‌تان منقضی شد، ما نمی‌توانیم داده‌هایتان را از AnkiWeb بازیابی کنیم، اما اگر رونوشت محلی یا [پشتیبان](./backups.md) دارید ممکن است بتوانید بازیابیدشان.
 
-### Avoiding Data Deletion
+### جلوگیری از حذف داده‌ها {#avoiding-data-deletion}
 
-Each time you visit ankiweb.net, or use the synchronization feature in Anki, AnkiMobile or AnkiDroid,
-your account will automatically be marked as active.
+هر بار که به ankiweb.net سر می‌زنید یا از قابلیت همگام‌سازی در آنکی، AnkiMobile یا AnkiDroid استفاده می‌کنید، حسابتان به‌طور خودکار فعال علامت می‌خورد.
 
-If your account has been inactive for 6 months or more, and you used the service for a week or longer,
-we will send you an email notifying you that deletion is pending.
-If you'd like to keep your account active, log in to ankiweb.net
-and study a card, or sync one of your devices within 30 days.
+اگر حسابتان ۶ ماه یا بیشتر غیرفعال بوده و بیش از یک هفته از خدمت استفاده کرده بودید، ایمیلی می‌فرستیم که خبر می‌دهد حذف در انتظار است.
+اگر می‌خواهید حسابتان فعال بماند، تا ۳۰ روز به ankiweb.net وارد شوید و کارتی مطالعه کنید، یا یکی از دستگاه‌هایتان را همگام کنید.
 
-## Firewalls
+## فایروال‌ها {#firewalls}
 
-Anki needs to be able to make outbound HTTPS connections to sync. It must be
-able to connect to ankiweb.net, sync.ankiweb.net, sync2.ankiweb.net, and so on.
-These domains may change over time, and the IP addresses they point to may also
-change, so we recommend you allow wildcard access to \*.ankiweb.net to reduce
-the chance of the firewall rules needing to be updated in the future.
+آنکی برای همگام‌سازی باید بتواند اتصال‌های HTTPS خروجی برقرار کند. باید بتواند به ankiweb.net، sync.ankiweb.net، sync2.ankiweb.net و غیره متصل شود.
+این دامنه‌ها ممکن است با گذشت زمان تغییر کنند و نشانی‌های IP که به آن‌ها اشاره می‌کنند هم ممکن است تغییر کنند؛ پس توصیه می‌کنیم دسترسی عام (wildcard) به \*.ankiweb.net را مجاز کنید تا احتمال نیاز به به‌روزرسانی قواعد فایروال در آینده کم شود.
 
-If you have a firewall on your machine, you should add an exception for
-Anki. If you are on a work or school network, contact your
-network administrator for assistance - it is not something we can help
-you with.
+اگر روی رایانه‌تان فایروال دارید، باید برای آنکی استثنا بگذارید. اگر روی شبکه محل کار یا مدرسه هستید، برای کمک با مدیر شبکه‌تان تماس بگیرید — کاری است که ما نمی‌توانیم در آن کمکتان کنیم.
 
-## Proxies
+## پروکسی‌ها {#proxies}
 
-If you need a proxy to access the internet, Anki should automatically
-pick up your system proxy settings if you’re on Windows or macOS, and
-will honour the HTTP_PROXY environment variable if you’re on another
-platform.
+اگر برای دسترسی به اینترنت به پروکسی نیاز دارید، آنکی در ویندوز یا macOS باید تنظیمات پروکسی سیستم‌تان را خودکار بردارد و در پلتفرم‌های دیگر متغیر محیطی HTTP_PROXY را به رسمیت می‌شناسد.
 
-Anki will only be able to pick up your system settings if a proxy is
-manually configured, and does not require a password. If your system
-uses automatic proxy setup, or uses a proxy that requires a username and
-password, you will need to manually tell Anki the proxy configuration.
+آنکی فقط در صورتی می‌تواند تنظیمات سیستم‌تان را بردارد که پروکسی به‌طور دستی پیکربندی شده و نیازمند گذرواژه نباشد. اگر سیستم‌تان از تنظیم خودکار پروکسی استفاده می‌کند یا پروکسی‌ای می‌خواهد که نام کاربری و گذرواژه لازم دارد، باید پیکربندی پروکسی را به‌طور دستی به آنکی بگویید.
 
-To tell Anki your proxy settings, define a HTTPS_PROXY environment
-variable that points to the proxy server. It will look like:
+برای گفتن تنظیمات پروکسی به آنکی، متغیر محیطی HTTPS_PROXY‌ای تعریف کنید که به سرور پروکسی اشاره کند. این‌طور خواهد بود:
 
     http://user:pass@proxy.company.com:8080
 
-If your username or password contains an @ (e.g `user@workdomain.com`),
-you need to change it to %40, like so:
+اگر نام کاربری یا گذرواژه‌تان شامل @ است (مثلاً `user@workdomain.com`)، باید آن را به %40 تغییر دهید؛ مانند:
 
     http://user%40workdomain.com:pass@proxy.company.com:8080
 
-Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
+آنکی 2.0 به‌دنبال HTTP_PROXY می‌گردد نه HTTPS_PROXY.
 
-To set environment variables on Windows, see
-<https://duckduckgo.com/?q=windows+set+environment+variable>
+برای تنظیم متغیرهای محیطی در ویندوز،
+<https://duckduckgo.com/?q=windows+set+environment+variable> را ببینید
 
-If you’re on a Mac, see
-<http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x>
+اگر روی مک هستید،
+<http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x> را ببینید
 
-Heavily locked down networks that intercept secure connections and
-present their own certificates may cause Anki to throw up SSL
-errors. In such environments, you may be able to work around the errors using [this add-on](https://ankiweb.net/shared/info/1332261690).
+شبکه‌های به‌شدت قفل‌شده‌ای که اتصال‌های امن را رهگیری و گواهی‌های خودشان را ارائه می‌کنند ممکن است باعث شوند آنکی خطاهای SSL بدهد. در چنین محیط‌هایی، شاید بتوانید با [این افزونه](https://ankiweb.net/shared/info/1332261690) از خطاها عبور کنید.
 
-An alternative solution is to install a local proxy server, and point
-that proxy server at your normal proxy server. You can then tell Anki to
-use the local proxy, which will redirect requests to the proxy you
-normally use.
+راه‌حل جایگزین، نصب یک سرور پروکسی محلی و اشاره دادن آن سرور به سرور پروکسی عادی‌تان است. سپس می‌توانید به آنکی بگویید از پروکسی محلی استفاده کند که درخواست‌ها را به پروکسی‌ای که معمولاً استفاده می‌کنید بازهدایت می‌کند.

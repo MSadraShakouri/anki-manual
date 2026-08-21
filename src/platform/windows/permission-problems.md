@@ -1,33 +1,33 @@
-# Windows permission problems
+# مشکلات مجوز در ویندوز {#windows-permission-problems}
 
 <!-- toc -->
 
-## Permission Problems
+## مشکلات مجوز {#permission-problems}
 
-If you receive "access denied" messages, some of Anki's files may be set to read only mode, meaning Anki is not able to write to them.
+اگر پیام‌های "access denied" می‌گیرید، ممکن است بعضی پرونده‌های آنکی روی حالت فقط‌خواندنی تنظیم شده باشند؛ یعنی آنکی نمی‌تواند در آن‌ها بنویسد.
 
-To fix the problem, you can do the following:
+برای رفع مشکل می‌توانید کارهای زیر را انجام دهید:
 
-- in the search area of the start bar, type `cmd.exe` and hit <kbd>Enter</kbd>
-- in the window that opens, type the following and hit <kbd>Enter</kbd> to see your username:
+- در ناحیه جست‌وجوی نوار استارت، `cmd.exe` را تایپ و <kbd>Enter</kbd> را بزنید
+- در پنجره‌ای که باز می‌شود، موارد زیر را تایپ و <kbd>Enter</kbd> را بزنید تا نام کاربری‌تان را ببینید:
 
 whoami
 
-- type the following, hitting <kbd>Enter</kbd> after each line, and replacing ____ (and keeping the :F part) with your username from the previous command
+- موارد زیر را تایپ کنید، پس از هر خط <kbd>Enter</kbd> را بزنید، و ____ را (با نگه‌داشتن بخش :F) با نام کاربری‌تان از دستور قبلی جایگزین کنید
 
 cd %APPDATA%
 
 icacls Anki2 /grant ____:F /t
 
-That command should fix the permissions on Anki's data folder, and you should now be able to start the program.
+این دستور باید مجوزهای پوشه داده آنکی را درست کند و اکنون باید بتوانید برنامه را شروع کنید.
 
-## Antivirus/Firewall/Anti-Malware
+## آنتی‌ویروس/فایروال/ضدبدافزار {#antivirusfirewallanti-malware}
 
-Some users have experienced "permission denied" or "readonly" errors that were caused by security software installed on their machine. You may need to add an exception for Anki, or try temporarily disabling the software to rule it out as the cause. Some users have reported that simply turning off their software did not fix the problem, and they either had to add an exception for Anki or uninstall the software.
+بعضی کاربران خطاهای "permission denied" یا "readonly" را تجربه کرده‌اند که به‌دلیل نرم‌افزار امنیتی نصب‌شده روی رایانه‌شان بوده. شاید لازم باشد برای آنکی استثنا بگذارید، یا نرم‌افزار را موقتاً غیرفعال کنید تا به‌عنوان علت کنار گذاشته شود. بعضی کاربران گزارش کرده‌اند که صرفاً خاموش‌کردن نرم‌افزارشان مشکل را حل نکرد و مجبور بودند یا برای آنکی استثنا بگذارند یا نرم‌افزار را حذف کنند.
 
-## Debugging Permission Problems
+## اشکال‌زدایی مشکلات مجوز {#debugging-permission-problems}
 
-If problems persist after you've ruled out Antivirus and related programs, have performed the steps above to fix permissions, and don't use OneDrive, please run the following commands in `cmd.exe`, pressing <kbd>Enter</kbd> after each one.
+اگر مشکلات پس از کنار گذاشتن آنتی‌ویروس و برنامه‌های مرتبط، انجام مراحل بالا برای رفع مجوزها و استفاده نکردن از OneDrive ادامه داشتند، لطفاً دستورهای زیر را در `cmd.exe` اجرا کنید و پس از هرکدام <kbd>Enter</kbd> بزنید.
 
 whoami
 
@@ -35,4 +35,4 @@ cd %APPDATA%
 
 icacls Anki2 /t
 
-Then copy & paste or screenshot what you see, and post it to us in a support ticket.
+سپس چیزی که می‌بینید را رونوشت و چسبانده یا از آن تصویر بگیرید و در تیکت پشتیبانی برای ما بفرستید.

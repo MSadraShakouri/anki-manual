@@ -1,11 +1,10 @@
-# Windows
+# ویندوز {#windows}
 
-## Installing & Upgrading Anki on Windows
+## نصب و ارتقای آنکی در ویندوز {#installing--upgrading-anki-on-windows}
 
-For instructions on how to install or upgrade Anki on Windows, see:
-- [Install & Upgrade](installing.md)
+برای راهنمای نصب یا ارتقای آنکی در ویندوز، ببینید:
+- [نصب و ارتقا](installing.md)
 
-## Problems
+## مشکلات {#problems}
 
-If you encounter any issues when installing or starting Anki, please see the
-subsections in the table of contents.
+اگر هنگام نصب یا شروع آنکی با مشکلی روبه‌رو شدید، لطفاً زیربخش‌های فهرست مطالب را ببینید.

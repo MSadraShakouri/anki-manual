@@ -1,73 +1,39 @@
-# Contributing
+# مشارکت {#contributing}
 
 <!-- toc -->
 
-## Sharing Decks Publicly
+## اشتراک‌گذاری عمومی دسته‌ها {#sharing-decks-publicly}
 
-To share decks with the general public, [synchronize](syncing.md) them
-with AnkiWeb, then log into AnkiWeb and click on "Share" from the menu
-next to the deck you wish to share.
+برای اشتراک‌گذاری دسته‌ها با عموم مردم، آن‌ها را با AnkiWeb [همگام](syncing.md) کنید، سپس به AnkiWeb وارد شوید و از منوی کنار دسته‌ای که می‌خواهید به اشتراک بگذارید روی "Share" کلیک کنید.
 
-If you shared a deck previously (including with previous versions of
-Anki), you can update it by clicking "Share" as above. Updating a shared
-deck will not reset the download counts or ratings. You can delete a
-shared deck that you have uploaded using the Delete button on the shared
-deck's page.
+اگر قبلاً دسته‌ای را به اشتراک گذاشته‌اید (از جمله با نسخه‌های قبلی آنکی)، می‌توانید با کلیک روی "Share" مانند بالا آن را به‌روزرسانی کنید. به‌روزرسانی دسته اشتراکی، شمار دانلودها یا امتیازها را بازنشانی نمی‌کند. می‌توانید دسته اشتراکی‌ای که بارگذاری کرده‌اید را با دکمه Delete در صفحه دسته اشتراکی حذف کنید.
 
-When updating a deck, AnkiWeb expects the deck to be at the same
-location as before. If you shared a deck when it was called "Korean
-Verbs" for example, and then renamed it to "Korean::Korean Verbs",
-resharing will not be able to update the existing copy. If you have
-forgotten the original name, you can guess it by downloading the
-deck on AnkiWeb and importing it (File > Import) in a new profile
-(File > Switch profile > Add). Then you can copy the exact name of the
-deck when it was first shared. If this doesn't work, please contact
-support.
+هنگام به‌روزرسانی دسته، AnkiWeb انتظار دارد دسته در همان محل قبلی باشد. مثلاً اگر دسته‌ای را وقتی "Korean Verbs" نام داشت به اشتراک گذاشته‌اید و سپس نامش را به "Korean::Korean Verbs" تغییر داده‌اید، اشتراک‌گذاری مجدد نمی‌تواند رونوشت موجود را به‌روزرسانی کند. اگر نام اصلی را فراموش کرده‌اید، می‌توانید با دانلود دسته روی AnkiWeb و درون‌ریزی‌اش (File > Import) در نمایه جدیدی (File > Switch profile > Add) آن را حدس بزنید. سپس می‌توانید نام دقیق دسته هنگام نخستین اشتراک را رونوشت کنید. اگر این کار نکرد، لطفاً با پشتیبانی تماس بگیرید.
 
-When you update a shared deck, users who downloaded the deck previously
-will not automatically receive updates. If they download the deck again
-and re-import it, newly added material will be imported without altering
-their existing study progress, provided neither you nor the user has
-altered the note type since the first import.
+وقتی دسته اشتراکی را به‌روزرسانی می‌کنید، کاربرانی که قبلاً دسته را دانلود کرده‌اند به‌طور خودکار به‌روزرسانی نمی‌گیرند. اگر دسته را دوباره دانلود و درون‌ریزی کنند، مطالب تازه‌افزوده بدون دست‌بردن به پیشرفت مطالعه موجودشان درون‌ریزی می‌شوند، به‌شرط آنکه هیچ‌یک از شما و کاربر از نخستین درون‌ریزی، نوع یادداشت را تغییر نداده باشید.
 
-## Sharing Decks Privately
+## اشتراک‌گذاری خصوصی دسته‌ها {#sharing-decks-privately}
 
-If you’d like to share decks with a limited group of people (such as a
-study group or class) rather than the general public, you can do so by
-sharing them outside of AnkiWeb.
+اگر می‌خواهید دسته‌ها را با گروه محدودی از افراد (مانند گروه مطالعه یا کلاس) به اشتراک بگذارید نه با عموم، می‌توانید این کار را با اشتراک‌گذاری بیرون از AnkiWeb انجام دهید.
 
-To share a deck privately, go to the File menu and choose Export. Select
-a single deck (not "All Decks"), and turn off "include scheduling
-information". This will produce an .apkg file which you can share with
-others.
+برای اشتراک‌گذاری خصوصی دسته، به منوی File بروید و Export را انتخاب کنید. یک دسته واحد را انتخاب کنید (نه "All Decks")، و "include scheduling information" را خاموش کنید. این کار پرونده .apkg‌ای می‌سازد که می‌توانید با دیگران به اشتراک بگذارید.
 
-You can share the .apkg file by emailing it to people, placing it on a
-website or shared folder, or using a free file sharing service like
-Dropbox or Google Drive and sending people a link.
+می‌توانید پرونده .apkg را با ایمیل‌کردن به افراد، قراردادن روی وب‌سایت یا پوشه مشترک، یا استفاده از خدمت رایگان اشتراک پرونده مانند Dropbox یا Google Drive و فرستادن پیوند به افراد به اشتراک بگذارید.
 
-Both the computer version and mobile clients make it easy to import from
-an apkg file simply by clicking or tapping on it. AnkiWeb does not have
-the ability to import apkg files however, so the recipients of your deck
-will need to have the computer version or Anki on their mobile device.
+هم نسخه رایانه‌ای و هم کلاینت‌های موبایل، درون‌ریزی از پرونده apkg را با کلیک یا ضربه ساده آسان می‌کنند. اما AnkiWeb توانایی درون‌ریزی پرونده‌های apkg را ندارد؛ پس دریافت‌کنندگان دسته شما باید نسخه رایانه‌ای یا آنکی روی دستگاه موبایلشان را داشته باشند.
 
-When a user imports an .apkg file, cards that already exist in their
-collection will be ignored and any new cards will be added. As long as
-they use the same note type, modified cards will also be updated. To
-prevent data loss, cards that have been deleted in the new apkg file
-will not be deleted in the user’s collection, so if you need to delete
-cards from users' decks for whatever reason, you will need to contact
-them about it.
+وقتی کاربر پرونده .apkg را درون‌ریزی می‌کند، کارت‌هایی که هم‌اکنون در مجموعه‌اش هست نادیده گرفته می‌شوند و کارت‌های جدید افزوده می‌شوند. تا وقتی از همان نوع یادداشت استفاده کنند، کارت‌های تغییریافته هم به‌روزرسانی می‌شوند. برای جلوگیری از از دست رفتن داده‌ها، کارت‌هایی که در پرونده apkg جدید حذف شده‌اند در مجموعه کاربر حذف نمی‌شوند؛ پس اگر به هر دلیلی لازم است کارت‌هایی را از دسته‌های کاربران حذف کنید، باید در این باره با آن‌ها تماس بگیرید.
 
-## Sharing Add-ons
+## اشتراک‌گذاری افزونه‌ها {#sharing-add-ons}
 
-See <https://addon-docs.ankiweb.net/sharing.html>
+<https://addon-docs.ankiweb.net/sharing.html> را ببینید
 
-## Translating Anki
+## ترجمه آنکی {#translating-anki}
 
-See <https://translating.ankiweb.net>
+<https://translating.ankiweb.net> را ببینید
 
-## Contributing Code
+## مشارکت در کد {#contributing-code}
 
-Anki's source code is available at <https://github.com/ankitects/anki>
+کد منبع آنکی در <https://github.com/ankitects/anki> موجود است
 
-Before contributing, please see [contributing.md](https://github.com/ankitects/anki/blob/main/docs/contributing.md).
+پیش از مشارکت، لطفاً [contributing.md](https://github.com/ankitects/anki/blob/main/docs/contributing.md) را ببینید.

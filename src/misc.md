@@ -1,48 +1,33 @@
-# Miscellanea
+# گوناگون {#miscellanea}
 
 <!-- toc -->
 
-## Menu Shortcuts
+## میانبرهای منو {#menu-shortcuts}
 
-On Windows/Linux you can hold down the <kbd>Alt</kbd> key and press a highlighted
-letter to activate a particular menu.
+در ویندوز/لینوکس می‌توانید کلید <kbd>Alt</kbd> را نگه دارید و حرف برجسته‌شده‌ای را فشار دهید تا منوی مشخصی فعال شود.
 
-Although macOS doesn’t support this feature, it does allow you instead to assign
-shortcuts to specific menu items. See
-<https://support.apple.com/en-au/guide/mac-help/mchlp2271/mac>
-for more information.
+macOS این قابلیت را پشتیبانی نمی‌کند، اما در عوض به شما اجازه می‌دهد به موارد مشخصی از منو میانبر اختصاص دهید. برای اطلاعات بیشتر
+<https://support.apple.com/en-au/guide/mac-help/mchlp2271/mac> را ببینید.
 
-## Debug Console
+## کنسول اشکال‌زدایی {#debug-console}
 
-Sometimes you may be asked to use the debug console to change a setting
-or check something. Unless asked to enter text in the "debug console",
-you will probably not need this. Advanced users may like to read more
-about it in the [add-on writing guide](https://addon-docs.ankiweb.net/debugging.html#debug-console).
+گاهی ممکن است از شما خواسته شود برای تغییر تنظیمی یا بررسی چیزی از کنسول اشکال‌زدایی استفاده کنید. مگر آنکه از شما خواسته شده باشد متنی در «کنسول اشکال‌زدایی» وارد کنید، احتمالاً به این نیاز نخواهید داشت. کاربران پیشرفته شاید بخواهند درباره آن در [راهنمای نوشتن افزونه](https://addon-docs.ankiweb.net/debugging.html#debug-console) بیشتر بخوانند.
 
-When asked to enter text into the "debug console", please start Anki,
-and in the main window, press
+وقتی از شما خواسته شد متنی در «کنسول اشکال‌زدایی» وارد کنید، لطفاً آنکی را شروع کنید و در پنجره اصلی بزنید
 
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>
 
-(the control key, shift key, and semi-colon key at the same time)
+(کلید کنترل، کلید شیفت و کلید نقطه‌ویرگول هم‌زمان)
 
-On a Mac, press
+روی مک بزنید
 
 <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>
 
-(the command key, shift key, and semi-colon key at the same time)
+(کلید فرمان، کلید شیفت و کلید نقطه‌ویرگول هم‌زمان)
 
-On some non-English keyboards, you may need to press <kbd>:</kbd> or <kbd>+</kbd> instead
-of <kbd>;</kbd>.
+در بعضی صفحه‌کلیدهای غیرانگلیسی، شاید به‌جای <kbd>;</kbd> لازم باشد <kbd>:</kbd> یا <kbd>+</kbd> را بفشارید.
 
-In the window that has popped up, paste the text you were asked
-to paste in the top section. When you’ve done so, press
-<kbd>Ctrl</kbd>+<kbd>Return</kbd> (On Mac, <kbd>Command</kbd>+<kbd>Return</kbd>), and some text should appear in
-the bottom section. If you’ve been asked to paste the resulting output,
-copy it from the bottom area, and paste it back to the support
-person.
+در پنجره‌ای که باز شده، متنی را که از شما خواسته شده در بخش بالایی بچسبانید. وقتی این کار را کردید،
+<kbd>Ctrl</kbd>+<kbd>Return</kbd> را بزنید (روی مک، <kbd>Command</kbd>+<kbd>Return</kbd>) و باید متنی در بخش پایینی ظاهر شود. اگر از شما خواسته شده خروجی حاصل را بچسبانید، آن را از ناحیه پایانی رونوشت کنید و برای فرد پشتیبان بفرستید.
 
-If you press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Return</kbd> instead of just <kbd>Ctrl</kbd>+<kbd>Return</kbd>, Anki will
-try to print the result rather than doing what you asked it to. If you
-are getting unexpected errors, make sure you’re not holding down
-the <kbd>Shift</kbd> key.
+اگر به‌جای صرفِ <kbd>Ctrl</kbd>+<kbd>Return</kbd>، <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Return</kbd> را بزنید، آنکی می‌کوشد نتیجه را چاپ کند به‌جای اینکه کاری را که خواستید انجام دهد. اگر خطاهای غیرمنتظره می‌گیرید، مطمئن شوید کلید <kbd>Shift</kbd> را نگه نداشته‌اید.

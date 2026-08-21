@@ -1,290 +1,181 @@
-# Card Info, Graphs and Statistics
+# اطلاعات کارت، نمودارها و آمار {#card-info-graphs-and-statistics}
 
 <!-- toc -->
 
-## Card Info
+## اطلاعات کارت {#card-info}
 
-You can display information about a card by using the Cards&gt;Info menu item,
-by right-clicking on the card and then selecting **Info**, or by pressing
-<kbd>I</kbd> on the study screen.
+می‌توانید اطلاعات درباره کارتی را با مورد منوی Cards&gt;Info، با راست‌کلیک روی کارت و انتخاب **Info**، یا با فشردن <kbd>I</kbd> در صفحه مطالعه نمایش دهید.
 
-![Card Info](media/card_info.png)
+![اطلاعات کارت](media/card_info.png)
 
-A few notes:
+چند نکته:
 
-**Position**\
-It shows the order the card will appear
-in relative to other new cards. The position can be changed in the
-browser. Once a card has been studied, the position is not used, unless
-the card is manually reset to new again.
+**موقعیت (Position)**\
+ترتیبی را نشان می‌دهد که کارت نسبت به کارت‌های جدید دیگر ظاهر می‌شود. موقعیت را می‌توان در مرورگر تغییر داد. وقتی کارتی مطالعه شد، موقعیت دیگر استفاده نمی‌شود، مگر آنکه کارت به‌طور دستی دوباره به جدید بازنشانی شود.
 
-**Interval**\
-The delay from one review to the next. Times are abbreviated; "0s, 1m,
-3h, 4d, 5mo, 6y" refers to seconds, minutes, hours, days, months and
-years respectively.
+**فاصله (Interval)**\
+تأخیر از یک مرور تا مرور بعد. زمان‌ها مخفف‌اند؛ «0s, 1m, 3h, 4d, 5mo, 6y» به‌ترتیب یعنی ثانیه، دقیقه، ساعت، روز، ماه و سال.
 
-**Ease**\
-The approximate amount the interval will grow when you answer a review
-card with the "Good" button.
+**سهولت (Ease)**\
+مقدار تقریبی رشد فاصله وقتی به کارت مروری با دکمه "Good" پاسخ می‌دهید.
 
-The bottom section shows the review history for the card. Rating denotes
-the button (1 = Again, 4 = Easy). When cards are manually rescheduled using
-the "reset" or "set due date" actions, the type will be listed as Manual
-and the rating as 0.
+بخش پایینی، تاریخچه مرور کارت را نشان می‌دهد. نمره (Rating) دکمه را مشخص می‌کند (۱ = Again، ۴ = Easy). وقتی کارت‌ها با کنش‌های "reset" یا "set due date" به‌طور دستی دوباره زمان‌بندی می‌شوند، نوع به‌صورت Manual و نمره به‌صورت ۰ فهرست می‌شود.
 
-## Statistics
+## آمار {#statistics}
 
-The statistics window is accessed by clicking on **Stats** button at the
-top of the main window, or by pressing <kbd>T</kbd>.
+پنجره آمار با کلیک روی دکمه **Stats** در بالای پنجره اصلی، یا با فشردن <kbd>T</kbd> باز می‌شود.
 
-![Statistics screen](media/Statistics.png)
+![صفحه آمار](media/Statistics.png)
 
-## Selecting Decks / Collection
+## انتخاب دسته‌ها / مجموعه {#selecting-decks--collection}
 
-### Deck
+### دسته {#deck}
 
-By default, the statistics window will show statistics from the currently selected deck and any
-subdecks it may contain, but you can select any deck from your collection by typing its name in the
-text box at the top of the screen or (from Anki 2.1.61), by using the deck selector at the bottom.
+به‌طور پیش‌فرض، پنجره آمار آمارِ دستهٔ در حال انتخاب و هر زیردسته‌ای که ممکن است در بر داشته باشد را نشان می‌دهد؛ اما می‌توانید هر دسته‌ای از مجموعه‌تان را با تایپ نامش در جعبه متن بالای صفحه یا (از آنکی 2.1.61) با انتخاب‌گر دسته در پایین انتخاب کنید.
 
-### Collection
+### مجموعه {#collection}
 
-If you select this checkbox, statistics will be shown for your entire collection. You can also display graphs
-for arbitrary searches by adding filters in the search box at the top (2.1.28+).
+اگر این کادر را علامت بزنید، آمار برای کل مجموعه‌تان نشان داده می‌شود. همچنین می‌توانید نمودارهایی برای جست‌وجوهای دلخواه با افزودن پالایه‌ها در جعبه جست‌وجوی بالا نمایش دهید (2.1.28+).
 
-### History
+### تاریخچه {#history}
 
-By default, Anki shows you statistics for the last 12 months.
-You can change this to all history scope or deck life scope at the top. (The
-"today" section at the top remains of course unaffected by this selection.)
+به‌طور پیش‌فرض، آنکی آمار ۱۲ ماه گذشته را به شما نشان می‌دهد.
+می‌توانید این را در بالا به محدوده همه تاریخ یا طول عمر دسته تغییر دهید. (بخش «امروز» در بالا البته از این انتخاب تأثیر نمی‌پذیرد.)
 
-### More
+### بیشتر {#more}
 
-- Clicking on "Save PDF" at the bottom will save a PDF document of the statistics to a file
-  on your desktop to make it easy to share your statistics with others.
+- کلیک روی "Save PDF" در پایین، سند PDFی از آمار را در پرونده‌ای روی میزکارتان ذخیره می‌کند تا به‌اشتراک‌گذاری آمارتان با دیگران آسان باشد.
 
-- When you delete notes, their review history is maintained in Anki. It
-  will not be included when looking at statistics for a specific deck (as
-  Anki has no way of knowing which deck the deleted cards belonged to),
-  but will be included when you look at statistics for the whole
-  collection.
+- وقتی یادداشت‌ها را حذف می‌کنید، تاریخچه مرورشان در آنکی نگه داشته می‌شود. این تاریخچه هنگام نگاه به آمار دسته‌ای مشخص شامل نمی‌شود (چون آنکی راهی برای دانستن اینکه کارت‌های حذف‌شده به کدام دسته تعلق داشتند ندارد)، اما هنگام نگاه به آمار کل مجموعه شامل می‌شود.
 
-- Anki 2.1.28+ introduced redesigned graphs. The old graphs are still
-  accessible with a <kbd>Shift</kbd>-click on the Stats button.
+- آنکی 2.1.28+ نمودارهای بازطراحی‌شده را معرفی کرد. نمودارهای قدیمی همچنان با کلیک <kbd>Shift</kbd> روی دکمه Stats در دسترس‌اند.
 
-## Today
+## امروز {#today}
 
-At the top of the statistics window is a brief list of textual
-statistics about the reviews that you have completed today. A “review”
-in this context is "one answering of a card", so a card might count as
-multiple reviews if it needed to be seen multiple times, and a learning
-card answered also counts as a “review.” A couple of the stats whose
-meaning may not be immediately obvious:
+در بالای پنجره آمار، فهرست کوتاهی از آمار متنی درباره مرورهایی که امروز کامل کرده‌اید هست. «مرور» در این متن یعنی «یک بار پاسخ‌دادن به کارت»؛ پس کارتی ممکن است چند مرور شمرده شود اگر لازم بوده چند بار دیده شود، و پاسخ به کارتِ در حال یادگیری هم «مرور» حساب می‌شود. دو آمار که معنایشان شاید فوراً روشن نباشد:
 
-### Again Count
-This is the number of reviews that you have failed (i.e., pressed Again
-on). The correct percentage listed afterwards is the number of cards you
-did "not" fail divided by the total number of cards you studied.
+### شمار Again {#again-count}
+این شمار مرورهایی است که خراب کرده‌اید (یعنی Again زده‌اید). درصد صحیحِ پس از آن، شمار کارت‌هایی است که خراب «نکرده‌اید» تقسیم بر شمار کل کارت‌هایی که مطالعه کرده‌اید.
 
-### Learn, Review, Relearn, Filtered
-The number of reviews that were learning cards, review cards, relearning
-cards, or studied in a filtered deck when not due.
+### یادگیری، مرور، یادگیری مجدد، پالایش‌شده {#learn-review-relearn-filtered}
+شمار مرورهایی که کارت‌های در حال یادگیری، کارت‌های مروری، کارت‌های در حال یادگیری مجدد بوده‌اند، یا در دسته پالایش‌شده وقتی سررسید نبودند مطالعه شده‌اند.
 
-The stats for the current day are not a good overall indicator of your
-learning progress; everyone has bad days and good days, and seeing that
-you got a lower percentage correct on a particular day should not be
-cause for concern. The remainder of the stats, which take longer periods
-of time into account, will give more useful information if you wish to
-try to change your study habits or scheduling settings based on your
-performance.
+آمار روز فعلی شاخص کلی خوبی از پیشرفت یادگیری شما نیست؛ همه روزهای بد و خوبی دارند و دیدن اینکه در روز خاصی درصد صحیح پایین‌تری گرفته‌اید نباید نگران‌کننده باشد. بقیه آمار، که بازه‌های زمانی طولانی‌تری را در نظر می‌گیرند، اطلاعات مفیدتری می‌دهند اگر بخواهید بر پایه عملکردتان عادت‌های مطالعه یا تنظیمات زمان‌بندی‌تان را تغییر دهید.
 
-The “today” statistics are unaffected by the time period selected at the
-bottom of the window.
+آمارهای «امروز» از بازه زمانی انتخاب‌شده در پایین پنجره تأثیر نمی‌پذیرند.
 
-## The Graphs
+## نمودارها {#the-graphs}
 
-### Future Due
-This graph shows an estimated number of reviews that will be due on a
-given day in the future if you learn no new cards and fail no cards. The
-bars and the left axis show the number of cards due on each day if you
-study all cards each day, while the gray shaded region and the right axis show
-the number of cards due on that day if you don’t study at all until then.
-Note that the forecast graph does not count reviews that are currently
-overdue, so if you have a large backlog, the overdue cards will not be
-displayed.
+### سررسید آینده {#future-due}
+این نمودار برآوردی از شمار مرورهایی را نشان می‌دهد که در روز معینی در آینده سررسید خواهند بود، اگر کارت جدیدی نیاموزید و کارتی را خراب نکنید. میله‌ها و محور چپ، شمار کارت‌های سررسید در هر روز را اگر هر روز همه کارت‌ها را مطالعه کنید نشان می‌دهند، در حالی که ناحیه سایه‌خاکستری و محور راست، شمار کارت‌های سررسید در آن روز را اگر تا آن زمان اصلاً مطالعه نکنید نشان می‌دهند. توجه کنید نمودار پیش‌بینی، مرورهایی را که هم‌اکنون عقب‌افتاده‌اند نمی‌شمارد؛ پس اگر انبوه بزرگی دارید، کارت‌های عقب‌افتاده نمایش داده نمی‌شوند.
 
-Daily load is an estimate of the average number of cards to be reviewed daily.
-If you don't have a backlog, daily load should be approximately equal to
-your number of due cards.
+بار روزانه (daily load) برآوردی از میانگین شمار کارت‌هایی است که روزانه مرور می‌شوند.
+اگر انبوهی ندارید، بار روزانه باید تقریباً برابر شمار کارت‌های سررسیدتان باشد.
 
-It is calculated as follows:
+این‌گونه محاسبه می‌شود:
 
 $$
 \frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}
 $$
 
-Here, \\(I_n\\) is the interval of
-the n-th card. If the interval is less than one day, the summation term is 1. This
-prevents cards with short intervals from unrealistically skewing the value of daily load.
+اینجا \\(I_n\\) فاصله nاُمین کارت است. اگر فاصله کمتر از یک روز باشد، جمله جمع ۱ است. این مانع می‌شود کارت‌های با فاصله کوتاه، مقدار بار روزانه را به‌طور غیرواقعی منحرف کنند.
 
-Example: you have a card with an interval of 10 days and a card with an interval of 50 days.
-Daily load = \\(\frac{1}{10} + \frac{1}{50} = 0.12\\), meaning that, _on average_, you will have 0.12 due cards per day.
+مثال: کارتی با فاصله ۱۰ روز و کارتی با فاصله ۵۰ روز دارید.
+بار روزانه = \\(\\frac{1}{10} + \\frac{1}{50} = 0.12\\)؛ یعنی _به‌طور میانگین_، روزانه ۰٫۱۲ کارت سررسید خواهید داشت.
 
-### Calendar
-This graph shows past card review activity. Hovering the mouse over a specific item
-allows you to view the number of revisions made that day. Click on a day of the
-week to make that the starting day.
+### تقویم {#calendar}
+این نمودار فعالیت مرور کارت‌های گذشته را نشان می‌دهد. نگه‌داشتن ماوس روی مورد مشخصی به شما اجازه می‌دهد شمار مرورهای انجام‌شده در آن روز را ببینید. روی روزی از هفته کلیک کنید تا آن روز، روز شروع شود.
 
-### Reviews
-This graph counts the number of card reviews you have done. The bars may
-correspond to days, weeks, or months, depending on the time period
-you’ve selected at the bottom of the screen. The differently colored
-blocks show how many of the cards you answered on each day were
-[mature](getting-started.md#card-states), young, relearning, or learning cards.
-There is also a separate group for cards answered in a filtered/cram
-deck while they were not due. The gray shaded region and the right axis show
-the cumulative total for each type of review as time progresses across the
-graph (so at 0 days, it would display the number for the entire time
-period displayed on the graph).
+### مرورها {#reviews}
+این نمودار شمار مرورهای کارتی را که انجام داده‌اید می‌شمارد. میله‌ها ممکن است به روز، هفته یا ماه مربوط باشند، بسته به بازه زمانی‌ای که در پایین صفحه انتخاب کرده‌اید. بلوک‌های رنگی مختلف نشان می‌دهند از کارت‌هایی که هر روز پاسخ داده‌اید، چندتا [بالغ](getting-started.md#card-states)، نابالغ، در حال یادگیری مجدد یا در حال یادگیری بوده‌اند.
+گروه جداگانه‌ای هم برای کارت‌هایی هست که در دسته پالایش‌شده/مرور فشرده وقتی سررسید نبودند پاسخ داده شده‌اند. ناحیه سایه‌خاکستری و محور راست، جمع تجمعی هر نوع مرور را با پیشرفت زمان در طول نمودار نشان می‌دهند (پس در ۰ روز، شمار کل بازه زمانی نمایش‌داده‌شده روی نمودار را نشان می‌دهند).
 
-### Card Counts
-This pie chart shows what percentage of your deck or collection consists
-of mature, unseen, young/learn, and suspended cards. If you wish to
-calculate a more precise percentage, the key shows the exact number of
-cards in each section, and the total number of cards is displayed to the
-side.
+### شمار کارت‌ها {#card-counts}
+این نمودار دایره‌ای نشان می‌دهد چند درصد دسته یا مجموعه‌تان از کارت‌های بالغ، دیده‌نشده، نابالغ/در حال یادگیری و معلق تشکیل شده. اگر می‌خواهید درصد دقیق‌تری حساب کنید، کلیدها شمار دقیق کارت‌های هر بخش را نشان می‌دهند و شمار کل کارت‌ها کنارش نمایش داده می‌شود.
 
-### Review Time
-This graph works exactly like Review Count, except that it deals with
-the amount of time you spent on each card rather than the number of
-cards answered.
+### زمان مرور {#review-time}
+این نمودار دقیقاً مانند شمار مرور کار می‌کند، با این تفاوت که با مدت زمانی سر و کار دارد که روی هر کارت گذاشته‌اید، نه شمار کارت‌های پاسخ‌داده‌شده.
 
-### Review Intervals
-This graph displays the number of cards that have a given interval (the
-delay between two reviews). The gray shaded region and the right axis tell you
-what percentage of your cards have an interval of less than or equal to the
-time below that point. The time scope has a different effect on this
-graph than other graphs: rather than changing which cards or period of
-studying is included, it limits how far out the intervals are displayed
-to (so 14-month intervals are not displayed at all on a 1-year graph).
+### فاصله‌های مرور {#review-intervals}
+این نمودار شمار کارت‌هایی را نشان می‌دهد که فاصله (تأخیر میان دو مرور) معینی دارند. ناحیه سایه‌خاکستری و محور راست به شما می‌گویند چه درصدی از کارت‌هایتان فاصله‌ای کمتر یا مساوی زمانِ زیر آن نقطه دارند. بازه زمانی روی این نمودار اثری متفاوت از بقیه نمودارها دارد: به‌جای تغییر اینکه کدام کارت‌ها یا دوره مطالعه شامل می‌شوند، محدود می‌کند فاصله‌ها تا چه اندازه‌ای نمایش داده شوند (پس فاصله‌های ۱۴ ماهه اصلاً روی نمودار ۱ ساله نمایش داده نمی‌شوند).
 
-### Card Ease
-This graph shows the number of cards that have a specific ease factor.
-Average ease of the selected deck / collection is also displayed here.
+### سهولت کارت {#card-ease}
+این نمودار شمار کارت‌هایی را نشان می‌دهد که ضریب سهولت مشخصی دارند. میانگین سهولت دسته/مجموعهٔ انتخاب‌شده هم اینجا نمایش داده می‌شود.
 
-### Card Stability
-Only shown if FSRS is enabled. Stability is defined as the amount of time required
-for the probability of recall to decrease from 100% to 90%.
+### پایداری کارت {#card-stability}
+فقط اگر FSRS فعال باشد نمایش داده می‌شود. پایداری به‌صورت مدت زمان لازم برای کاهش احتمال یادآوری از ۱۰۰٪ به ۹۰٪ تعریف می‌شود.
 
-### Card Difficulty
-Only shown if FSRS is enabled. Difficulty determines how quickly a card's interval grows
-after each review.
+### دشواری کارت {#card-difficulty}
+فقط اگر FSRS فعال باشد نمایش داده می‌شود. دشواری تعیین می‌کند فاصله کارت پس از هر مرور چقدر سریع رشد می‌کند.
 
-### Card Retrievability
-Only shown if FSRS is enabled. "Retrievability" is synonymous with "probability of recall".
+### بازیابی‌پذیری کارت {#card-retrievability}
+فقط اگر FSRS فعال باشد نمایش داده می‌شود. «بازیابی‌پذیری» مرادف «احتمال یادآوری» است.
 
-Estimated total knowledge is the total number of cards you are likely to currently remember,
-calculated by multiplying average retrievability by the number of cards that have been
-reviewed at least once.
+دانش کلِ برآوردی، شمار کل کارت‌هایی است که احتمالاً هم‌اکنون به یاد دارید؛ با ضرب میانگین بازیابی‌پذیری در شمار کارت‌هایی که دست‌کم یک بار مرور شده‌اند محاسبه می‌شود.
 
-### Hourly Breakdown
-This graph shows the percentage of total reviews you have passed during given
-hours.
-1. x-axis (bottom): Time of day (at given hour).
-2. y-axis (right): Amount of cards studied.
-3. secondary y-axis (left): Success rate in percent.
+### تفکیک ساعتی {#hourly-breakdown}
+این نمودار درصد کل مرورهایی را که در ساعات معینی قبول کرده‌اید نشان می‌دهد.
+1. محور x (پایین): زمان روز (در ساعت معین).
+2. محور y (راست): شمار کارت‌های مطالعه‌شده.
+3. محور y ثانویه (چپ): نرخ موفقیت بر حسب درصد.
 
-The blue bars thus show you the number of reviews you’ve made at that hour (so
-that you know how significant the results are). The gray shaded region shows
-the percentage of the total reviews you have passed (i.e., not pressed _Again_
-on) at that hour.
+میله‌های آبی پس شمار مرورهایی را که در آن ساعت انجام داده‌اید نشان می‌دهند (تا بدانید نتایج چقدر معنادارند). ناحیه سایه‌خاکستری، درصد کل مرورهایی را که در آن ساعت قبول کرده‌اید (یعنی _Again_ نزده‌اید) نشان می‌دهد.
 
-### Answer Buttons
-This graph shows how many times you’ve chosen the Again, Hard, Good, or
-Easy button while studying learning/new, young, and
-[mature](getting-started.md#card-states) cards. Anki also displays the percentage
-of correct reviews for each type of card.
+### دکمه‌های پاسخ {#answer-buttons}
+این نمودار نشان می‌دهد چند بار هنگام مطالعه کارت‌های یادگیری/جدید، نابالغ و [بالغ](getting-started.md#card-states) دکمه Again، Hard، Good یا Easy را انتخاب کرده‌اید. آنکی درصد مرورهای صحیح هر نوع کارت را هم نمایش می‌دهد.
 
 
-### True Retention Table
+### جدول حفظ واقعی {#true-retention-table}
 
-This table shows your retention across different cards and different time frames.
-A card is defined as "mature" if its interval is ≥21 days. Only one review per day - the first one - counts.
-Again counts as "Fail"; Hard, Good, and Easy count as "Pass".
-This table can be used to check how well [Anki's spaced repetition algorithm](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html) is working for you.
+این جدول حفظ شما را در کارت‌ها و بازه‌های زمانی مختلف نشان می‌دهد.
+کارتی «بالغ» تعریف می‌شود که فاصله‌اش ≥۲۱ روز باشد. فقط یک مرور در روز — نخستین — شمرده می‌شود.
+Again «شکست» حساب می‌شود؛ Hard و Good و Easy «قبولی».
+از این جدول می‌توان برای بررسی اینکه [الگوریتم تکرار بافاصله آنکی](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html) چقدر برایتان خوب کار می‌کند استفاده کرد.
 
-If you are using FSRS, your true retention is expected to be close to your [desired retention](deck-options.md#desired-retention).
-Keep in mind that data for a single day is noisy, so it's better to look at monthly data. If your true retention doesn't match your desired retention very well, here are some general recommendations:
+اگر از FSRS استفاده می‌کنید، انتظار می‌رود حفظ واقعی‌تان به [حفظ مطلوب](deck-options.md#desired-retention)‌تان نزدیک باشد.
+در نظر داشته باشید داده یک روز فقط نویزی است؛ پس بهتر است به داده‌های ماهانه نگاه کنید. اگر حفظ واقعی‌تان خیلی خوب با حفظ مطلوب‌تان مطابقت ندارد، این توصیه‌های کلی را ببینید:
 
-1) Optimize your FSRS parameters.
-2) Use different presets with their own parameters for different material.
-3) Suspend/reformulate [leeches](leeches.md).
-4) Make sure you are [using the answer buttons as intended](studying.md#answer-buttons).
+1) پارامترهای FSRS‌تان را بهینه‌سازی کنید.
+2) برای مطالب مختلف از پیش‌تنظیم‌های متفاوت با پارامترهای خودشان استفاده کنید.
+3) [انگل‌ها](leeches.md) را معلق کنید یا بازنویسی کنید.
+4) مطمئن شوید [دکمه‌های پاسخ را طبق منظور استفاده می‌کنید](studying.md#answer-buttons).
 
 
-## Manual Analysis
+## تحلیل دستی {#manual-analysis}
 
-If you’re interested in getting information from your statistics other
-than what Anki provides, it is possible to access the data directly.
-Because of the complexity involved, this is not something we can provide
-any support for.
+اگر علاقه‌مندید از آمارتان اطلاعاتی فراتر از آنچه آنکی فراهم می‌کند به دست آورید، ممکن است مستقیماً به داده‌ها دسترسی داشته باشید.
+به‌دلیل پیچیدگی درگیر، این چیزی نیست که بتوانیم برایش پشتیبانی ارائه کنیم.
 
-One option is to [write an add-on](addons.md) that adds another graph or
-more details to the statistics window. There are several add-ons of this
-sort on AnkiWeb already, which you can look at to get an idea of how it
-works.
+یک گزینه [نوشتن افزونه](addons.md) است که نمودار یا جزئیات دیگری به پنجره آمار بیفزاید. چند افزونه از این دست هم‌اکنون روی AnkiWeb هست که می‌توانید برای درک نحوه کار به آن‌ها نگاه کنید.
 
-A more powerful and more complex option is to extract the review log
-information directly from Anki’s database and analyze it in an external
-program. Anki uses a database format called SQLite. There are many tools
-available for working with SQLite databases; one of the easiest to start
-with is called [SQLite Browser](http://sqlitebrowser.org/), which will
-allow you to look around the database as well as export a CSV version of
-tables for import into another program.
+گزینه قدرتمندتر و پیچیده‌تر، استخراج اطلاعات گزارش مرور مستقیماً از پایگاه داده آنکی و تحلیل آن در برنامه‌ای بیرونی است. آنکی از قالب پایگاه داده‌ای به نام SQLite استفاده می‌کند. ابزارهای زیادی برای کار با پایگاه‌های داده SQLite موجود است؛ یکی از آسان‌ترین‌ها برای شروع [SQLite Browser](http://sqlitebrowser.org/) نام دارد که به شما اجازه می‌دهد در پایگاه داده بگردید و همچنین نسخه CSVی از جدول‌ها را برای درون‌ریزی به برنامه‌ای دیگر برون‌بری کنید.
 
-The most important table for statistics is the "revlog" table, which
-stores an entry for each review that you conduct. The columns are as
-follows:
+مهم‌ترین جدول برای آمار، جدول "revlog" است که برای هر مروری که انجام می‌دهید یک ورودی ذخیره می‌کند. ستون‌ها این‌ها هستند:
 
 **id**\
-The time at which the review was conducted, as the number of
-milliseconds that had passed since midnight UTC on January 1, 1970.
-(This is sometimes known as "Unix epoch time", especially when in
-straight seconds instead of milliseconds.)
+زمان انجام مرور، به‌صورت شمار میلی‌ثانیه‌های سپری‌شده از نیمه‌شب UTC اول ژانویه ۱۹۷۰.
+(این گاهی «زمان Unix epoch» نامیده می‌شود، به‌ویژه وقتی بر حسب ثانیه‌های ساده به‌جای میلی‌ثانیه است.)
 
 **cid**\
-The ID of the card that was reviewed. You can look up this value in the
-id field of the "cards" table to get more information about the card,
-although note that the card could have changed between when the revlog
-entry was recorded and when you are looking it up. It is also the
-millisecond timestamp of the card’s creation time.
+شناسه کارتی که مرور شده. می‌توانید این مقدار را در فیلد id جدول "cards" جست‌وجو کنید تا اطلاعات بیشتری درباره کارت به دست آورید؛ البته توجه کنید که کارت ممکن است بین زمان ثبت ورودی revlog و زمان جست‌وجوی شما تغییر کرده باشد. این همان زمان‌استمپ میلی‌ثانیه‌ای زمان ساخت کارت هم هست.
 
 **usn**\
-This column is used to keep track of the sync state of reviews and
-provides no useful information for analysis.
+این ستون برای پیگیری وضعیت همگام‌سازی مرورها استفاده می‌شود و اطلاعات مفیدی برای تحلیل نمی‌دهد.
 
 **ease**\
-Which button you pressed at the end of the review (1 for Again, 4 for
-Easy).
+دکمه‌ای که در پایان مرور زده‌اید (۱ برای Again، ۴ برای Easy).
 
 **ivl**\
-The new interval that the card was pushed to after the review. Positive
-values are in days; negative values are in seconds (for learning cards).
+فاصله جدیدی که کارت پس از مرور به آن هل داده شده. مقادیر مثبت بر حسب روزند؛ مقادیر منفی بر حسب ثانیه (برای کارت‌های در حال یادگیری).
 
 **lastIvl**\
-The interval the card had before the review. Cards introduced for the
-first time have a last interval equal to the Again delay.
+فاصله‌ای که کارت پیش از مرور داشت. کارت‌هایی که برای نخستین‌بار معرفی شده‌اند فاصله قبلی‌ای برابر تأخیر Again دارند.
 
 **factor**\
-The new ease factor of the card in permille (parts per thousand). If the
-ease factor is 2500, the card’s interval will be multiplied by 2.5 the
-next time you press Good.
+ضریب سهولت جدید کارت بر حسب permille (جزء در هزار). اگر ضریب سهولت ۲۵۰۰ باشد، فاصله کارت دفعه بعد که Good می‌زنید در ۲٫۵ ضرب می‌شود.
 
 **time**\
-The amount of time (in milliseconds) you spent on the question and
-answer sides of the card before selecting an ease button.
+مدت زمان (بر حسب میلی‌ثانیه)‌ای که پیش از انتخاب دکمه سهولت، روی سمت‌های پرسش و پاسخ کارت گذاشته‌اید.
 
 **type**\
-This is 0 for learning cards, 1 for review cards, 2 for relearning cards,
-and 3 for early "cram" cards (cards being studied in a filtered deck when they
-are not due).
+این برای کارت‌های در حال یادگیری ۰، برای کارت‌های مروری ۱، برای کارت‌های در حال یادگیری مجدد ۲ و برای کارت‌های «مرور فشرده» زودهنگام (کارت‌هایی که در دسته پالایش‌شده وقتی سررسید نیستند مطالعه می‌شوند) ۳ است.

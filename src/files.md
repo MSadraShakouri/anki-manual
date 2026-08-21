@@ -1,209 +1,149 @@
-# Managing Files and Your Collection
+# مدیریت پرونده‌ها و مجموعه‌تان {#managing-files-and-your-collection}
 
 <!-- toc -->
 
-## Checking Your Collection
+## بررسی مجموعه‌تان {#checking-your-collection}
 
-It is a good idea to occasionally check your collection file for
-problems. You can do this via the Tools&gt;Check Database menu item.
-Checking the database ensures the file has not been corrupted, rebuilds some
-internal structures, and optimizes the file.
+ایده خوبی است که گاهی پرونده مجموعه‌تان را از نظر مشکلات بررسی کنید. این کار را می‌توانید از طریق مورد منوی Tools&gt;Check Database انجام دهید.
+بررسی پایگاه داده مطمئن می‌شود پرونده خراب نشده، بعضی ساختارهای داخلی را بازسازی و پرونده را بهینه می‌کند.
 
-When you check the database, your tag list is also rebuilt. When you
-delete individual decks or cards, Anki does not update the list of used
-tags, as it's inefficient to do so. If you want to clear old tags out
-from the list that are no longer in use, checking your database is the
-way to do it.
+وقتی پایگاه داده را بررسی می‌کنید، فهرست برچسب‌هایتان هم بازسازی می‌شود. وقتی دسته‌ها یا کارت‌های منفرد را حذف می‌کنید، آنکی فهرست برچسب‌های استفاده‌شده را به‌روزرسانی نمی‌کند، چون انجامش ناکارآمد است. اگر می‌خواهید برچسب‌های قدیمیِ دیگر بلااستفاده را از فهرست پاک کنید، بررسی پایگاه داده راه انجامش است.
 
-Note that Anki will automatically optimize your collection once
-every 2 weeks. This optimization ensures the collection performs well,
-but it does not check for errors or rebuild the tag list when
-automatically optimizing.
+توجه کنید آنکی هر ۲ هفته یک‌بار به‌طور خودکار مجموعه‌تان را بهینه می‌کند. این بهینه‌سازی تضمین می‌کند مجموعه خوب کار کند، اما هنگام بهینه‌سازی خودکار، خطاها را بررسی نمی‌کند و فهرست برچسب‌ها را بازسازی نمی‌کند.
 
 <a id="file-locations"></a>
 
-## User Data
+## داده‌های کاربر {#user-data}
 
-On **Windows**, the latest Anki versions store your collection files in your
-appdata folder. You can access it by opening the file manager, and
-typing `%APPDATA%\Anki2` in the location field. Older versions of Anki
-stored your Anki files in a folder called `Anki` in your `Documents`
-folder.
+در **ویندوز**، آخرین نسخه‌های آنکی پرونده‌های مجموعه‌تان را در پوشه appdata شما ذخیره می‌کنند. می‌توانید با باز کردن مدیر پرونده و تایپ `%APPDATA%\Anki2` در فیلد مسیر به آن دسترسی یابید. نسخه‌های قدیمی‌تر آنکی پرونده‌های آنکی شما را در پوشه‌ای به نام `Anki` در پوشه `Documents` شما ذخیره می‌کردند.
 
-On **Mac** computers, recent Anki versions store all user data in the
-`~/Library/Application Support/Anki2` folder. The Library folder is
-hidden by default, but can be revealed in Finder by holding down the
-option key while clicking on the Go menu. If you're on an older Anki
-version, your Anki files will be in your `Documents/Anki` folder.
+در رایانه‌های **مک**، نسخه‌های اخیر آنکی همه داده‌های کاربر را در پوشه `~/Library/Application Support/Anki2` ذخیره می‌کنند. پوشه Library به‌طور پیش‌فرض مخفی است، اما می‌توان با نگه‌داشتن کلید option هنگام کلیک روی منوی Go در Finder آشکارش کرد. اگر روی نسخه قدیمی‌تر آنکی هستید، پرونده‌های آنکی شما در پوشه `Documents/Anki` خواهد بود.
 
-On **Linux**, recent Anki versions store your user data in
-`~/.local/share/Anki2`, or `$XDG_DATA_HOME/Anki2` if you have set a
-custom data path. If you are using a third-party **Flatpak** build,
-your files will be in `~/.var/app/net.ankiweb.Anki/data/Anki2/`.
-Older versions of Anki stored your files in
-`~/Documents/Anki` or `~/Anki`.
+در **لینوکس**، نسخه‌های اخیر آنکی داده‌های کاربر شما را در
+`~/.local/share/Anki2` ذخیره می‌کنند، یا `$XDG_DATA_HOME/Anki2` اگر مسیر داده سفارشی تنظیم کرده‌اید. اگر از نسخه **Flatpak** شخص ثالث استفاده می‌کنید، پرونده‌هایتان در
+`~/.var/app/net.ankiweb.Anki/data/Anki2/` خواهند بود.
+نسخه‌های قدیمی‌تر آنکی پرونده‌هایتان را در
+`~/Documents/Anki` یا `~/Anki` ذخیره می‌کردند.
 
-Within the Anki folder, the program-level and profile-level preferences
-are stored in a file called `prefs.db`.
+درون پوشه آنکی، تنظیمات سطح برنامه و سطح نمایه در پرونده‌ای به نام `prefs.db` ذخیره می‌شوند.
 
-There is also a separate folder for each profile. The folder contains:
+همچنین برای هر نمایه پوشه جداگانه‌ای هست. پوشه شامل:
 
-- Your notes, decks, cards and so on in a file called `collection.anki2`
+- یادداشت‌ها، دسته‌ها، کارت‌ها و غیره در پرونده‌ای به نام `collection.anki2`
 
-- Your audio and images in a `collection.media` folder
+- صداها و تصاویرتان در پوشه `collection.media`
 
-- A backups folder
+- یک پوشه پشتیبان‌ها
 
-- Some system files
+- چند پرونده سیستمی
 
-You should never copy or move your collection while Anki is open. Doing
-so could cause your collection to become corrupt. Please do not move or
-modify the other files in the folder either.
+هرگز نباید هنگام باز بودن آنکی مجموعه‌تان را رونوشت یا جابه‌جا کنید. این کار می‌تواند مجموعه‌تان را خراب کند. لطفاً بقیه پرونده‌های پوشه را هم جابه‌جا یا تغییر ندهید.
 
-## Program Files
+## پرونده‌های برنامه {#program-files}
 
-Anki is installed in the following locations by default:
+آنکی به‌طور پیش‌فرض در این مکان‌ها نصب می‌شود:
 
-- Windows: `%LOCALAPPDATA%\Programs\Anki`
+- ویندوز: `%LOCALAPPDATA%\Programs\Anki`
 - macOS: `/Applications/Anki.app`
-- Linux: `/usr/local/share/anki`
+- لینوکس: `/usr/local/share/anki`
 
-When you install/update Anki in versions 25.07 to 25.09.4, it downloads support
-files and places them in the following locations:
+وقتی آنکی را در نسخه‌های 25.07 تا 25.09.4 نصب/به‌روزرسانی می‌کنید، پرونده‌های پشتیبانی را دانلود و در مکان‌های زیر قرار می‌دهد:
 
-- Windows: `%LOCALAPPDATA%\AnkiProgramFiles`
+- ویندوز: `%LOCALAPPDATA%\AnkiProgramFiles`
 - macOS: `~/Library/Application Support/AnkiProgramFiles`
-- Linux: `~/.local/share/AnkiProgramFiles`
+- لینوکس: `~/.local/share/AnkiProgramFiles`
 
-Removing that folder will cause the launcher to behave like a fresh install.
+حذف آن پوشه باعث می‌شود راه‌انداز مانند نصب تازه رفتار کند.
 
-The `AnkiProgramFiles` contains all the files needed to run Anki aside from
-the launcher. You can copy it to a different folder or system, and start
-Anki from the new location by opening `AnkiProgramFiles/.venv/bin/anki` (or
-`AnkiProgramFiles\.venv\scripts\anki` on Windows). If placed in the standard location on a new computer, the launcher will also be able to re-use the existing files, provided the files were copied with modification times preserved.
+پوشه `AnkiProgramFiles` همه پرونده‌های لازم برای اجرای آنکی را به‌جز راه‌انداز در بر دارد. می‌توانید آن را به پوشه یا سیستم دیگری رونوشت کنید و آنکی را از محل جدید با باز کردن `AnkiProgramFiles/.venv/bin/anki` (یا
+`AnkiProgramFiles\.venv\scripts\anki` در ویندوز) شروع کنید. اگر در محل استاندارد روی رایانه جدیدی قرار گیرد، راه‌انداز هم می‌تواند از پرونده‌های موجود استفاده کند، مشروط بر اینکه پرونده‌ها با حفظ زمان‌های تغییر رونوشت شده باشند.
 
-See the flash drive section below for more.
+برای اطلاعات بیشتر، بخش درایو فلش در پایین را ببینید.
 
-## Startup Options
+## گزینه‌های شروع {#startup-options}
 
-If you have made a destructive change on one computer and have an
-undamaged copy on another computer, you may wish to start Anki without
-syncing in order to use the full sync option without first downloading
-the changes. Similarly, if you are experiencing problems with Anki, you
-might need to (or might be instructed to) disable add-ons temporarily to
-see if one might be causing the problem. To do both of these things at the same time, you can
-open Anki in safe mode by holding down the <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down until the on-screen message informs you that Anki has started in safe mode. If you're on Linux and that didn't work, run 'anki --safemode'.
+اگر روی رایانه‌ای تغییری مخرب داده‌اید و روی رایانه دیگری رونوشت سالمی دارید، شاید بخواهید آنکی را بدون همگام‌سازی شروع کنید تا از گزینه همگام‌سازی کامل بدون دانلود اولیه تغییرات استفاده کنید. به همین ترتیب، اگر با آنکی مشکلی دارید، ممکن است لازم باشد (یا به شما گفته شود) افزونه‌ها را موقتاً غیرفعال کنید تا ببینید آیا یکی باعث مشکل است یا نه. برای انجام هر دو کار هم‌زمان، می‌توانید آنکی را با نگه‌داشتن کلید <kbd>Shift</kbd> هنگام شروع، در حالت ایمن باز کنید. <kbd>Shift</kbd> را نگه دارید تا وقتی پیام روی صفحه به شما بگوید آنکی در حالت ایمن شروع شده است. اگر روی لینوکس هستید و این کار نکرد، 'anki --safemode' را اجرا کنید.
 
-It is possible to specify a custom folder location during startup. This
-is an advanced feature that is primarily intended to be used with
-portable installations, and we recommend you use the default location in
-most circumstances.
+ممکن است مکان پوشه سفارشی را هنگام شروع مشخص کنید. این قابلیتی پیشرفته است که عمدتاً برای نصب‌های قابل حمل در نظر گرفته شده و توصیه می‌کنیم در بیشتر موارد از مکان پیش‌فرض استفاده کنید.
 
-The syntax to specify an alternate folder is as follows:
+نحو مشخص‌کردن پوشه جایگزین این‌گونه است:
 
     anki -b /path/to/anki/folder
 
-- If you have multiple profiles, you can pass -p &lt;name&gt; to load
-  a specific profile.
-- If you pass -p some-fake-name, Anki will show the profile screen on startup.
-  If no profile is provided, the last-used profile is loaded.
+- اگر چند نمایه دارید، می‌توانید -p &lt;name&gt; را برای بارگذاری نمایه مشخصی بدهید.
+- اگر -p some-fake-name بدهید، آنکی هنگام شروع صفحه نمایه‌ها را نشان می‌دهد.
+  اگر نمایه‌ای داده نشود، آخرین نمایه استفاده‌شده بارگذاری می‌شود.
 
-- To change the interface language, use -l &lt;iso 639-1 language
-  code&gt;, such as "-l ja" for Japanese.
+- برای تغییر زبان رابط، از -l &lt;iso 639-1 language
+  code&gt; استفاده کنید؛ مانند "-l ja" برای ژاپنی.
 
-If you always want to use a custom folder location, you can modify your
-shortcut to Anki. On Windows, right-click on the shortcut, choose
-Properties, select the Shortcut tab, and add "-b
-\\path\\to\\data\\folder" after the path to the program, which should
-leave you with something like
+اگر همیشه می‌خواهید از مکان پوشه سفارشی استفاده کنید، می‌توانید میان‌بر آنکی‌تان را تغییر دهید. در ویندوز، روی میان‌بر راست‌کلیک کنید، Properties را انتخاب کنید، زبانه Shortcut را برگزینید و «-b
+\\path\\to\\data\\folder» را پس از مسیر برنامه بیفزایید؛ که چیزی مانند این به دست می‌دهید
 
     "C:\Program Files\Anki\anki.exe" -b "C:\AnkiDataFolder"
 
-You can also use this technique with the -l option to easily use Anki in
-different languages.
+همچنین می‌توانید از این تکنیک با گزینه -l برای استفاده آسان از آنکی به زبان‌های مختلف بهره ببرید.
 
-On Windows, you should use a backslash (\\) not a forward slash (/).
+در ویندوز، باید از بک‌اسلش (\\) استفاده کنید نه اسلش (/).
 
-On a Mac there is no easy way to alter the behaviour when clicking on
-the Anki icon, but it is possible to start Anki with a custom base
-folder from a terminal:
+در مک راه آسانی برای تغییر رفتار هنگام کلیک روی نشان آنکی وجود ندارد، اما ممکن است از ترمینال، آنکی را با پوشه پایه سفارشی شروع کنید:
 
     open /Applications/Anki.app --args -b ~/myankifolder
 
-Alternatively, you can define the environment variable "ANKI_BASE".
-On Windows, you can define the environment variable with:
+همچنین می‌توانید متغیر محیطی "ANKI_BASE" را تعریف کنید.
+در ویندوز می‌توانید متغیر محیطی را این‌گونه تعریف کنید:
 
     set "ANKI_BASE=C:/path/to/AnkiDataFolder"
 
-On Linux and macOS, you can use:
+در لینوکس و macOS می‌توانید استفاده کنید:
 
     export ANKI_BASE="/path/to/AnkiDataFolder"
 
-## DropBox and File Syncing
+## DropBox و همگام‌سازی پرونده‌ها {#dropbox-and-file-syncing}
 
-We do not recommend you sync your Anki folder directly with a
-third-party synchronization service, as it can lead to database
-corruption when files are synced while in use.
+توصیه نمی‌کنیم پوشه آنکی‌تان را مستقیماً با خدمت همگام‌سازی شخص ثالثی همگام کنید، چون می‌تواند به خرابی پایگاه داده بینجامد وقتی پرونده‌ها هنگام استفاده همگام می‌شوند.
 
-If you just want to synchronize your media, you can link external
-folders into services like DropBox. See [DropboxWiki: Sync
-Folders Outside Dropbox (archive.org)][dropboxwiki-sync-other]
-for more info.
+اگر فقط می‌خواهید رسانه‌هایتان را همگام کنید، می‌توانید پوشه‌های بیرونی را به خدماتی مانند DropBox پیوند بزنید. برای اطلاعات بیشتر
+[DropboxWiki: Sync Folders Outside Dropbox (archive.org)][dropboxwiki-sync-other] را ببینید.
 
 [dropboxwiki-sync-other]: http://web.archive.org/web/20180919153730/http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders
 
-If you wish to keep your collection in sync as well, it is strongly
-recommended that you create a script that copies your files from your
-synced folder to a local folder, launches Anki, and then copies the
-files back when Anki is closed. This will ensure that the files are
-never synchronized while they are open.
+اگر مایلید مجموعه‌تان را هم همگام نگه دارید، به‌شدت توصیه می‌شود اسکریپتی بسازید که پرونده‌هایتان را از پوشه همگام‌شده به پوشه محلی رونوشت می‌کند، آنکی را اجرا می‌کند و سپس وقتی آنکی بسته شد پرونده‌ها را برمی‌گرداند. این تضمین می‌کند پرونده‌ها هرگز هنگام باز بودن همگام نشوند.
 
-## Network Filesystems
+## سیستم‌پرونده‌های شبکه‌ای {#network-filesystems}
 
-We strongly recommend you have Anki store your files on a local hard
-disk, as network filesystems can lead to database corruption. If a
-network filesystem is your only option, regular use of Tools&gt;Check
-Database to detect corruption is recommended.
+به‌شدت توصیه می‌کنیم آنکی پرونده‌هایتان را روی دیسک سخت محلی ذخیره کند، چون سیستم‌پرونده‌های شبکه‌ای می‌توانند به خرابی پایگاه داده بینجامند. اگر سیستم‌پرونده شبکه‌ای تنها گزینه شماست، استفاده منظم از Tools&gt;Check Database برای تشخیص خرابی توصیه می‌شود.
 
-## Running from a Flash Drive
+## اجرا از درایو فلش {#running-from-a-flash-drive}
 
-On Windows, Anki can be installed on a USB / flash drive and run as a
-portable application. The following example assumes your USB drive is
-drive E; adjust as necessary.
+در ویندوز، آنکی را می‌توان روی درایو USB/فلش نصب و به‌عنوان برنامه‌ای قابل حمل اجرا کرد. مثال زیر فرض می‌کند درایو USB شما درایو E است؛ در صورت نیاز تنظیمش کنید.
 
-- Copy the %LOCALAPPDATA%\Programs\Anki folder to the flash drive, so you
-  have a folder like E:\\Anki.
+- پوشه %LOCALAPPDATA%\Programs\Anki را روی درایو فلش رونوشت کنید تا پوشه‌ای مانند E:\\Anki داشته باشید.
 
-- Create a text file called E:\\anki.bat with the following text:
+- پرونده متنی به نام E:\\anki.bat با متن زیر بسازید:
 
   E:\anki\anki.exe -b E:\ankidata
 
-If you would like to prevent the black command prompt window from
-remaining open, you can instead use:
+اگر می‌خواهید مانع شوید پنجره سیاه خط فرمان باز بماند، به‌جای آن می‌توانید استفاده کنید:
 
     start /b E:\anki\anki.exe -b E:\ankidata
 
-- Double-clicking on anki.bat should start Anki with the user data
-  stored in E:\\ankidata.
+- دوبار کلیک روی anki.bat باید آنکی را با داده‌های کاربرِ ذخیره‌شده در E:\\ankidata شروع کند.
 
-The full path including drive letter is required - if you try using
-`\anki\anki.exe` instead you will find syncing stops working.
+مسیر کامل شامل حرف درایو الزامی است — اگر به‌جایش `\anki\anki.exe` را امتحان کنید می‌بینید همگام‌سازی از کار می‌افتد.
 
-WARNING: The drive letter must be the same on all devices. If you set this up for drive E,
-it won't work for a flash drive mapped to drive D for example.
+هشدار: حرف درایو باید روی همه دستگاه‌ها یکسان باشد. اگر این را برای درایو E راه انداخته‌اید، مثلاً برای درایو فلشی که به درایو D نگاشت شده کار نخواهد کرد.
 
-WARNING: Media syncing with AnkiWeb may not work if your flash drive is formatted
-as FAT32. Please format the drive as NTFS to ensure media syncs
-correctly.
+هشدار: همگام‌سازی رسانه با AnkiWeb ممکن است اگر درایو فلش شما FAT32 فرمت شده باشد کار نکند. لطفاً درایو را NTFS فرمت کنید تا رسانه‌ها درست همگام شوند.
 
-### Anki Launcher
+### راه‌انداز آنکی {#anki-launcher}
 
-These instructions apply to Anki versions 25.07 to 25.09.4:
+این دستورالعمل‌ها برای نسخه‌های 25.07 تا 25.09.4 آنکی‌اند:
 
-1. Download the latest Anki launcher, and install it in a custom location:
-   `E:\Anki\Launcher`. Not `E:\Anki\Launcher\Anki`.
-2. When the launcher appears, close it without installing.
-3. Put the following in a file `E:\Anki\Anki.bat`:
+1. آخرین راه‌انداز آنکی را دانلود و در مکانی سفارشی نصب کنید:
+   `E:\Anki\Launcher`. نه `E:\Anki\Launcher\Anki`.
+2. وقتی راه‌انداز ظاهر شد، بدون نصب آن را ببندید.
+3. موارد زیر را در پرونده `E:\Anki\Anki.bat` بگذارید:
 
 ```bat
 @echo off
@@ -215,128 +155,96 @@ set ANKI_BASE=%USB_ROOT%\AnkiData
 start /b %ANKI_LAUNCHER%
 ```
 
-4. Double-click on the .bat file you created, and install Anki as normal.
-5. You can now double-click on the .bat file to run Anki from other machines.
+4. روی پرونده .bat‌ای که ساختید دوبار کلیک کنید و آنکی را مثل همیشه نصب کنید.
+5. اکنون می‌توانید با دوبار کلیک روی پرونده .bat، آنکی را از رایانه‌های دیگر اجرا کنید.
 
-Tools>Upgrade/Downgrade will continue to function, but only when your machine
-has access to the internet.
+Tools>Upgrade/Downgrade همچنان کار خواهد کرد، اما فقط وقتی رایانه شما به اینترنت دسترسی دارد.
 
-## Backups
+## پشتیبان‌ها {#backups}
 
-See [this section](./backups.md).
+[این بخش](./backups.md) را ببینید.
 
-## Inaccessible Harddisk
+## هارددیسک غیرقابل دسترس {#inaccessible-harddisk}
 
-If Anki can't write to files in the [Anki folder](#user-data), a message
-will be displayed on startup saying that Anki can't write to the
-harddisk, and Anki will close. If you're unsure how to fix the
-permissions, please contact someone near you who is knowledgeable about
-computers and can help you out.
+اگر آنکی نتواند در [پوشه آنکی](#user-data) پرونده‌ای بنویسد، هنگام شروع پیامی نمایش داده می‌شود که می‌گوید آنکی نمی‌تواند روی هارددیسک بنویسد و آنکی بسته می‌شود. اگر مطمئن نیستید چگونه مجوزها را درست کنید، لطفاً از کسی نزدیک شما که به رایانه مسلط است و می‌تواند کمک کند بخواهید.
 
-## Permissions of Temp Folder
+## مجوزهای پوشه Temp {#permissions-of-temp-folder}
 
-Anki uses the system's temporary folder to store temporary data. If the
-permissions of this folder have been changed from the default settings
-by a rogue app or buggy antivirus app, Anki will not function properly.
+آنکی از پوشه موقت سیستم برای ذخیره داده‌های موقت استفاده می‌کند. اگر مجوزهای این پوشه توسط برنامه‌ای خرابکار یا آنتی‌ویروس معیوبی از تنظیمات پیش‌فرض تغییر کرده باشد، آنکی درست کار نخواهد کرد.
 
-If you're on a Windows 7 machine, the general steps to fix the problem
-are listed below. As this is somewhat complicated, please ask someone
-knowledgeable about Windows if you are not sure.
+اگر روی ویندوز ۷ هستید، مراحل کلی رفع مشکل در پایین فهرست شده است. چون این کمی پیچیده است، اگر مطمئن نیستید لطفاً از کسی مطلع درباره ویندوز بپرسید.
 
-1. Click on the start bar, and type in %temp% (including the percents),
-   then hit <kbd>Enter</kbd>.
+1. روی نوار استارت کلیک کنید و %temp% را (شامل علامت‌های درصد) تایپ کنید، سپس <kbd>Enter</kbd> را بزنید.
 
-2. Go up one folder, and locate the temp folder. Right click on it, and
-   choose Properties.
+2. یک پوشه بالاتر بروید و پوشه temp را پیدا کنید. رویش راست‌کلیک کرده و
+   Properties را انتخاب کنید.
 
-3. In the security tab, click on Advanced.
+3. در زبانه security، روی Advanced کلیک کنید.
 
-4. Click on the Owner tab. If you're not listed as the owner, click the
-   button to take ownership.
+4. روی زبانه Owner کلیک کنید. اگر به‌عنوان مالک فهرست نشده‌اید، دکمه
+   گرفتن مالکیت را بزنید.
 
-5. On the permissions tab, ensure that you have full control. On a
-   default W7 install the control will actually be inherited from
-   c:\\users\\your-username.
+5. در زبانه permissions، مطمئن شوید کنترل کامل دارید. در نصب پیش‌فرض W7، کنترل در واقع از
+   c:\\users\\your-username به ارث می‌رسد.
 
-## Corrupt Collections
+## مجموعه‌های خراب {#corrupt-collections}
 
-Anki uses a file format that is robust against program and computer
-crashes, but it's still possible for your collection to become corrupt
-if the files are modified while Anki is open, stored on a network drive,
-or corrupted by a bug.
+آنکی از قالب پرونده‌ای استفاده می‌کند که در برابر خرابی برنامه و رایانه مقاوم است، اما همچنان ممکن است مجموعه‌تان خراب شود اگر پرونده‌ها هنگام باز بودن آنکی تغییر داده شوند، روی درایو شبکه‌ای ذخیره شده باشند، یا توسط اشکالی خراب شوند.
 
-When you run Tools&gt;Check Database, you will receive a message if Anki
-detects the file has been corrupted. **The best way to recover from this
-is to restore from the most recent [automatic backup](#backups)**, but
-if your backup is too old, then you can attempt to repair the corruption
-instead.
+وقتی Tools&gt;Check Database را اجرا می‌کنید، اگر آنکی تشخیص دهد پرونده خراب شده پیامی می‌گیرید. **بهترین راه بازیابی از این، بازگردانی از جدیدترین [پشتیبان خودکار](#backups)** است، اما اگر پشتیبان‌تان خیلی قدیمی است، می‌توانید به‌جای آن تلاش کنید خرابی را تعمیر کنید.
 
-On Linux, make sure sqlite3 is installed. On a Mac, it should be
-installed already. On Windows, download
-<http://www.sqlite.org/sqlite-3_6_23.zip>.
+در لینوکس، مطمئن شوید sqlite3 نصب است. در مک، باید از قبل نصب باشد. در ویندوز،
+<http://www.sqlite.org/sqlite-3_6_23.zip> را دانلود کنید.
 
-Next, create a backup of your collection.anki2 file, in case something
-goes wrong with the steps below.
+سپس از پرونده collection.anki2 خود پشتیبانی بسازید، مبادا با مراحل زیر چیزی خراب شود.
 
-### Linux/macOS
+### لینوکس/macOS {#linuxmacos}
 
-Open a terminal, change to the folder your collection is located in, and
-type:
+یک ترمینال باز کنید، به پوشه‌ای که مجموعه در آن است بروید و تایپ کنید:
 
     sqlite3 collection.anki2 .dump > dump.txt
 
-Open the resulting dump.txt file in a text editor, and look at the final
-line. If it reads "rollback;", change it to "commit;"
+پرونده dump.txt حاصل را در ویرایشگر متنی باز کنید و به خط آخر نگاه کنید. اگر "rollback;" است، آن را به "commit;" تغییر دهید.
 
-Then run the following in a terminal:
+سپس دستور زیر را در ترمینال اجرا کنید:
 
     cat dump.txt | sqlite3 temp.file
 
-Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you're done, proceed to the final
-step.
+مطمئن شوید temp.file را استفاده می‌کنید — collection.anki2 را سمت راست نگذارید،
+وگرنه پرونده را خالی می‌کنید. وقتی تمام شد، به مرحله آخر بروید.
 
-### Windows
+### ویندوز {#windows}
 
-Copy the `sqlite3.exe` program and your deck to your desktop. Then go to
-**Start&gt;Run** and type in `cmd.exe`.
+برنامه `sqlite3.exe` و دسته‌تان را روی میزکار رونوشت کنید. سپس به
+**Start&gt;Run** بروید و `cmd.exe` را تایپ کنید.
 
-If you're on a recent Windows, the command prompt may not start on your
-desktop. If you don't see desktop displayed in the command prompt, type
-something like the following, replacing "administrator" with your login
-name.
+اگر روی ویندوز اخیر هستید، خط فرمان شاید روی میزکارتان شروع نشود. اگر desktop در خط فرمان نمایش داده نشده، چیزی مانند زیر تایپ کنید و "administrator" را با نام ورودتان جایگزین کنید.
 
     cd C:\Users\Administrator\Desktop
 
-Then type:
+سپس تایپ کنید:
 
     sqlite3 collection.anki2 .dump > dump.txt
 
-Open the resulting dump.txt file in a text editor, and look at the final
-line. If it reads "rollback;", change it to "commit;"
+پرونده dump.txt حاصل را در ویرایشگر متنی باز کنید و به خط آخر نگاه کنید. اگر "rollback;" است، آن را به "commit;" تغییر دهید.
 
-Then run the following in a terminal:
+سپس دستور زیر را در ترمینال اجرا کنید:
 
     type dump.txt | sqlite3 temp.file
 
-Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you're done, proceed to the final
-step.
+مطمئن شوید temp.file را استفاده می‌کنید — collection.anki2 را سمت راست نگذارید،
+وگرنه پرونده را خالی می‌کنید. وقتی تمام شد، به مرحله آخر بروید.
 
-### Final Step
+### مرحله آخر {#final-step}
 
-Check that you didn't get an error message, and that temp.file is not
-empty. The procedure optimizes the collection in the process, so it's
-normal for the new file to be somewhat smaller than the old one.
+بررسی کنید که پیام خطایی نگرفته‌اید و temp.file خالی نیست. این روش، مجموعه را در میان فرایند بهینه می‌کند؛ پس طبیعی است که پرونده جدید کمی کوچک‌تر از قدیمی باشد.
 
-When you've confirmed the file is not empty:
+وقتی مطمئن شدید پرونده خالی نیست:
 
-- rename the original collection.anki2 file to something else
+- نام پرونده collection.anki2 اصلی را به چیز دیگری تغییر دهید
 
-- rename temp.file to collection.anki2
+- نام temp.file را به collection.anki2 تغییر دهید
 
-- move collection.anki2 back into your collection folder, overwriting
-  the old version
+- collection.anki2 را به پوشه مجموعه‌تان برگردانید و نسخه قدیمی را بازنویسی کنید
 
-- start Anki and go to Tools&gt;Check Database to make sure the
-  collection has been successfully restored.
+- آنکی را شروع کنید و به Tools&gt;Check Database بروید تا مطمئن شوید مجموعه با موفقیت بازگردانی شده است.
