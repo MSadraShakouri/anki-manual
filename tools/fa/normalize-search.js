@@ -73,7 +73,6 @@ for (const field of Object.keys(index.index)) {
     tokensIn++;
     const norm = lunrFa.normalize(token);
     if (!norm) continue;
-    const before = JSON.stringify(newRoot).length; // cheap collision signal
     insertToken(newRoot, norm, docs);
     tokensOut++;
   }
