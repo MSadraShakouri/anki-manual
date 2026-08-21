@@ -509,7 +509,8 @@ function playground_text(playground, hidden = true) {
         html.classList.add('sidebar-resizing');
     }
     function resize(e) {
-        var pos = (e.clientX - sidebar.offsetLeft);
+        // RTL: sidebar docked to the right edge
+        var pos = (window.innerWidth - e.clientX);
         if (pos < 20) {
             hideSidebar();
         } else {
@@ -558,15 +559,16 @@ function playground_text(playground, hidden = true) {
         if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) { return; }
         if (window.search && window.search.hasFocus()) { return; }
 
+        // RTL: arrow keys are mirrored (left = next page)
         switch (e.key) {
-            case 'ArrowRight':
+            case 'ArrowLeft':
                 e.preventDefault();
                 var nextButton = document.querySelector('.nav-chapters.next');
                 if (nextButton) {
                     window.location.href = nextButton.href;
                 }
                 break;
-            case 'ArrowLeft':
+            case 'ArrowRight':
                 e.preventDefault();
                 var previousButton = document.querySelector('.nav-chapters.previous');
                 if (previousButton) {
