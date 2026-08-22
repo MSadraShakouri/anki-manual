@@ -101,11 +101,6 @@ body {
     transition: margin-right 0.3s ease, transform 0.3s ease;
 }
 
-/* فلش‌های بازکردن فصل‌ها در فهرست: آینه شوند */
-.chapter li > a.toggle div {
-    transform: scaleX(-1);
-}
-
 /* نشانگر پرش به سرفصل‌ها در سمت راست */
 h1:target::before, h2:target::before, h3:target::before,
 h4:target::before, h5:target::before, h6:target::before {
