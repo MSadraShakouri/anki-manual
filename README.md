@@ -31,6 +31,18 @@
 gh issue list --label sync
 ```
 
+## برون‌بری برای وب‌سایت مستندات جدید
+
+پس از دریافت مخزن اصلی آنکی در `~/anki`، ترجمه را با دستور زیر به ساختار Mintlify
+در `docs-site/fa/manual` برون‌بری کنید:
+
+```bash
+python3 tools/fa/export_mintlify.py --anki-repo ~/anki
+```
+
+این ابزار ۵۵ صفحهٔ فعلی راهنما را تبدیل می‌کند، پیوندها و calloutها را با MDX
+سازگار می‌کند و از رسانه‌های مشترک موجود در مخزن اصلی استفاده می‌کند.
+
 ## مجوز
 
 این راهنما با مجوز [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) منتشر می‌شود،
