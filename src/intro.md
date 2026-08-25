@@ -37,6 +37,7 @@
 - [русский язык](https://andreykaiu.github.io/anki-manual-ru/)
 - [Українська](https://astropsy999.github.io/anki-manual/)
 - [العربية](https://abdnh.github.io/anki-manual/)
+- [فارسى](https://msadrashakouri.github.io/anki-manual/)
 - [日本語](http://wikiwiki.jp/rage2050/)
 - [简体中文](https://open-spaced-repetition.github.io/anki-manual-zh-CN/)
 
