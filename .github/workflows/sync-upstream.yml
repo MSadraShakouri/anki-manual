@@ -12,9 +12,17 @@ jobs:
       issues: write
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
+
+      - name: Ensure 'sync' label exists
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create sync \
+            --description "Upstream commit waiting to be translated/merged" \
+            --color 5319E7 || echo "label 'sync' already exists"
 
       - name: Add upstream remote and fetch
         run: |
@@ -65,8 +73,7 @@ jobs:
             gh issue create \
               --title "$title" \
               --body "$body" \
-              --label sync
-            echo "Created issue for $sha"
+              --label sync && echo "Created issue for $sha" || echo "::warning::could not create issue for $sha (will retry tomorrow)"
           done < new-commits.txt
 
       - name: Update origin/upstream
