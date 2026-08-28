@@ -45,6 +45,8 @@ DEVIATIONS = {
         "added_links": [
             "https://docs.ankiweb.net/",
             "https://docs.ankiweb.net/",
+            # link to this Persian translation's own site, added on purpose
+            "https://msadrashakouri.github.io/anki-manual/",
         ],
     },
 }
