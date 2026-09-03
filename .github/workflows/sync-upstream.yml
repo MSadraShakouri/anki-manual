@@ -11,6 +11,9 @@ jobs:
     permissions:
       issues: write
       contents: write
+      # pushing the `upstream` mirror branch can carry changes to
+      # .github/workflows/* from upstream, which requires this permission
+      workflows: write
     steps:
       - uses: actions/checkout@v5
         with:
