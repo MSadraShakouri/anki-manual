@@ -11,9 +11,11 @@ jobs:
     permissions:
       issues: write
       contents: write
-      # pushing the `upstream` mirror branch can carry changes to
-      # .github/workflows/* from upstream, which requires this permission
-      workflows: write
+      # NOTE: there is intentionally no `workflows: write` here. It is not a
+      # valid GITHUB_TOKEN permission, and using it makes this whole file
+      # invalid so the workflow stops running entirely. GITHUB_TOKEN can
+      # never push commits that create or update .github/workflows/*; the
+      # mirror push in the last step uses the SYNC_TOKEN secret instead.
     steps:
       - uses: actions/checkout@v5
         with:
@@ -81,7 +83,37 @@ jobs:
 
       - name: Update origin/upstream
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional PAT used only for the mirror push: classic token with
+          # 'repo' + 'workflow' scopes, or fine-grained token with Contents
+          # read/write + Workflows read/write on this repository. Needed
+          # because GITHUB_TOKEN can never push refs that touch
+          # .github/workflows/*, which upstream's Dependabot bumps regularly
+          # do. Without it, issues are still created daily, but the mirror
+          # branch cannot advance past such commits.
+          SYNC_TOKEN: ${{ secrets.SYNC_TOKEN }}
         shell: bash
         run: |
-          git push origin upstream/main:refs/heads/upstream --force
+          set -euo pipefail
+
+          token="${SYNC_TOKEN:-$GITHUB_TOKEN}"
+          auth="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$token" | base64 -w0)"
+
+          # Scoped credential override: only this push authenticates with the
+          # chosen token; the earlier fetch of the public upstream repo keeps
+          # using the default GITHUB_TOKEN credentials persisted by checkout.
+          if git -c "http.https://github.com/.extraheader=$auth" \
+               push origin upstream/main:refs/heads/upstream --force 2>&1 | tee push.log; then
+            echo "Mirror branch 'upstream' updated."
+          else
+            if grep -qi "workflow" push.log; then
+              if [ -z "${SYNC_TOKEN:-}" ]; then
+                echo "::error::The upstream history contains changes to .github/workflows/* (upstream Dependabot action bumps), and the default GITHUB_TOKEN is never allowed to create or update workflow files. To fix this permanently: create a personal access token (classic token with 'repo' and 'workflow' scopes, or a fine-grained token with Contents: read/write and Workflows: read/write on this repository), add it as the SYNC_TOKEN secret in Settings > Secrets and variables > Actions, then re-run this workflow."
+              else
+                echo "::error::SYNC_TOKEN was rejected by the push. Make sure the token is valid and has workflow access (classic: 'repo' + 'workflow' scopes; fine-grained: Contents and Workflows read/write on this repository)."
+              fi
+            else
+              echo "::error::git push failed; see the output above."
+            fi
+            exit 1
+          fi
